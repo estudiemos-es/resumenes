@@ -39,6 +39,23 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 .sheet {
   background-image: none !important;
 }
+
+/* Full screen notes layout */
+html, body {
+  width: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: var(--paper) !important;
+}
+.sheet {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
 </style>
 </head>
 <body>
@@ -384,6 +401,7 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 </main>
 </body>
 </html>
+
 
 
 
