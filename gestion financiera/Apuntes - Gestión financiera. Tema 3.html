@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión financiera. Tema 3</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión financiera. Tema 3</h1>
+
+<h2>Gestión financiera: ayudas y subvenciones</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y conceptos generales</h2>
+
+<p style="margin: 0 0 1rem;">Las ayudas y subvenciones públicas y privadas constituyen un instrumento de financiación esencial para las empresas y los trabajadores autónomos. En muchas ocasiones, estos recursos resultan determinantes para afrontar la puesta en marcha o el inicio de un proyecto empresarial. Por este motivo, es fundamental conocer su existencia, saber localizar los canales de búsqueda, entender los procedimientos de tramitación y comprender sus implicaciones contables y fiscales.</p>
+
+<p style="margin: 0 0 1rem;">Desde el punto de vista terminológico, la Real Academia Española (RAE) define <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ayuda</strong> como la acción y efecto de ayudar, mientras que define <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subvención</strong> como una ayuda económica que se concede a una persona o institución para que realice una actividad considerada de interés general. De este modo, se entiende que las subvenciones son, por su naturaleza etimológica, un tipo específico de ayuda.</p>
+
+<p style="margin: 0 0 1rem;">Estas aportaciones se clasifican según el origen de sus fondos en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ayudas públicas:</strong> Aquellas cuyos fondos provienen del sector público, como ministerios, comunidades autónomas, ayuntamientos o empresas públicas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ayudas privadas:</strong> Aquellas que proceden del sector privado, siendo las más habituales las otorgadas por fundaciones, asociaciones y empresas privadas.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Mientras que para el beneficiario estas ayudas representan una vía de financiación y obtención de recursos, para el benefactor o entidad concedente la finalidad puede ser muy diversa. Entre los objetivos más destacados se encuentran:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Facilitar la creación de nuevas iniciativas empresariales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Evitar el cierre de empresas en dificultades y, en consecuencia, contener el desempleo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Dinamizar un sector económico específico mediante estímulos financieros.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Propiciar la expansión y el crecimiento de los negocios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Fomentar la competitividad de los productos o servicios en los mercados nacional e internacional.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Contribuir al mantenimiento de una economía estable y al control de los precios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Modernizar y adaptar las estructuras de las empresas y la capacitación de sus trabajadores a las exigencias del mercado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Impulsar el desarrollo de nuevos productos y tecnologías.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Diferencias entre subvenciones y otras ayudas</h2>
+
+<p style="margin: 0 0 1rem;">Aunque la mayor parte de los recursos de apoyo financiero provienen del sector público (ya sea en el ámbito europeo, estatal, autonómico o local), no todas las ayudas públicas pueden considerarse subvenciones. La distinción entre ambas no depende de la denominación comercial o administrativa que se les otorgue, sino del cumplimiento de la normativa legal vigente.</p>
+
+<p style="margin: 0 0 1rem;">En España, las subvenciones públicas están reguladas por la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ley 38/2003, de 17 de noviembre, General de Subvenciones</strong> y por su reglamento de desarrollo. Cualquier ayuda que no se ajuste a lo establecido en esta ley no puede ser calificada formalmente como subvención.</p>
+
+<p style="margin: 0 0 1rem;">Las diferencias principales entre una subvención y otras tipologías de ayudas son las siguientes:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Discrecionalidad vs. carácter reglado:</strong> La subvención posee un carácter discrecional en su concesión, mientras que las ayudas suelen tener un carácter reglado, lo que obliga a la administración a satisfacerlas si se cumplen las condiciones preestablecidas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Carácter patrimonial:</strong> La subvención consiste en una atribución financiera directa, ya sea mediante la entrega de fondos públicos monetarios o en especie, pero siempre cuantificable económicamente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ausencia de devolución (a fondo perdido):</strong> Las subvenciones se otorgan a fondo perdido, lo que significa que el beneficiario no tiene la obligación de reintegrar los fondos recibidos, siempre y cuando cumpla estrictamente con las condiciones impuestas en su concesión.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vinculación a un fin concreto:</strong> La subvención está asociada de forma obligatoria a una finalidad determinada por la ley, por lo que su aplicación queda condicionada al cumplimiento de dicho objetivo.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Ley general de subvenciones (Ley 38/2003)</h2>
+
+<p style="margin: 0 0 1rem;">La Ley 38/2003 define formalmente la subvención como cualquier disposición dineraria realizada por la Administración General del Estado, las entidades locales o las administraciones de las comunidades autónomas a favor de personas públicas o privadas, siempre que cumpla con tres requisitos obligatorios:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ausencia de contraprestación:</strong> La entrega de los fondos debe realizarse sin que exista una contraprestación directa por parte de los sujetos beneficiarios.</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sujeción a un objetivo:</strong> La entrega de la cuantía está condicionada al cumplimiento de un objetivo específico, la ejecución de un proyecto, la realización de una actividad o la adopción de un comportamiento singular (ya sean actividades realizadas o por desarrollar). El beneficiario queda obligado a cumplir tanto con los compromisos materiales como con las obligaciones formales establecidas.</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fomento de utilidad pública:</strong> El proyecto, conducta o situación financiada debe tener como finalidad el fomento de una actividad de utilidad pública, de interés social o de promoción de una utilidad pública general.</p>
+
+<p style="margin: 0 0 1rem;">El proceso completo para la gestión de una subvención se desarrolla en cinco fases secuenciales:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Publicación:</strong> Difusión oficial de la convocatoria y de sus bases reguladoras.</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presentación:</strong> Remisión de la solicitud y la documentación requerida por parte de los interesados.</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Evaluación de las solicitudes presentadas por parte del órgano competente.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Concesión:</strong> Adjudicación formal de los fondos económicos a los beneficiarios seleccionados.</p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Justificación:</strong> Acreditación documental por parte del beneficiario de haber cumplido con el objeto y las condiciones para las que se otorgó la subvención.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tramitación de ayudas y bases reguladoras</h2>
+
+<p style="margin: 0 0 1rem;">El proceso de tramitación se rige de manera estricta por las bases o condiciones publicadas en la convocatoria de la ayuda. En el caso de las subvenciones públicas, cualquier vacío o aspecto no especificado en las bases reguladoras de la convocatoria deberá resolverse aplicando de manera supletoria la Ley General de Subvenciones.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fases de la tramitación</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estudio de las bases y presentación de la solicitud:</strong> Tras la publicación de las bases, los interesados deben analizar los requisitos exigidos. Si los cumplen, proceden a la presentación de la solicitud en la forma, lugar y plazo indicados. Con el fin de agilizar los trámites, es habitual la inclusión de una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">declaración responsable</strong>, mediante la cual el solicitante manifiesta bajo su responsabilidad que todos los datos expuestos son ciertos y que dispone de la documentación que lo acredita, la cual presentará únicamente si le es requerida por el órgano gestor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución de solicitudes:</strong> Una vez finalizado el plazo de presentación, la administración evalúa los expedientes. Dependiendo del procedimiento de concesión, se distinguen dos modalidades:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Concurrencia competitiva:</span> Las solicitudes se comparan y se clasifican de acuerdo con criterios de valoración fijados previamente en las bases. Los fondos se adjudican a los expedientes que obtengan una mayor puntuación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Concesión directa:</span> Las solicitudes se comprueban individualmente por orden de llegada. Se conceden a aquellas que cumplan los requisitos establecidos hasta agotar el presupuesto asignado, sin que exista competencia directa entre los solicitantes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Concesión y justificación:</strong> Tras dictarse la resolución de concesión, se procede al pago y el beneficiario asume la obligación de justificar que ha destinado los fondos al fin para el que fueron concedidos.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Bases mínimas que deben reunir las subvenciones públicas</h3>
+
+<p style="margin: 0 0 1rem;">De acuerdo con la legislación, las bases reguladoras de una subvención pública deben incluir de forma obligatoria el siguiente contenido mínimo:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Definición precisa del objeto de la subvención.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Requisitos que deben reunir los beneficiarios para poder optar a la ayuda.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Condiciones de solvencia y eficacia que deban cumplir las personas jurídicas solicitantes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Procedimiento detallado de concesión de la subvención.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Criterios objetivos de otorgamiento y, en su caso, la ponderación asignada a cada uno de ellos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Cuantía individualizada de la subvención o los criterios objetivos para su determinación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Órganos competentes para la ordenación, instrucción y resolución del procedimiento de concesión, así como el plazo de notificación de la resolución.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Determinación de los libros y registros contables específicos que garanticen la justificación adecuada de la subvención.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Plazo y forma de justificación del cumplimiento de la finalidad de la subvención y de la aplicación de los fondos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Medidas de garantía que deban constituirse a favor del órgano concedente, sus medios de constitución y el procedimiento para su cancelación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Posibilidad de realizar pagos anticipados y abonos a cuenta, así como el régimen de garantías que deban aportar los beneficiarios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Circunstancias que, debido a la alteración de las condiciones iniciales, puedan dar lugar a la modificación de la resolución de concesión.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Régimen de compatibilidad o incompatibilidad con otras subvenciones, ayudas, ingresos o recursos destinados a la misma finalidad, procedentes de cualquier administración o entidad pública o privada.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Criterios de graduación de los posibles incumplimientos de las condiciones impuestas, que servirán para calcular la cantidad definitiva que recibirá el beneficiario o el importe que deberá reintegrar, aplicando siempre el principio de proporcionalidad.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Clasificación y tipos de ayudas</h2>
+
+<p style="margin: 0 0 1rem;">Para comprender el ecosistema de las ayudas financieras, estas pueden clasificarse bajo diferentes criterios técnicos:</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según la entidad que otorga la ayuda</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Públicas:</strong> Concedidas por organismos del sector público (ministerios, ayuntamientos, diputaciones, etc.).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Privadas:</strong> Concedidas por entidades del sector privado (empresas, asociaciones, fundaciones).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según el ámbito territorial</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Internacional:</strong> Provenientes de organismos extranjeros o multilaterales, como los fondos de la Unión Europea.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Nacional:</strong> Su aplicación se circunscribe a todo el territorio del Estado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Autonómico:</strong> Limitadas a beneficiarios que tengan su residencia o domicilio fiscal en una determinada comunidad autónoma.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Local:</strong> Convocadas por ayuntamientos o entidades públicas de carácter local.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según la forma de cobro</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Finalistas:</strong> Se abonan al beneficiario una vez que este ha realizado la inversión, la ha justificado y la administración ha comprobado su correcta ejecución.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Anticipadas:</strong> Se abonan antes de realizar o justificar la inversión, sirviendo como herramienta de financiación directa para acometer el proyecto objeto de la ayuda.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según el tipo de prestación</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Monetarias:</strong> Suponen un desembolso directo de fondos en efectivo a favor del beneficiario.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bonificaciones:</strong> No implican una entrega directa de dinero, sino que consisten en reducciones, deducciones o bonificaciones en las obligaciones de pago del beneficiario (por ejemplo, bonificaciones de la Seguridad Social o préstamos con tipos de interés subvencionados a través del Instituto de Crédito Oficial).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Otros servicios:</strong> Ayudas consistentes en la prestación de servicios gratuitos, tales como programas de formación o asistencia técnica especializada por parte de terceros.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según su finalidad contable</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">De capital:</strong> Destinadas a la adquisición de bienes de inversión de carácter permanente (por ejemplo, una subvención para la compra de maquinaria o equipos informáticos).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">De explotación:</strong> Vinculadas a la actividad corriente y de explotación de la empresa, sin asociarse a un bien de inversión concreto (por ejemplo, ayudas para compensar gastos corrientes o para la contratación de personal).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según el fomento del empleo</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Autoempleo:</strong> Dirigidas a personas físicas que inician una actividad económica por cuenta propia (como la tarifa plana de autónomos).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Creación de empleo:</strong> Destinadas a la ampliación o estabilización de las plantillas de trabajadores mediante bonificaciones o incentivos directos a la contratación.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Búsqueda de ayudas</h2>
+
+<p style="margin: 0 0 1rem;">La localización de ayudas y subvenciones puede realizarse de forma directa en los organismos convocantes o bien mediante plataformas digitales centralizadas. Las bases de todas las ayudas públicas deben publicarse obligatoriamente en los boletines oficiales correspondientes o en los portales institucionales de las entidades convocantes.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Recursos de búsqueda a nivel nacional</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Portal de la Administración General del Estado:</strong> A través de su buscador web (administracion.gob.es) se unifica la oferta de empleo público, becas y subvenciones.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Portal PYME:</strong> Coordinado por la Dirección General de Industria y de la Pequeña y Mediana Empresa (perteneciente al Ministerio de Industria, Comercio y Turismo), ofrece herramientas de búsqueda específicas para emprendedores y pymes en ipyme.org y plataformapyme.es.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Punto de Atención al Emprendedor (PAE):</strong> Accesible en paelectronico.es, ofrece asesoramiento y recursos para la tramitación de proyectos.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Recursos de búsqueda autonómicos y locales</h3>
+
+<p style="margin: 0 0 1rem;">Las administraciones regionales y locales disponen de portales orientados al tejido empresarial de su territorio. Algunos ejemplos de referencia son:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Junta de Andalucía:</strong> Portal oficial de tramitación y ayudas (juntadeandalucia.es).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ayuntamiento de Madrid:</strong> Iniciativa de apoyo al emprendimiento (madridemprende.es).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Diputación de Alicante:</strong> Sede electrónica para la gestión de subvenciones y becas provinciales.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Recursos de búsqueda en el ámbito privado y buscadores especializados</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fundaciones y asociaciones:</strong> Entidades como la Fundación Unicaja Banco o la Confederación Española de Asociaciones de Jóvenes Empresarios (CEAJE) publican convocatorias de ayudas y premios para proyectos innovadores.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Buscadores privados especializados:</strong> Plataformas web como todosubvenciones.com o infoayudas.com recopilan de forma sistemática y categorizada las convocatorias vigentes de carácter público y privado.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Compatibilidad y fiscalidad</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Compatibilidad</h3>
+
+<p style="margin: 0 0 1rem;">La posibilidad de acumular diferentes ayudas para un mismo proyecto viene determinada de forma expresa en las bases reguladoras de cada convocatoria. En el ámbito de las subvenciones públicas, la Ley General de Subvenciones exige que las bases detallen el régimen de compatibilidad o incompatibilidad con otras fuentes de financiación.</p>
+
+<p style="margin: 0 0 1rem;">Como regla general, las ayudas destinadas a inversiones concretas suelen ser compatibles entre sí, siempre que procedan de diferentes organismos públicos o privados y que la suma acumulada de todas las ayudas concedidas no supere el 100% del coste total del proyecto o inversión financiada.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fiscalidad</h3>
+
+<p style="margin: 0 0 1rem;">Las ayudas y subvenciones destinadas al ejercicio de una actividad económica están, por norma general, <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">sujetas y no exentas</strong> de tributación. Esto significa que deben integrarse en la base imponible de los impuestos correspondientes: el Impuesto sobre la Renta de las Personas Físicas (IRPF) en el caso de trabajadores autónomos, o el Impuesto sobre Sociedades (IS) para las personas jurídicas.</p>
+
+<p style="margin: 0 0 1rem;">La imputación temporal de los ingresos derivados de la ayuda varía según su tipología:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subvenciones de capital (vinculadas a una inversión):</strong> El importe recibido no se imputa íntegramente en el año de cobro. Su integración en la base imponible se realiza de manera diferida, en la misma proporción en que se amortice el bien de inversión adquirido con dichos fondos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Ejemplo práctico:</span> Si una empresa recibe una subvención de 10.000 € para la compra de una máquina industrial que tiene una vida útil de 10 años, la empresa imputará como ingreso fiscal en el Impuesto sobre Sociedades la cantidad de 1.000 € anuales durante cada uno de los 10 años de amortización del equipo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subvenciones de explotación (vinculadas a la actividad corriente):</strong> Al no estar vinculadas a un elemento del activo no corriente, estas ayudas se deben imputar en su totalidad (el 100%) como ingreso del ejercicio económico en el que se conceden.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Ejemplo práctico:</span> Si una empresa obtiene una ayuda de 5.000 € por la contratación e incremento de su plantilla de trabajadores en el año 2020, deberá declarar e integrar el total de los 5.000 € como ingreso fiscal en la liquidación del Impuesto sobre Sociedades del ejercicio 2020.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos de aplicación</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Selección de opciones de financiación</h3>
+
+<p style="margin: 0 0 1rem;">Un trabajador autónomo que gestiona una academia de apoyo escolar para niños se encuentra ante tres alternativas financieras para potenciar su actividad:</p>
+
+<p style="margin: 0 0 1rem;">1. Un préstamo bancario a 5 años a tipo de interés de mercado para la adquisición de mobiliario nuevo.</p>
+
+<p style="margin: 0 0 1rem;">2. Un curso gratuito de formación en comercio internacional ofertado por una asociación empresarial.</p>
+
+<p style="margin: 0 0 1rem;">3. Una ayuda municipal de 1.200 € destinada al pago del alquiler del local comercial, sujeta a la condición de mantener el negocio activo durante al menos un año.</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis y resolución:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> La primera opción (el préstamo bancario) no constituye una ayuda, ya que se trata de un producto financiero del activo con condiciones estándar de mercado y obligación de devolución total del capital e intereses.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La segunda opción (el curso de comercio internacional) sí es una ayuda privada en especie, pero resulta inadecuada para la actividad del autónomo (apoyo escolar a niños), por lo que su solicitud carece de sentido estratégico y sería previsiblemente desestimada.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La tercera opción (la ayuda de alquiler del ayuntamiento) cumple con la definición formal de ayuda pública, es idónea para la actividad de la academia y resulta óptima para financiar sus costes fijos de explotación. Por tanto, el autónomo debe optar por solicitar esta última ayuda.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Impacto fiscal de las subvenciones</h3>
+
+<p style="margin: 0 0 1rem;">Una empresa constructora recibe durante el ejercicio dos aportaciones públicas diferenciadas:</p>
+
+<p style="margin: 0 0 1rem;">1. Una ayuda a la explotación de 2.000 € por cada contrato de trabajo temporal transformado en indefinido. En total, la empresa ha realizado 3 transformaciones de contratos, recibiendo la suma de 6.000 € el 25 de marzo.</p>
+
+<p style="margin: 0 0 1rem;">2. Una ayuda de capital de 5.000 € concedida el 1 de julio para la adquisición de un generador eléctrico. El precio de adquisición del generador fue de 8.000 € y se le estima una vida útil de 10 años (amortización lineal).</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis y resolución del impacto fiscal al cierre del ejercicio:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tratamiento de la ayuda por contratación (explotación):</strong> Al tratarse de una subvención de explotación, debe imputarse el 100% de la cuantía en el ejercicio corriente. Por tanto, se integran <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">6.000 €</strong> como ingresos del ejercicio en el Impuesto sobre Sociedades.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tratamiento de la ayuda para el generador (capital):</strong> Al ser una subvención de capital, su imputación fiscal se realiza en proporción a la amortización del elemento financiado. El coste de adquisición de la máquina es irrelevante para el cálculo del diferimiento de la subvención; el cálculo se realiza sobre el importe de la ayuda concedida (5.000 €) distribuido a lo largo de su vida útil (10 años), lo que equivale a una imputación anual de 500 € (o 41,67 € mensuales). Dado que la ayuda se concedió el 1 de julio, en el ejercicio corriente solo se computan 6 meses de uso del bien (el 50% del año). Por consiguiente, la imputación fiscal de esta ayuda para el primer año será de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">250 €</strong>.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Repaso final</h2>
+
+<p style="margin: 0 0 1rem;">El estudio de la gestión financiera de las ayudas y subvenciones permite extraer las siguientes conclusiones clave:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Las ayudas y subvenciones son recursos financieros procedentes de fondos públicos o privados que permiten a las empresas financiar sus inversiones o actividades operativas sin necesidad de contraprestación directa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subvención pública</strong> es una categoría específica sujeta a la Ley General de Subvenciones (Ley 38/2003), caracterizada por su concesión discrecional, su carácter patrimonial, su otorgamiento a fondo perdido y su vinculación obligatoria a un fin de interés social o utilidad pública.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Las convocatorias se rigen por sus <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">bases reguladoras</strong>, un documento jurídico obligatorio que detalla el objeto, los requisitos, el proceso de selección, la compatibilidad con otras ayudas y los criterios de justificación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La fiscalidad de las ayudas exige su integración en el IRPF o en el Impuesto sobre Sociedades. Las ayudas de explotación se integran totalmente en el ejercicio en que se conceden, mientras que las de capital se imputan al resultado de forma diferida, siguiendo el ritmo de la amortización contable del activo que financian.</li>
+
+</ul>
+
+</main>
+</body>
+</html>

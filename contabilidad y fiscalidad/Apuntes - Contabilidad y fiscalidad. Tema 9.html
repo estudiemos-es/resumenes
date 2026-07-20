@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Contabilidad y fiscalidad. Tema 9</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Contabilidad y fiscalidad. Tema 9</h1>
+
+<h2>Análisis y clasificación de costes</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización</h2>
+
+<p style="margin: 0 0 1rem;">La gestión eficiente de los costes asociados a los servicios o productos que ofrece una empresa es un pilar fundamental para garantizar su sostenibilidad, viabilidad y rentabilidad a largo plazo. En el ámbito de la contabilidad de costes, es imprescindible identificar, analizar e imputar de forma correcta los diferentes factores de producción en los centros de costes correspondientes.</p>
+
+<p style="margin: 0 0 1rem;">Este proceso proporciona a las organizaciones una visión detallada y estructurada de la distribución interna de sus recursos financieros, lo que resulta clave para la toma de decisiones estratégicas e informadas.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Coste de los servicios o productos que ofrece la empresa</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de coste</h3>
+
+<p style="margin: 0 0 1rem;">La determinación de los costes en una unidad económica está íntimamente ligada a la función de producción y a la disponibilidad de los factores productivos. Esto representa la relación tecnológica entre los recursos utilizados (<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">inputs</strong>) y los productos o servicios obtenidos (<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">outputs</strong>), valorados según el precio de dichos recursos.</p>
+
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">coste</strong> se define, en términos monetarios, como el equivalente de los recursos consumidos en el desarrollo de una actividad económica. Es fundamental entender que el coste no se materializa de forma efectiva hasta que no se produce el consumo real de los recursos. No obstante, existe la posibilidad de proyectar estos consumos mediante los denominados <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">costes a priori o estándar</strong>, que estiman y valoran monetariamente los consumos antes de que ocurran.</p>
+
+<p style="margin: 0 0 1rem;">Es común confundir los conceptos de gasto, coste e inversión, por lo que es necesario diferenciarlos con precisión:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gasto:</strong> Se refiere al momento de la adquisición de los bienes y servicios para las actividades productivas. Es una transacción de carácter externo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste:</strong> Se produce en el momento en que esos bienes y servicios adquiridos se consumen de manera efectiva en el proceso productivo. Es un concepto de ámbito interno.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inversión:</strong> Ocurre cuando el gasto realizado se extiende y se aprovecha a lo largo de varios periodos contables.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Desde una perspectiva académica y contable, el coste se define como el conjunto de cargas incorporables al proceso contable que busca representar y medir el movimiento interno de valores generado por la actividad productiva, culminando con la entrega de bienes o servicios en el mercado.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Costes fijos y variables</h3>
+
+<p style="margin: 0 0 1rem;">Dependiendo de su comportamiento respecto al volumen de actividad o producción, los costes se clasifican en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes fijos:</strong> Son aquellos que se generan de forma independiente al volumen de producción alcanzado. Estos costes se mantienen constantes incluso si la empresa detiene por completo su actividad y no produce ninguna unidad (por ejemplo, el alquiler de las instalaciones).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes variables:</strong> Son aquellos que fluctúan de manera directa en función del nivel de producción de la empresa. Si la producción se detiene, estos costes desaparecen, y a medida que se incrementa el número de unidades producidas, el coste variable aumenta proporcionalmente (por ejemplo, las materias primas).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para calcular el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">coste total (CT)</strong> de una organización se utiliza la siguiente función matemática:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">CT = Cf + Cv</span></p>
+
+<p style="margin: 0 0 1rem;">Donde <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cf</strong> representa los costes fijos y <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cv</strong> representa los costes variables.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Costes medios y marginales</h3>
+
+<p style="margin: 0 0 1rem;">A partir de los conceptos de coste total y coste variable, se derivan otras métricas fundamentales para el análisis económico:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes medios (CmT):</strong> Se obtienen al dividir el coste total de un periodo entre el número de unidades producidas en ese mismo intervalo de tiempo. Indica el coste promedio de fabricar cada unidad. Su fórmula es:</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">CmT = <span class="formula-frac"><span class="num">CT(Q)</span><span class="den">Q</span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes marginales (C&#039;):</strong> Representan el incremento que experimenta el coste total cuando se incrementa la producción en una unidad adicional. Esta métrica informa de manera precisa sobre el impacto financiero que tiene producir una unidad más en cualquier momento del proceso.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Por otra parte, en la contabilidad de costes existe una división fundamental entre cargas incorporables y no incorporables:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cargas incorporables:</strong> Son aquellas que deben incluirse obligatoriamente en el cálculo de los costes y en la fijación de precios de los productos. Se dividen en:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cargas directas:</strong> Se asocian de manera inmediata y unívoca al proceso de producción de un bien o grupo de bienes específicos (por ejemplo, las materias primas principales).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cargas indirectas:</strong> Afectan de forma global al coste de varios elementos o productos, por lo que requieren la aplicación de un método de asignación o reparto para ser imputadas correctamente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cargas no incorporables:</strong> Son aquellas que no se pueden incluir en el cálculo de los costes de los productos.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Elementos que integran los costes</h3>
+
+<p style="margin: 0 0 1rem;">Para la consecución de los objetivos empresariales, la dirección de la empresa necesita conocer con exactitud la composición del coste de sus productos. Los costes se clasifican de la siguiente manera:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes directos:</strong> Son los que se asignan directamente a un objetivo de costes específico sin necesidad de aplicar criterios de reparto arbitrarios. Se componen de tres elementos principales:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Materiales directos:</strong> Las materias primas esenciales utilizadas en la fabricación del producto (por ejemplo, la madera para producir una mesa). Aquellos materiales de escaso valor o menor entidad (como pegamentos o tornillos) se clasifican como costes indirectos debido a su bajo coste relativo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mano de obra directa:</strong> Los salarios y cargas sociales de los operarios que participan de forma directa y física en la transformación o fabricación del producto (por ejemplo, el sueldo del ebanista que monta la mesa).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes generales directos:</strong> Cualquier otro coste directo que no pertenezca a las categorías de materiales directos o mano de obra directa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes indirectos:</strong> Son aquellos que, por exclusión, no pueden asignarse de forma directa y unívoca a un producto o servicio concreto. Requieren el uso de métodos de reparto o imputación. Ejemplos de estos costes son la amortización de maquinaria, el alquiler de la fábrica, los salarios del personal de administración, las primas de seguros generales, el consumo de energía general y las tareas de mantenimiento.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Factores de producción e imputación en los centros de costes</h2>
+
+<p style="margin: 0 0 1rem;">Mientras que las cargas directas se asignan inmediatamente a los productos, las cargas indirectas se distribuyen en primer lugar mediante un procedimiento denominado <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">reparto primario</strong>. Este proceso consiste en asignar las cargas indirectas a grupos de clasificación organizativos llamados <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">secciones</strong> o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">centros de costes</strong>.</p>
+
+<p style="margin: 0 0 1rem;">Una sección o centro de costes es una división de la actividad de la empresa que cuenta con una función claramente definida, dispone de los medios necesarios para su ejecución y cuya actividad se puede medir mediante unidades de trabajo específicas.</p>
+
+<p style="margin: 0 0 1rem;">La distribución de los costes indirectos en secciones permite:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Calcular de forma precisa el coste de la unidad de trabajo en cada sección.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Aplicar las unidades de trabajo de cada sección a un elemento, producto o servicio específico, facilitando la imputación final.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Las secciones o centros de costes se clasifican en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Secciones administrativas:</strong> Encargadas de las tareas de dirección, administración general, finanzas, gestión de personal y contabilidad. Su actividad puede o no afectar de forma directa a la explotación de la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Secciones de explotación:</strong> Se subdividen en:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Auxiliares:</strong> No participan directamente en la transformación del producto, sino que prestan soporte y aseguran el correcto funcionamiento de otras secciones (por ejemplo, talleres de mantenimiento, laboratorios de calidad, almacenes, publicidad u oficinas de métodos).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Principales:</strong> Desarrollan funciones esenciales dentro del ciclo de explotación de la empresa. Se dividen en:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Aprovisionamientos:</span> Gestión de la compra y almacenamiento de materiales y suministros.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Producción:</span> Procesos físicos de transformación y fabricación de los bienes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Distribución:</span> Actividades relacionadas con la comercialización y venta de los productos.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Es fundamental definir únicamente aquellas secciones que existan realmente en la práctica y cuya medición de costes sea técnica y económicamente viable.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 1: la empresita</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Planteamiento del caso</h3>
+
+<p style="margin: 0 0 1rem;">La empresa denominada &quot;La Empresita&quot; presenta los siguientes costes durante un periodo determinado. Adicionalmente, se conoce que el volumen total de sus ventas ha ascendido a 100.000 €.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Sueldos y salarios: 30.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Gastos de locomoción: 5.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Publicidad: 6.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Página web: 1.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Servicios de prensa: 1.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Alquiler: 5.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Gasto de materias primas: 34.000 €</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación de costes y cálculo de resultados</h3>
+
+<p style="margin: 0 0 1rem;">En primer lugar, clasificamos cada partida entre costes fijos (independientes del volumen de producción) y costes variables (vinculados al nivel de actividad):</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sueldos y salarios:</strong> Coste fijo (30.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gastos de locomoción:</strong> Coste variable (5.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Publicidad:</strong> Coste fijo (6.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Página web:</strong> Coste fijo (1.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Servicios de prensa:</strong> Coste fijo (1.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Alquiler:</strong> Coste fijo (5.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gasto de materias primas:</strong> Coste variable (34.000 €)</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">A partir de esta clasificación, sumamos las categorías:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total costes variables:</strong> 5.000 € + 34.000 € = 39.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total costes fijos:</strong> 30.000 € + 6.000 € + 1.000 € + 1.000 € + 5.000 € = 43.000 €</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuenta de resultados de la empresita</h3>
+
+<p style="margin: 0 0 1rem;">Para obtener el resultado del periodo, se aplica la estructura de la cuenta de pérdidas y ganancias:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ventas:</strong> 100.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(-) Costes variables:</strong> (39.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(=) Margen bruto:</strong> 61.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(-) Costes fijos:</strong> (43.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(=) Resultado del periodo:</strong> 18.000 € *(Nota: Aunque el documento original indica un resultado de 28.000 € debido a un error aritmético de transcripción en su tabla de origen, la operación matemática correcta de restar 43.000 € de costes fijos al margen bruto de 61.000 € da como resultado real 18.000 €).*</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Consumo de factores productivos y precios unitarios</h2>
+
+<p style="margin: 0 0 1rem;">Para determinar con exactitud el precio unitario de los productos y fijar los márgenes de beneficio comercial, es necesario calcular el consumo real de los factores productivos. El proceso para la afectación e imputación de los costes indirectos se desarrolla mediante las siguientes fases:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Distribución inicial:</strong> Las cargas indirectas que se consideran incorporables se asignan en primer lugar a todas las secciones o centros de coste de la empresa (reparto primario).</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del coste de la unidad de trabajo:</strong> Si la sección tiene definida una unidad de trabajo o de obra, se calcula su coste unitario dividiendo el coste total acumulado en la sección entre el número de unidades de trabajo realizadas.</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reparto secundario:</strong> Se redistribuyen los costes acumulados en las secciones administrativas y auxiliares entre las secciones principales de explotación, utilizando criterios y bases de reparto preestablecidos. Esto permite conocer el coste definitivo de cada sección principal.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Imputación final al producto:</strong> Una vez calculado el coste unitario de trabajo de las secciones principales, se asignan al producto las cargas indirectas de producción y de distribución.</p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del coste total:</strong> Se suma el coste directo (previamente asignado) y el coste indirecto imputado para obtener el coste total del producto.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Secuencia metodológica de trabajo</h3>
+
+<p style="margin: 0 0 1rem;">Para realizar de forma rigurosa la contabilidad de costes, se debe seguir el siguiente orden:</p>
+
+<p style="margin: 0 0 1rem;">1. Clasificar las cargas según su naturaleza económica.</p>
+
+<p style="margin: 0 0 1rem;">2. Diferenciar las cargas en incorporables y no incorporables al proceso productivo.</p>
+
+<p style="margin: 0 0 1rem;">3. Clasificar las cargas incorporables en directas e indirectas.</p>
+
+<p style="margin: 0 0 1rem;">4. Imputar las cargas directas a los productos o servicios correspondientes.</p>
+
+<p style="margin: 0 0 1rem;">5. Repartir las cargas indirectas a través de los centros de coste.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Esquema de formación del precio unitario</h3>
+
+<p style="margin: 0 0 1rem;">La estructura para determinar el precio unitario de venta de un producto sigue el siguiente esquema de agregación:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Costes directos</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(+)</strong> Costes indirectos de producción</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(=) Coste de producción total</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(+)</strong> Coste indirecto de distribución</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(=) Coste total de ventas (o precio unitario)</strong></li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Coste de cada etapa del proceso productivo</h2>
+
+<p style="margin: 0 0 1rem;">La cadena de valor de una empresa es una herramienta de análisis que permite identificar qué actividades estratégicas aportan un mayor valor añadido y, por tanto, otorgan una ventaja competitiva a la organización. Según el modelo clásico de la Cadena de Valor de Porter, esta se compone de tres elementos fundamentales:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Actividades primarias o principales:</strong> Tareas directamente implicadas en la creación física del producto, su venta, entrega al cliente y el servicio posventa (diseño, producción, logística interna, logística externa, marketing y ventas, y servicio al cliente). Son indispensables para transformar los inputs en outputs.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Actividades de apoyo o auxiliares:</strong> Sirven de soporte y estructura tanto a las actividades primarias como a sí mismas (infraestructura de la empresa, gestión de recursos humanos, desarrollo tecnológico o I+D, y compras o aprovisionamiento).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Margen:</strong> Definido como la diferencia entre el valor total (ingresos generados) y los costes totales incurridos por la empresa para desempeñar todas las actividades generadoras de valor.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo práctico de la cadena de valor</h3>
+
+<p style="margin: 0 0 1rem;">Una empresa fabricante de muebles registra los siguientes costes distribuidos por actividades de la cadena de valor:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Actividades logísticas: 10.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Actividades de producción: 25.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Actividades de marketing y atención al cliente: 12.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Costes de recursos humanos: 18.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Costes de investigación y desarrollo (I+D): 6.000 €</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de costes totales:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Costes totales = 10.000 + 25.000 + 12.000 + 18.000 + 6.000 = 71.000 €</span></p>
+
+<p style="margin: 0 0 1rem;">Si los ingresos totales por ventas ascienden a 112.000 €, el margen de la empresa se calcula de la siguiente forma:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Ingresos totales: 112.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(-)</strong> Costes totales: (71.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(=) Margen:</strong> 41.000 €</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estructura del coste</h2>
+
+<p style="margin: 0 0 1rem;">La estructura del coste describe las etapas sucesivas necesarias para la formación cualitativa y cuantitativa de esta magnitud económica. Diseñar un sistema de estructura de costes permite medir y valorar los factores consumidos, gestionar los inventarios y planificar la producción de forma eficiente.</p>
+
+<p style="margin: 0 0 1rem;">La formación del coste se realiza mediante un proceso de agregación continua que se divide en las siguientes etapas:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste básico:</strong> Formado exclusivamente por la suma de las materias primas (materiales) y la mano de obra directa.</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste industrial:</strong> Se obtiene al sumar al coste básico los costes generales industriales (tales como dirección técnica, mantenimiento de maquinaria y amortizaciones de fábrica).</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste de explotación:</strong> Se calcula sumando al coste industrial los costes generales de administración y de venta de la empresa.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste de empresa:</strong> Es el coste definitivo, que se obtiene al añadir los costes financieros al coste de explotación.</p>
+
+<p style="margin: 0 0 1rem;">Los costes directos de este proceso se estiman de forma precisa, mientras que los costes indirectos (como los costes generales industriales de mantenimiento o amortización) se asignan mediante criterios o métodos de reparto que pueden llegar a ser más arbitrarios.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 2: costes directos en la empresita</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Planteamiento del caso</h3>
+
+<p style="margin: 0 0 1rem;">&quot;La Empresita&quot; desea calcular los costes unitarios de producción para una línea de camisas. Los datos de fabricación aportados son los siguientes:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Volumen de producción previsto: 40.000 camisas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Consumo de tela: 1 metro de tela por cada camisa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Precio de la tela: 5 € por metro.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Coste total de mano de obra de la empresa: 120.000 €. Se conoce que el personal participa directamente en la fabricación de las camisas durante un 60% de su tiempo total de trabajo.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución de costes directos y coste unitario</h3>
+
+<p style="margin: 0 0 1rem;">Calculamos en primer lugar el coste de los materiales directos (tela):</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Coste de la tela = 40.000 camisas × 1 metro/camisa × 5 €/metro = 200.000 €</span></p>
+
+<p style="margin: 0 0 1rem;">Calculamos la porción de mano de obra que se considera mano de obra directa (60% del coste total de personal):</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Mano de obra directa = 120.000 € × 60% = 72.000 €</span></p>
+
+<p style="margin: 0 0 1rem;">Calculamos el total de costes directos de producción:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total costes directos = 200.000 € (tela) + 72.000 € (mano de obra) = 272.000 €</span></p>
+
+<p style="margin: 0 0 1rem;">Calculamos el coste unitario directo de cada camisa fabricada:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Coste unitario = <span class="formula-frac"><span class="num">272.000 €</span><span class="den">40.000 camisas</span></span> = 6,80 € por camisa</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Imputación de costes indirectos a las secciones auxiliares y principales</h2>
+
+<p style="margin: 0 0 1rem;">Para establecer de qué manera los costes indirectos afectan a las diferentes secciones (auxiliares y principales) de la empresa, se llevan a cabo de forma secuencial dos tipos de procesos de reparto:</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Reparto primario</h3>
+
+<p style="margin: 0 0 1rem;">Consiste en distribuir la totalidad de los costes indirectos acumulados por la empresa entre todas las secciones existentes (tanto principales como auxiliares). Para realizar esta distribución se emplean las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">claves de reparto</strong>, que son unidades de medida lógicas y representativas asociadas a la naturaleza de cada coste indirecto (por ejemplo, metros cuadrados para el alquiler, potencia contratada para la luz, etc.).</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Reparto secundario</h3>
+
+<p style="margin: 0 0 1rem;">Una vez completado el reparto primario, se ejecuta el reparto secundario. Su finalidad es trasladar de forma definitiva los costes acumulados en las secciones auxiliares hacia las secciones principales, debido a que estas últimas son las que tienen una relación directa con la obtención del producto final.</p>
+
+<p style="margin: 0 0 1rem;">Para realizar esta transferencia de costes se utilizan las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">unidades de obra</strong>, que sirven como medida de la aportación o del servicio que una sección auxiliar presta a otra sección.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y resolución del caso práctico final</h2>
+
+<p style="margin: 0 0 1rem;">El análisis de costes es una herramienta indispensable para la mejora continua y la gestión eficiente de los recursos empresariales. Comprender la tipología de costes, estructurar adecuadamente los costes directos e indirectos, definir los centros de costes y aplicar correctamente los procesos de reparto primario y secundario resulta crítico para la viabilidad de cualquier entidad económica.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución de la clasificación de costes del caso práctico final</h3>
+
+<p style="margin: 0 0 1rem;">Como cierre de la unidad, se presenta la clasificación definitiva de los costes de la actividad económica analizada:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Materia prima:</strong> Coste variable (su consumo varía en proporción directa con el volumen de producción).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuestos:</strong> Coste fijo (se devengan independientemente del nivel de actividad productiva de la empresa).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Seguros:</strong> Coste fijo (cuotas constantes que se generan de forma independiente al volumen de producción).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mano de obra:</strong> Coste fijo (considerado de carácter fijo en la estructura de costes de este supuesto).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Alquiler:</strong> Coste fijo (gasto constante que no varía según el volumen de producción o ventas).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisiones de venta:</strong> Coste variable (directamente vinculadas e incrementadas según el número de transacciones comerciales realizadas).</li>
+
+</ul>
+
+</main>
+</body>
+</html>

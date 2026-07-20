@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión financiera. Tema 15</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión financiera. Tema 15</h1>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción a las aplicaciones financieras en hoja de cálculo</h2>
+
+<p style="margin: 0 0 1rem;">Las hojas de cálculo constituyen una herramienta indispensable en el ámbito de la gestión financiera. Su uso permite automatizar y simplificar operaciones complejas de cálculo, reduciendo de manera significativa el margen de error y facilitando la toma de decisiones mediante la vinculación de celdas y la aplicación de fórmulas predefinidas.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Liquidación de cuentas corrientes</h2>
+
+<p style="margin: 0 0 1rem;">La liquidación de una cuenta corriente en una hoja de cálculo requiere un procedimiento estructurado para determinar el saldo final tras aplicar los intereses correspondientes a un período determinado. El proceso se desarrolla a través de los siguientes pasos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Recopilación de movimientos</strong>: Se deben registrar cronológicamente todos los movimientos del período de liquidación (por ejemplo, un trimestre), detallando fechas y conceptos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Definición de condiciones</strong>: Es necesario especificar las tasas de interés pactadas para los saldos deudores y los saldos acreedores.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Registro en el debe y el haber</strong>: Se trasladan las cuantías al cuadro de liquidación. Las operaciones que disminuyen el saldo se anotan en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Debe</strong> y las que lo aumentan en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Haber</strong>.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de saldos acumulados</strong>: Se añade una columna para actualizar el saldo de forma continua, identificando si es deudor o acreedor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Determinación de los días de vigencia</strong>: Se calcula el tiempo que permanece activo cada saldo restando la fecha del movimiento posterior de la fecha del movimiento actual.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de números comerciales</strong>: Se multiplican los días de vigencia por el saldo correspondiente (deudor o acreedor).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Liquidación de intereses</strong>: Se aplican las fórmulas específicas para calcular los intereses deudores y acreedores a partir del total de los números comerciales acumulados, obteniendo finalmente el saldo de cierre.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Liquidación de cuentas de crédito</h2>
+
+<p style="margin: 0 0 1rem;">Las cuentas de crédito presentan una mayor complejidad debido a la existencia de comisiones adicionales y límites de crédito. El procedimiento en la hoja de cálculo incluye:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Establecimiento de condiciones</strong>: Se definen los intereses deudores, acreedores, intereses por saldos excedidos, y las comisiones pactadas (como apertura, estudio o no disponibilidad), además del límite de crédito.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gastos de apertura</strong>: Se calculan inicialmente las comisiones de apertura y estudio sobre el límite de crédito concedido.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Registro de movimientos y saldos</strong>: Se introducen los movimientos en las columnas de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Debe</strong> y <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Haber</strong> para calcular el saldo acumulado deudor o acreedor. Dado que los tipos de interés suelen ser anuales, se dividen entre 360 para operar con días en los números comerciales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de días</strong>: Se determina el número de días transcurridos entre movimientos, incluyendo la fecha de cierre como referencia final.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Números comerciales y excesos</strong>: Se calculan los números comerciales deudores y acreedores. Adicionalmente, se genera una columna para registrar los días y las cantidades en las que el saldo ha superado el límite de crédito establecido (saldos excedidos).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de intereses</strong>: Se determinan los intereses deudores, acreedores y por exceso basándose en sus respectivos números comerciales y tipos de interés.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisión por no disponibilidad</strong>: Se calcula el saldo medio dispuesto dividiendo el total de números comerciales deudores entre los días totales del período. Este valor se resta al límite de crédito para obtener el saldo medio no dispuesto, sobre el cual se aplica la comisión correspondiente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cierre de la cuenta</strong>: Se consolidan todos los conceptos anteriores para obtener el saldo final de la cuenta de crédito.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Amortización de préstamos mediante el método francés</h2>
+
+<p style="margin: 0 0 1rem;">El método francés se caracteriza por presentar términos amortizativos (anualidades o mensualidades) constantes. Para estructurar este cuadro de amortización en una hoja de cálculo se siguen estos pasos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Definición de variables</strong>: Se introducen los datos del capital inicial, la duración del préstamo y el tipo de interés aplicable.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Período inicial</strong>: El año o período cero únicamente refleja el capital vivo inicial, sin pagos asociados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del término amortizativo</strong>: Se utiliza la función financiera <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PAGO</strong> de la hoja de cálculo. Esta función requiere el tipo de interés, el número de períodos y el capital inicial (este último con signo negativo para que el resultado sea positivo).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de intereses</strong>: Para cada período, se multiplica el capital vivo del período anterior por la tasa de interés.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota de amortización</strong>: Se obtiene restando los intereses del período al término amortizativo constante.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo</strong>: Se calcula restando la cuota de amortización del período actual al capital vivo del período anterior.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Uso de referencias absolutas</strong>: Se emplea la fijación de celdas (tecla F4) en las variables constantes para permitir arrastrar las fórmulas de manera eficiente por todo el cuadro.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Amortización de préstamos mediante el método americano</h2>
+
+<p style="margin: 0 0 1rem;">A diferencia del método francés, el método americano se basa en la devolución total del capital prestado en un único pago al final de la vida del préstamo, abonando únicamente intereses en los períodos intermedios.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estructura del capital vivo</strong>: El capital vivo permanece constante e igual al importe inicial durante todos los períodos, reduciéndose a cero únicamente en el último año tras el pago final.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de intereses</strong>: Los intereses se mantienen constantes en cada período y se calculan multiplicando el capital vivo inicial por el tipo de interés.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota de amortización</strong>: Es igual a cero en todos los períodos intermedios. En el último período, la cuota de amortización equivale al total del capital inicial prestado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Término amortizativo</strong>: Se obtiene sumando los intereses y la cuota de amortización de cada período. En los años intermedios coincide con el pago de intereses, mientras que en el último año incluye la devolución total del principal más los intereses devengados.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Amortización de operaciones de leasing</h2>
+
+<p style="margin: 0 0 1rem;">El leasing o arrendamiento financiero incorpora una opción de compra al final del contrato, conocida como valor residual. Su simulación en la hoja de cálculo requiere:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Variables de entrada</strong>: Capital vivo inicial, tasa de interés, duración del contrato y el valor residual pactado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de la mensualidad</strong>: Se utiliza nuevamente la función financiera <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PAGO</strong>, pero introduciendo adicionalmente el parámetro del valor residual para que el cálculo de la cuota constante tenga en cuenta este pago final diferido.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desglose de la cuota</strong>: Los intereses se calculan multiplicando el capital vivo del período anterior por el interés aplicable. La amortización del período se obtiene restando estos intereses de la mensualidad constante.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Evolución del capital</strong>: El capital vivo disminuye período a período al restarle la amortización acumulada. En el último período del cuadro, el saldo del capital vivo debe coincidir exactamente con el valor residual establecido.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Amortización de empréstitos con anualidad constante</h2>
+
+<p style="margin: 0 0 1rem;">La amortización de empréstitos mediante títulos o bonos con anualidad y cupón constantes exige un proceso de ajuste debido a la imposibilidad de amortizar fracciones de títulos. El procedimiento es el siguiente:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos de partida</strong>: Número de títulos, valor nominal de cada título, duración, tipo de interés y valor del cupón.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Anualidad teórica</strong>: Se calcula el término amortizativo teórico mediante la fórmula financiera correspondiente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de intereses y amortización teórica</strong>: Los intereses se determinan sobre el capital vivo del período anterior. La amortización teórica es la diferencia entre la anualidad teórica y los intereses.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ajuste por títulos enteros</strong>: El número de títulos teóricos a amortizar se obtiene dividiendo la amortización teórica entre el valor nominal. Dado que no se pueden amortizar fracciones de títulos, se aplica una función de redondeo en la hoja de cálculo para obtener un número entero de títulos amortizados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Recálculo de valores reales</strong>: A partir del número entero de títulos ajustado, se recalcula la amortización real y, finalmente, se ajusta la anualidad real sumando los intereses al nuevo valor de amortización real.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Amortización de empréstitos variables</h2>
+
+<p style="margin: 0 0 1rem;">Cuando las anualidades de un empréstito no son constantes, estas pueden variar siguiendo una progresión geométrica o aritmética.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Progresión geométrica</strong>: Las anualidades aumentan o disminuyen en cada período según un porcentaje o razón constante de crecimiento. En la hoja de cálculo, se determina la primera anualidad mediante una fórmula específica que considera la razón de crecimiento, y las anualidades de los períodos sucesivos se obtienen multiplicando el valor anterior por dicha razón. El número de títulos amortizados se ajusta mediante redondeo a números enteros, recalculando posteriormente los importes reales de amortización y anualidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Progresión aritmética</strong>: En este caso, las anualidades varían en cada período mediante la adición de una cantidad fija o diferencia constante. Tras aplicar la fórmula correspondiente para calcular la primera anualidad, las siguientes se determinan sumando la diferencia constante a la anualidad del período previo, procediendo igualmente al redondeo y ajuste de los títulos físicos amortizados.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Valor actual neto y tasa interna de retorno</h2>
+
+<p style="margin: 0 0 1rem;">La evaluación de proyectos de inversión se facilita mediante funciones específicas que analizan la viabilidad financiera a partir de los flujos de caja estimados.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Flujos netos de caja</strong>: Se calculan restando los pagos a los cobros previstos para cada uno de los períodos del proyecto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Valor actual neto</strong>: Representa el valor actualizado de los flujos de caja futuros menos la inversión inicial. En la hoja de cálculo se emplea la función <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VNA</strong>, introduciendo la tasa de descuento requerida y el rango de flujos netos de caja desde el período uno en adelante. Al resultado de esta función se le debe restar manualmente el desembolso inicial (que se sitúa en el período cero).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tasa interna de retorno</strong>: Mide la rentabilidad relativa del proyecto, igualando el valor actual neto a cero. Se calcula de forma directa utilizando la función <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong>, seleccionando todo el rango de flujos de caja netos, incluyendo el desembolso inicial negativo del período cero.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen de aplicaciones y toma de decisiones</h2>
+
+<p style="margin: 0 0 1rem;">La integración de estas operaciones financieras en una hoja de cálculo no solo agiliza el trabajo administrativo, sino que resulta fundamental para la planificación estratégica y el control presupuestario de las organizaciones. Permite realizar análisis comparativos rápidos (como evaluar diferentes opciones de financiación, comparar la viabilidad de varios proyectos de inversión mediante el VAN y la TIR, o decidir entre diferentes modalidades de leasing con o sin valor residual), facilitando la adopción de medidas correctoras oportunas para alcanzar los objetivos financieros de la empresa.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Contabilidad y fiscalidad. Tema 11</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Contabilidad y fiscalidad. Tema 11</h1>
+
+<h2>Modelos de costes y análisis de desviaciones</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización</h2>
+
+<p style="margin: 0 0 1rem;">La contabilidad de costes es una herramienta esencial en la gestión de cualquier empresa. Su propósito principal es permitir a las organizaciones evaluar la eficiencia de sus operaciones y facilitar la toma de decisiones estratégicas para mejorar la rentabilidad.</p>
+
+<p style="margin: 0 0 1rem;">Para lograr una gestión óptima, es necesario comprender cómo afectan los costes y la producción a la organización. Esto implica analizar las desviaciones (tanto internas como externas), calcular el umbral de rentabilidad (o punto muerto) y determinar los coeficientes de apalancamiento operativo y financiero. Estos indicadores ayudan a identificar ineficiencias y a establecer medidas correctoras.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Sistemas de cálculo de costes</h2>
+
+<p style="margin: 0 0 1rem;">La contabilidad de costes busca proporcionar la información necesaria para realizar una planificación y un control interno eficaces. Para alcanzar estos objetivos, las empresas deben implantar modelos de cálculo de costes y definir métodos de análisis posteriores. Este proceso implica:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planificación previa</strong>: Estimar y hacer explícita la cantidad de costes en los que se incurrirá antes de comenzar la actividad productiva.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Medición y control</strong>: Medir los costes reales durante y después de la actividad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis de desviaciones</strong>: Comparar lo planificado con lo real y analizar las diferencias.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">La distinción entre costes fijos (aquellos independientes del volumen de producción) y costes variables (aquellos que aumentan a medida que se incrementa la producción) da origen a los dos modelos principales de cálculo de costes: el modelo de costes completos o <span class="markdown-emphasis">full cost</span> y el modelo de costes directos o <span class="markdown-emphasis">direct cost</span>.</p>
+
+<p style="margin: 0 0 1rem;">La elección de un modelo u otro define qué proporción de los costes se asignará al coste final del producto o servicio. Los factores clave para decidir qué sistema implantar son:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El sector económico al que pertenece la empresa (primario, secundario o terciario).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El sistema contable que se utiliza.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Los objetivos estratégicos establecidos por la compañía.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La información requerida para la toma de decisiones.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Modelo de costes completos o full cost</h3>
+
+<p style="margin: 0 0 1rem;">Este modelo se caracteriza por asignar al producto <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">todos los costes</strong> en los que la empresa incurre para su creación, sin importar si son fijos o variables, directos o indirectos. Históricamente fue el primer método en desarrollarse.</p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ámbitos de utilidad</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Cuando se fabrica bajo pedido o presupuesto para productos con un precio de venta casi fijo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Cuando se requiere realizar comparaciones con otras empresas del mismo sector.</li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ventajas</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Permite comparar el coste final de un producto directamente con su precio de venta, facilitando el análisis de su rentabilidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Ofrece una valoración realista de las existencias de productos terminados y en curso en el inventario permanente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Facilita el análisis detallado de los procesos contables en términos de coste.</li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Inconvenientes</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> No aporta información suficiente para la toma de decisiones específicas, como la conveniencia de dejar de fabricar un determinado producto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> No proporciona los datos necesarios para fijar políticas de precios flexibles.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La asignación de costes indirectos carece de un criterio plenamente objetivo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> No tiene en cuenta el impacto de las variaciones en el nivel de actividad sobre los componentes del coste final.</li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Tipos de costes completos</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Full cost literal</strong>: Incorpora todos los costes directos e indirectos vinculados a la producción, abarcando desde las materias primas hasta los costes de administración.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Full cost industrial</strong>: Imputa únicamente los costes de producción al producto (incluyendo los costes indirectos asociados a la inversión en activos fijos como maquinaria e instalaciones), mientras que los costes de administración y comerciales se llevan directamente a la cuenta de pérdidas y ganancias.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Modelo de costes directos o direct cost</h3>
+
+<p style="margin: 0 0 1rem;">También conocido como modelo de costes parciales, este sistema imputa al producto <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">únicamente los costes directos y variables</strong> (como las materias primas y la mano de obra directa que interviene directamente en la fabricación).</p>
+
+<p style="margin: 0 0 1rem;">Los costes fijos de la empresa no se asignan al producto, sino que se consideran <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">costes del periodo</strong> y se imputan directamente al resultado del ejercicio.</p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ámbitos de utilidad</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> En empresas donde los costes directos representan una parte muy significativa del total de costes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> En compañías que fabrican múltiples productos y necesitan conocer la contribución individual de cada uno de ellos al beneficio global.</li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ventajas</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Permite estimar con rapidez los beneficios provisionales de la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Identifica la contribución de cada producto al resultado global (margen de contribución).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Facilita el cálculo del umbral de rentabilidad y ayuda a orientar la política de precios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Determina con precisión el precio mínimo por debajo del cual no es rentable vender un producto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Ayuda a seleccionar la gama de productos más rentable para la empresa.</li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Inconvenientes</h4>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> No es idóneo para determinar costes en operaciones con programas de producción muy diferenciados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Dificulta la asignación de los costes que se generan de forma conjunta.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Puede llegar a distorsionar los costes en los centros de análisis al no tener en cuenta las cargas de carácter estructural.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Comparación de los modelos de costes</h3>
+
+<p style="margin: 0 0 1rem;">La principal diferencia radica en cómo se tratan los costes fijos e indirectos, lo que afecta directamente al cálculo del resultado y a la valoración de las existencias.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Full cost literal</strong>: Imputa todos los costes (industriales, comerciales y de administración) al producto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Full cost industrial</strong>: Imputa al producto solo los costes de producción. Los comerciales y administrativos van directamente a pérdidas y ganancias.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Direct cost</strong>: Imputa al producto únicamente los costes directos y variables. Los costes fijos se tratan como costes del periodo.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico de la empresa Automático</h2>
+
+<p style="margin: 0 0 1rem;">La empresa Automático S.A. produce dos productos (P1 y P2) con la siguiente información:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Producto P1</strong>: 1.000 unidades producidas y vendidas a un precio de venta de 15 €/unidad. Los costes unitarios directos son: materia prima (3 €), mano de obra (5 €), transporte (2 €) y comisiones de venta (1,5 €).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Producto P2</strong>: 1.500 unidades producidas y vendidas a un precio de venta de 15 €/unidad. Los costes unitarios directos son: materia prima (10 €), mano de obra (5 €), transporte (1 €) y comisiones de venta (1,5 €).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La empresa presenta además unos <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">costes indirectos variables</strong> totales de 600 €.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para calcular el coste de los productos mediante el método de costes directos, se desglosan los costes directos y se excluyen los indirectos (que serán costes del periodo):</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cálculo de costes directos totales y unitarios</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Para el producto P1</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Materia prima: 3.000 € (3 € * 1.000 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Mano de obra: 5.000 € (5 € * 1.000 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Transporte: 2.000 € (2 € * 1.000 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Comisiones de venta: 1.500 € (1,5 € * 1.000 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste directo total P1</strong>: 11.500 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste unitario P1</strong>: 11,5 €/unidad</li>
+
+</ul>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Para el producto P2</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Materia prima: 15.000 € (10 € * 1.500 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Mano de obra: 7.500 € (5 € * 1.500 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Transporte: 1.500 € (1 € * 1.500 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Comisiones de venta: 2.250 € (1,5 € * 1.500 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste directo total P2</strong>: 26.250 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste unitario P2</strong>: 17,5 €/unidad</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuenta de resultados y margen industrial</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ventas</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> P1: 15.000 € (15 € * 1.000 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> P2: 22.500 € (15 € * 1.500 unidades)</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes directos</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> P1: -11.500 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> P2: -26.250 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Margen industrial</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> P1: 3.500 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> P2: -3.750 € (margen negativo)</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">El margen industrial conjunto de ambos productos es de -250 € (3.500 € de P1 menos 3.750 € de P2). Al restar los costes indirectos de 600 € (tratados como costes del periodo), las pérdidas totales de la compañía ascienden a 850 €:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Margen total = 3.500 € - 3.750 € - 600 € = -850 €</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El coste estándar y el análisis de desviaciones</h2>
+
+<p style="margin: 0 0 1rem;">Existen dos momentos diferentes para el cálculo de los costes dentro de la empresa:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes históricos</strong>: Se calculan a posteriori, una vez que se dispone de los datos reales de la operación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste estándar</strong>: Se calcula a priori, anticipando el consumo de recursos y su valoración antes de que se realice la actividad. Permite presupuestar resultados y facilita la toma de decisiones.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">El proceso de control consiste en planificar, registrar la contabilidad real, comparar lo previsto con lo real y realizar un control y análisis de las desviaciones para aplicar medidas correctoras. Una desviación es la diferencia entre la cantidad presupuestada y la cantidad finalmente obtenida. No todas las desviaciones son desfavorables (por ejemplo, un aumento de la productividad puede generar una desviación económica por incentivos, pero ser beneficiosa en términos globales).</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Desviaciones endógenas y exógenas</h3>
+
+<p style="margin: 0 0 1rem;">Las desviaciones se clasifican según su origen en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviaciones exógenas</strong>: Provocadas por factores externos a la empresa, por lo que no existe una responsabilidad directa de la organización. Pueden deberse a:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Acontecimientos imprevistos y excepcionales</span>: Al no repetirse en el tiempo, no requieren modificar el coste estándar establecido.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Acontecimientos externos recurrentes</span>: Si se prevé que continúen en el futuro, exigen una actualización del coste estándar.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviaciones endógenas</strong>: Provocadas por factores internos de la empresa. Se dividen en:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Desviaciones técnicas</span>: Deficiencias en herramientas o maquinaria, variaciones en la productividad del personal, cuellos de botella en la producción, errores contables o modificaciones en los horarios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Desviaciones económicas</span>: Cambios en las escalas salariales, variaciones en las primas e incentivos, deficiencias en la gestión de compras y contratación, o errores al establecer el estándar o al realizar los registros contables.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Cálculo del umbral de rentabilidad</h2>
+
+<p style="margin: 0 0 1rem;">El umbral de rentabilidad (también llamado punto muerto) es el volumen de ventas o unidades producidas en el cual los ingresos totales igualan a los costes totales. En este punto, el beneficio de la empresa es exactamente igual a cero.</p>
+
+<p style="margin: 0 0 1rem;">Analíticamente, el punto de partida es:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ingresos totales = Costes totales</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Precio × Cantidad = Costes fijos + (Coste variable unitario × Cantidad)</span></p>
+
+<p style="margin: 0 0 1rem;">Despejando la cantidad (<span class="formula-inline">Q</span>), se obtiene la fórmula del umbral de rentabilidad:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Q = <span class="formula-frac"><span class="num">Costes fijos</span><span class="den">Precio - Coste variable unitario</span></span></span></p>
+
+<p style="margin: 0 0 1rem;">La diferencia entre el precio de venta y el coste variable unitario se denomina <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">margen de cobertura</strong>, el cual indica cuánto aporta cada unidad vendida a la cobertura de los costes fijos.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Escenarios respecto al punto muerto</h3>
+
+<p style="margin: 0 0 1rem;">1. Si la cantidad producida es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">igual</strong> al punto muerto, el beneficio es cero.</p>
+
+<p style="margin: 0 0 1rem;">2. Si la cantidad producida es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">mayor</strong> al punto muerto, la empresa obtiene beneficios.</p>
+
+<p style="margin: 0 0 1rem;">3. Si la cantidad producida es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">menor</strong> al punto muerto, la empresa incurre en pérdidas.</p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ejemplo práctico de cálculo</h4>
+
+<p style="margin: 0 0 1rem;">Una compañía vende un producto a 40 €/unidad, con un coste variable unitario de 10 € y unos costes fijos totales de 30.000 €.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Q = <span class="formula-frac"><span class="num">30.000 €</span><span class="den">40 € - 10 €</span></span> = 1.000 unidades</span></p>
+
+<p style="margin: 0 0 1rem;">La empresa debe producir y vender exactamente 1.000 unidades para no perder ni ganar dinero. En este nivel, los ingresos totales (40.000 €) igualan a los costes totales (30.000 € de costes fijos más 10.000 € de costes variables).</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Apalancamiento y estructura de costes</h2>
+
+<p style="margin: 0 0 1rem;">El apalancamiento describe el efecto que ejercen los costes fijos sobre la rentabilidad de la empresa y sobre los rendimientos de los accionistas. Los costes fijos deben atenderse con independencia del volumen de negocio y se clasifican en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes fijos operativos</strong>: Derivados de la actividad corriente, como el alquiler, compras y servicios exteriores.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Costes fijos financieros</strong>: Derivados del coste de la financiación ajena (intereses de la deuda).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Por regla general, un mayor nivel de apalancamiento incrementa la rentabilidad potencial, pero también introduce un mayor nivel de riesgo. Los directivos toman decisiones estratégicas que modifican esta estructura, por ejemplo:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Externalización (outsourcing)</strong>: Consiste en subcontratar procesos con un tercero. Esto reduce los costes fijos (trasladándolos a variables) y disminuye el apalancamiento, aunque a costa de perder cierto control sobre el proceso productivo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estructura financiera</strong>: Encontrar la combinación idónea entre recursos propios y deuda externa para financiar la actividad sin incurrir en costes financieros excesivos que ahoguen la rentabilidad.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Coeficientes de apalancamiento operativo y financiero</h3>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Apalancamiento operativo (AO)</h4>
+
+<p style="margin: 0 0 1rem;">Mide el impacto relativo que tienen las variaciones en el volumen de actividad sobre el resultado de la empresa, dada su estructura de costes. Su fórmula es:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">AO = <span class="formula-frac"><span class="num">Ventas - Costes variables</span><span class="den">Ventas - Costes variables - Costes fijos</span></span></span></p>
+
+<p style="margin: 0 0 1rem;">Si una empresa tuviera únicamente costes variables, los cambios en las ventas repercutirían de manera directamente proporcional en el resultado. La presencia de costes fijos genera el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">efecto disolución</strong>: a medida que aumentan las ventas, el coste fijo unitario disminuye porque se reparte entre más unidades. Si una empresa alcanza con facilidad su punto muerto, tiene mayor margen para asumir riesgos operativos y aumentar su rentabilidad.</p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Apalancamiento financiero (RRP)</h4>
+
+<p style="margin: 0 0 1rem;">Mide el efecto del endeudamiento sobre la rentabilidad de los recursos propios. Se calcula con la siguiente fórmula:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">RRP = RAT + ( <span class="formula-frac"><span class="num">RAT - i</span><span class="den">RP</span></span> )</span></p>
+
+<p style="margin: 0 0 1rem;">Donde los componentes son:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RRP</strong>: Rentabilidad de los recursos propios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RAT</strong>: Rentabilidad de los activos totales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">i</strong>: Tipo de interés pagado por la deuda.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RP</strong>: Rendimiento patrimonial.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio de decisión</strong>: Si el resultado de la operación <span class="formula-inline">(RAT - i)</span> es positivo, significa que la rentabilidad de los activos supera al coste de la deuda; por lo tanto, conviene financiarse con recursos ajenos para incrementar la rentabilidad financiera. Si es negativo, el endeudamiento reduce la rentabilidad.</p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ejemplo práctico de apalancamiento financiero</h4>
+
+<p style="margin: 0 0 1rem;">Si una empresa presenta una rentabilidad de los activos totales (RAT) del 8% (0,08), una deuda de 100.000 € con un tipo de interés (<span class="formula-inline">i</span>) del 5% (0,05) y un rendimiento patrimonial (RP) del 12% (0,12):</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">RRP = 0,08 + ( <span class="formula-frac"><span class="num">0,08 - 0,05</span><span class="den">0,12</span></span> ) = 0,08 + 0,25 = 0,33 (33%)</span></p>
+
+<p style="margin: 0 0 1rem;">La rentabilidad de los recursos propios se eleva al 33% debido al efecto positivo del apalancamiento financiero.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico de la empresa Apalancando</h2>
+
+<p style="margin: 0 0 1rem;">La empresa Pepes S.A. presenta los siguientes datos al cierre del ejercicio:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Ingresos por ventas: 10.000.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Costes variables: 3.500.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Costes fijos: 5.000.000 €</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para determinar el apalancamiento operativo (AO) de la empresa, aplicamos su fórmula:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">AO = <span class="formula-frac"><span class="num">10.000.000 € - 3.500.000 €</span><span class="den">10.000.000 € - 3.500.000 € - 5.000.000 €</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">AO = <span class="formula-frac"><span class="num">6.500.000 €</span><span class="den">1.500.000 €</span></span> = 4,33</span></p>
+
+<p style="margin: 0 0 1rem;">Este resultado de 4,33 significa que por cada 1% que varíen las ventas de la empresa Pepes S.A., sus beneficios operativos experimentarán una variación del 4,33%.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Valoración de la información para el control y la reducción de costes</h2>
+
+<p style="margin: 0 0 1rem;">Las decisiones estratégicas en la contabilidad de gestión (como la fabricación propia, la externalización, la aceptación de pedidos especiales o la eliminación de líneas de negocio) se fundamentan en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">análisis coste-volumen-beneficio</strong>. Este enfoque evalúa los efectos que tienen sobre los resultados las modificaciones en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El precio de venta.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Los costes fijos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Los costes variables.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El volumen de ventas.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para tomar la decisión que maximice el beneficio de la organización, se debe seguir un proceso estructurado en cinco fases:</p>
+
+<p style="margin: 0 0 1rem;">1. Estudiar de forma precisa el objetivo que se pretende alcanzar.</p>
+
+<p style="margin: 0 0 1rem;">2. Identificar todas las alternativas posibles para alcanzar dicho objetivo.</p>
+
+<p style="margin: 0 0 1rem;">3. Calcular de forma detallada los costes y los ingresos previstos para cada alternativa.</p>
+
+<p style="margin: 0 0 1rem;">4. Medir el beneficio neto que se obtendría en cada una de las opciones analizadas.</p>
+
+<p style="margin: 0 0 1rem;">5. Elegir la alternativa que maximice el beneficio económico de la empresa.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Decisiones a corto plazo fundamentadas en este análisis</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aceptar o rechazar pedidos adicionales</strong>: Evaluar si los ingresos adicionales que aporta el pedido superan a los costes específicos que este genera.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eliminar o mantener una línea de negocio o producto</strong>: Analizar tanto los costes e ingresos directos del producto en cuestión como el impacto que su desaparición tendría sobre las ventas y costes de los productos restantes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fabricar o externalizar</strong>: Decidir si es más rentable producir internamente un componente o adquirirlo a un proveedor externo.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y resolución del caso práctico final</h2>
+
+<p style="margin: 0 0 1rem;">El control de costes es el pilar de la contabilidad de gestión. El conocimiento detallado de las desviaciones internas (endógenas) y externas (exógenas) permite aplicar medidas correctoras a tiempo. Asimismo, el cálculo del umbral de rentabilidad y el análisis de los coeficientes de apalancamiento operativo y financiero definen el equilibrio óptimo entre la estructura de costes y la estructura de financiación de la empresa.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución del caso práctico de la unidad</h3>
+
+<p style="margin: 0 0 1rem;">Una empresa debe decidir si le conviene fabricar sus propios filtros o comprarlos a un proveedor externo, partiendo de los siguientes datos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Coste de adquisición externa (Precio): 3 €/unidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Coste variable unitario de fabricación interna: 1 €/unidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Costes fijos totales asociados a la fabricación: 20.000 €.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para determinar a partir de qué volumen de producción es preferible fabricar en lugar de comprar, aplicamos la fórmula del punto muerto o umbral de rentabilidad:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Q = <span class="formula-frac"><span class="num">20.000 €</span><span class="den">3 €/unidad - 1 €/unidad</span></span> = 10.000 unidades</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conclusión</strong>: Si las necesidades de la empresa son inferiores a 10.000 unidades, la opción más económica es comprar los filtros al proveedor externo. A partir de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10.000 unidades</strong>, resulta más rentable para la empresa fabricar los filtros por sí misma.</li>
+
+</ul>
+
+</main>
+</body>
+</html>

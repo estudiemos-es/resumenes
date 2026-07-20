@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión financiera. Tema 5</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión financiera. Tema 5</h1>
+
+<h2>Productos de activo</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización</h2>
+
+<p style="margin: 0 0 1rem;">Las entidades de crédito y financieras operan principalmente a través de la captación y canalización de recursos. Para entender su funcionamiento, es fundamental distinguir entre sus dos actividades básicas:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Productos de pasivo:</strong> Son aquellos mediante los cuales las entidades captan recursos de las unidades económicas que tienen excedentes de financiación. La entidad paga una retribución (intereses) por estos fondos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Productos de activo:</strong> Son aquellos mediante los cuales las entidades canalizan los recursos captados hacia las unidades económicas que presentan un déficit de financiación. La entidad cobra un interés por prestar estos fondos.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">El negocio bancario radica en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">margen de intermediación</strong>, que es la diferencia entre lo que la entidad paga por los recursos captados y lo que cobra por los recursos prestados. Las entidades buscan minimizar los costes de captación y maximizar los ingresos por financiación, un equilibrio que se ve regulado por la fuerte competencia del sector, especialmente dinamizada en los últimos años por la aparición de la banca en línea.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Los productos de activo y su finalidad</h2>
+
+<p style="margin: 0 0 1rem;">Las unidades económicas con déficit de financiación pueden ser tanto personas físicas como personas jurídicas. Los fondos obtenidos a través de los productos de activo se destinan principalmente a tres fines:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Producción:</strong> Financiación de la actividad corriente, como la compra de materias primas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inversión:</strong> Adquisición de bienes de equipo, vehículos, maquinaria o sistemas informáticos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Adquisición de viviendas:</strong> Financiación inmobiliaria a largo plazo.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Relación entre importe, riesgo y plazo</h3>
+
+<p style="margin: 0 0 1rem;">Las características de cualquier producto de activo se estructuran bajo una relación de proporcionalidad directa entre tres variables esenciales:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A mayor plazo, mayor riesgo:</strong> El transcurso del tiempo incrementa la incertidumbre sobre la capacidad de devolución del deudor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A mayor importe, mayor riesgo:</strong> Cuanto más elevada sea la cantidad prestada, mayor es la pérdida potencial para la entidad en caso de impago.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A mayor plazo, mayor importe:</strong> Generalmente, las entidades conceden importes más elevados solo cuando se pactan plazos de amortización más largos.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Según el plazo de vencimiento, los productos de activo se clasifican en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Corto plazo:</strong> Créditos, microcréditos, descuento comercial, factoring y confirming.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Largo plazo:</strong> Préstamos, leasing y renting.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Relación entre riesgo y garantías</h2>
+
+<p style="margin: 0 0 1rem;">A diferencia de los productos de pasivo, donde el riesgo de pérdida para el ahorrador se mitiga gracias al respaldo de la propia entidad y al Fondo de Garantía de Depósitos, en los productos de activo la entidad financiera asume un riesgo directo que depende exclusivamente de la solvencia del deudor (persona física o jurídica).</p>
+
+<p style="margin: 0 0 1rem;">Para minimizar este riesgo de impago, las entidades exigen garantías. La regla general determina que <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">a mayor riesgo detectado en la operación, mayores serán las garantías exigidas</strong>.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Herramientas de análisis de riesgo</h3>
+
+<p style="margin: 0 0 1rem;">Antes de conceder financiación, las entidades analizan la situación financiera del solicitante mediante el estudio de sus estados financieros, declaraciones de IRPF, Impuesto de Sociedades o Impuesto de Patrimonio. Asimismo, consultan registros clave de solvencia y endeudamiento:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Asociación Nacional de Establecimientos Financieros (ASNEF):</strong> Registro de carácter privado que recoge los impagos de cuotas de clientes con entidades financieras y otras empresas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Registro de Aceptaciones Impagadas (RAI):</strong> Registro que contiene información sobre letras de cambio domiciliadas y aceptadas, pagarés y cheques que hayan sido devueltos por impago, siempre que su importe sea superior a 300,51 euros.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Central de Información de Riesgos del Banco de España (CIRBE):</strong> Base de datos gestionada por el Banco de España que recoge los riesgos activos de las personas físicas y jurídicas por importes acumulados superiores a 6.010,12 euros. Permite a las entidades conocer el nivel de endeudamiento global del solicitante.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de garantías</h3>
+
+<p style="margin: 0 0 1rem;">Las garantías se clasifican en dos grandes grupos según su naturaleza:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Garantía personal:</strong> Se fundamenta en la solvencia del propio deudor o de un tercero (avalista), quienes responden del cumplimiento de la obligación con todos sus bienes presentes y futuros. Se utiliza habitualmente en operaciones a corto plazo, como créditos personales o créditos nómina.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Garantía real:</strong> Consiste en la afectación de un bien concreto y determinado que responde directamente de la deuda, independientemente de quién sea su propietario. Si el deudor incumple, la entidad puede ejecutar el bien para resarcirse. Las modalidades más habituales son:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La hipoteca:</strong> Recae generalmente sobre bienes inmuebles.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La prenda:</strong> Recae sobre bienes muebles o derechos (como depósitos a plazo, valores mobiliarios, efectos comerciales o metales preciosos).</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Componentes comunes de las operaciones de activo</h2>
+
+<p style="margin: 0 0 1rem;">Toda operación de activo cuenta con una serie de elementos financieros y contractuales que determinan su coste y estructura de devolución:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo de interés:</strong> Es el porcentaje que representa la retribución que el deudor debe pagar a la entidad por disponer de los fondos. Puede ser:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fijo:</strong> Permanece constante durante toda la vida del contrato.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Variable:</strong> Se compone de un diferencial fijo sumado a un índice de referencia (generalmente el Euribor) y se actualiza periódicamente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisiones:</strong> Compensaciones económicas que cobran las entidades para cubrir los costes de estudio, formalización o gestión. Su importancia ha crecido para compensar la caída de los márgenes de interés. Las más habituales son:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisión de apertura:</strong> Por la formalización y puesta a disposición del producto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisión de estudio:</strong> Por el análisis de viabilidad técnica y financiera de la operación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisión por amortización anticipada o cancelación:</strong> Cobrada cuando el deudor devuelve total o parcialmente el capital antes del vencimiento pactado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisión por indisponibilidad:</strong> Aplicada en las cuentas de crédito sobre el saldo que el cliente mantiene aprobado pero no ha utilizado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Otras comisiones:</strong> Por descubierto, mantenimiento, transferencias o uso de cajeros ajenos. Suelen expresarse en porcentaje con el establecimiento de un importe mínimo fijo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota:</strong> Es el pago periódico que realiza el deudor para devolver el dinero. Cada cuota se compone de una parte destinada a la devolución del capital principal (amortización) y otra destinada al pago de los intereses devengados.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 1: liquidación de comisiones</h2>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Lucía solicita un crédito de 2.000 euros a tres meses utilizando su cuenta de ahorros como garantía (garantía prendaria). El tipo de interés es del 3% anual. La comisión de apertura está bonificada (0 euros). Existe una comisión por indisponibilidad del 0,15% con un mínimo de 1,20 euros. Finalmente, Lucía solo dispone de 1.500 euros de forma inmediata para pagar una reserva de plaza universitaria.</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución y cálculos:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de intereses por la cantidad dispuesta:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">La cantidad dispuesta es de 1.500 euros durante un plazo de 3 meses a un tipo de interés del 3% anual.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Intereses = 1.500 × 0,03 × (<span class="formula-frac"><span class="num">3</span><span class="den">12</span></span>) = 11,25 euros</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de la comisión por indisponibilidad:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">El saldo no dispuesto es la diferencia entre el límite del crédito y lo utilizado:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">2.000 - 1.500 = 500 euros</span></p>
+
+<p style="margin: 0 0 1rem;">Aplicando el porcentaje de la comisión:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">500 × 0,0015 = 0,75 euros</span></p>
+
+<p style="margin: 0 0 1rem;">Dado que 0,75 euros es inferior al mínimo establecido por contrato (1,20 euros), se aplica el mínimo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">1,20 euros</strong>.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste total de la operación:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Gastos totales = 11,25 (intereses) + 1,20 (comisión por indisponibilidad) = 12,45 euros</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Importe total a ingresar al vencimiento:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total a devolver = 1.500 (principal dispuesto) + 12,45 (costes) = 1.512,45 euros</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El crédito bancario</h2>
+
+<p style="margin: 0 0 1rem;">El crédito bancario es el producto de activo idóneo para financiar las necesidades de circulante o tesorería a corto plazo de las empresas y particulares. Su concepto clave es la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">disponibilidad</strong>.</p>
+
+<p style="margin: 0 0 1rem;">La entidad financiera no entrega el dinero de forma directa y total, sino que abre una cuenta con un límite máximo de dinero del que el cliente puede ir disponiendo de manera gradual según sus necesidades reales. El deudor solo paga intereses por las cantidades efectivamente utilizadas y por el tiempo en que las mantenga dispuestas. El contrato se formaliza mediante una póliza intervenida por un fedatario público.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Elementos del crédito bancario</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sujetos:</strong> La entidad financiera (acreedor) y el deudor o solicitante (persona física o jurídica).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plazo:</strong> Corto o medio plazo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Importe:</strong> Al ser a corto plazo, suele ser moderado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipos de interés aplicables:</strong> Se pueden aplicar diferentes tipos en la misma operación:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Sobre el saldo dispuesto (importe utilizado).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Sobre el saldo disponible y no dispuesto (comisión de indisponibilidad).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Sobre el saldo excedido o descubierto (cuando se supera el límite autorizado).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Garantías:</strong> Habitualmente personales, debido al menor importe y plazo de la operación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisiones:</strong> Principalmente de apertura y de indisponibilidad.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El préstamo bancario</h2>
+
+<p style="margin: 0 0 1rem;">El préstamo bancario es el producto de activo diseñado para la financiación de inversiones y necesidades de fondos a largo plazo.</p>
+
+<p style="margin: 0 0 1rem;">A diferencia del crédito, la entidad financiera <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">cede la totalidad de los fondos de una sola vez</strong> al inicio de la operación. El deudor asume la obligación de devolver este capital mediante el pago de cuotas periódicas que incluyen tanto el capital amortizado como los intereses generados.</p>
+
+<p style="margin: 0 0 1rem;">El contrato de préstamo se instrumenta en una póliza intervenida por fedatario público para operaciones comunes. En el caso de préstamos con garantía hipotecaria, importes de elevada cuantía o de gran complejidad, se requiere obligatoriamente su formalización en escritura pública.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Elementos del préstamo bancario</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sujetos:</strong> Entidad financiera y deudor (persona física o jurídica).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plazo:</strong> Operaciones a largo plazo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Importe:</strong> Elevado, acorde con los planes de inversión que financia.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo de interés:</strong> Puede ser fijo o variable.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Garantías:</strong> Generalmente reales (aportadas por el propio bien que se financia, como una vivienda). No obstante, existen préstamos con garantía personal que suelen cumplir los siguientes límites estándar:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Importe máximo de unos 30.000 euros.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Plazo máximo de devolución de 7 años.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Tipo de interés preferentemente fijo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> La cuota de amortización no debe superar el 40% de los ingresos líquidos del deudor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El importe concedido no puede ser superior al valor real del bien adquirido.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Las garantías pueden configurarse de forma personal, solidaria, subsidiaria o mancomunada, dependiendo de la prelación y el grado de responsabilidad exigible a los intervinientes en el pago.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisiones:</strong> Destacan las de apertura, estudio y cancelación o amortización anticipada.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuotas:</strong> Pagos periódicos (mensuales, trimestrales, semestrales o anuales) compuestos por la amortización del principal y los intereses devengados.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Diferencias entre préstamo y crédito bancario</h2>
+
+<p style="margin: 0 0 1rem;">Aunque ambos son los pilares de la financiación bancaria de activo, presentan diferencias estructurales muy marcadas:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo de interés:</strong> En el crédito, el tipo de interés suele ser más elevado que en el préstamo, pero se calcula únicamente sobre la cantidad de dinero efectivamente dispuesta y por los días que se ha utilizado. En el préstamo, el interés se calcula sobre la totalidad del capital concedido y durante todo el periodo de liquidación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Disposición de los fondos:</strong> En el crédito la disposición es gradual, flexible y adaptada a las necesidades diarias. En el préstamo, la disposición es única y se produce íntegramente al inicio del contrato.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo de vigencia:</strong> El crédito opera a corto o medio plazo; el préstamo se orienta al medio o largo plazo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Evolución del saldo:</strong> Al vencimiento del crédito, el saldo de la cuenta debe estar restituido en su totalidad (debe volver a mostrar el límite inicial disponible). En el préstamo, el saldo final de la deuda tras el pago de la última cuota es cero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vencimiento y prórroga:</strong> El crédito admite la renovación de su contrato al llegar al vencimiento. El préstamo no es renovable; si se necesita más capital, se debe formalizar un contrato nuevo con nuevas condiciones.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inmediatez en la disponibilidad:</strong> El crédito ofrece disponibilidad casi inmediata una vez concedido. El préstamo requiere un proceso de estudio y formalización más lento que puede demorarse días o semanas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Flexibilidad:</strong> El crédito es un producto altamente flexible; el préstamo es rígido, con condiciones y cuotas fijadas desde el momento inicial de la firma.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El descuento de efectos</h2>
+
+<p style="margin: 0 0 1rem;">El descuento de efectos es una operación financiera que permite a las empresas anticipar el cobro de sus ventas aplazadas. Su concepto clave es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">anticipo</strong>.</p>
+
+<p style="margin: 0 0 1rem;">Cuando una empresa vende un producto o presta un servicio, es habitual que el cliente no pague en efectivo, sino mediante un documento que contiene un compromiso de pago aplazado (un efecto comercial con vencimiento futuro). Si la empresa necesita liquidez inmediata y no puede esperar al vencimiento, acude a una entidad financiera para descontar dicho efecto.</p>
+
+<p style="margin: 0 0 1rem;">La entidad bancaria adelanta a la empresa el importe nominal del efecto, deduciendo previamente los intereses por los días que restan hasta el vencimiento y las comisiones de gestión. La empresa recibe un importe neto menor, pero obtiene liquidez inmediata.</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aspecto fundamental sobre el riesgo:</strong> La entidad financiera no asume el riesgo de insolvencia del deudor. Si al vencimiento el obligado al pago no atiende la deuda, el banco cargará el importe nominal del efecto impagado en la cuenta de la empresa cedente, sumando además una comisión por devolución.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto y elementos del efecto comercial</h3>
+
+<p style="margin: 0 0 1rem;">Un efecto es un documento formal que instrumenta un compromiso de pago y que debe contener, obligatoriamente, el importe nominal y la fecha de vencimiento. Los efectos más habituales son las letras de cambio, los pagarés y los cheques (cuando su fecha de pago es diferida).</p>
+
+<p style="margin: 0 0 1rem;">En una operación de descuento intervienen:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descontante:</strong> La entidad financiera que anticipa los fondos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descontatario o librador:</strong> La empresa que posee el efecto, solicita el anticipo y lo cede endosándolo a la entidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Librado:</strong> El cliente de la empresa, que es el deudor obligado al pago del efecto a su vencimiento.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo de interés:</strong> El coste financiero cobrado por anticipar el dinero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisiones y gastos:</strong> Los costes de administración y gestión del cobro.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo:</strong> El número de días que median entre la fecha del descuento y la fecha de vencimiento del efecto.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tipología de descuentos de efectos</h2>
+
+<p style="margin: 0 0 1rem;">Los descuentos se clasifican según diversos criterios:</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según la determinación del tipo de interés</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento tradicional:</strong> El tipo de interés aplicado es variable y se calcula estrictamente en función de los días que faltan hasta el vencimiento del efecto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento a forfait:</strong> Se aplica un tipo de interés fijo y predeterminado, independientemente del plazo de vencimiento que le reste al efecto.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según el origen de la operación</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento comercial:</strong> Los efectos proceden de las operaciones de venta habituales del giro o tráfico de la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento financiero:</strong> El efecto instrumentaliza un préstamo que la entidad bancaria ha concedido previamente a la empresa.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según el tipo de documento objeto de descuento</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento de letra de cambio:</strong> La transmisión de la letra a la entidad para su anticipo se realiza mediante la fórmula jurídica del endoso.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento de cheque:</strong> Anticipo del cobro de un cheque cuya fecha de pago es posterior a la de emisión.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento de facturas:</strong> Se realiza el endoso directo de una factura comercial para anticipar su cobro futuro.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento de pagarés:</strong> Anticipo del importe de un pagaré emitido por un cliente como promesa formal de pago.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descuento comercial (cesión de crédito):</strong> Anticipo de los derechos de cobro de clientes a los que se ha concedido un aplazamiento habitual (por ejemplo, a 30, 45 o 60 días) sin necesidad de que exista un título valor físico.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Línea de descuento:</strong> Contrato marco por el cual la entidad financiera aprueba un límite máximo de dinero para descontar un conjunto variado de efectos comerciales de forma recurrente durante un periodo de tiempo.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 2: impago al vencimiento</h2>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> La Sociedad Agrícola Manzano vende mercancía y recibe de su cliente un pagaré de 10.000 euros con vencimiento a 60 días. Para obtener liquidez, decide descontar el pagaré en su banco. El día del descuento, la entidad le cobra 50 euros en concepto de intereses y 7 euros en concepto de comisiones y gastos. Llegado el vencimiento, el cliente no paga el pagaré y el banco lo devuelve cobrando una comisión de devolución de 80 euros.</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis de los flujos de cobros y pagos:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase A: Momento del descuento (Cobro inicial de la sociedad):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">La entidad anticipa el nominal del pagaré deduciendo los intereses y las comisiones iniciales.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Importe neto recibido = Nominal - Intereses - Comisiones</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Importe neto recibido = 10.000 - 50 - 7 = 9.943 euros</span></p>
+
+<p style="margin: 0 0 1rem;">La empresa recibe un cobro de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">9.943 euros</strong>.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase B: Momento del vencimiento (Pago por impago):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Al resultar impagado por el cliente, el banco carga a la sociedad el nominal completo del pagaré más la comisión de devolución pactada.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Importe total a pagar = Nominal + Comisión de devolución</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Importe total a pagar = 10.000 + 80 = 10.080 euros</span></p>
+
+<p style="margin: 0 0 1rem;">La empresa debe realizar un pago de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10.080 euros</strong> a la entidad financiera.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y resolución del caso práctico de la unidad</h2>
+
+<p style="margin: 0 0 1rem;">El estudio de los productos de activo muestra cómo las entidades financieras compiten en el mercado para colocar sus recursos excedentes buscando la máxima rentabilidad y seguridad, adaptando sus productos a las necesidades de financiación del circulante (créditos y descuentos) o de la inversión (préstamos) de sus clientes.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución del caso práctico integrado</h3>
+
+<p style="margin: 0 0 1rem;">Se analiza una operación comercial entre la Sociedad Agrícola Manzano (comprador/deudor) y su empresa proveedora (vendedor/acreedor), donde se evalúa la opción de emitir un efecto comercial para aplazar el pago en lugar de realizar un pago inmediato con descuento:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis para la Sociedad Agrícola Manzano:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Emitir un efecto comercial para pagar a plazo no le genera costes financieros directos adicionales y le permite preservar su limitada liquidez hasta que reciba los ingresos de sus ventas de la campaña navideña.</p>
+
+<p style="margin: 0 0 1rem;">Sin embargo, esta decisión le acarrea un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">coste de oportunidad</strong>: debe renunciar al descuento por pronto pago del 2% que le ofrecía el proveedor.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Si el pedido fuera de 100.000 euros, la pérdida del descuento supondría un coste de:</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">100.000 × 0,02 = 2.000 euros</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Si el pedido fuera de 10.000 euros, la pérdida del descuento supondría un coste de:</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">10.000 × 0,02 = 200 euros</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis para la Empresa Proveedora:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Al no cobrar al contado, la empresa proveedora se ahorra tener que aplicar el descuento por pronto pago del 2% a su cliente. Sin embargo, al necesitar la liquidez, decide acudir al banco a descontar el efecto recibido, lo que le cuesta un 2% en concepto de intereses de descuento para anticipar los fondos.</p>
+
+<p style="margin: 0 0 1rem;">Financieramente, el ahorro del 2% que no le hace al cliente se neutraliza con el 2% de intereses que le paga al banco. La diferencia de coste real para el proveedor se reduce exclusivamente a las comisiones bancarias de tramitación del descuento, que ascienden a <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">50 euros</strong>.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu de apuntes</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --ink: #18202f;
+      --muted: #637083;
+      --line: #dce2ea;
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --shadow: 0 16px 40px rgba(24, 32, 47, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(15, 118, 110, .12), transparent 34%),
+        linear-gradient(315deg, rgba(180, 83, 9, .10), transparent 30%),
+        var(--bg);
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 56px;
+    }
+
+    header {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .search {
+      width: min(460px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      padding: 13px 15px;
+      box-shadow: 0 8px 24px rgba(24, 32, 47, .06);
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .subject-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: start;
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .badge {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: #eef7f6;
+      color: var(--accent);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: 5px 9px;
+    }
+
+    .links {
+      display: grid;
+      gap: 8px;
+      padding: 14px;
+    }
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      min-height: 44px;
+      padding: 11px 12px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      color: var(--ink);
+      text-decoration: none;
+      background: #fbfcfe;
+      transition: border-color .15s ease, transform .15s ease, background .15s ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      border-color: rgba(15, 118, 110, .45);
+      background: #f3fbfa;
+      outline: none;
+      transform: translateY(-1px);
+    }
+
+    .arrow {
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 620px) {
+      main {
+        width: min(100% - 20px, 1180px);
+        padding-top: 28px;
+      }
+
+      .subjects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Menu de apuntes</h1>
+        <p class="subtitle">Acceso directo a todos los temas y unidades organizados por asignatura.</p>
+      </div>
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Buscar tema, unidad o asignatura..." autocomplete="off">
+        <span class="count" id="count">80 apuntes disponibles</span>
+      </div>
+    </header>
+
+    <div class="subjects" id="subjects">
+      <section data-subject="contabilidad fiscalidad">
+        <div class="subject-head">
+          <h2>Contabilidad y fiscalidad</h2>
+          <span class="badge">15 temas</span>
+        </div>
+        <div class="links">
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%201.html">Tema 1 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%202.html">Tema 2 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%203.html">Tema 3 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%204.html">Tema 4 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%205.html">Tema 5 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%206.html">Tema 6 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%207.html">Tema 7 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%208.html">Tema 8 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%209.html">Tema 9 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%2010.html">Tema 10 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%2011.html">Tema 11 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%2012.html">Tema 12 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%2013.html">Tema 13 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%2014.html">Tema 14 <span class="arrow">Abrir</span></a>
+          <a href="contabilidad%20y%20fiscalidad/Apuntes%20-%20Contabilidad%20y%20fiscalidad.%20Tema%2015.html">Tema 15 <span class="arrow">Abrir</span></a>
+        </div>
+      </section>
+
+      <section data-subject="gestion financiera">
+        <div class="subject-head">
+          <h2>Gestion financiera</h2>
+          <span class="badge">15 temas</span>
+        </div>
+        <div class="links">
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%201.html">Tema 1 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%202.html">Tema 2 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%203.html">Tema 3 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%204.html">Tema 4 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%205.html">Tema 5 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%206.html">Tema 6 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%207.html">Tema 7 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%208.html">Tema 8 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%209.html">Tema 9 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%2010.html">Tema 10 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%2011.html">Tema 11 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%2012.html">Tema 12 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%2013.html">Tema 13 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%2014.html">Tema 14 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20financiera/Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%2015.html">Tema 15 <span class="arrow">Abrir</span></a>
+        </div>
+      </section>
+
+      <section data-subject="gestion recursos humanos rrhh">
+        <div class="subject-head">
+          <h2>Gestion de recursos humanos</h2>
+          <span class="badge">15 temas</span>
+        </div>
+        <div class="links">
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%201.html">Tema 1 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%202.html">Tema 2 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%203.html">Tema 3 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%204.html">Tema 4 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%205.html">Tema 5 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%206.html">Tema 6 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%207.html">Tema 7 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%208.html">Tema 8 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%209.html">Tema 9 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%2010.html">Tema 10 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%2011.html">Tema 11 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%2012.html">Tema 12 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%2013.html">Tema 13 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%2014.html">Tema 14 <span class="arrow">Abrir</span></a>
+          <a href="gestion%20rrhh/Apuntes%20-%20Gesti%C3%B3n%20de%20recursos%20humanos.%20Tema%2015.html">Tema 15 <span class="arrow">Abrir</span></a>
+        </div>
+      </section>
+
+      <section data-subject="ingles english">
+        <div class="subject-head">
+          <h2>English</h2>
+          <span class="badge">20 unidades</span>
+        </div>
+        <div class="links">
+          <a href="ingles/Apuntes%20-%20English.%20Unit%201.html">Unit 1 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%202.html">Unit 2 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%203.html">Unit 3 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%204.html">Unit 4 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%205.html">Unit 5 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%206.html">Unit 6 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%207.html">Unit 7 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%208.html">Unit 8 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%209.html">Unit 9 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2010.html">Unit 10 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2011.html">Unit 11 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2012.html">Unit 12 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2013.html">Unit 13 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2014.html">Unit 14 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2015.html">Unit 15 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2016.html">Unit 16 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2017.html">Unit 17 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2018.html">Unit 18 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2019.html">Unit 19 <span class="arrow">Open</span></a>
+          <a href="ingles/Apuntes%20-%20English.%20Unit%2020.html">Unit 20 <span class="arrow">Open</span></a>
+        </div>
+      </section>
+
+      <section data-subject="sostenibilidad aplicada sistema productivo">
+        <div class="subject-head">
+          <h2>Sostenibilidad aplicada al sistema productivo</h2>
+          <span class="badge">15 temas</span>
+        </div>
+        <div class="links">
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%201.html">Tema 1 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%202.html">Tema 2 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%203.html">Tema 3 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%204.html">Tema 4 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%205.html">Tema 5 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%206.html">Tema 6 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%207.html">Tema 7 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%208.html">Tema 8 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%209.html">Tema 9 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%2010.html">Tema 10 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%2011.html">Tema 11 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%2012.html">Tema 12 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%2013.html">Tema 13 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%2014.html">Tema 14 <span class="arrow">Abrir</span></a>
+          <a href="sostenibilidad/Apuntes%20-%20Sostenibilidad%20aplicada%20al%20sistema%20productivo.%20Tema%2015.html">Tema 15 <span class="arrow">Abrir</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const search = document.querySelector("#search");
+    const count = document.querySelector("#count");
+    const sections = [...document.querySelectorAll("section")];
+    const links = [...document.querySelectorAll("a")];
+
+    function normalize(text) {
+      return text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function filterLinks() {
+      const query = normalize(search.value.trim());
+      let visibleLinks = 0;
+
+      sections.forEach((section) => {
+        let sectionHasResults = false;
+        const subject = normalize(section.dataset.subject || section.querySelector("h2").textContent);
+
+        section.querySelectorAll("a").forEach((link) => {
+          const text = normalize(`${subject} ${link.textContent}`);
+          const isVisible = !query || text.includes(query);
+          link.classList.toggle("hidden", !isVisible);
+          sectionHasResults = sectionHasResults || isVisible;
+          visibleLinks += isVisible ? 1 : 0;
+        });
+
+        section.classList.toggle("hidden", !sectionHasResults);
+      });
+
+      count.textContent = `${visibleLinks} apunte${visibleLinks === 1 ? "" : "s"} disponible${visibleLinks === 1 ? "" : "s"}`;
+    }
+
+    search.addEventListener("input", filterLinks);
+    filterLinks();
+  </script>
+</body>
+</html>

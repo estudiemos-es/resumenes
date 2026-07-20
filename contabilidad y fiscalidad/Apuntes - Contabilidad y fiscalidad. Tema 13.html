@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Contabilidad y fiscalidad. Tema 13</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Contabilidad y fiscalidad. Tema 13</h1>
+
+<h2>Análisis patrimonial y financiero</h2>
+
+<p style="margin: 0 0 1rem;">El análisis patrimonial y el análisis financiero son dos herramientas fundamentales para comprender la situación económica de una empresa y facilitar la toma de decisiones estratégicas. Mientras que el análisis patrimonial se enfoca en la estructura y composición del patrimonio (activos, pasivos y patrimonio neto), el análisis financiero evalúa la rentabilidad, la liquidez, el endeudamiento y la eficiencia en la gestión de los recursos. Ambos enfoques se complementan para ofrecer una visión global y detallada de la salud de la organización.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Análisis patrimonial</h2>
+
+<p style="margin: 0 0 1rem;">El análisis patrimonial de los estados financieros evalúa la situación de la empresa considerando el origen de sus recursos financieros y su aplicación en inversiones. Este análisis combina una perspectiva estática con una dinámica que examina las variaciones de la estructura patrimonial a lo largo del tiempo.</p>
+
+<p style="margin: 0 0 1rem;">La estructura económica (el activo) muestra cómo se invierten los capitales. La proporción adecuada entre el activo no corriente y el activo corriente varía según el sector de actividad (por ejemplo, una empresa industrial frente a una comercial). Para evaluar esta estructura y su evolución temporal, se utilizan:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Porcentajes verticales:</strong> Indican la composición porcentual de las masas patrimoniales en un momento concreto.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Porcentajes horizontales:</strong> Muestran la variación de cada partida a lo largo del tiempo.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Los tres instrumentos principales para el análisis patrimonial son el fondo de maniobra, los ratios patrimoniales y el estudio de los equilibrios patrimoniales.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fondo de maniobra</h3>
+
+<p style="margin: 0 0 1rem;">La solvencia a medio y largo plazo exige un equilibrio financiero entre las inversiones (activo) y sus fuentes de financiación (pasivo y patrimonio neto). Como regla general:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El activo corriente debe financiarse con deudas a corto plazo (pasivo corriente).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El activo no corriente debe financiarse con recursos a largo plazo o capitales permanentes (patrimonio neto y pasivo no corriente).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Depender únicamente de deudas a corto plazo para financiar el activo corriente es arriesgado debido a posibles desajustes entre cobros y pagos. Por ello, parte del activo corriente debe financiarse con recursos a largo plazo. Esta parte se conoce como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">fondo de maniobra</strong> o capital circulante.</p>
+
+<p style="margin: 0 0 1rem;">La fórmula analítica para su cálculo es:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Fondo de maniobra = Activo corriente - Pasivo corriente</span></p>
+
+<p style="margin: 0 0 1rem;">Existen tres situaciones posibles que reflejan el equilibrio patrimonial de la empresa:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de maniobra mayor que cero (FM &gt; 0):</strong> Es la situación idónea. La empresa financia parte de su activo corriente con capitales permanentes, lo que garantiza la solvencia necesaria para afrontar los pagos a corto plazo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de maniobra igual a cero (FM = 0):</strong> El activo corriente se financia exclusivamente con pasivo corriente. Cualquier retraso en la venta de existencias o en el cobro a clientes puede generar tensiones de liquidez y problemas de pago.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de maniobra menor que cero (FM &lt; 0):</strong> Es una situación de gran inestabilidad. Los recursos a corto plazo están financiando parte del activo no corriente, lo que puede provocar una suspensión de pagos.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ratios patrimoniales</h3>
+
+<p style="margin: 0 0 1rem;">Un ratio es el cociente entre dos magnitudes que permite medir la relación de una masa patrimonial con respecto al total o a otras partidas. Los ratios patrimoniales más significativos son:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de garantía:</strong> Mide la capacidad de la empresa para hacer frente a la totalidad de sus deudas con sus activos.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de garantía = <span class="formula-frac"><span class="num">Activo total</span><span class="den">Pasivo total</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Entre 1,5 y 2. Si es inferior a 1, la empresa se encuentra en situación de quiebra técnica.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de endeudamiento:</strong> Mide la proporción de deudas en relación con la estructura financiera de la empresa.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de endeudamiento = <span class="formula-frac"><span class="num">Pasivo</span><span class="den">Patrimonio neto + Pasivo</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Entre 0,4 y 0,6. Un valor superior a 0,5 puede indicar un exceso de endeudamiento.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de autonomía financiera:</strong> Mide la independencia de la empresa respecto a la financiación ajena.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de autonomía financiera = <span class="formula-frac"><span class="num">Patrimonio neto</span><span class="den">Pasivo total</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Entre 0,8 y 1,5. A mayor ratio, mayor es la independencia financiera de la entidad.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de calidad de deuda:</strong> Evalúa la proporción de las deudas a corto plazo sobre el total de las deudas.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de calidad de deuda = <span class="formula-frac"><span class="num">Pasivo corriente</span><span class="den">Pasivo total</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Depende de la actividad. En grandes cadenas de distribución alimentaria, por ejemplo, un ratio elevado de deuda a corto plazo puede ser estable debido a que el plazo de cobro a clientes es inmediato y el de pago a proveedores es muy amplio.</p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ejemplo de cálculo de ratios patrimoniales</h4>
+
+<p style="margin: 0 0 1rem;">Supongamos una empresa con los siguientes datos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Activo total: 100.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Pasivo total: 40.000 € (del cual el Pasivo corriente es de 10.000 €)</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Patrimonio neto: 60.000 €</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Los ratios patrimoniales se calculan de la siguiente manera:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de garantía:</strong>
+<span class="formula-inline">100.000 / 40.000 = 2,5</span> (situación óptima y solvente).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de endeudamiento:</strong>
+<span class="formula-inline">40.000 / 60.000 = 0,66</span> (de acuerdo con el método de cálculo aplicado en el caso práctico del documento original, que relaciona el pasivo total directamente con el patrimonio neto).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de autonomía financiera:</strong>
+<span class="formula-inline">60.000 / 40.000 = 1,5</span> (buena independencia financiera).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de calidad de deuda:</strong>
+<span class="formula-inline">10.000 / 40.000 = 0,25</span> (el 25% de la deuda vence a corto plazo).</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 1: Peralta S. A.</h2>
+
+<p style="margin: 0 0 1rem;">La empresa Peralta S. A., dedicada a la fabricación y venta de canapés, presenta el siguiente balance de situación simplificado:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo no corriente:</strong> 78.200 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo corriente:</strong> 146.800 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo total:</strong> 225.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Patrimonio neto:</strong> 72.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pasivo no corriente:</strong> 80.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pasivo corriente:</strong> 73.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pasivo total:</strong> 153.000 € (Pasivo no corriente + Pasivo corriente)</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong></p>
+
+<p style="margin: 0 0 1rem;">Para determinar la situación patrimonial, calculamos el fondo de maniobra:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">FM = Activo corriente - Pasivo corriente</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">FM = 146.800 € - 73.000 € = 73.800 €</span></p>
+
+<p style="margin: 0 0 1rem;">El fondo de maniobra es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">positivo</strong> (73.800 €). Esto indica una posición normal de equilibrio financiero, ya que el activo corriente está financiado en parte por el pasivo corriente y en parte por recursos a largo plazo (pasivo no corriente y patrimonio neto).</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Análisis financiero</h2>
+
+<p style="margin: 0 0 1rem;">El análisis financiero evalúa la capacidad de la empresa para liquidar o reembolsar sus pasivos a medida que van venciendo a través de la conversión de sus activos en medios de pago. Mientras que el análisis patrimonial ofrece una base estructural y estática, el análisis financiero aporta una evaluación dinámica del desempeño y de la generación de valor.</p>
+
+<p style="margin: 0 0 1rem;">Los instrumentos principales del análisis financiero son el periodo medio de maduración y los ratios de liquidez.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Periodo medio de maduración</h3>
+
+<p style="margin: 0 0 1rem;">El periodo medio de maduración (PMM) es el tiempo promedio en días que transcurre desde que se adquiere la materia prima hasta que se cobra de los clientes, abarcando todo el ciclo de explotación. Las empresas intentan reducir este periodo para disminuir sus necesidades de financiación.</p>
+
+<p style="margin: 0 0 1rem;">La duración y las etapas del ciclo de explotación varían según la actividad de la empresa:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Empresas industriales:</strong> Experimentan un ciclo de explotación completo que incluye la adquisición de materias primas, almacenamiento, producción, almacenamiento de productos terminados, venta y cobro. Este ciclo requiere de forma continua un fondo de maniobra positivo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Empresas comerciales:</strong> Tienen un ciclo más corto al no disponer de fases de aprovisionamiento de materias primas ni de producción. Si las ventas se realizan al contado, los proveedores pueden llegar a financiar todo el inventario, permitiendo operar con un fondo de maniobra negativo sin riesgo de insolvencia.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Empresas de servicios:</strong> No requieren inversión en existencias de productos y apenas reciben crédito comercial de proveedores, pero suelen anticipar costes de personal y pueden acumular saldos elevados de clientes.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Etapas del periodo medio de maduración</h3>
+
+<p style="margin: 0 0 1rem;">Para determinar el periodo medio de maduración es necesario calcular la rotación de cada fase del ciclo de explotación y, posteriormente, el tiempo medio de cada etapa:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio de aprovisionamiento (PMa):</strong> Tiempo que las materias primas permanecen en el almacén antes de ser utilizadas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> *Rotación (<span class="formula-inline">n<sub>a</sub></span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>a</sub> = <span class="formula-frac"><span class="num">Consumo anual de materias primas</span><span class="den">Stock medio de materias primas</span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> *Periodo (<span class="formula-inline">PMa</span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMa = <span class="formula-frac"><span class="num">365</span><span class="den">n<sub>a</sub></span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio de producción (PMf):</strong> Tiempo que se tarda en fabricar los productos. En las empresas comerciales este periodo es cero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> *Rotación (<span class="formula-inline">n<sub>f</sub></span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>f</sub> = <span class="formula-frac"><span class="num">Coste total de la producción anual</span><span class="den">Stock medio de productos en curso de fabricación</span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> *Periodo (<span class="formula-inline">PMf</span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMf = <span class="formula-frac"><span class="num">365</span><span class="den">n<sub>f</sub></span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio de venta (PMv):</strong> Tiempo que se requiere para vender los productos terminados fabricados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> *Rotación (<span class="formula-inline">n<sub>v</sub></span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>v</sub> = <span class="formula-frac"><span class="num">Ventas de productos terminados a precio de coste</span><span class="den">Stock medio de productos terminados</span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> *Periodo (<span class="formula-inline">PMv</span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMv = <span class="formula-frac"><span class="num">365</span><span class="den">n<sub>v</sub></span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio de cobro (PMc):</strong> Tiempo que transcurre entre la venta de los productos y el cobro efectivo a los clientes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> *Rotación (<span class="formula-inline">n<sub>c</sub></span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>c</sub> = <span class="formula-frac"><span class="num">Ventas de productos terminados a crédito a precio de venta</span><span class="den">Saldo medio de clientes</span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> *Periodo (<span class="formula-inline">PMc</span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMc = <span class="formula-frac"><span class="num">365</span><span class="den">n<sub>c</sub></span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio de pago (PMp):</strong> Tiempo que transcurre desde la compra de las materias primas o mercaderías hasta su pago efectivo a los proveedores.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> *Rotación (<span class="formula-inline">n<sub>p</sub></span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>p</sub> = <span class="formula-frac"><span class="num">Compras anuales a crédito</span><span class="den">Saldo medio de proveedores</span></span></span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> *Periodo (<span class="formula-inline">PMp</span>):*</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMp = <span class="formula-frac"><span class="num">365</span><span class="den">n<sub>p</sub></span></span></span></p>
+
+<p style="margin: 0 0 1rem;">A partir de estos subperiodos se definen dos magnitudes:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio económico:</strong> Tiempo total del ciclo de explotación (desde la entrada de materiales hasta el cobro al cliente).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMM Económico = PMa + PMf + PMv + PMc</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio financiero:</strong> Tiempo que la empresa debe financiar con recursos propios o ajenos (descontando el plazo de pago que conceden los proveedores).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMM Financiero = PMM Económico - PMp</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 2: Comercial S. A.</h2>
+
+<p style="margin: 0 0 1rem;">La empresa Comercial S. A. se dedica a la compra y venta de frutas y hortalizas, y aporta los siguientes datos anuales:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Compra de mercaderías: 25.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Stock medio de mercaderías: 5.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Ventas de mercadería: 30.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Saldo medio de clientes: 4.000 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Saldo medio de proveedores: 2.500 €</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong></p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del periodo medio de almacenamiento de mercaderías (PMa):</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Rotación (<span class="formula-inline">n<sub>a</sub></span>):</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>a</sub> = <span class="formula-frac"><span class="num">25.000</span><span class="den">5.000</span></span> = 5</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Periodo (<span class="formula-inline">PMa</span>):</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMa = <span class="formula-frac"><span class="num">365</span><span class="den">5</span></span> = 73 días</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del periodo medio de cobro (PMc):</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Rotación (<span class="formula-inline">n<sub>c</sub></span>):</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>c</sub> = <span class="formula-frac"><span class="num">30.000</span><span class="den">4.000</span></span> = 7,5</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Periodo (<span class="formula-inline">PMc</span>):</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMc = <span class="formula-frac"><span class="num">365</span><span class="den">7,5</span></span> = 48,70 días</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del periodo medio de pago (PMp):</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Rotación (<span class="formula-inline">n<sub>p</sub></span>):</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">n<sub>p</sub> = <span class="formula-frac"><span class="num">25.000</span><span class="den">2.500</span></span> = 10</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Periodo (<span class="formula-inline">PMp</span>):</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMp = <span class="formula-frac"><span class="num">365</span><span class="den">10</span></span> = 36,50 días</span></p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de los periodos medios totales:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio económico:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMM Económico = PMa + PMc = 73 + 48,70 = 121,70 días</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo medio financiero:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">PMM Financiero = PMM Económico - PMp = 121,70 - 36,50 = 85,20 días</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Ratios financieros</h2>
+
+<p style="margin: 0 0 1rem;">Los ratios financieros miden la capacidad de la empresa para hacer frente a sus obligaciones de pago a corto plazo. Tienen mayor relevancia cuando se comparan con los datos de periodos anteriores o con la media del sector.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de liquidez:</strong> Mide la capacidad para afrontar las deudas a corto plazo con el total de los activos corrientes.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de liquidez = <span class="formula-frac"><span class="num">Activo corriente</span><span class="den">Pasivo corriente</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Entre 1,5 y 2. Un valor menor que 1 advierte de riesgo de suspensión de pagos; un valor superior a 2 indica la existencia de recursos ociosos.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de tesorería o acid test:</strong> Mide la capacidad de pago inmediata de las deudas a corto plazo utilizando el realizable y el disponible, excluyendo las existencias.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de tesorería = <span class="formula-frac"><span class="num">Realizable + Disponible</span><span class="den">Pasivo corriente</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Entre 0,8 y 1,2. Valores inferiores pueden generar dificultades de pago a muy corto plazo.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de disponibilidad:</strong> Mide la capacidad de pago inmediata utilizando únicamente el efectivo disponible de la empresa.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de disponibilidad = <span class="formula-frac"><span class="num">Disponible</span><span class="den">Pasivo corriente</span></span></span></p>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Valor óptimo:</span> Entre 0,1 y 0,3. Un valor por encima de este rango muestra recursos líquidos improductivos.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estudio de la situación patrimonial y financiera de una empresa</h2>
+
+<p style="margin: 0 0 1rem;">A partir del siguiente balance de situación, realizaremos un análisis patrimonial y financiero completo:</p>
+
+<table class="markdown-table"><thead><tr><th>Activo</th><th>Valor (€)</th><th>Patrimonio neto y pasivo</th><th>Valor (€)</th></tr></thead><tbody><tr><td>Activo no corriente</td><td></td><td>Patrimonio neto</td><td></td></tr><tr><td>Inmovilizado intangible</td><td>4.300</td><td>Fondos propios</td><td>183.100</td></tr><tr><td>Inmovilizado material</td><td>110.600</td><td></td><td></td></tr><tr><td>Inversiones financieras a l/p</td><td>70.800</td><td>Pasivo no corriente</td><td></td></tr><tr><td></td><td></td><td>Deudas a largo plazo</td><td>30.600</td></tr><tr><td>Activo corriente</td><td></td><td>Pasivo corriente</td><td></td></tr><tr><td>Existencias</td><td>11.200</td><td>Proveedores y otros acreedores</td><td>6.400</td></tr><tr><td>Realizable</td><td>10.100</td><td></td><td></td></tr><tr><td>Efectivo (Disponible)</td><td>13.100</td><td></td><td></td></tr><tr><td>Activo total</td><td>220.100</td><td>PN y pasivo total</td><td>220.100</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Análisis de solvencia y liquidez a corto plazo</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de maniobra:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">FM = Activo corriente - Pasivo corriente = 34.400 - 6.400 = 28.000 €</span></p>
+
+<p style="margin: 0 0 1rem;">El fondo de maniobra es positivo (28.000 €), lo que indica equilibrio a corto plazo.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de liquidez:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Rl = <span class="formula-frac"><span class="num">34.400</span><span class="den">6.400</span></span> = 5,38</span></p>
+
+<p style="margin: 0 0 1rem;">Es muy superior al valor óptimo (1,5 - 2), lo que indica una alta seguridad frente a los pagos, pero también la presencia de recursos ociosos que restan rentabilidad.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de tesorería (Acid test):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Rt = <span class="formula-frac"><span class="num">10.100 + 13.100</span><span class="den">6.400</span></span> = <span class="formula-frac"><span class="num">23.200</span><span class="den">6.400</span></span> = 3,63</span></p>
+
+<p style="margin: 0 0 1rem;">Muy por encima del rango óptimo (0,8 - 1,2), confirmando el exceso de recursos líquidos a corto plazo.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de disponibilidad:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Rd = <span class="formula-frac"><span class="num">13.100</span><span class="den">6.400</span></span> = 2,05</span></p>
+
+<p style="margin: 0 0 1rem;">Supera ampliamente el óptimo (0,1 - 0,3), lo que corrobora que la empresa mantiene demasiado dinero en efectivo sin rentabilizar.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Análisis de la estructura patrimonial</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de garantía:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de garantía = <span class="formula-frac"><span class="num">220.100</span><span class="den">37.000</span></span> = 5,95</span></p>
+
+<p style="margin: 0 0 1rem;">Al ser muy superior a 1,5, la empresa ofrece una excelente garantía frente a sus acreedores a largo plazo.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de endeudamiento:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de endeudamiento = <span class="formula-frac"><span class="num">37.000</span><span class="den">183.100</span></span> = 0,20</span></p>
+
+<p style="margin: 0 0 1rem;">Presenta un nivel de endeudamiento bajo (óptimo 0,4 - 0,6), lo que refleja una estructura financiera muy capitalizada y segura.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de autonomía financiera:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de autonomía financiera = <span class="formula-frac"><span class="num">183.100</span><span class="den">37.000</span></span> = 4,95</span></p>
+
+<p style="margin: 0 0 1rem;">El valor es muy elevado, confirmando la gran independencia de la empresa frente a la financiación externa.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ratio de calidad de deuda:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Ratio de calidad de deuda = <span class="formula-frac"><span class="num">6.400</span><span class="den">30.600</span></span> = 0,21</span></p>
+
+<p style="margin: 0 0 1rem;">(De acuerdo con el cálculo del documento original que relaciona el pasivo corriente con el pasivo no corriente). El 21% de las deudas de la empresa vencen a corto plazo, lo que reduce la presión de reembolso inmediato.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y repaso final</h2>
+
+<p style="margin: 0 0 1rem;">El análisis patrimonial y financiero es una competencia clave para la gestión empresarial. Permite diagnosticar la estabilidad, solvencia y rentabilidad de cualquier organización para fundamentar la toma de decisiones.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuentas anuales:</strong> Para realizar estos análisis se utilizan las cuentas anuales, compuestas por el balance de situación, la cuenta de pérdidas y ganancias, el estado de cambios en el patrimonio neto, el estado de flujos de efectivo y la memoria. Las pequeñas y medianas empresas (pymes) no tienen la obligación de presentar el estado de cambios en el patrimonio neto ni el estado de flujos de efectivo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de maniobra:</strong> Es la métrica de equilibrio por excelencia. Representa la parte del activo corriente financiada con recursos a largo plazo.</li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Resolución del caso práctico de la unidad</h4>
+
+<p style="margin: 0 0 1rem;">Si una empresa presenta un activo corriente de 136.000 € y un pasivo corriente de 59.200 €, su fondo de maniobra se calcula de la siguiente manera:</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Fondo de maniobra = 136.000 € - 59.200 € = 76.800 €</span></p>
+
+<p style="margin: 0 0 1rem;">Al ser el fondo de maniobra positivo (76.800 €), la empresa se encuentra en una situación de equilibrio financiero y cuenta con margen de seguridad para atender sus obligaciones inmediatas.</p>
+
+</main>
+</body>
+</html>

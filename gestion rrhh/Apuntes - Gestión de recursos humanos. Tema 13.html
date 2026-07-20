@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión de recursos humanos. Tema 13</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión de recursos humanos. Tema 13</h1>
+
+<h2>Cálculo e ingreso de las cuotas a la seguridad social</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización</h2>
+
+<p style="margin: 0 0 1rem;">Tanto los trabajadores como las empresas tienen la obligación de realizar aportaciones económicas al sistema de la seguridad social. Estas aportaciones se calculan y comunican de forma mensual a la Tesorería General de la Seguridad Social (TGSS). Para llevar a cabo este intercambio de información de manera eficiente y sin errores, se utilizan herramientas informáticas específicas y documentos normalizados que detallan la relación de los trabajadores, las bases de cotización y los conceptos retributivos abonados.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Aportaciones al sistema de la seguridad social</h2>
+
+<p style="margin: 0 0 1rem;">Las aportaciones consisten en la aplicación de un porcentaje (tipo de cotización) sobre las retribuciones de los trabajadores. Estos tipos de cotización se establecen anualmente en los presupuestos generales del estado y se dividen en tres grandes bloques:</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">1. Cotización por contingencias</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contingencias comunes:</strong> Se aplica un tipo general del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">28,30%</strong>, donde la empresa asume el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">23,60%</strong> y el trabajador el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">4,70%</strong>.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mecanismo de equidad intergeneracional (MEI):</strong> Es un recargo que se aplica sobre la base de contingencias comunes. Su incremento es progresivo según el año:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2023:</strong> 0,60% total (0,50% empresa y 0,10% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2024:</strong> 0,70% total (0,58% empresa y 0,12% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2025:</strong> 0,80% total (0,67% empresa y 0,13% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2026:</strong> 0,90% total (0,75% empresa y 0,15% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2027:</strong> 1,00% total (0,83% empresa y 0,17% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2028:</strong> 1,10% total (0,92% empresa y 0,18% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2029:</strong> 1,20% total (1,00% empresa y 0,20% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Accidentes de trabajo y enfermedades profesionales (AT y EP):</strong> Esta cotización es asumida en su totalidad por la empresa. Los porcentajes varían según las tablas de tarifas establecidas para cada actividad o epígrafe profesional.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">2. Conceptos de cotización conjunta</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desempleo:</strong> Los tipos varían según la modalidad contractual:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Tipo general:</span> 7,05% total (5,50% empresa y 1,55% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Contrato de duración determinada a tiempo completo:</span> 8,30% total (6,70% empresa y 1,60% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Contrato de duración determinada a tiempo parcial:</span> 8,30% total (6,70% empresa y 1,60% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de garantía salarial (FOGASA):</strong> Corresponde únicamente a la empresa, con un tipo del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">0,20%</strong> (el trabajador no cotiza por este concepto).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Formación profesional:</strong> Se aplica un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">0,70%</strong> total, donde la empresa aporta el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">0,60%</strong> y el trabajador el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">0,10%</strong>.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">3. Cotización por horas extraordinarias</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extraordinarias comunes:</strong> Tienen un tipo de cotización del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">28,30%</strong> (23,60% empresa y 4,70% trabajador).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extraordinarias de fuerza mayor:</strong> Tienen un tipo reducido del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">14,00%</strong> (12,00% empresa y 2,00% trabajador).</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">La relación nominal de trabajadores</h2>
+
+<p style="margin: 0 0 1rem;">La relación nominal de trabajadores (RNT) es el documento digital que sustituye al antiguo modelo TC2. Se transmite mensualmente a través de la aplicación SILTRA y contiene la información detallada de todos los empleados de la empresa durante el mes de liquidación.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Estructura del documento</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Encabezado:</strong> Contiene los datos identificativos de la liquidación, tales como la razón social de la empresa, la cuenta de cotización, el periodo de liquidación (con formato MM/AAAA - MM/AAAA), el número de liquidación, la modalidad de pago, el número de trabajadores incluidos, el tipo de liquidación (total o parcial) y la entidad gestora de accidentes de trabajo (INSS o mutua colaboradora).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuerpo del documento:</strong> Detalla los datos individuales de cada trabajador: su número de afiliación a la seguridad social (NAF), identificador de persona física, días cotizados, horas cotizadas en contratos a tiempo parcial, horas complementarias, importes y la suma de las bases de cotización de contingencias comunes y de AT y EP.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Nota sobre el desempleo:</span> La duración de las prestaciones de desempleo se calcula según el periodo cotizado en los últimos seis años anteriores a la situación legal de desempleo, oscilando entre los 360 días cotizados (que dan derecho a 120 días de prestación) y los 2160 días cotizados (que otorgan 720 días de prestación).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pie del documento:</strong> Incluye el número de referencia, la fecha y hora de emisión, y la huella digital (un código alfanumérico que garantiza su autenticidad).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Características principales</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Sirve como justificante oficial de que la empresa se encuentra al corriente de pago con la seguridad social.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Su comunicación es mensual y se refiere siempre al mes inmediato anterior.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Refleja de manera explícita las reducciones o bonificaciones aplicables a los trabajadores que tengan derecho a ellas.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El recibo de liquidación de cotizaciones</h2>
+
+<p style="margin: 0 0 1rem;">El recibo de liquidación de cotizaciones (RLC) sustituye al antiguo modelo TC1. Se genera de forma conjunta con la RNT y funciona como el documento de pago mensual de las cotizaciones de la empresa. A diferencia de la RNT, el RLC no desglosa las bases individuales de cada empleado, sino que muestra los importes globales acumulados.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Estructura del RLC</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos de envío:</strong> Número de autorización de la transmisión.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos identificativos:</strong> Información de la empresa y la modalidad de pago elegida (pago electrónico o domiciliación bancaria).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Codificaciones informáticas:</strong> Referencias, fecha, hora, huella digital, periodo de pago e identificación de la emisora.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuerpo del documento:</strong> Describe el concepto de la liquidación (contingencias comunes, horas extras, incapacidad temporal por accidente de trabajo, etc.), la cuantía total de la base y el importe a ingresar.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pie de página:</strong> Contiene un código de barras destinado a facilitar el pago.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Plazo de presentación e ingreso de cuotas</h3>
+
+<p style="margin: 0 0 1rem;">Las cuotas se ingresan mensualmente a mes vencido (por ejemplo, las cuotas devengadas en abril se pagan en el mes de mayo). La empresa actúa como retenedora, descontando de la nómina del trabajador la cuota obrera para ingresarla junto con la aportación patronal.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plazo general:</strong> El último día hábil del mes de presentación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sistema de liquidación directa:</strong> El plazo límite se adelanta al penúltimo día hábil del mes.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Liquidación de seguros sociales a través de SILTRA y RED</h2>
+
+<p style="margin: 0 0 1rem;">La comunicación y liquidación de los seguros sociales se realiza mediante sistemas autorizados por la seguridad social.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Liquidación a través de SILTRA</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instalación:</strong> La empresa debe descargar y configurar la aplicación SILTRA en sus sistemas.</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vinculación:</strong> Se define la ruta de acceso de SILTRA dentro del programa de gestión de nóminas de la empresa para poder exportar los ficheros.</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Configuración bancaria:</strong> Se introducen los datos de la cuenta bancaria de la empresa en el programa de nóminas.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Generación de ficheros:</strong> Se calculan las nóminas y se genera un archivo de cotizaciones en formato XML, el cual se envía a la TGSS mediante la opción &quot;procesar remesas de cotización&quot; en SILTRA.</p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Respuesta de la TGSS:</strong> La tesorería procesa la información y envía de vuelta los documentos RLC y RNT al apartado de comunicaciones de la aplicación.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Liquidación a través del sistema RED</h3>
+
+<p style="margin: 0 0 1rem;">Dentro de la opción &quot;confeccionar liquidaciones&quot;, el usuario puede optar por:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Recuperar datos del mes anterior:</strong> Si las bases de cotización no han variado, se pueden importar los datos previos. El sistema permite modificar únicamente a los trabajadores que hayan tenido variaciones. Los nuevos trabajadores aparecerán inicialmente con base cero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No recuperar datos:</strong> El sistema descarga un fichero con todas las bases de cotización a cero para ser rellenado desde el principio.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Confirmación y borrador:</strong> Una vez validados los datos, se acepta la liquidación y se genera un borrador del RLC donde se selecciona la modalidad de pago:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Cargo en cuenta (domiciliación):</span> Requiere aprobar el recibo antes del día 20 del mes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Pago electrónico:</span> Permite aprobar, confeccionar e imprimir el recibo después del día 20 para realizar el pago directamente en la entidad financiera.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Previsualización:</strong> Permite revisar los documentos RLC y RNT antes de la confirmación definitiva.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El fichero de conceptos retribuidos abonados</h2>
+
+<p style="margin: 0 0 1rem;">El Real Decreto Legislativo 8/2015 establece la obligación de las empresas de comunicar a la TGSS todos los conceptos retributivos abonados (CRA) a sus trabajadores en cada periodo de liquidación, independientemente de si dichos conceptos cotizan o no.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Códigos normalizados</h3>
+
+<p style="margin: 0 0 1rem;">Para homogeneizar la información, la TGSS utiliza códigos estandarizados:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código 0002:</strong> Horas extraordinarias comunes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código 0003:</strong> Horas extraordinarias de fuerza mayor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código 0007:</strong> Salarios de tramitación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código 0060:</strong> Vacaciones retribuidas y no disfrutadas.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Sujetos obligados y exentos</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Obligados:</strong> Empresarios de todos los regímenes y sistemas especiales, empresas públicas o privadas con trabajadores por cuenta ajena y trabajadores con base de cotización o cuota fija.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Exentos:</strong> Empleadores del régimen especial de empleados de hogar, empresarios de profesionales taurinos, trabajadores por cuenta propia (autónomos) y autónomos del régimen especial del mar.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Comunicación y justificante</h3>
+
+<p style="margin: 0 0 1rem;">La información se envía a través del sistema RED, el sistema de liquidación directa o SILTRA. Al finalizar el proceso, la aplicación emite un justificante de recepción que contiene:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Datos identificativos de la empresa (razón social, cuenta de cotización y periodo de liquidación).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Datos de cada trabajador (NAF, nombre, conceptos retribuidos abonados, importes y fechas).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Código CEA (código electrónico de autenticidad) para garantizar la validez legal del documento.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resolución de casos prácticos y calendario de liquidaciones</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Plazo de pago de seguros sociales</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situación:</strong> Cristina, responsable de recursos humanos, planea acudir al banco a pagar los seguros sociales el lunes 1 de junio, asumiendo que está dentro de plazo porque el último día del mes (31 de mayo) cae en domingo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Cristina comete un error. Cuando el último día del mes es inhábil (en este caso, domingo), el plazo límite para realizar el pago de forma electrónica se adelanta al día hábil inmediatamente anterior (el viernes 29 de mayo). Al pagar el lunes 1 de junio, la empresa incurre en un retraso y deberá abonar un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">recargo del 10%</strong> sobre el importe total de los seguros sociales, siempre que realice el ingreso dentro del primer mes siguiente al vencimiento.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Límites de las bases de cotización</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situación:</strong> Carolina detecta que la base de cotización de una trabajadora (Patricia) calculada en su nómina es inferior a la que figura en la RNT emitida por la TGSS.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> El desfase se debe a que la nómina de Patricia se calculó con una base de cotización inferior al mínimo legal establecido en las tablas oficiales. El sistema de la seguridad social corrige automáticamente estas anomalías aplicando el límite mínimo correspondiente al grupo de cotización de la trabajadora. Las bases de cotización siempre deben situarse entre los límites mínimos y máximos vigentes.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Calendario de liquidaciones de la seguridad social</h3>
+
+<p style="margin: 0 0 1rem;">Para una correcta gestión de las obligaciones con la seguridad social, se deben dominar los siguientes hitos temporales de carácter mensual:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día 1:</strong> Apertura del periodo de presentación para solicitar la liquidación de las cuotas del mes anterior.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día 22:</strong> Fecha límite para la presentación de liquidaciones mediante la modalidad de cargo en cuenta. <span class="markdown-emphasis">Excepción:</span> En los meses de febrero y diciembre, este plazo se adelanta al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">día 20</strong>.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día 24:</strong> Cierre de oficio por parte de la TGSS de todos los borradores de liquidación que hayan sido generados entre los días 1 y 23 del mes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día 28:</strong> Cierre de oficio por parte de la TGSS de los borradores generados a partir del día 23. <span class="markdown-emphasis">Excepción:</span> En el mes de febrero, este cierre de oficio se adelanta al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">día 26</strong>.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Penúltimo día del mes:</strong> Fecha límite para la presentación de los seguros sociales cuando se utiliza la modalidad de pago electrónico.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Último día del mes:</strong> Fecha límite absoluta para efectuar el ingreso de las cuotas de la seguridad social.</li>
+
+</ul>
+
+</main>
+</body>
+</html>

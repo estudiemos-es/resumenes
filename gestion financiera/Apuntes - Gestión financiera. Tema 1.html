@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión financiera. Tema 1</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión financiera. Tema 1</h1>
+
+<h2>Gestión financiera: el sistema financiero</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El sistema financiero español</h2>
+
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">sistema financiero</strong> se define como el conjunto de mercados, instituciones, intermediarios y medios cuyo objetivo principal es canalizar el ahorro generado por los agentes económicos con superávit hacia aquellos agentes que presentan déficit de fondos. En este esquema, actúa como un puente directo entre los ahorradores y los inversores.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Funciones del sistema financiero</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fomentar, captar y canalizar el ahorro:</strong> Es la función principal. Permite que el dinero de las unidades familiares (ahorradores habituales) llegue a las empresas y al sector público (inversores habituales) para financiar sus proyectos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Facilitar la gestión de cobros y pagos:</strong> Proporciona los mecanismos y la tecnología necesarios para que las transacciones de dinero se realicen de manera fluida y segura.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proporcionar herramientas para la gestión de riesgos:</strong> Ofrece productos y estructuras que permiten a los agentes económicos cubrirse ante posibles pérdidas o incertidumbres financieras.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Composición del sistema financiero</h2>
+
+<p style="margin: 0 0 1rem;">El sistema financiero se estructura en torno a cuatro elementos fundamentales:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercados financieros:</strong> Espacios físicos o virtuales donde se produce el encuentro entre los demandantes y los oferentes de fondos para intercambiar activos financieros y fijar sus precios de forma transparente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instrumentos financieros:</strong> Contratos que representan un activo financiero para quien los adquiere (un derecho de cobro) y un pasivo financiero para quien los emite (una obligación de pago).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instituciones financieras:</strong> Organismos públicos encargados de regular, supervisar y garantizar el correcto funcionamiento y la estabilidad del sistema. La máxima autoridad en España es el Ministerio de Economía, aunque se han transferido competencias de soberanía a instituciones de la Unión Europea como el Banco Central Europeo o el Consejo de Asuntos Económicos y Financieros (ECOFIN).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Intermediarios financieros:</strong> Entidades encargadas de mediar de forma activa entre los agentes con exceso de liquidez y aquellos que necesitan financiación.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Mercados financieros</h2>
+
+<p style="margin: 0 0 1rem;">Los mercados financieros son el núcleo donde se negocian los activos. Para que un mercado funcione de manera óptima, debe cumplir con cinco propiedades esenciales:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Libertad:</strong> Ausencia de barreras u obstáculos tanto para la entrada como para la salida de compradores y vendedores en el mercado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Flexibilidad:</strong> Capacidad de los precios de los activos para reaccionar y adaptarse rápidamente ante cualquier cambio en las condiciones del entorno o de la economía.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Transparencia:</strong> Facilidad y claridad con la que los participantes pueden acceder a la información relevante sobre los activos y las operaciones.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Profundidad:</strong> Se refiere a la existencia de un elevado número de órdenes de compra y de venta para los activos negociados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Amplitud:</strong> Capacidad del mercado para ofrecer una gran variedad y cantidad de activos financieros diferentes.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Funciones de los mercados financieros</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Poner en contacto directo o indirecto a los agentes ahorradores con los inversores.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Fijar los precios de los activos y establecer las condiciones de su intercambio.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Reducir de forma significativa los costes de transacción e intermediación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Garantizar y proporcionar liquidez a los activos financieros para facilitar su venta rápida.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de mercados financieros</h3>
+
+<p style="margin: 0 0 1rem;">Existen diferentes clasificaciones de los mercados según el tipo de activo y sus plazos de vencimiento:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado monetario:</strong> Destinado a la negociación de activos a corto plazo, caracterizados por una elevada liquidez y un riesgo muy reducido.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado de capitales:</strong> Orientado a la negociación de activos a medio y largo plazo, donde los niveles de riesgo suelen ser mayores y la liquidez es más limitada.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado de divisas:</strong> Mercado global que funciona de forma ininterrumpida durante 24 horas al día, 5.5 días a la semana (desde la apertura en Australia el domingo por la tarde hasta el cierre en Nueva York el viernes). Se encarga del intercambio de monedas extranjeras.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado interbancario:</strong> Espacio donde las entidades bancarias se prestan dinero entre sí a plazos muy cortos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado de futuros y opciones:</strong> Mercado de productos derivados donde se negocian contratos de compra o venta de activos a una fecha futura y a un precio previamente acordado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado de deuda pública anotada:</strong> Mercado especializado en la emisión y negociación de los títulos de deuda emitidos por el Estado y las administraciones públicas.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 1: adquisición de vivienda</h2>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> El matrimonio formado por Francisco y Alicia decide adquirir una vivienda en el año 2020 por valor de 220.000 €. Durante ese año, obtuvieron una renta de trabajo de 47.000 €. Además, disponían de 12.000 € en un depósito bancario y un saldo de 25.000 € en su cuenta corriente. Para cubrir el importe restante de la vivienda, solicitaron un préstamo hipotecario.</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis:</strong> Antes de tomar la decisión de compra, Francisco y Alicia actuaban como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">unidades económicas con excedente</strong> financiero, ya que poseían ahorros acumulados en depósitos y cuentas corrientes. Al adquirir la vivienda y comprometer todos sus ahorros, además de solicitar un préstamo hipotecario por la diferencia, su papel cambia radicalmente: pasan a convertirse en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">unidades económicas con déficit</strong> o necesidades de financiación, debido a la deuda adquirida con la entidad bancaria.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Instrumentos financieros</h2>
+
+<p style="margin: 0 0 1rem;">Los instrumentos financieros son títulos que facilitan el trasvase de fondos desde los ahorradores hacia los inversores. Tienen una naturaleza doble según el punto de vista desde el que se analicen:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desde el punto de vista del inversor (activo):</strong> Representa un derecho de cobro o de propiedad sobre los flujos futuros que genere el emisor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desde el punto de vista del emisor (pasivo):</strong> Representa una obligación de pago o devolución de los fondos captados, junto con sus intereses.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Características desde el punto de vista del inversor</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgo:</strong> Probabilidad de que el emisor del título no pueda cumplir con sus obligaciones de pago en la fecha de vencimiento acordada. Existe una relación directa entre el riesgo y la rentabilidad: a mayor riesgo, el inversor exigirá una mayor rentabilidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rentabilidad:</strong> Compensación o recompensa económica (generalmente en forma de intereses o dividendos) que recibe el tenedor del activo por asumir el riesgo de la inversión y ceder su dinero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Liquidez:</strong> Capacidad y rapidez con la que un activo financiero puede transformarse en dinero en efectivo sin sufrir una pérdida significativa en su valor real. Existe una relación inversa entre la liquidez y la rentabilidad: los activos más líquidos suelen ofrecer menores rentabilidades.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Características desde el punto de vista del emisor</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coste de financiación:</strong> Representa la tasa de interés o el coste total que debe asumir la entidad emisora para captar los recursos de los inversores. Es la contrapartida de la rentabilidad del inversor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plazo:</strong> Periodo de tiempo estipulado durante el cual el emisor dispondrá de los fondos antes de tener que devolverlos. Es la contrapartida de la liquidez del inversor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ausencia de riesgo de insolvencia:</strong> Para el emisor del título no existe el riesgo de insolvencia sobre su propio activo, ya que este representa una obligación de pago y no un derecho de cobro.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación de los instrumentos financieros</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instrumentos financieros primarios:</strong> Son aquellos emitidos de forma directa por las unidades económicas demandantes de recursos (como empresas o el sector público) para captar fondos de los ahorradores sin intermediación activa en la creación del título.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instrumentos financieros secundarios:</strong> Son emitidos directamente por los intermediarios financieros (como los bancos) con el fin de captar fondos del público para, posteriormente, utilizarlos en la concesión de financiación a terceros.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Instituciones financieras</h2>
+
+<p style="margin: 0 0 1rem;">El sistema financiero español se organiza de manera sectorial en tres grandes áreas de supervisión y control: el sector bancario, el sector de valores mobiliarios y el sector asegurador.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Instituciones del sector bancario</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Banco Central Europeo (BCE):</strong> Máxima autoridad monetaria de la Unión Europea. Su función principal es definir la política monetaria común, velar por la estabilidad de precios en la eurozona (control de la inflación) y supervisar la solvencia de las entidades de crédito para evitar crisis sistémicas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eurosistema:</strong> Agrupación constituida por el Banco Central Europeo y los bancos centrales nacionales de los países de la Unión Europea que han adoptado el euro como moneda común.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sistema Europeo de Bancos Centrales (SEBC):</strong> Estructura integrada por el Banco Central Europeo y los bancos centrales nacionales de todos los estados miembros de la Unión Europea, independientemente de si han adoptado el euro o no.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Banco de España:</strong> Institución nacional encargada de ejecutar las directrices del Eurosistema y del Banco Central Europeo en territorio español. Entre sus funciones clave destacan la supervisión de las entidades de crédito nacionales, la colaboración con el Tesoro Público en la emisión de deuda del Estado y la gestión de la Central de Información de Riesgos (CIRBE), registro público al que acuden los bancos para analizar la solvencia de los clientes antes de otorgar financiación.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de Garantía de Depósitos (FGD):</strong> Entidad que garantiza la devolución de los depósitos en cuentas corrientes, de ahorro o a plazo fijo de los usuarios de entidades de crédito españolas hasta un límite máximo de 100.000 € por depositante y entidad, en caso de insolvencia o quiebra de la institución bancaria.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Instituciones del sector de valores mobiliarios</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comisión Nacional del Mercado de Valores (CNMV):</strong> Organismo encargado de la supervisión, inspección y control de los mercados de valores españoles y de todos los agentes que operan en ellos. Su objetivo prioritario es garantizar la transparencia de las transacciones, la correcta formación de los precios y la protección activa de los inversores frente a abusos o manipulaciones informativas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo de Garantía de Inversiones (FOGAIN):</strong> Institución destinada a proteger a los clientes de las empresas de servicios de inversión (como sociedades de valores) que entren en un proceso de insolvencia o concurso de acreedores. Garantiza una indemnización de hasta un máximo de 100.000 € por cliente para recuperar los fondos o valores depositados en dicha entidad.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Instituciones del sector asegurador</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Dirección General de Seguros y Fondos de Pensiones (DGSFP):</strong> Órgano administrativo nacional adscrito al Ministerio de Economía que supervisa y controla la actividad de las compañías de seguros y las gestoras de fondos de pensiones. Su misión principal es velar por la solvencia de estas empresas y defender los derechos de los asegurados, beneficiarios y terceros perjudicados mediante la resolución de quejas y reclamaciones.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Intermediarios financieros y su supervisión</h2>
+
+<p style="margin: 0 0 1rem;">Los intermediarios financieros se encargan de canalizar los flujos de dinero y se clasifican según el organismo público responsable de su control y supervisión.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Intermediarios supervisados por el Banco de España</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades bancarias o de depósito:</strong> Instituciones autorizadas para captar fondos del público en forma de depósitos exigibles y utilizarlos para la concesión de préstamos y créditos a terceros. Incluyen a los bancos, las cajas de ahorros y las cooperativas de crédito. Aunque no pueden asumir riesgos de seguros directamente, suelen comercializarlos mediante acuerdos con aseguradoras de su mismo grupo empresarial.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instituto de Crédito Oficial (ICO):</strong> Banco público nacional que ofrece financiación de manera indirecta colaborando con las entidades financieras comerciales a través de la mediación de las denominadas Líneas ICO.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades de pago:</strong> Personas jurídicas autorizadas para prestar y ejecutar de manera directa servicios de pago y cobro en nombre de sus clientes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Establecimientos financieros de crédito (EFC):</strong> Entidades especializadas en la concesión de crédito que no pueden captar depósitos del público. Su actividad se centra en operaciones específicas como el arrendamiento financiero (<span class="markdown-emphasis">leasing</span>), el anticipo de facturas (<span class="markdown-emphasis">factoring</span>) o la concesión de avales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades de dinero electrónico:</strong> Empresas autorizadas para emitir medios de pago en soporte electrónico (tarjetas prepago o software) que representan un crédito exigible frente al emisor y son aceptados por comercios distintos a la entidad emisora.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedades de tasación:</strong> Empresas de servicios auxiliares encargadas de la valoración e informe de bienes inmuebles, actividad requerida obligatoriamente para la formalización de préstamos hipotecarios.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedades de garantía recíproca (SGR):</strong> Entidades cuyo objeto principal es facilitar el acceso a la financiación de las pequeñas y medianas empresas asociadas mediante la concesión de avales y garantías personales, además de ofrecer asesoramiento financiero especializado.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Intermediarios supervisados por la Comisión Nacional del Mercado de Valores</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Instituciones de inversión colectiva (IIC):</strong> Entidades (como los fondos de inversión) que agrupan las aportaciones de capital de múltiples ahorradores individuales para invertirlas de forma conjunta en mercados de valores mobiliarios bajo una gestión profesionalizada.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Empresas de servicios de inversión (ESI):</strong> Entidades financieras de mediación que facilitan el acceso de los inversores a los mercados de valores, realizando labores de compra, venta y asesoramiento de activos financieros.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondos de capital riesgo:</strong> Entidades orientadas a la toma de participaciones temporales en el capital de empresas no cotizadas, con el fin de reflotarlas, expandirlas o sanearlas para su posterior venta a un precio superior.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Intermediarios supervisados por la Dirección General de Seguros y Fondos de Pensiones</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aseguradores privados:</strong> Compañías de seguros que, mediante el cobro de una prima de seguro periódica, se comprometen a indemnizar o reparar los daños sufridos por el asegurado o beneficiario ante la ocurrencia de un siniestro cubierto por el contrato.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Consorcio de Compensación de Seguros:</strong> Entidad pública empresarial adscrita al Ministerio de Economía que asume funciones singulares en el sector de seguros:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Cubrir riesgos de carácter extraordinario o catastrófico (terremotos, inundaciones, atentados terroristas, etc.).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Asumir el seguro obligatorio de vehículos de las administraciones públicas que lo soliciten o de aquellos vehículos particulares que hayan sido rechazados por las aseguradoras privadas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Actuar como fondo de garantía indemnizando a las víctimas de accidentes de tráfico causados por vehículos que carezcan de seguro obligatorio, vehículos desconocidos o robados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades financieras relacionadas con planes de pensiones:</strong> Entidades encargadas de gestionar el ahorro a largo plazo aportado por los partícipes para cubrir contingencias de jubilación, invalidez, dependencia o fallecimiento, ofreciendo ventajas fiscales reguladas por ley.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación entre intermediarios bancarios y no bancarios</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Intermediarios financieros bancarios:</strong> Son aquellos que tienen la capacidad de crear dinero de forma directa en la economía. Captan depósitos del público y, utilizando el sistema de reserva fraccional, conceden nueva financiación. Ejemplos de estos son los bancos y las cajas de ahorro.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Intermediarios financieros no bancarios:</strong> Son aquellos que actúan como puros mediadores en el trasvase de fondos, pero carecen de la capacidad técnica y legal para crear dinero de forma directa en el sistema financiero.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 2: inversión en acciones</h2>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> En el año 2016, Andrea decide diversificar sus ahorros invirtiendo en acciones de dos sociedades de valores distintas. Invierte un capital de 136.000 € en la Sociedad Agrícola Manzano y 12.000 € en la Sociedad Máquinas Rueda.</p>
+
+<p style="margin: 0 0 1rem;">En mayo de 2021, se producen dos acontecimientos:</p>
+
+<p style="margin: 0 0 1rem;">1. La Sociedad Agrícola Manzano es declarada insolvente de forma oficial. En ese momento, el valor de las acciones de Andrea ascendía a 138.000 €.</p>
+
+<p style="margin: 0 0 1rem;">2. Las acciones de la Sociedad Máquinas Rueda sufren una devaluación en bolsa y pasan a valer 10.000 €, lo que supone una pérdida latente de 2.000 € por fluctuaciones de mercado.</p>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis de coberturas del Fondo de Garantía de Inversiones (FOGAIN):</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Caso de la Sociedad Agrícola Manzano:</strong> Al tratarse de una quiebra e insolvencia declarada de la entidad financiera depositaria, el FOGAIN se activa para proteger al inversor. Sin embargo, el límite máximo de indemnización legal está fijado en 100.000 € por cliente. Como consecuencia, Andrea recuperará únicamente los 100.000 € garantizados, asumiendo una pérdida real de 36.000 € sobre el capital inicialmente aportado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Caso de la Sociedad Máquinas Rueda:</strong> La pérdida de 2.000 € en el valor de las acciones se debe exclusivamente a las oscilaciones y el comportamiento habitual de los precios en los mercados financieros, y no a una situación de insolvencia de la entidad de custodia. Por tanto, esta pérdida patrimonial no se encuentra cubierta por el FOGAIN, debiendo ser asumida en su totalidad por la inversora.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y clasificación de conceptos prácticos</h2>
+
+<p style="margin: 0 0 1rem;">Para afianzar la estructura del sistema financiero, se presenta la clasificación técnica de los principales instrumentos, mercados e intermediarios analizados:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Acciones de una sociedad:</strong> Clasificadas como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">activo financiero</strong> (representan propiedad y derecho de cobro para el tenedor).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta corriente:</strong> Clasificada como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">activo financiero</strong> para el depositante (derecho de disposición inmediata de fondos).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Letras del Tesoro:</strong> Clasificadas como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">activo financiero</strong> de renta fija a corto plazo emitido por el Estado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidad bancaria:</strong> Clasificada como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">intermediario financiero bancario</strong> con capacidad de creación de dinero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bolsa de Madrid:</strong> Clasificada como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">mercado financiero</strong> regulado de capitales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedad de leasing:</strong> Clasificada como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">intermediario financiero no bancario</strong> (establecimiento financiero de crédito).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Compañía de seguros:</strong> Clasificada como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">intermediario financiero no bancario</strong> supervisado por la DGSFP.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Seguro del automóvil:</strong> Clasificado como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">activo financiero</strong> (contrato que otorga derecho a indemnización ante siniestro).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Diferencias clave en mercados de negociación</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado de capitales:</strong> Negociación de activos financieros a medio y largo plazo. Se caracteriza por presentar niveles de liquidez más reducidos y un riesgo potencial más elevado para el inversor.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercado monetario:</strong> Negociación de activos financieros a corto plazo. Se caracteriza por ofrecer una alta liquidez y un riesgo de pérdida de valor muy reducido. Un ejemplo de activo monetario estándar presenta un perfil de riesgo bajo, una rentabilidad fija (por ejemplo, 3,25%) y un plazo de liquidez a corto plazo (un año).</li>
+
+</ul>
+
+</main>
+</body>
+</html>

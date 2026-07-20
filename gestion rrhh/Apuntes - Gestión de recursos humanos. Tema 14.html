@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión de recursos humanos. Tema 14</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión de recursos humanos. Tema 14</h1>
+
+<h2>Cálculo e ingreso de las retenciones de IRPF</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contexto histórico</h2>
+
+<p style="margin: 0 0 1rem;">El Impuesto sobre la Renta de las Personas Físicas (IRPF) en España fue aprobado por las Cortes en el año 1978, aunque previamente ya existían figuras impositivas sobre la renta. En sus orígenes, este impuesto contaba con 28 tramos y sus tipos impositivos oscilaban entre un mínimo del 15% y un máximo del 65,5%.</p>
+
+<p style="margin: 0 0 1rem;">En la actualidad, el IRPF es un impuesto de carácter nacional, pero presenta particularidades territoriales. Existen regímenes propios en los territorios históricos del País Vasco (Vizcaya, Guipúzcoa y Álava) y en Navarra, así como especialidades y excepciones aplicables en Ceuta y Melilla.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Comunicación de datos al pagador: modelo 145</h2>
+
+<p style="margin: 0 0 1rem;">Cuando un trabajador se incorpora a una empresa, debe cumplimentar el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 145</strong>. Este documento, diseñado por la Agencia Tributaria, sirve para que el empleado comunique su situación personal y familiar al empleador. Con esta información, la empresa calcula el porcentaje de retención que debe aplicar en la nómina.</p>
+
+<p style="margin: 0 0 1rem;">La empresa tiene la obligación de archivar y conservar este documento para ponerlo a disposición de la Agencia Tributaria si esta lo solicita, por lo que no requiere una tramitación directa o envío inmediato a la administración tras su firma.</p>
+
+<p style="margin: 0 0 1rem;">El modelo 145 se estructura en los siguientes 7 apartados:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del perceptor que efectúa la comunicación</strong>: El trabajador debe rellenar sus datos personales y marcar una de las tres casillas disponibles, según la definición que mejor se ajuste a su situación familiar actual.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Hijos y otros descendientes</strong>: Se detallan los hijos u otros descendientes menores de 25 años (o mayores de esa edad si tienen reconocida una discapacidad) que convivan con el perceptor. Se debe indicar el año de nacimiento y el grado de discapacidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ascendientes</strong>: Se reflejan los ascendientes mayores de 65 años (o menores de esa edad si son discapacitados) que convivan con el trabajador. Se requiere indicar su año de nacimiento y su grado de discapacidad.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pensiones compensatorias</strong>: Se consignan las cantidades anuales que el trabajador está obligado a pagar por decisión judicial en concepto de pensión compensatoria a favor del cónyuge o anualidades por alimentos en favor de los hijos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagos por la adquisición o rehabilitación de la vivienda habitual</strong>: Se marca esta casilla si el trabajador adquirió su vivienda habitual mediante financiación ajena con derecho a deducción antes del 1 de enero de 2013. Esta opción no se puede marcar si los ingresos anuales del perceptor superan los 33.007,20 €.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fecha y firma de la comunicación</strong>: Firma del trabajador que valida la veracidad de los datos aportados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Acuse de recibo</strong>: Firma del pagador (la empresa) que confirma la recepción del documento.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota de interés</span>: El modelo 145 permite consignar un máximo de 4 hijos. Si el trabajador tiene más de 4 hijos, deberá adjuntar una copia adicional del modelo para poder registrar a todos sus descendientes.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Cálculo del tipo de retención y tramos</h2>
+
+<p style="margin: 0 0 1rem;">Las empresas tienen la obligación legal de retener una parte de los ingresos salariales de sus empleados en cada nómina. El porcentaje final de retención se calcula basándose en la situación familiar del empleado y sus ingresos brutos anuales, aplicando una escala de tramos fijada por la Agencia Tributaria.</p>
+
+<p style="margin: 0 0 1rem;">En los contratos de duración igual o inferior a un año, la ley permite aplicar un tipo de retención mínimo del 2%. No obstante, el trabajador puede solicitar voluntariamente a la empresa que se le aplique un porcentaje de retención superior.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tramos de retención del IRPF</h3>
+
+<p style="margin: 0 0 1rem;">La retención se calcula por tramos sobre la base imponible del trabajador:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> De 0 € a 12.450 €: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">19%</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> De 12.450 € a 20.200 €: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">24%</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> De 20.200 € a 35.200 €: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30%</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> De 35.200 € a 60.000 €: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">37%</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Más de 60.000 €: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">45%</strong></li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Reducciones sobre la base imponible</h3>
+
+<p style="margin: 0 0 1rem;">Para ajustar el impuesto a las circunstancias reales del trabajador, se aplican reducciones anuales sobre la base imponible:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Por hijos menores de 25 años que conviven con el perceptor</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Primer hijo: 2.400 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Segundo hijo: 2.700 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Tercer hijo: 4.000 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Cuarto hijo y sucesivos: 4.500 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Por ascendientes convivientes</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Mayores de 65 años: 1.150 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Mayores de 75 años: 2.550 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Por discapacidad</strong>:</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Carácter general: 3.000 € al año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Discapacidad igual o superior al 65%: 9.000 € al año.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">El ajuste definitivo de estas retenciones se realiza al presentar la declaración anual de la renta. Si las retenciones aplicadas durante el año fueron superiores a lo debido, la Agencia Tributaria devolverá la diferencia; si fueron inferiores, el contribuyente deberá pagar la cantidad restante.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Ingreso de retenciones: modelo 111</h2>
+
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 111</strong> es la autoliquidación con la que las empresas y autónomos declaran e ingresan en la Agencia Tributaria el dinero que han retenido a los trabajadores en sus nóminas, así como a otros perceptores.</p>
+
+<p style="margin: 0 0 1rem;">Este modelo consta de 7 apartados diferenciados:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del declarante</strong>: Identificación de la empresa o autónomo mediante etiqueta identificativa o, en su defecto, nombre, apellidos y DNI/NIF.</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Devengo</strong>: Indica el año del ejercicio y el periodo correspondiente (que puede ser un trimestre o un mes concreto).</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Liquidación</strong>: Desglose detallado de las retenciones practicadas por diferentes conceptos, tales como rendimientos del trabajo, rendimientos de actividades económicas, premios de juegos o concursos, ganancias patrimoniales por aprovechamientos forestales y contraprestaciones por cesión de derechos de imagen. El total de la liquidación resulta de sumar todas estas retenciones.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ingreso</strong>: Si el resultado de la liquidación es a ingresar, se detalla el importe y la forma de pago elegida.</p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Declaración negativa</strong>: Se marca en caso de que el resultado de la autoliquidación sea igual a cero.</p>
+
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Complementaria</strong>: Se marca si esta declaración se presenta para corregir o complementar una autoliquidación del mismo periodo presentada previamente.</p>
+
+<p style="margin: 0 0 1rem;">7. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Firma</strong>: Firma del declarante y fecha en la que se realiza la presentación.</p>
+
+<p style="margin: 0 0 1rem;">La presentación del modelo 111 puede realizarse por vía electrónica (mediante certificado electrónico, firma digital avanzada o Cl@ve) o bien utilizando un documento impreso generado a través del servicio de impresión oficial de la Agencia Tributaria.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Plazos de presentación e ingreso</h2>
+
+<p style="margin: 0 0 1rem;">La periodicidad con la que se debe presentar el modelo 111 varía según la tipología del obligado tributario:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presentación mensual</strong>: Obligatoria para grandes empresas y administraciones públicas que cuenten con un presupuesto anual superior a los 6 millones de euros. La presentación debe realizarse dentro de los primeros 20 días de cada mes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presentación trimestral</strong>: Aplicable a sociedades anónimas o limitadas (que no sean grandes empresas), personas físicas, administraciones públicas que no superen el límite presupuestario y demás obligados tributarios. Se presenta dentro de los 20 días posteriores al vencimiento de cada trimestre natural.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota sobre la domiciliación</span>: Si el pago trimestral se realiza mediante domiciliación bancaria, el plazo de presentación se acorta, finalizando el día 15 del mes correspondiente.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen anual de retenciones: modelo 190</h2>
+
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 190</strong> funciona como el resumen anual informativo de las retenciones declaradas mensualmente o trimestralmente a través de los modelos 111.</p>
+
+<p style="margin: 0 0 1rem;">El modelo consta de una carátula con datos generales y hojas anexas con el desglose de los perceptores:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del declarante</strong>: Información identificativa de la empresa o autónomo.</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Persona y teléfono de contacto</strong>: Datos para resolver dudas sobre la declaración.</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Devengo</strong>: Año del ejercicio anual que se declara.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modalidad de presentación</strong>: Indica si se utiliza el formato impreso generado por el sistema de la Agencia Tributaria o la vía telemática.</p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resumen de los datos</strong>: Suma global de las percepciones y retenciones del año.</p>
+
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Declaración complementaria o sustitutiva</strong>: Casilla para rectificar resúmenes anuales anteriores del mismo ejercicio.</p>
+
+<p style="margin: 0 0 1rem;">7. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fecha y firma</strong>.</p>
+
+<p style="margin: 0 0 1rem;">En las hojas de detalle de los perceptores se debe identificar a cada trabajador o colaborador con su nombre, apellidos, NIF y una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">clave de percepción</strong> que identifica el origen de los ingresos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Clave A</strong>: Rendimientos del trabajo por cuenta ajena.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Clave C</strong>: Prestaciones o subsidios por desempleo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Clave G</strong>: Rendimientos derivados de actividades profesionales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Clave H</strong>: Rendimientos de actividades agrícolas, ganaderas, forestales y actividades empresariales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Clave I</strong>: Rendimientos procedentes de la propiedad intelectual, industrial o del arrendamiento y subarrendamiento de bienes inmuebles.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Adicionalmente, se pueden requerir <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subclaves</strong> dentro de estas categorías para especificar con mayor precisión la naturaleza de las retribuciones. El plazo de presentación del modelo 190 comprende desde el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">1 de enero al 31 de enero</strong> del año posterior al ejercicio declarado.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Certificado de retenciones</h2>
+
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">certificado de retenciones</strong> es un documento anual emitido por el pagador donde se certifican todos los rendimientos abonados al trabajador y las retenciones de IRPF que se le practicaron durante el año. Este documento es indispensable para que el empleado pueda confeccionar su declaración de la renta y cotejar que los datos del borrador fiscal de la Agencia Tributaria son correctos.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contenido del certificado</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del perceptor</strong>: Nombre, apellidos y NIF del trabajador.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del pagador</strong>: NIF, nombre y apellidos (si es autónomo) o razón social (si es una empresa).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ejercicio</strong>: Año al que corresponden los datos declarados.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desglose de rendimientos</strong>: Detalle diferenciado de las cuantías abonadas (retribuciones dinerarias, retribuciones en especie, atrasos, etc.).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fecha y firma</strong>: Firmado únicamente por el pagador para otorgarle validez legal como justificante.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Las empresas tienen la obligación legal de entregar este certificado a sus trabajadores. En caso de que no lo faciliten, el trabajador puede solicitar la información directamente a la Agencia Tributaria.</p>
+
+<p style="margin: 0 0 1rem;">Es responsabilidad del trabajador comunicar datos verídicos y mantenerlos actualizados (domicilio, cuenta bancaria, cambios familiares) a través del modelo 145. Comunicar datos falsos o erróneos no exime de las obligaciones fiscales; el trabajador tendrá que regularizar su situación al hacer la declaración de la renta y se expone a sanciones económicas consistentes en un porcentaje sobre la cantidad que se dejó de retener de forma indebida.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos y resolución</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Situación familiar especial en el modelo 145</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Javier se incorpora como programador informático a una nueva empresa. Tiene una discapacidad auditiva reconocida del 33%. Su esposa, Pandora, trabaja de forma esporádica con un contrato fijo-discontinuo, percibiendo unos ingresos anuales de 1.200 €.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: Al rellenar el apartado 1 del modelo 145, Javier debe marcar la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">casilla número 2</strong>, correspondiente a contribuyentes casados y no separados legalmente cuyo cónyuge no obtiene rentas superiores a 1.500 € anuales. Al marcar esta opción, es obligatorio indicar el DNI de su esposa en la casilla contigua. Asimismo, deberá hacer constar su grado de discapacidad del 33% para acogerse a las reducciones correspondientes.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Regularización de las retenciones de IRPF</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Una empresa de conservas con 83 trabajadores traslada una queja a su gestoría debido a que los empleados experimentaron una retención de IRPF inusualmente alta en las nóminas de noviembre y diciembre del año anterior.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: Las empresas suelen regularizar los tipos de retención de IRPF en los meses de noviembre y diciembre para ajustar posibles desviaciones anuales. Para evitar variaciones bruscas de retención a final de año, el gestor debe realizar revisiones y recalcular el IRPF de forma trimestral (en los meses de abril, julio y octubre), contrastando las nóminas con los modelos 145 actualizados y atendiendo a las solicitudes de incremento voluntario de retención hechas por los empleados.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico de la unidad: Retención en indemnizaciones por despido</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Determinar si las indemnizaciones por finalización de contrato o despido deben tributar por IRPF.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: Por norma general, las indemnizaciones por finalización de contrato cotizan por IRPF al considerarse rendimientos del trabajo. No obstante, en los casos de despido (como el de Adrián tras un acto de conciliación), la indemnización legalmente establecida está exenta de tributación por IRPF hasta un límite máximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">180.000 €</strong>. Si la indemnización pactada supera este límite (por ejemplo, una indemnización de 196.000 €), la cuantía excedente (16.000 €) sí estará sujeta a retención por IRPF.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y repaso final</h2>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 145</strong> es el documento interno mediante el cual el trabajador comunica sus datos familiares y personales a la empresa para que esta calcule la retención de IRPF adecuada.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El cálculo del porcentaje de retención se realiza por <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">tramos progresivos</strong> (desde el 19% hasta el 45%) aplicados sobre la base imponible, la cual se aminora mediante deducciones por hijos, ascendientes y discapacidades.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 111</strong> sirve para ingresar periódicamente (mensual o trimestralmente) las retenciones aplicadas a los trabajadores.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 190</strong> es la declaración informativa anual que resume todos los modelos 111 presentados durante el ejercicio fiscal y se presenta en el mes de enero.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">certificado de retenciones</strong> es un documento obligatorio que expide la empresa para que el trabajador pueda comprobar y realizar su declaración anual de la renta.</li>
+
+</ul>
+
+</main>
+</body>
+</html>

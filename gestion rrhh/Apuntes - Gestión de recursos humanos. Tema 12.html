@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuntes - Gestión de recursos humanos. Tema 12</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+</head>
+<body>
+<main class="sheet">
+<h1>Apuntes - Gestión de recursos humanos. Tema 12</h1>
+
+<h2>Cálculo y confección de nóminas</h2>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción a la gestión de nóminas</h2>
+
+<p style="margin: 0 0 1rem;">En la confección de una nómina intervienen diversos conceptos retributivos. Para calcularlos correctamente, es necesario conocer sus peculiaridades, tales como si cotizan por el total de su importe o únicamente por un porcentaje determinado.</p>
+
+<p style="margin: 0 0 1rem;">Existen diferentes tipos de nóminas según la situación del trabajador, distinguiendo entre retribución mensual o diaria, pagas extraordinarias prorrateadas o abonadas en meses específicos, nóminas con anticipos, y situaciones especiales como la huelga, la incapacidad temporal o el trabajo a tiempo parcial.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Nómina de retribución mensual</h2>
+
+<p style="margin: 0 0 1rem;">La retribución mensual se aplica a los trabajadores pertenecientes a los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">grupos de cotización del 1 al 7</strong>.</p>
+
+<p style="margin: 0 0 1rem;">Al confeccionar una nómina de retribución mensual, el periodo de liquidación que se indica en la casilla de días es siempre de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 días</strong> (siempre que el empleado haya trabajado todo el mes), independientemente de si el mes concreto tiene 28, 29 o 31 días. En las fechas del periodo de liquidación se detalla el rango real (por ejemplo, del 1 al 31 de agosto).</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo práctico de retribución mensual</h3>
+
+<p style="margin: 0 0 1rem;">Un auxiliar administrativo (grupo de cotización del 1 al 7) presenta los siguientes datos para su nómina:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aportación al régimen general:</strong> 4,70%</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aportación MEI (Mecanismo de Equidad Intergeneracional):</strong> 0,13%</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aportación desempleo:</strong> 1,60%</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aportación a formación profesional (FP):</strong> 0,10%</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong> 1160 €/mes</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de antigüedad:</strong> 35 €/mes</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IRPF:</strong> 12%</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagas extraordinarias:</strong> Dos pagas de 1160 € cada una.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Pasos para el cálculo:</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el total devengado:</strong> Se suman los conceptos salariales del mes.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total devengado = Salario base + Plus de antigüedad = 1160 € + 35 € = 1195 €</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la prorrata de las pagas extraordinarias:</strong> Las pagas extras se cotizan mensualmente de forma prorrateada durante las 12 mensualidades del año, aunque se cobren en los meses fijados (habitualmente julio y diciembre).</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total pagas extras = 2 × 1160 € = 2320 €</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Prorrata mensual = <span class="formula-frac"><span class="num">2320 €</span><span class="den">12 meses</span></span> = 193,33 €/mes</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la base de cotización de contingencias comunes (BCCC):</strong> Se obtiene sumando el total devengado (excluyendo conceptos no cotizables si los hubiera) y la prorrata de las pagas extras.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCC = 1195 € + 193,33 € = 1388,33 €</span></p>
+
+<p style="margin: 0 0 1rem;">Sobre esta base se aplicarán los porcentajes de aportación del trabajador a la Seguridad Social.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la retención por IRPF:</strong> Se aplica el porcentaje correspondiente sobre el total devengado.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Retención IRPF = 1195 € × 12% = 143,40 €</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Nómina de retribución diaria</h2>
+
+<p style="margin: 0 0 1rem;">La retribución diaria se aplica a los trabajadores de los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">grupos de cotización del 8 al 11</strong>.</p>
+
+<p style="margin: 0 0 1rem;">A diferencia de la retribución mensual, en este tipo de nómina sí se tiene en cuenta el número real de días que tiene el mes para el cálculo de los días de liquidación (28, 29, 30 o 31 días).</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo práctico de retribución diaria</h3>
+
+<p style="margin: 0 0 1rem;">Un operario de producción (grupo de cotización 9) presenta los siguientes datos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong> 38 €/día</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de asistencia:</strong> 5,10 €/día</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IRPF:</strong> 10%</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días del mes de liquidación:</strong> 30 días</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aportaciones del trabajador:</strong> Porcentajes básicos (Contingencias comunes y MEI: 4,83%, Desempleo: 1,60%, Formación Profesional: 0,10%).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Pasos para el cálculo:</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el total devengado:</strong> Se multiplican los conceptos diarios por el número de días del mes.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong>
+<span class="formula-inline">38 €/día × 30 días = 1140 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de asistencia:</strong>
+<span class="formula-inline">5,10 €/día × 30 días = 153 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="formula-block">Total devengado = 1140 € + 153 € = 1293 €</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las bases de cotización:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Base de cotización de contingencias comunes (BCCC):</strong> Suma del salario base, complementos salariales y la prorrata de pagas extras (en este supuesto no se indican pagas extras, por lo que es 0 €).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCC = 1293 € + 0 € = 1293 €</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Base de cotización de contingencias profesionales (BCCP):</strong> Es igual a la BCCC más las horas extraordinarias (al no haber horas extras, ambas bases coinciden).</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCP = BCCC + Horas extras = 1293 € + 0 € = 1293 €</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las aportaciones del trabajador a la Seguridad Social:</strong> Se aplican sobre la BCCC.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contingencias comunes y MEI (4,83%):</strong>
+<span class="formula-inline">1293 € × 4,83% = 62,45 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desempleo (1,60%):</strong>
+<span class="formula-inline">1293 € × 1,60% = 20,69 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Formación profesional (0,10%):</strong>
+<span class="formula-inline">1293 € × 0,10% = 1,29 €</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la retención por IRPF:</strong> Se aplica sobre el total devengado.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Retención IRPF = 1293 € × 10% = 129,30 €</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Cálculo de nóminas con pagas extraordinarias prorrateadas</h2>
+
+<p style="margin: 0 0 1rem;">Prorratear las pagas extraordinarias consiste en dividir el importe de las dos pagas extras que corresponden por ley entre los 12 meses del año. Esto incrementa el salario bruto mensual percibido por el trabajador.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo práctico</h3>
+
+<p style="margin: 0 0 1rem;">Datos del trabajador:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong> 1160 €/mes</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de antigüedad:</strong> 35 €/mes</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagas extras:</strong> Dos pagas de 1160 € cada una, prorrateadas mensualmente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deducciones del trabajador:</strong> Contingencias comunes (4,83%), Desempleo (1,60%), Formación Profesional (0,10%), IRPF (12%).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Pasos para el cálculo:</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la prorrata de pagas extras:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Prorrata = <span class="formula-frac"><span class="num">2 × 1160 €</span><span class="den">12 meses</span></span> = 193,33 €/mes</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el total devengado:</strong> Al estar prorrateadas, la prorrata se suma directamente al devengo mensual.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total devengado = Salario base + Plus de antigüedad + Prorrata de pagas extras</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total devengado = 1160 € + 35 € + 193,33 € = 1388,33 €</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las bases de cotización:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<span class="formula-block">BCCC = 1160 € + 35 € + 193,33 € = 1388,33 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="formula-block">BCCP = BCCC = 1388,33 € (al no haber horas extras)</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el líquido a percibir:</strong> Se restan las deducciones de Seguridad Social e IRPF al total devengado.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Líquido a percibir = Total devengado - Total deducciones</span></p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la base sujeta a IRPF:</strong> Coincide con el total devengado (<span class="formula-inline">1388,33 €</span>), sobre la cual se aplica el 12% de retención.</p>
+
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aportaciones de la empresa:</strong> Se calculan aplicando los porcentajes correspondientes (por ejemplo, 24,27%, 1,95%, 5,50%, 0,60% y 0,20%) sobre la BCCP (<span class="formula-inline">1388,33 €</span>).</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Cálculo de nóminas con paga extra no prorrateada</h2>
+
+<p style="margin: 0 0 1rem;">Cuando las pagas extras no se prorratean en las 12 mensualidades, se abonan íntegramente en los meses correspondientes (por ejemplo, junio y diciembre).</p>
+
+<p style="margin: 0 0 1rem;">Para evitar que la cotización a la Seguridad Social se dispare de forma desproporcionada en esos meses de cobro, la cotización por las pagas extras se realiza de manera prorrateada mes a mes a lo largo de todo el año en las nóminas ordinarias.</p>
+
+<p style="margin: 0 0 1rem;">Por este motivo, cuando se emite la nómina específica de la paga extra:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No se cotiza a la Seguridad Social</strong> (ya se ha cotizado mensualmente).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Solo se aplica la retención por IRPF</strong>.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo de nómina de paga extra de verano</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Importe de la paga extra (Total devengado):</strong> 1160 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IRPF aplicable:</strong> 12%</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Pasos para el cálculo:</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deducción por IRPF:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Retención IRPF = 1160 € × 12% = 139,20 €</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el líquido a percibir:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Líquido a percibir = Total devengado - Retención IRPF = 1160 € - 139,20 € = 1020,80 €</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Impacto de la huelga en la nómina</h2>
+
+<p style="margin: 0 0 1rem;">El ejercicio del derecho a huelga suspende el contrato de trabajo. Esto significa que el empleador no tiene la obligación de abonar el salario correspondiente a los días de huelga, y dichos días se descuentan proporcionalmente de todos los conceptos retributivos, incluyendo el salario base, los complementos salariales y la prorrata de las pagas extraordinarias.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico: Huelga de dos días</h3>
+
+<p style="margin: 0 0 1rem;">Martina, economista (grupo de cotización 1, contrato indefinido), realiza una huelga de dos días (13 y 14 de abril). Su retribución mensual habitual para un mes de 30 días es:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong> 1800 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de idiomas:</strong> 150 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de antigüedad:</strong> 90 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de transporte:</strong> 100 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagas extras:</strong> Dos pagas de 1800 € cada una.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IRPF:</strong> 15%</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución y recálculo de conceptos por 28 días trabajados:</h3>
+
+<p style="margin: 0 0 1rem;">Para calcular la nómina reducida por los dos días de huelga, se calcula la parte proporcional multiplicando cada concepto por la fracción de días trabajados (28 de un total de 30 días):</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong>
+<span class="formula-inline">1800 € × <span class="formula-frac"><span class="num">28</span><span class="den">30</span></span> = 1680 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de idiomas:</strong>
+<span class="formula-inline">150 € × <span class="formula-frac"><span class="num">28</span><span class="den">30</span></span> = 140 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de antigüedad:</strong>
+<span class="formula-inline">90 € × <span class="formula-frac"><span class="num">28</span><span class="den">30</span></span> = 84 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de transporte:</strong>
+<span class="formula-inline">100 € × <span class="formula-frac"><span class="num">28</span><span class="den">30</span></span> = 93,33 €</span></li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Cálculo de nómina con incapacidad temporal</h2>
+
+<p style="margin: 0 0 1rem;">La incapacidad temporal (IT) es la situación en la que un trabajador no puede realizar su actividad laboral debido a una enfermedad o accidente y recibe asistencia sanitaria. Se divide en dos tipos:</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contingencias comunes</h3>
+
+<p style="margin: 0 0 1rem;">Hace referencia a enfermedades comunes o accidentes no laborales (por ejemplo, una gripe o una lesión deportiva en el tiempo libre).</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subsidio económico:</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días 1 al 3 de la baja:</strong> No se percibe prestación económica (0% de la base reguladora). El día que se produce la baja no se considera trabajado en contingencias comunes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días 4 al 20 de la baja:</strong> Se percibe el 60% de la base reguladora.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A partir del día 21 de la baja:</strong> Se percibe el 75% de la base reguladora.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fórmula de la Base Reguladora (BR):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BR = <span class="formula-frac"><span class="num">Base de cotización por contingencias comunes del mes anterior</span><span class="den">Número de días cotizados en el mes anterior</span></span></span></p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ejemplo práctico de contingencias comunes</h4>
+
+<p style="margin: 0 0 1rem;">Un trabajador del grupo 1 está de baja por enfermedad común del 5 de abril al 30 de abril (26 días de baja). En marzo cotizó una BCCC de 1800 € por 30 días. Su salario ordinario es de 1500 € de salario base, 50 € de plus de responsabilidad y dos pagas extras no prorrateadas.</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la Base Reguladora (BR):</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BR = <span class="formula-frac"><span class="num">1800 €</span><span class="den">30 días</span></span> = 60 €/día</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el importe de la prestación por los días de baja:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días 5 a 7 de abril (3 días):</strong>
+<span class="formula-inline">0 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días 8 a 19 de abril (12 días):</strong>
+<span class="formula-inline">60% de la BR = 60% × 60 €/día × 12 días = 432 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días 20 a 30 de abril (11 días):</strong>
+<span class="formula-inline">75% de la BR = 75% × 60 €/día × 11 días = 495 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total de la prestación por IT:</strong>
+<span class="formula-inline">432 € + 495 € = 927 €</span></li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contingencias profesionales</h3>
+
+<p style="margin: 0 0 1rem;">Hace referencia a accidentes de trabajo o enfermedades profesionales (por ejemplo, una lesión en la fábrica).</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subsidio económico:</strong> Se percibe el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">75% de la base reguladora desde el primer día de la baja</strong>. El día en que ocurre el accidente se considera día trabajado y es abonado íntegramente por la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fórmula de la Base Reguladora (BR):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BR = <span class="formula-frac"><span class="num">Base de cotización por contingencias profesionales del mes anterior - Horas extraordinarias del mes anterior</span><span class="den">Número de días cotizados en el mes anterior</span></span> + <span class="formula-frac"><span class="num">Horas extraordinarias del año anterior</span><span class="den">365 días</span></span></span></p>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Ejemplo práctico de contingencias profesionales</h4>
+
+<p style="margin: 0 0 1rem;">Un trabajador del grupo 1 sufre un accidente laboral y está de baja del 5 al 30 de abril. En marzo cotizó por contingencias profesionales 1800 € (30 días) y acumuló 183 € de horas extras el año anterior. Su salario es de 1500 € de salario base, 50 € de plus de responsabilidad y dos pagas extras no prorrateadas.</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la Base Reguladora (BR):</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BR = <span class="formula-frac"><span class="num">1800 €</span><span class="den">30 días</span></span> + <span class="formula-frac"><span class="num">183 €</span><span class="den">365 días</span></span> = 60 €/día + 0,50 €/día = 60,50 €/día</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la prestación por IT (del 6 al 30 de abril = 25 días de baja efectiva):</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Prestación = 60,50 €/día × 25 días × 75% = 1134,38 €</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el total devengado en el mes:</strong> Se suma la retribución de los días trabajados (del 1 al 5 de abril, equivalentes a 5 días) más la prestación por IT.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días trabajados:</strong>
+<span class="formula-inline"><span class="formula-frac"><span class="num">1500 € + 50 €</span><span class="den">30 días</span></span> × 5 días = 258,33 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="formula-block">Total devengado = 258,33 € + 1134,38 € = 1392,71 €</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bases de cotización durante la IT:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Base de cotización de contingencias comunes:</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Días trabajados y pluses: <span class="formula-inline">258,33 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Parte proporcional de pagas extras de los días trabajados: <span class="formula-inline">(<span class="formula-frac"><span class="num">1500 € × 2</span><span class="den">12</span></span>) × <span class="formula-frac"><span class="num">5</span><span class="den">30</span></span> = 41,67 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Base de cotización correspondiente al periodo de IT (se mantiene la cotización de la base del mes anterior proporcional a los 25 días de baja): <span class="formula-inline">60 €/día × 25 días = 1500 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="formula-block">Total BCCC = 258,33 € + 41,67 € + 1500 € = 1800 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Base de cotización de contingencias profesionales:</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Días trabajados y parte de pagas extras: <span class="formula-inline">258,33 € + 41,67 € = 300 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;"> Base de cotización por IT del periodo de baja: <span class="formula-inline">60,50 €/día × 25 días = 1512,50 €</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="formula-block">Total BCCP = 300 € + 1512,50 € = 1812,50 €</span></li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contratos de trabajo a tiempo parcial</h2>
+
+<p style="margin: 0 0 1rem;">Para calcular la nómina de un trabajador a tiempo parcial, se deben calcular las retribuciones en proporción a las horas trabajadas en comparación con la jornada completa.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico: Socorrista de piscina</h3>
+
+<p style="margin: 0 0 1rem;">Mario trabaja como socorrista a tiempo parcial. Su jornada es de 5 horas al día, de lunes a viernes (frente a las 8 horas de la jornada completa). Los datos de su contrato son:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base a jornada completa:</strong> 1150 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de asistencia:</strong> 3 €/día laborable</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mes de cálculo:</strong> Julio de 2021 (cuenta con 22 días laborables).</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Pasos para el cálculo:</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las horas totales del mes a jornada completa:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Horas jornada completa = 22 días laborables × 8 horas/día = 176 horas</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las horas reales de trabajo de Mario:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Horas de Mario = 22 días laborables × 5 horas/día = 110 horas</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el precio de la hora de trabajo:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Precio hora = <span class="formula-frac"><span class="num">1150 €</span><span class="den">176 horas</span></span> = 6,53 €/hora</span></p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el salario base adaptado a su jornada parcial:</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Salario base de Mario = 110 horas × 6,53 €/hora = 718,30 €</span></p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular el plus de asistencia:</strong> Se aplica sobre los días laborables del mes.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Plus de asistencia = 3 €/día × 22 días = 66 €</span></p>
+
+<p style="margin: 0 0 1rem;">*Nota: En los contratos a tiempo parcial existen bases mínimas de cotización por hora según el grupo de cotización que se deben respetar por ley.*</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Gestión de anticipos en la nómina</h2>
+
+<p style="margin: 0 0 1rem;">Cuando un trabajador solicita un anticipo de su salario, la empresa le entrega la cantidad solicitada de manera íntegra (sin aplicar retenciones en ese momento). Posteriormente, al cerrar la nómina mensual, se debe regularizar esta situación.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reflejo en la nómina:</strong> El importe anticipado se incluye en el apartado de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">deducciones</strong> bajo el concepto de &quot;anticipos&quot;.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del líquido:</strong> El anticipo se suma al resto de deducciones (Seguridad Social e IRPF) para restarse del total devengado.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Líquido a percibir = Total devengado - Deducciones Seguridad Social - Retención IRPF - Anticipo</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bases de cotización:</strong> Las bases de cotización (BCCC y BCCP) no varían debido al anticipo, ya que se calcula la cotización sobre el salario devengado completo del mes, independientemente de que una parte se haya cobrado por adelantado.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resolución del caso práctico: nómina con horas extraordinarias</h2>
+
+<p style="margin: 0 0 1rem;">A continuación se detalla el cálculo de la nómina de Jorge, quien además de su salario ordinario ha realizado horas extraordinarias durante el mes de liquidación.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Datos del caso:</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario base:</strong> 1160 €/mes</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plus de antigüedad:</strong> 35 €/mes</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prorrata mensual de pagas extras:</strong> 193,33 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extraordinarias no estructurales:</strong> 60 €</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extraordinarias de fuerza mayor:</strong> 15 €</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cálculos detallados:</h3>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la Base de Cotización de Contingencias Comunes (BCCC):</strong></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCC = Salario base + Plus de antigüedad + Prorrata de pagas extras</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCC = 1160 € + 35 € + 193,33 € = 1388,33 €</span></p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular la Base de Cotización de Contingencias Profesionales (BCCP):</strong> Incorpora el valor de todas las horas extraordinarias realizadas.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCP = BCCC + Horas extras no estructurales + Horas extras de fuerza mayor</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">BCCP = 1388,33 € + 60 € + 15 € = 1463,33 €</span></p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las deducciones del trabajador por horas extras:</strong> Las horas extras tienen un tipo de cotización específico para el trabajador según su tipología:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extras no estructurales (tipo del 4,70%):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">60 € × 4,70% = 2,82 €</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extras de fuerza mayor (tipo del 2,00%):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">15 € × 2,00% = 0,30 €</span></p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Calcular las aportaciones de la empresa por horas extras:</strong></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extras no estructurales (tipo del 23,60%):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">60 € × 23,60% = 14,16 €</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horas extras de fuerza mayor (tipo del 12,00%):</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">15 € × 12,00% = 1,80 €</span></p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen de conceptos clave</h2>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo de liquidación mensual:</strong> Se establece siempre en 30 días para los grupos de cotización del 1 al 7, con independencia de la duración real del mes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo de liquidación diaria:</strong> Se calcula por los días reales del mes para los grupos de cotización del 8 al 11.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagas extras prorrateadas:</strong> Se dividen entre 12 y se suman mensualmente al total devengado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagas extras no prorrateadas:</strong> Solo tributan por IRPF en la nómina del mes de cobro, ya que su cotización a la Seguridad Social se realiza de forma prorrateada en las nóminas de todo el año.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huelga:</strong> Los días de huelga suspenden el contrato de trabajo y se descuentan de forma proporcional de todos los conceptos de la nómina.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incapacidad temporal por contingencias comunes:</strong> No se cobra los primeros 3 días; se percibe el 60% de la BR del día 4 al 20, y el 75% a partir del día 21. El día de la baja no cuenta como trabajado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incapacidad temporal por contingencias profesionales:</strong> Se percibe el 75% de la BR desde el primer día de baja efectiva. El día del accidente se considera trabajado y es abonado por la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Anticipos:</strong> Se restan en el apartado de deducciones de la nómina y no modifican las bases de cotización.</li>
+
+</ul>
+
+</main>
+</body>
+</html>
