@@ -56,9 +56,64 @@ html, body {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+/* Note navigation buttons */
+.note-nav {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.note-nav a {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #111827;
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, .16);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .22);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+}
+.note-nav a:hover,
+.note-nav a:focus-visible {
+  background: #0f766e;
+  outline: none;
+}
+.sheet {
+  padding-top: 86px !important;
+}
+@media (max-width: 700px) {
+  .note-nav {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .note-nav a {
+    min-height: 38px;
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+  .sheet {
+    padding-top: 72px !important;
+  }
+}
 </style>
 </head>
 <body>
+<nav class="note-nav" aria-label="Navegacion del apunte"><a href="../index.html">MENU</a><a href="Apuntes%20-%20Gesti%C3%B3n%20financiera.%20Tema%204.html">SIGUIENTE</a></nav>
 <main class="sheet">
 <h1>Apuntes - Gestión financiera. Tema 3</h1>
 
@@ -401,6 +456,7 @@ html, body {
 </main>
 </body>
 </html>
+
 
 
 
