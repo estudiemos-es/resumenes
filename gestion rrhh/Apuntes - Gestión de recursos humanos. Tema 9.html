@@ -1,61 +1,91 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión de recursos humanos. Tema 9</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n de recursos humanos. Tema 9</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión de recursos humanos. Tema 9</h1>
+<h1>Apuntes - GestiÃ³n de recursos humanos. Tema 9</h1>
 
-<h2>Apuntes de gestión de recursos humanos: incidencias en la relación laboral</h2>
+<h2>Apuntes de gestiÃ³n de recursos humanos: incidencias en la relaciÃ³n laboral</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción a las modificaciones contractuales</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n a las modificaciones contractuales</h2>
 
-<p style="margin: 0 0 1rem;">El contrato de trabajo representa la relación laboral entre un empleado y una empresa. A lo largo de su vigencia, este documento puede sufrir diversas modificaciones debido a necesidades organizativas, económicas o personales. Estas alteraciones se clasifican principalmente en dos categorías:</p>
+<p style="margin: 0 0 1rem;">El contrato de trabajo representa la relaciÃ³n laboral entre un empleado y una empresa. A lo largo de su vigencia, este documento puede sufrir diversas modificaciones debido a necesidades organizativas, econÃ³micas o personales. Estas alteraciones se clasifican principalmente en dos categorÃ­as:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modificación objetiva:</strong> Es aquella que afecta directamente al objeto del contrato de trabajo. Incluye aspectos como la movilidad funcional, la movilidad geográfica, la suspensión del contrato o cualquier modificación sustancial de las condiciones de trabajo previamente pactadas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ModificaciÃ³n objetiva:</strong> Es aquella que afecta directamente al objeto del contrato de trabajo. Incluye aspectos como la movilidad funcional, la movilidad geogrÃ¡fica, la suspensiÃ³n del contrato o cualquier modificaciÃ³n sustancial de las condiciones de trabajo previamente pactadas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modificación subjetiva:</strong> Es aquella que afecta a los sujetos del contrato, específicamente al empleador. Un ejemplo de esto ocurre cuando un trabajador pasa a estar contratado por otra razón social dentro del mismo grupo de empresas. En esta situación se produce una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subrogación</strong>, lo que significa que el nuevo empleador asume la posición del anterior, estando obligado a respetar la totalidad de las condiciones contractuales preexistentes del trabajador.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ModificaciÃ³n subjetiva:</strong> Es aquella que afecta a los sujetos del contrato, especÃ­ficamente al empleador. Un ejemplo de esto ocurre cuando un trabajador pasa a estar contratado por otra razÃ³n social dentro del mismo grupo de empresas. En esta situaciÃ³n se produce una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subrogaciÃ³n</strong>, lo que significa que el nuevo empleador asume la posiciÃ³n del anterior, estando obligado a respetar la totalidad de las condiciones contractuales preexistentes del trabajador.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Marco normativo de las modificaciones</h2>
 
-<p style="margin: 0 0 1rem;">Para que cualquier modificación del contrato de trabajo sea válida, la empresa debe respetar los límites y procedimientos establecidos por la ley. El marco normativo de referencia está compuesto por:</p>
+<p style="margin: 0 0 1rem;">Para que cualquier modificaciÃ³n del contrato de trabajo sea vÃ¡lida, la empresa debe respetar los lÃ­mites y procedimientos establecidos por la ley. El marco normativo de referencia estÃ¡ compuesto por:</p>
 
 <p style="margin: 0 0 1rem;">1. El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estatuto de los trabajadores</strong>.</p>
 
 <p style="margin: 0 0 1rem;">2. El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">convenio colectivo</strong> aplicable a la empresa o sector.</p>
 
-<p style="margin: 0 0 1rem;">Existen materias que cuentan con un procedimiento de modificación específicamente regulado en el Estatuto de los Trabajadores (ET):</p>
+<p style="margin: 0 0 1rem;">Existen materias que cuentan con un procedimiento de modificaciÃ³n especÃ­ficamente regulado en el Estatuto de los Trabajadores (ET):</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad geográfica:</strong> Regulada en los artículos 40 y 41 del ET.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad geogrÃ¡fica:</strong> Regulada en los artÃ­culos 40 y 41 del ET.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad funcional:</strong> Regulada en el artículo 39 del ET.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad funcional:</strong> Regulada en el artÃ­culo 39 del ET.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reducción de la jornada de trabajo:</strong> Regulada en el artículo 47 del ET.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ReducciÃ³n de la jornada de trabajo:</strong> Regulada en el artÃ­culo 47 del ET.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aumento de jornada por horas extraordinarias:</strong> Regulado en el artículo 35 del ET.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aumento de jornada por horas extraordinarias:</strong> Regulado en el artÃ­culo 35 del ET.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo de disfrute de las vacaciones:</strong> Regulado en el artículo 38 del ET.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo de disfrute de las vacaciones:</strong> Regulado en el artÃ­culo 38 del ET.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">En aquellos casos en los que no exista un procedimiento específico regulado por la ley o el convenio, el empresario deberá fundamentar sus decisiones en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">artículo 41 del ET</strong>. Este artículo exige que el empleador alegue y justifique la medida basándose en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">razones técnicas, organizativas, económicas o de producción</strong>.</p>
+<p style="margin: 0 0 1rem;">En aquellos casos en los que no exista un procedimiento especÃ­fico regulado por la ley o el convenio, el empresario deberÃ¡ fundamentar sus decisiones en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">artÃ­culo 41 del ET</strong>. Este artÃ­culo exige que el empleador alegue y justifique la medida basÃ¡ndose en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">razones tÃ©cnicas, organizativas, econÃ³micas o de producciÃ³n</strong>.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Movilidad funcional</h2>
 
-<p style="margin: 0 0 1rem;">La movilidad funcional se produce cuando la empresa encomienda al trabajador funciones distintas de aquellas para las que fue inicialmente contratado. Está regulada por el artículo 39 del Estatuto de los Trabajadores y se clasifica de la siguiente manera:</p>
+<p style="margin: 0 0 1rem;">La movilidad funcional se produce cuando la empresa encomienda al trabajador funciones distintas de aquellas para las que fue inicialmente contratado. EstÃ¡ regulada por el artÃ­culo 39 del Estatuto de los Trabajadores y se clasifica de la siguiente manera:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad funcional horizontal:</strong> Se produce cuando el cambio de funciones se realiza dentro del mismo grupo profesional del trabajador.</li>
@@ -71,29 +101,29 @@
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Requisitos y límites de la movilidad funcional</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Requisitos y lÃ­mites de la movilidad funcional</h3>
 
-<p style="margin: 0 0 1rem;">Para garantizar los derechos del trabajador, la legislación impone las siguientes condiciones:</p>
+<p style="margin: 0 0 1rem;">Para garantizar los derechos del trabajador, la legislaciÃ³n impone las siguientes condiciones:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> La empresa debe respetar siempre la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">dignidad</strong> del empleado y su <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">titulación académica</strong>.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Régimen salarial en movilidad ascendente:</strong> El trabajador tendrá derecho a percibir el salario correspondiente al grupo profesional superior cuyas funciones esté realizando.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> La empresa debe respetar siempre la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">dignidad</strong> del empleado y su <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">titulaciÃ³n acadÃ©mica</strong>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Régimen salarial en movilidad descendente:</strong> El trabajador mantendrá su salario de origen y no se le podrá reducir para equipararlo al de la categoría inferior.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RÃ©gimen salarial en movilidad ascendente:</strong> El trabajador tendrÃ¡ derecho a percibir el salario correspondiente al grupo profesional superior cuyas funciones estÃ© realizando.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Limitación de despido:</strong> Si el trabajador no rinde según las expectativas en sus nuevas funciones, la empresa no puede utilizar este bajo desempeño como motivo para un despido objetivo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RÃ©gimen salarial en movilidad descendente:</strong> El trabajador mantendrÃ¡ su salario de origen y no se le podrÃ¡ reducir para equipararlo al de la categorÃ­a inferior.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Límite temporal para la movilidad ascendente:</strong> No podrá superar los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">6 meses en un periodo de un año</strong>, ni los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">8 meses en un periodo de dos años</strong>.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">LimitaciÃ³n de despido:</strong> Si el trabajador no rinde segÃºn las expectativas en sus nuevas funciones, la empresa no puede utilizar este bajo desempeÃ±o como motivo para un despido objetivo.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">LÃ­mite temporal para la movilidad ascendente:</strong> No podrÃ¡ superar los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">6 meses en un periodo de un aÃ±o</strong>, ni los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">8 meses en un periodo de dos aÃ±os</strong>.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Vías para ejecutar la movilidad funcional</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">VÃ­as para ejecutar la movilidad funcional</h3>
 
-<p style="margin: 0 0 1rem;">La movilidad funcional puede ser promovida a través de tres vías:</p>
+<p style="margin: 0 0 1rem;">La movilidad funcional puede ser promovida a travÃ©s de tres vÃ­as:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mutuo acuerdo:</strong> Se produce cuando el empresario propone el cambio y el trabajador lo acepta voluntariamente, reflejando dicho pacto por escrito.</li>
@@ -102,45 +132,45 @@
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa del trabajador:</strong> El propio empleado se ofrece de forma voluntaria para realizar un ascenso o descenso de funciones.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa del empresario:</strong> El empresario decide de manera unilateral el cambio de funciones. Para que sea válido, deben existir razones técnicas u organizativas que lo justifiquen, debe limitarse al tiempo indispensable y comunicarse adecuadamente al trabajador.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa del empresario:</strong> El empresario decide de manera unilateral el cambio de funciones. Para que sea vÃ¡lido, deben existir razones tÃ©cnicas u organizativas que lo justifiquen, debe limitarse al tiempo indispensable y comunicarse adecuadamente al trabajador.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Movilidad geográfica</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Movilidad geogrÃ¡fica</h2>
 
-<p style="margin: 0 0 1rem;">La movilidad geográfica, regulada por el artículo 40 del Estatuto de los Trabajadores, consiste en el traslado de uno o varios trabajadores a un centro de trabajo diferente en una localidad distinta, siempre que dicho cambio <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">implique un cambio de residencia</strong> para el afectado.</p>
+<p style="margin: 0 0 1rem;">La movilidad geogrÃ¡fica, regulada por el artÃ­culo 40 del Estatuto de los Trabajadores, consiste en el traslado de uno o varios trabajadores a un centro de trabajo diferente en una localidad distinta, siempre que dicho cambio <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">implique un cambio de residencia</strong> para el afectado.</p>
 
-<p style="margin: 0 0 1rem;">La empresa puede realizar traslados de carácter <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">individual</strong> o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">colectivo</strong>, pero siempre deben estar fundamentados en causas económicas, técnicas, organizativas o de producción.</p>
+<p style="margin: 0 0 1rem;">La empresa puede realizar traslados de carÃ¡cter <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">individual</strong> o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">colectivo</strong>, pero siempre deben estar fundamentados en causas econÃ³micas, tÃ©cnicas, organizativas o de producciÃ³n.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación según la duración</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ClasificaciÃ³n segÃºn la duraciÃ³n</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Definitivo (traslado):</strong> Se considera traslado cuando el cambio de centro de trabajo tiene una duración superior a <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">12 meses en un periodo de 3 años</strong>.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Definitivo (traslado):</strong> Se considera traslado cuando el cambio de centro de trabajo tiene una duraciÃ³n superior a <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">12 meses en un periodo de 3 aÃ±os</strong>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Temporal (desplazamiento):</strong> Se considera desplazamiento cuando la estancia en el nuevo centro no supera los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">12 meses en un periodo de 3 años</strong>.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Temporal (desplazamiento):</strong> Se considera desplazamiento cuando la estancia en el nuevo centro no supera los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">12 meses en un periodo de 3 aÃ±os</strong>.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento de comunicación</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento de comunicaciÃ³n</h3>
 
-<p style="margin: 0 0 1rem;">La empresa tiene la obligación estricta de comunicar la decisión en tiempo y forma:</p>
+<p style="margin: 0 0 1rem;">La empresa tiene la obligaciÃ³n estricta de comunicar la decisiÃ³n en tiempo y forma:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Procedimiento individual:</strong> La empresa debe notificar oficialmente el traslado al trabajador y a sus representantes legales con una antelación mínima de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 días</strong> antes de la fecha de efectividad.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Procedimiento individual:</strong> La empresa debe notificar oficialmente el traslado al trabajador y a sus representantes legales con una antelaciÃ³n mÃ­nima de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 dÃ­as</strong> antes de la fecha de efectividad.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Procedimiento colectivo:</strong> Cuando afecta a un volumen significativo de la plantilla, se debe abrir un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">periodo de consultas</strong> con los representantes de los trabajadores que durará como máximo <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 días</strong>. El procedimiento implica:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Procedimiento colectivo:</strong> Cuando afecta a un volumen significativo de la plantilla, se debe abrir un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">periodo de consultas</strong> con los representantes de los trabajadores que durarÃ¡ como mÃ¡ximo <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 dÃ­as</strong>. El procedimiento implica:</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">1. Notificar la apertura de las consultas y sus conclusiones a la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Dirección General de Trabajo</strong> de la comunidad autónoma correspondiente.</p>
+<p style="margin: 0 0 1rem;">1. Notificar la apertura de las consultas y sus conclusiones a la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DirecciÃ³n General de Trabajo</strong> de la comunidad autÃ³noma correspondiente.</p>
 
-<p style="margin: 0 0 1rem;">2. Notificar individualmente a los trabajadores afectados la decisión final del traslado con un preaviso mínimo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 días</strong>.</p>
+<p style="margin: 0 0 1rem;">2. Notificar individualmente a los trabajadores afectados la decisiÃ³n final del traslado con un preaviso mÃ­nimo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 dÃ­as</strong>.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Modificaciones sustanciales de las condiciones de trabajo</h2>
 
-<p style="margin: 0 0 1rem;">El empresario tiene la facultad de modificar de forma unilateral las condiciones de trabajo, sin necesidad de negociación previa, siempre que existan causas justificadas de carácter técnico, económico, organizativo o de producción (artículo 41 del ET).</p>
+<p style="margin: 0 0 1rem;">El empresario tiene la facultad de modificar de forma unilateral las condiciones de trabajo, sin necesidad de negociaciÃ³n previa, siempre que existan causas justificadas de carÃ¡cter tÃ©cnico, econÃ³mico, organizativo o de producciÃ³n (artÃ­culo 41 del ET).</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Materias que constituyen modificaciones sustanciales</h3>
 
@@ -148,23 +178,23 @@
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> La jornada de trabajo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El horario y la distribución del tiempo de trabajo.</li>
+<li style="margin-bottom: .45rem; position: relative;"> El horario y la distribuciÃ³n del tiempo de trabajo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El régimen de trabajo a turnos (turnicidad).</li>
+<li style="margin-bottom: .45rem; position: relative;"> El rÃ©gimen de trabajo a turnos (turnicidad).</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Las funciones del puesto.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El sistema de remuneración y cuantía salarial.</li>
+<li style="margin-bottom: .45rem; position: relative;"> El sistema de remuneraciÃ³n y cuantÃ­a salarial.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de modificaciones sustanciales</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Individual:</strong> Afecta a un solo trabajador. La empresa debe preavisar al empleado y a los representantes del personal con un mínimo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 días</strong> de antelación. Ante esto, el trabajador puede aceptar la decisión, impugnarla ante la jurisdicción social o solicitar la rescisión de su contrato con derecho a indemnización.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Individual:</strong> Afecta a un solo trabajador. La empresa debe preavisar al empleado y a los representantes del personal con un mÃ­nimo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 dÃ­as</strong> de antelaciÃ³n. Ante esto, el trabajador puede aceptar la decisiÃ³n, impugnarla ante la jurisdicciÃ³n social o solicitar la rescisiÃ³n de su contrato con derecho a indemnizaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Colectiva:</strong> Se considera colectiva cuando, en un periodo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90 días</strong>, afecta al menos a:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Colectiva:</strong> Se considera colectiva cuando, en un periodo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90 dÃ­as</strong>, afecta al menos a:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10 trabajadores</strong> en empresas de menos de 100 empleados.</li>
@@ -172,19 +202,19 @@
 <li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10% de los trabajadores</strong> en empresas que tengan entre 100 y 300 empleados.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 trabajadores</strong> en empresas que tengan más de 300 empleados.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 trabajadores</strong> en empresas que tengan mÃ¡s de 300 empleados.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota:</span> También se incluye dentro de las modificaciones sustanciales el concepto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">permuta</strong>, que ocurre cuando dos trabajadores deciden de mutuo acuerdo intercambiar sus puestos de trabajo por resultarles de interés mutuo.</p>
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota:</span> TambiÃ©n se incluye dentro de las modificaciones sustanciales el concepto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">permuta</strong>, que ocurre cuando dos trabajadores deciden de mutuo acuerdo intercambiar sus puestos de trabajo por resultarles de interÃ©s mutuo.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Suspensión del contrato de trabajo</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">SuspensiÃ³n del contrato de trabajo</h2>
 
-<p style="margin: 0 0 1rem;">La suspensión del contrato de trabajo consiste en la interrupción temporal de la prestación laboral sin que se extinga o rompa el vínculo contractual entre la empresa y el trabajador. Durante el periodo que dure la suspensión, el trabajador no tiene la obligación de trabajar y el empresario no tiene la obligación de abonar el salario.</p>
+<p style="margin: 0 0 1rem;">La suspensiÃ³n del contrato de trabajo consiste en la interrupciÃ³n temporal de la prestaciÃ³n laboral sin que se extinga o rompa el vÃ­nculo contractual entre la empresa y el trabajador. Durante el periodo que dure la suspensiÃ³n, el trabajador no tiene la obligaciÃ³n de trabajar y el empresario no tiene la obligaciÃ³n de abonar el salario.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Causas de suspensión del contrato</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Causas de suspensiÃ³n del contrato</h3>
 
-<p style="margin: 0 0 1rem;">Las causas legales que pueden dar lugar a la suspensión de la relación laboral son las siguientes:</p>
+<p style="margin: 0 0 1rem;">Las causas legales que pueden dar lugar a la suspensiÃ³n de la relaciÃ³n laboral son las siguientes:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Mutuo acuerdo entre las partes.</li>
 
@@ -198,37 +228,37 @@
 
 <li style="margin-bottom: .45rem; position: relative;"> Riesgo durante la lactancia natural de un menor de 9 meses.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Adopción, acogimiento o reducción de jornada por motivos familiares (como el cuidado de un menor afectado por cáncer u otra enfermedad grave).</li>
+<li style="margin-bottom: .45rem; position: relative;"> AdopciÃ³n, acogimiento o reducciÃ³n de jornada por motivos familiares (como el cuidado de un menor afectado por cÃ¡ncer u otra enfermedad grave).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Fuerza mayor temporal (gestionada mediante expedientes de regulación de empleo o de regulación temporal de empleo: ERE o ERTE).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Fuerza mayor temporal (gestionada mediante expedientes de regulaciÃ³n de empleo o de regulaciÃ³n temporal de empleo: ERE o ERTE).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Ejercicio de un cargo público representativo o de responsabilidad sindical a nivel provincial o superior.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Ejercicio de un cargo pÃºblico representativo o de responsabilidad sindical a nivel provincial o superior.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Ejercicio del derecho a huelga.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Cierre legal de la empresa.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Suspensión de empleo y sueldo por razones disciplinarias.</li>
+<li style="margin-bottom: .45rem; position: relative;"> SuspensiÃ³n de empleo y sueldo por razones disciplinarias.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Permiso para la formación o perfeccionamiento profesional.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Permiso para la formaciÃ³n o perfeccionamiento profesional.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Obligación de abandonar el puesto por ser víctima de violencia de género.</li>
+<li style="margin-bottom: .45rem; position: relative;"> ObligaciÃ³n de abandonar el puesto por ser vÃ­ctima de violencia de gÃ©nero.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento de suspensión por causas empresariales</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento de suspensiÃ³n por causas empresariales</h3>
 
-<p style="margin: 0 0 1rem;">Cuando la suspensión se deba a causas técnicas, organizativas, económicas, de producción o de fuerza mayor, la empresa debe seguir el procedimiento formal de comunicación a la autoridad laboral competente y abrir un periodo de consultas con los representantes de los trabajadores de un máximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 días</strong>.</p>
+<p style="margin: 0 0 1rem;">Cuando la suspensiÃ³n se deba a causas tÃ©cnicas, organizativas, econÃ³micas, de producciÃ³n o de fuerza mayor, la empresa debe seguir el procedimiento formal de comunicaciÃ³n a la autoridad laboral competente y abrir un periodo de consultas con los representantes de los trabajadores de un mÃ¡ximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 dÃ­as</strong>.</p>
 
-<p style="margin: 0 0 1rem;">Si estas mismas causas justifican una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">reducción de la jornada de trabajo</strong> en lugar de una suspensión total, dicha reducción podrá oscilar entre el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10% y el 70%</strong> de la jornada habitual, calculada sobre una base diaria, semanal, mensual o anual.</p>
+<p style="margin: 0 0 1rem;">Si estas mismas causas justifican una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">reducciÃ³n de la jornada de trabajo</strong> en lugar de una suspensiÃ³n total, dicha reducciÃ³n podrÃ¡ oscilar entre el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10% y el 70%</strong> de la jornada habitual, calculada sobre una base diaria, semanal, mensual o anual.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Derechos adquiridos y opciones del trabajador</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Derechos adquiridos (condición más beneficiosa)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Derechos adquiridos (condiciÃ³n mÃ¡s beneficiosa)</h3>
 
-<p style="margin: 0 0 1rem;">Se entiende por derecho adquirido aquella condición que resulta más beneficiosa para el trabajador que lo dispuesto en el Estatuto de los Trabajadores o en el convenio colectivo de aplicación. Su determinación suele requerir la valoración de un juez, pero para que sea considerado como tal debe cumplir con tres requisitos esenciales:</p>
+<p style="margin: 0 0 1rem;">Se entiende por derecho adquirido aquella condiciÃ³n que resulta mÃ¡s beneficiosa para el trabajador que lo dispuesto en el Estatuto de los Trabajadores o en el convenio colectivo de aplicaciÃ³n. Su determinaciÃ³n suele requerir la valoraciÃ³n de un juez, pero para que sea considerado como tal debe cumplir con tres requisitos esenciales:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Debe suponer una mejora real sobre los mínimos legales y convencionales.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Debe suponer una mejora real sobre los mÃ­nimos legales y convencionales.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Debe haber sido concedido y mantenido por el empresario de manera voluntaria, con pleno conocimiento de que no estaba obligado a ello por ley o convenio.</li>
 
@@ -238,92 +268,93 @@
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Opciones del trabajador ante modificaciones individuales</h3>
 
-<p style="margin: 0 0 1rem;">Cuando un trabajador recibe la notificación de una modificación individual de sus condiciones (con un preaviso mínimo de 15 días), dispone de las siguientes opciones:</p>
+<p style="margin: 0 0 1rem;">Cuando un trabajador recibe la notificaciÃ³n de una modificaciÃ³n individual de sus condiciones (con un preaviso mÃ­nimo de 15 dÃ­as), dispone de las siguientes opciones:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aceptar la decisión</strong> de la empresa de manera conforme.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aceptar la decisiÃ³n</strong> de la empresa de manera conforme.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Negarse y solicitar la rescisión del contrato</strong>, lo que le dará derecho a percibir la indemnización correspondiente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Negarse y solicitar la rescisiÃ³n del contrato</strong>, lo que le darÃ¡ derecho a percibir la indemnizaciÃ³n correspondiente.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impugnar la medida</strong> ante la jurisdicción social si considera que no está justificada. El plazo para presentar la impugnación es de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">20 días</strong> desde la recepción de la notificación escrita. Aunque el empresario puede comunicar la decisión de forma verbal, se suele realizar por escrito para dejar constancia. Si el juez determina que el empresario no justificó debidamente la modificación, este estará obligado a restituir al trabajador en sus condiciones previas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impugnar la medida</strong> ante la jurisdicciÃ³n social si considera que no estÃ¡ justificada. El plazo para presentar la impugnaciÃ³n es de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">20 dÃ­as</strong> desde la recepciÃ³n de la notificaciÃ³n escrita. Aunque el empresario puede comunicar la decisiÃ³n de forma verbal, se suele realizar por escrito para dejar constancia. Si el juez determina que el empresario no justificÃ³ debidamente la modificaciÃ³n, este estarÃ¡ obligado a restituir al trabajador en sus condiciones previas.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Análisis de casos prácticos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">AnÃ¡lisis de casos prÃ¡cticos</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 1: obras en la fábrica (desplazamiento temporal)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 1: obras en la fÃ¡brica (desplazamiento temporal)</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Katherine trabaja en una fábrica de confección en Cádiz. Por obras de mejora sostenible que durarán <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">5 meses</strong>, la dirección determina que toda la plantilla debe trasladarse a otra planta en San Fernando (a 15 km de distancia).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Katherine trabaja en una fÃ¡brica de confecciÃ³n en CÃ¡diz. Por obras de mejora sostenible que durarÃ¡n <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">5 meses</strong>, la direcciÃ³n determina que toda la plantilla debe trasladarse a otra planta en San Fernando (a 15 km de distancia).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis:</strong> Al tratarse de un cambio con una duración inferior a 12 meses, se cataloga legalmente como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">desplazamiento</strong> (temporal) y no como traslado (definitivo).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AnÃ¡lisis:</strong> Al tratarse de un cambio con una duraciÃ³n inferior a 12 meses, se cataloga legalmente como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">desplazamiento</strong> (temporal) y no como traslado (definitivo).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Para proceder conforme a la ley, la empresa debe:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> Para proceder conforme a la ley, la empresa debe:</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">1. Iniciar un periodo de consultas de máximo 15 días con el representante legal de los trabajadores, al afectar a toda la plantilla.</p>
+<p style="margin: 0 0 1rem;">1. Iniciar un periodo de consultas de mÃ¡ximo 15 dÃ­as con el representante legal de los trabajadores, al afectar a toda la plantilla.</p>
 
-<p style="margin: 0 0 1rem;">2. Notificar la apertura y las conclusiones de las consultas a la Dirección General de Trabajo.</p>
+<p style="margin: 0 0 1rem;">2. Notificar la apertura y las conclusiones de las consultas a la DirecciÃ³n General de Trabajo.</p>
 
-<p style="margin: 0 0 1rem;">3. Emitir una comunicación oficial a los empleados con un preaviso mínimo de 30 días. En este caso, la empresa facilitó además un servicio de autocar para el transporte diario de los trabajadores, resolviendo la situación de forma satisfactoria.</p>
+<p style="margin: 0 0 1rem;">3. Emitir una comunicaciÃ³n oficial a los empleados con un preaviso mÃ­nimo de 30 dÃ­as. En este caso, la empresa facilitÃ³ ademÃ¡s un servicio de autocar para el transporte diario de los trabajadores, resolviendo la situaciÃ³n de forma satisfactoria.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 2: comisión negociadora en empresas sin representantes</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 2: comisiÃ³n negociadora en empresas sin representantes</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> La empresa Cristales Venecianos S.L. cuenta con 45 trabajadores y desea modificar el régimen de turnos de 10 de ellos (lo que constituye una modificación sustancial colectiva). La empresa no dispone de representantes legales de los trabajadores (RLT) para negociar.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> La empresa Cristales Venecianos S.L. cuenta con 45 trabajadores y desea modificar el rÃ©gimen de turnos de 10 de ellos (lo que constituye una modificaciÃ³n sustancial colectiva). La empresa no dispone de representantes legales de los trabajadores (RLT) para negociar.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis:</strong> Al ser una modificación colectiva, se requiere obligatoriamente una representación para negociar.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AnÃ¡lisis:</strong> Al ser una modificaciÃ³n colectiva, se requiere obligatoriamente una representaciÃ³n para negociar.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> La encargada de recursos humanos dispone de dos alternativas legales para conformar la comisión negociadora:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> La encargada de recursos humanos dispone de dos alternativas legales para conformar la comisiÃ³n negociadora:</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">1. Constituir una comisión integrada por un máximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 trabajadores de la propia empresa</strong>, elegidos de manera democrática por la plantilla.</p>
+<p style="margin: 0 0 1rem;">1. Constituir una comisiÃ³n integrada por un mÃ¡ximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 trabajadores de la propia empresa</strong>, elegidos de manera democrÃ¡tica por la plantilla.</p>
 
-<p style="margin: 0 0 1rem;">2. Constituir una comisión de máximo <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 miembros</strong> designados por los sindicatos más representativos del sector y de la comunidad autónoma.</p>
+<p style="margin: 0 0 1rem;">2. Constituir una comisiÃ³n de mÃ¡ximo <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 miembros</strong> designados por los sindicatos mÃ¡s representativos del sector y de la comunidad autÃ³noma.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 3: subrogación empresarial (resolución del caso de la unidad)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 3: subrogaciÃ³n empresarial (resoluciÃ³n del caso de la unidad)</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Una cadena hotelera adquiere un hotel de 4 estrellas en Valladolid y debe gestionar la transición del personal bajo el convenio de hostelería de la provincia.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Una cadena hotelera adquiere un hotel de 4 estrellas en Valladolid y debe gestionar la transiciÃ³n del personal bajo el convenio de hostelerÃ­a de la provincia.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Al producirse un cambio en la titularidad del empleador, se aplica la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subrogación</strong>. El departamento de recursos humanos debe:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> Al producirse un cambio en la titularidad del empleador, se aplica la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">subrogaciÃ³n</strong>. El departamento de recursos humanos debe:</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Comunicar individualmente y por escrito a cada trabajador la subrogación.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Comunicar individualmente y por escrito a cada trabajador la subrogaciÃ³n.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Garantizar y respetar todos los derechos adquiridos de los empleados (antigüedad, salario, categoría, funciones, jornada y turnos).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Garantizar y respetar todos los derechos adquiridos de los empleados (antigÃ¼edad, salario, categorÃ­a, funciones, jornada y turnos).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Verificar que el hotel adquirido no mantenga deudas pendientes con la Seguridad Social, dado que la nueva cadena hotelera respondería solidariamente ante dichas deudas en caso de existir.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Verificar que el hotel adquirido no mantenga deudas pendientes con la Seguridad Social, dado que la nueva cadena hotelera responderÃ­a solidariamente ante dichas deudas en caso de existir.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen de los conceptos clave</h2>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modificación objetiva vs. subjetiva:</strong> La objetiva altera las condiciones de la prestación (funciones, lugar, jornada), mientras que la subjetiva cambia al empleador (subrogación) manteniendo intactas las condiciones del trabajador.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ModificaciÃ³n objetiva vs. subjetiva:</strong> La objetiva altera las condiciones de la prestaciÃ³n (funciones, lugar, jornada), mientras que la subjetiva cambia al empleador (subrogaciÃ³n) manteniendo intactas las condiciones del trabajador.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad funcional:</strong> Regulada por el artículo 39 del ET. Puede ser horizontal (mismo grupo) o vertical (ascendente o descendente). Cuenta con límites estrictos de dignidad, titulación, salario y tiempo (máximo 6 meses en un año u 8 en dos años para la ascendente).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad funcional:</strong> Regulada por el artÃ­culo 39 del ET. Puede ser horizontal (mismo grupo) o vertical (ascendente o descendente). Cuenta con lÃ­mites estrictos de dignidad, titulaciÃ³n, salario y tiempo (mÃ¡ximo 6 meses en un aÃ±o u 8 en dos aÃ±os para la ascendente).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad geográfica:</strong> Regulada por el artículo 40 del ET. Implica cambio de residencia. Se divide en traslado (definitivo, más de 12 meses en 3 años) y desplazamiento (temporal, hasta 12 meses en 3 años). Requiere preaviso de 30 días.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movilidad geogrÃ¡fica:</strong> Regulada por el artÃ­culo 40 del ET. Implica cambio de residencia. Se divide en traslado (definitivo, mÃ¡s de 12 meses en 3 aÃ±os) y desplazamiento (temporal, hasta 12 meses en 3 aÃ±os). Requiere preaviso de 30 dÃ­as.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modificaciones sustanciales:</strong> Reguladas por el artículo 41 del ET. Afectan a condiciones nucleares del contrato. Pueden ser individuales (15 días de preaviso) o colectivas (según umbrales de plantilla en un periodo de 90 días).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modificaciones sustanciales:</strong> Reguladas por el artÃ­culo 41 del ET. Afectan a condiciones nucleares del contrato. Pueden ser individuales (15 dÃ­as de preaviso) o colectivas (segÃºn umbrales de plantilla en un periodo de 90 dÃ­as).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Suspensión contractual:</strong> Paralización temporal de las obligaciones recíprocas de trabajar y remunerar sin extinguir el contrato. Puede darse por causas personales (nacimiento, incapacidad) o empresariales (ERTE, fuerza mayor).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SuspensiÃ³n contractual:</strong> ParalizaciÃ³n temporal de las obligaciones recÃ­procas de trabajar y remunerar sin extinguir el contrato. Puede darse por causas personales (nacimiento, incapacidad) o empresariales (ERTE, fuerza mayor).</li>
 
 </ul>
 
 </main>
 </body>
 </html>
+

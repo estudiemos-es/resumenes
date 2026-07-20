@@ -1,98 +1,128 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apuntes - Contabilidad y fiscalidad. Tema 1</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
 <h1>Apuntes - Contabilidad y fiscalidad. Tema 1</h1>
 
-<h2>Creación de empresas, fondos propios y financiación</h2>
+<h2>CreaciÃ³n de empresas, fondos propios y financiaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La creación de empresas constituye un motor fundamental para el crecimiento económico, la innovación y la generación de empleo. Para garantizar la viabilidad y sostenibilidad a largo plazo de cualquier organización, es imprescindible llevar un registro contable preciso y transparente. Este registro no solo asegura el cumplimiento de las obligaciones legales, sino que también ofrece información financiera clave para la planificación estratégica y la toma de decisiones.</p>
+<p style="margin: 0 0 1rem;">La creaciÃ³n de empresas constituye un motor fundamental para el crecimiento econÃ³mico, la innovaciÃ³n y la generaciÃ³n de empleo. Para garantizar la viabilidad y sostenibilidad a largo plazo de cualquier organizaciÃ³n, es imprescindible llevar un registro contable preciso y transparente. Este registro no solo asegura el cumplimiento de las obligaciones legales, sino que tambiÃ©n ofrece informaciÃ³n financiera clave para la planificaciÃ³n estratÃ©gica y la toma de decisiones.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contabilización en soporte informático de los hechos contables</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ContabilizaciÃ³n en soporte informÃ¡tico de los hechos contables</h2>
 
-<p style="margin: 0 0 1rem;">El incremento en el volumen de información y la necesidad de agilizar la gestión empresarial exigen la digitalización y especialización de los departamentos contables. El uso de herramientas tecnológicas permite optimizar los procesos y reducir el margen de error.</p>
+<p style="margin: 0 0 1rem;">El incremento en el volumen de informaciÃ³n y la necesidad de agilizar la gestiÃ³n empresarial exigen la digitalizaciÃ³n y especializaciÃ³n de los departamentos contables. El uso de herramientas tecnolÃ³gicas permite optimizar los procesos y reducir el margen de error.</p>
 
-<p style="margin: 0 0 1rem;">Las aplicaciones informáticas de contabilidad ofrecen las siguientes funciones principales:</p>
+<p style="margin: 0 0 1rem;">Las aplicaciones informÃ¡ticas de contabilidad ofrecen las siguientes funciones principales:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Visualización gráfica:</strong> Permiten analizar la situación financiera de la empresa mediante gráficos e informes visuales.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VisualizaciÃ³n grÃ¡fica:</strong> Permiten analizar la situaciÃ³n financiera de la empresa mediante grÃ¡ficos e informes visuales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Control de vencimientos:</strong> Facilitan el seguimiento sistemático de los pagos pendientes y los cobros a realizar.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Control de vencimientos:</strong> Facilitan el seguimiento sistemÃ¡tico de los pagos pendientes y los cobros a realizar.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conexión bancaria:</strong> Posibilitan la comunicación segura con entidades financieras para automatizar transacciones y conciliaciones.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ConexiÃ³n bancaria:</strong> Posibilitan la comunicaciÃ³n segura con entidades financieras para automatizar transacciones y conciliaciones.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cumplimiento normativo:</strong> Incorporan planes de cuentas actualizados según la legislación vigente para asegurar el cumplimiento fiscal y contable.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cumplimiento normativo:</strong> Incorporan planes de cuentas actualizados segÃºn la legislaciÃ³n vigente para asegurar el cumplimiento fiscal y contable.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presentación telemática:</strong> Automatizan el proceso de depósito de las cuentas anuales en los registros oficiales.</li>
-
-</ul>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Aplicaciones informáticas contables</h3>
-
-<p style="margin: 0 0 1rem;">Existen diversos programas especializados en el mercado. Entre los más destacados se encuentran:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaSol:</strong> Es una herramienta muy versátil que destaca por su interfaz intuitiva. Es especialmente útil para elaborar balances, generar informes detallados y realizar la liquidación del Impuesto sobre el Valor Añadido (IVA).</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaPlus:</strong> Históricamente una de las aplicaciones más extendidas en el tejido empresarial debido a su rapidez operativa y a la sencillez en el manejo de sus funciones cotidianas.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PresentaciÃ³n telemÃ¡tica:</strong> Automatizan el proceso de depÃ³sito de las cuentas anuales en los registros oficiales.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Normalización contable y tipos de planes</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Aplicaciones informÃ¡ticas contables</h3>
 
-<p style="margin: 0 0 1rem;">La normalización contable es el proceso de unificación de criterios, principios y reglas para la elaboración y presentación de la información financiera. Su objetivo es garantizar que todas las empresas utilicen un mismo &quot;idioma&quot; contable, lo que permite la comparación, transparencia y armonización de sus estados financieros.</p>
+<p style="margin: 0 0 1rem;">Existen diversos programas especializados en el mercado. Entre los mÃ¡s destacados se encuentran:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaSol:</strong> Es una herramienta muy versÃ¡til que destaca por su interfaz intuitiva. Es especialmente Ãºtil para elaborar balances, generar informes detallados y realizar la liquidaciÃ³n del Impuesto sobre el Valor AÃ±adido (IVA).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaPlus:</strong> HistÃ³ricamente una de las aplicaciones mÃ¡s extendidas en el tejido empresarial debido a su rapidez operativa y a la sencillez en el manejo de sus funciones cotidianas.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">NormalizaciÃ³n contable y tipos de planes</h2>
+
+<p style="margin: 0 0 1rem;">La normalizaciÃ³n contable es el proceso de unificaciÃ³n de criterios, principios y reglas para la elaboraciÃ³n y presentaciÃ³n de la informaciÃ³n financiera. Su objetivo es garantizar que todas las empresas utilicen un mismo &quot;idioma&quot; contable, lo que permite la comparaciÃ³n, transparencia y armonizaciÃ³n de sus estados financieros.</p>
 
 <p style="margin: 0 0 1rem;">El Plan General Contable (PGC) se organiza en una estructura de cinco partes bien definidas:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Marco conceptual:</strong> Establece los principios contables, los objetivos de la información financiera y las características cualitativas de los estados financieros.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Marco conceptual:</strong> Establece los principios contables, los objetivos de la informaciÃ³n financiera y las caracterÃ­sticas cualitativas de los estados financieros.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Normas de registro y valoración:</strong> Detallan los criterios técnicos para registrar y valorar los diferentes elementos del patrimonio y los resultados de la actividad.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Normas de registro y valoraciÃ³n:</strong> Detallan los criterios tÃ©cnicos para registrar y valorar los diferentes elementos del patrimonio y los resultados de la actividad.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuentas anuales:</strong> Definen las normas de elaboración del balance, la cuenta de pérdidas y ganancias, el estado de cambios en el patrimonio neto, el estado de flujos de efectivo y la memoria.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuentas anuales:</strong> Definen las normas de elaboraciÃ³n del balance, la cuenta de pÃ©rdidas y ganancias, el estado de cambios en el patrimonio neto, el estado de flujos de efectivo y la memoria.</p>
 
 <p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuadro de cuentas:</strong> Contiene la lista ordenada y codificada de todas las cuentas contables.</p>
 
 <p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Definiciones y relaciones contables:</strong> Explican el funcionamiento de cada cuenta, indicando los motivos de su cargo y abono.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación según el tamaño de la empresa</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ClasificaciÃ³n segÃºn el tamaÃ±o de la empresa</h3>
 
 <p style="margin: 0 0 1rem;">Por regla general, todas las sociedades deben aplicar el Plan General Contable para grandes empresas (modelo normal). No obstante, pueden acogerse al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PGC Pyme</strong> o presentar modelos abreviados si, a la fecha de cierre de dos ejercicios consecutivos, cumplen al menos dos de los siguientes requisitos:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PGC Pymes (Balance y memoria abreviados):</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;">Total activo: Menor o igual a 4.000.000 €</li>
+<li style="margin-bottom: .45rem; position: relative;">Total activo: Menor o igual a 4.000.000 â‚¬</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Importe neto de la cifra de negocios: Menor o igual a 8.000.000 €</li>
+<li style="margin-bottom: .45rem; position: relative;">Importe neto de la cifra de negocios: Menor o igual a 8.000.000 â‚¬</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Número medio de trabajadores: Menor o igual a 50</li>
+<li style="margin-bottom: .45rem; position: relative;">NÃºmero medio de trabajadores: Menor o igual a 50</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta de pérdidas y ganancias abreviada:</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta de pÃ©rdidas y ganancias abreviada:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;">Total activo: Menor o igual a 11.400.000 €</li>
+<li style="margin-bottom: .45rem; position: relative;">Total activo: Menor o igual a 11.400.000 â‚¬</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Importe neto de la cifra de negocios: Menor o igual a 22.800.000 €</li>
+<li style="margin-bottom: .45rem; position: relative;">Importe neto de la cifra de negocios: Menor o igual a 22.800.000 â‚¬</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Número medio de trabajadores: Menor o igual a 250</li>
+<li style="margin-bottom: .45rem; position: relative;">NÃºmero medio de trabajadores: Menor o igual a 250</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Las diferencias entre los planes radican en su nivel de desglose y complejidad, siendo el modelo normal mucho más exigente en la presentación de información que el modelo de pymes.</p>
+<p style="margin: 0 0 1rem;">Las diferencias entre los planes radican en su nivel de desglose y complejidad, siendo el modelo normal mucho mÃ¡s exigente en la presentaciÃ³n de informaciÃ³n que el modelo de pymes.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estudio de los grupos del Plan General Contable Pyme</h2>
 
-<p style="margin: 0 0 1rem;">La codificación contable utiliza un sistema decimal estructurado por niveles de dígitos para facilitar la organización:</p>
+<p style="margin: 0 0 1rem;">La codificaciÃ³n contable utiliza un sistema decimal estructurado por niveles de dÃ­gitos para facilitar la organizaciÃ³n:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo:</strong> Identificado con un dígito (ej. 1).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo:</strong> Identificado con un dÃ­gito (ej. 1).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subgrupo:</strong> Identificado con dos dígitos (ej. 10).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subgrupo:</strong> Identificado con dos dÃ­gitos (ej. 10).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta:</strong> Identificada con tres dígitos (ej. 100).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta:</strong> Identificada con tres dÃ­gitos (ej. 100).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subcuenta:</strong> Identificada con cuatro o más dígitos (ej. 1000).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subcuenta:</strong> Identificada con cuatro o mÃ¡s dÃ­gitos (ej. 1000).</li>
 
 </ul>
 
@@ -100,31 +130,31 @@
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuentas del balance</h3>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 1. Financiación básica:</strong> Comprende los recursos propios de la empresa (capital social, reservas) y la financiación ajena a largo plazo.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 1. FinanciaciÃ³n bÃ¡sica:</strong> Comprende los recursos propios de la empresa (capital social, reservas) y la financiaciÃ³n ajena a largo plazo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 2. Inmovilizado:</strong> Registra los elementos patrimoniales destinados a servir de forma duradera en la actividad (terrenos, construcciones, maquinaria, mobiliario).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 3. Existencias:</strong> Incluye los bienes destinados a la venta en el curso ordinario de la actividad, las materias primas y los productos en proceso de fabricación.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 3. Existencias:</strong> Incluye los bienes destinados a la venta en el curso ordinario de la actividad, las materias primas y los productos en proceso de fabricaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 4. Acreedores y deudores por operaciones comerciales:</strong> Representa los derechos de cobro y las obligaciones de pago nacidos de la actividad comercial habitual (clientes, proveedores, deudores, acreedores).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 5. Cuentas financieras:</strong> Agrupa las inversiones financieras temporales, los préstamos a corto plazo y la tesorería disponible (bancos y caja).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 5. Cuentas financieras:</strong> Agrupa las inversiones financieras temporales, los prÃ©stamos a corto plazo y la tesorerÃ­a disponible (bancos y caja).</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuentas de la cuenta de pérdidas y ganancias</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuentas de la cuenta de pÃ©rdidas y ganancias</h3>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 6. Compras y gastos:</strong> Registra los aprovisionamientos de mercaderías, los gastos de personal, los servicios exteriores y otros gastos del ejercicio.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 6. Compras y gastos:</strong> Registra los aprovisionamientos de mercaderÃ­as, los gastos de personal, los servicios exteriores y otros gastos del ejercicio.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 7. Ventas e ingresos:</strong> Recoge los ingresos por la venta de bienes o prestación de servicios, así como los ingresos de carácter financiero o extraordinario.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 7. Ventas e ingresos:</strong> Recoge los ingresos por la venta de bienes o prestaciÃ³n de servicios, asÃ­ como los ingresos de carÃ¡cter financiero o extraordinario.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Fondos propios y la constitución de la empresa</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Fondos propios y la constituciÃ³n de la empresa</h2>
 
 <p style="margin: 0 0 1rem;">Los fondos propios representan la parte del patrimonio neto de la empresa que ha sido financiada directamente por los socios o generada de forma interna por la propia actividad y no distribuida.</p>
 
-<p style="margin: 0 0 1rem;">La ecuación fundamental del patrimonio establece la relación de estos conceptos:</p>
+<p style="margin: 0 0 1rem;">La ecuaciÃ³n fundamental del patrimonio establece la relaciÃ³n de estos conceptos:</p>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">Activo = Patrimonio neto + Pasivo</span></p>
 
@@ -136,169 +166,170 @@
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subgrupo 11. Reservas:</strong> Beneficios generados en ejercicios anteriores que la empresa ha decidido retener en lugar de distribuir como dividendos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subgrupo 12. Resultados pendientes de aplicación:</strong> Resultados del ejercicio corriente o de ejercicios anteriores cuyo destino definitivo aún no se ha decidido.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subgrupo 12. Resultados pendientes de aplicaciÃ³n:</strong> Resultados del ejercicio corriente o de ejercicios anteriores cuyo destino definitivo aÃºn no se ha decidido.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Las aportaciones de los socios para constituir el capital pueden ser <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">dinerarias</strong> (dinero en efectivo o transferencias bancarias) o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">no dinerarias</strong> (bienes como maquinaria, ordenadores, vehículos o inmuebles).</p>
+<p style="margin: 0 0 1rem;">Las aportaciones de los socios para constituir el capital pueden ser <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">dinerarias</strong> (dinero en efectivo o transferencias bancarias) o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">no dinerarias</strong> (bienes como maquinaria, ordenadores, vehÃ­culos o inmuebles).</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Proceso contable de constitución</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Proceso contable de constituciÃ³n</h3>
 
-<p style="margin: 0 0 1rem;">El método más habitual para constituir una sociedad es la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">fundación simultánea</strong>, en la que los socios fundadores suscriben todas las acciones en un único acto.</p>
+<p style="margin: 0 0 1rem;">El mÃ©todo mÃ¡s habitual para constituir una sociedad es la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">fundaciÃ³n simultÃ¡nea</strong>, en la que los socios fundadores suscriben todas las acciones en un Ãºnico acto.</p>
 
-<p style="margin: 0 0 1rem;">Legalmente, existen requisitos de capital mínimo para la constitución de las sociedades:</p>
+<p style="margin: 0 0 1rem;">Legalmente, existen requisitos de capital mÃ­nimo para la constituciÃ³n de las sociedades:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedades anónimas (S.A.):</strong> Capital mínimo de 60.000 €, del cual debe estar desembolsado al menos el 25% de cada acción en el momento de la constitución.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedades anÃ³nimas (S.A.):</strong> Capital mÃ­nimo de 60.000 â‚¬, del cual debe estar desembolsado al menos el 25% de cada acciÃ³n en el momento de la constituciÃ³n.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedades limitadas (S.L.):</strong> Capital mínimo de 1 €.</li>
-
-</ul>
-
-<p style="margin: 0 0 1rem;">El registro contable de la constitución consta de tres fases consecutivas:</p>
-
-<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">1. Emisión de las acciones o participaciones</h4>
-
-<p style="margin: 0 0 1rem;">Se registra el compromiso de creación de los títulos.</p>
-
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(190) Acciones o participaciones emitidas</td><td>X.XXX</td><td></td></tr><tr><td>a (194) Capital emitido pendiente de inscripción</td><td></td><td>X.XXX</td></tr></tbody></table><h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">2. Suscripción y desembolso</h4>
-
-<p style="margin: 0 0 1rem;">Se registra la aportación efectiva de los socios (por la parte desembolsada) y el derecho de cobro por la parte que queda pendiente de pago.</p>
-
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(572) Bancos c/c (por el importe desembolsado)</td><td>X.XXX</td><td></td></tr><tr><td>(1034) Socios por desembolsos no exigidos, capital pendiente de inscripción</td><td>X.XXX</td><td></td></tr><tr><td>a (190) Acciones o participaciones emitidas</td><td></td><td>X.XXX</td></tr></tbody></table><h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">3. Inscripción en el Registro Mercantil</h4>
-
-<p style="margin: 0 0 1rem;">Una vez inscrita la escritura pública en el Registro Mercantil, el capital adquiere carácter oficial y se reclasifican las cuentas provisionales.</p>
-
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(194) Capital emitido pendiente de inscripción</td><td>X.XXX</td><td></td></tr><tr><td>a (100) Capital social</td><td></td><td>X.XXX</td></tr></tbody></table><p style="margin: 0 0 1rem;">Simultáneamente, se reclasifica la cuenta de los socios por los desembolsos pendientes:</p>
-
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(1030) Socios por desembolsos no exigidos, capital social</td><td>X.XXX</td><td></td></tr><tr><td>a (1034) Socios por desembolsos no exigidos, capital pendiente de inscripción</td><td></td><td>X.XXX</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Gastos de constitución</h3>
-
-<p style="margin: 0 0 1rem;">La constitución de una sociedad genera gastos profesionales obligatorios, tales como honorarios de notarios, registradores mercantiles y asesores. Según el PGC, estos costes no se consideran gastos del ejercicio (no van al grupo 6), sino que <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">se cargan directamente contra el patrimonio neto</strong>, minorando las reservas de la sociedad mediante la cuenta <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(113) Reservas voluntarias</strong>.</p>
-
-<p style="margin: 0 0 1rem;">Cabe destacar que los servicios prestados por profesionales autónomos (notarios, registradores) están sujetos a una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">retención del 15%</strong> a cuenta del Impuesto sobre la Renta de las Personas Físicas (IRPF).</p>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Prima de emisión</h2>
-
-<p style="margin: 0 0 1rem;">La prima de emisión se origina cuando una sociedad emite sus acciones por un valor superior a su valor nominal. Esto significa que los socios deben pagar una cantidad adicional por cada acción que adquieren.</p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">Valor de emisión &gt; Valor nominal \implies Existe prima de emisión</span></p>
-
-<p style="margin: 0 0 1rem;">Esta diferencia no incrementa el capital social de la empresa, sino que se registra en la cuenta <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(110) Prima de emisión o asunción</strong>, la cual forma parte de los fondos propios dentro del balance.</p>
-
-<p style="margin: 0 0 1rem;">Una regla legal básica es que <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">el importe total de la prima de emisión debe quedar íntegramente desembolsado</strong> en el momento de la constitución o ampliación de capital, a diferencia del valor nominal, que puede desembolsarse parcialmente.</p>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Fuentes de financiación ajenas</h2>
-
-<p style="margin: 0 0 1rem;">La financiación ajena está compuesta por los recursos financieros que la empresa obtiene de terceros y que generan una obligación de devolución (deudas). Estas obligaciones se sitúan en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">pasivo</strong> del balance de situación.</p>
-
-<p style="margin: 0 0 1rem;">El PGC define el pasivo como las obligaciones actuales surgidas como consecuencia de sucesos pasados, para cuya extinción la empresa espera desprenderse de recursos que puedan producir beneficios o rendimientos económicos en el futuro.</p>
-
-<p style="margin: 0 0 1rem;">Podemos clasificar la financiación ajena en dos grandes categorías:</p>
-
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes ajenas negociadas:</strong> Son aquellas deudas que se contratan formalmente con entidades financieras u otros acreedores, con condiciones de plazo e intereses explícitos (ej. préstamos bancarios). Pueden ser a corto plazo (vencimiento igual o inferior a un año) o a largo plazo (vencimiento superior a un año).</p>
-
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes ajenas no negociadas (o financiación comercial):</strong> Es el aplazamiento de pago que conceden de manera natural los proveedores y acreedores al permitir abonar las compras de bienes y servicios en una fecha posterior a la entrega. Representa la principal fuente de financiación ajena para las pymes.</p>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Instrumentos de financiación ajena negociada</h3>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuentas de crédito:</strong> Contratos con entidades bancarias que ponen a disposición de la empresa un límite de dinero del que puede disponer según sus necesidades de tesorería. Los intereses se liquidan únicamente sobre el capital efectivamente utilizado, no sobre el total concedido.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Préstamos bancarios:</strong> Operaciones de financiación mediante las cuales la entidad entrega una cantidad fija de dinero que la empresa se compromete a devolver en los plazos pactados, junto con el pago de los intereses correspondientes.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Leasing (o arrendamiento financiero):</strong> Contrato de alquiler de un activo a largo plazo que incluye, de forma obligatoria, una opción de compra al finalizar el periodo pactado.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subvenciones recibidas:</strong> Fondos no reintegrables otorgados por administraciones públicas para financiar proyectos de inversión o actividades específicas, condicionados al cumplimiento de determinados requisitos.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Factoring:</strong> Instrumento financiero mediante el cual una empresa vende sus derechos de cobro sobre clientes (facturas) a una entidad financiera a cambio de recibir liquidez inmediata, asumiendo un coste por descuento comercial y gestión.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociedades limitadas (S.L.):</strong> Capital mÃ­nimo de 1 â‚¬.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos de aplicación</h2>
+<p style="margin: 0 0 1rem;">El registro contable de la constituciÃ³n consta de tres fases consecutivas:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Clasificación de cuentas en el PGC Pyme</h3>
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">1. EmisiÃ³n de las acciones o participaciones</h4>
 
-<p style="margin: 0 0 1rem;">A continuación se clasifica una selección de cuentas de uso habitual en sus correspondientes grupos del PGC de Pymes:</p>
+<p style="margin: 0 0 1rem;">Se registra el compromiso de creaciÃ³n de los tÃ­tulos.</p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(190) Acciones o participaciones emitidas</td><td>X.XXX</td><td></td></tr><tr><td>a (194) Capital emitido pendiente de inscripciÃ³n</td><td></td><td>X.XXX</td></tr></tbody></table><h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">2. SuscripciÃ³n y desembolso</h4>
+
+<p style="margin: 0 0 1rem;">Se registra la aportaciÃ³n efectiva de los socios (por la parte desembolsada) y el derecho de cobro por la parte que queda pendiente de pago.</p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(572) Bancos c/c (por el importe desembolsado)</td><td>X.XXX</td><td></td></tr><tr><td>(1034) Socios por desembolsos no exigidos, capital pendiente de inscripciÃ³n</td><td>X.XXX</td><td></td></tr><tr><td>a (190) Acciones o participaciones emitidas</td><td></td><td>X.XXX</td></tr></tbody></table><h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">3. InscripciÃ³n en el Registro Mercantil</h4>
+
+<p style="margin: 0 0 1rem;">Una vez inscrita la escritura pÃºblica en el Registro Mercantil, el capital adquiere carÃ¡cter oficial y se reclasifican las cuentas provisionales.</p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(194) Capital emitido pendiente de inscripciÃ³n</td><td>X.XXX</td><td></td></tr><tr><td>a (100) Capital social</td><td></td><td>X.XXX</td></tr></tbody></table><p style="margin: 0 0 1rem;">SimultÃ¡neamente, se reclasifica la cuenta de los socios por los desembolsos pendientes:</p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(1030) Socios por desembolsos no exigidos, capital social</td><td>X.XXX</td><td></td></tr><tr><td>a (1034) Socios por desembolsos no exigidos, capital pendiente de inscripciÃ³n</td><td></td><td>X.XXX</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Gastos de constituciÃ³n</h3>
+
+<p style="margin: 0 0 1rem;">La constituciÃ³n de una sociedad genera gastos profesionales obligatorios, tales como honorarios de notarios, registradores mercantiles y asesores. SegÃºn el PGC, estos costes no se consideran gastos del ejercicio (no van al grupo 6), sino que <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">se cargan directamente contra el patrimonio neto</strong>, minorando las reservas de la sociedad mediante la cuenta <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(113) Reservas voluntarias</strong>.</p>
+
+<p style="margin: 0 0 1rem;">Cabe destacar que los servicios prestados por profesionales autÃ³nomos (notarios, registradores) estÃ¡n sujetos a una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">retenciÃ³n del 15%</strong> a cuenta del Impuesto sobre la Renta de las Personas FÃ­sicas (IRPF).</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Prima de emisiÃ³n</h2>
+
+<p style="margin: 0 0 1rem;">La prima de emisiÃ³n se origina cuando una sociedad emite sus acciones por un valor superior a su valor nominal. Esto significa que los socios deben pagar una cantidad adicional por cada acciÃ³n que adquieren.</p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Valor de emisiÃ³n &gt; Valor nominal \implies Existe prima de emisiÃ³n</span></p>
+
+<p style="margin: 0 0 1rem;">Esta diferencia no incrementa el capital social de la empresa, sino que se registra en la cuenta <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">(110) Prima de emisiÃ³n o asunciÃ³n</strong>, la cual forma parte de los fondos propios dentro del balance.</p>
+
+<p style="margin: 0 0 1rem;">Una regla legal bÃ¡sica es que <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">el importe total de la prima de emisiÃ³n debe quedar Ã­ntegramente desembolsado</strong> en el momento de la constituciÃ³n o ampliaciÃ³n de capital, a diferencia del valor nominal, que puede desembolsarse parcialmente.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Fuentes de financiaciÃ³n ajenas</h2>
+
+<p style="margin: 0 0 1rem;">La financiaciÃ³n ajena estÃ¡ compuesta por los recursos financieros que la empresa obtiene de terceros y que generan una obligaciÃ³n de devoluciÃ³n (deudas). Estas obligaciones se sitÃºan en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">pasivo</strong> del balance de situaciÃ³n.</p>
+
+<p style="margin: 0 0 1rem;">El PGC define el pasivo como las obligaciones actuales surgidas como consecuencia de sucesos pasados, para cuya extinciÃ³n la empresa espera desprenderse de recursos que puedan producir beneficios o rendimientos econÃ³micos en el futuro.</p>
+
+<p style="margin: 0 0 1rem;">Podemos clasificar la financiaciÃ³n ajena en dos grandes categorÃ­as:</p>
+
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes ajenas negociadas:</strong> Son aquellas deudas que se contratan formalmente con entidades financieras u otros acreedores, con condiciones de plazo e intereses explÃ­citos (ej. prÃ©stamos bancarios). Pueden ser a corto plazo (vencimiento igual o inferior a un aÃ±o) o a largo plazo (vencimiento superior a un aÃ±o).</p>
+
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes ajenas no negociadas (o financiaciÃ³n comercial):</strong> Es el aplazamiento de pago que conceden de manera natural los proveedores y acreedores al permitir abonar las compras de bienes y servicios en una fecha posterior a la entrega. Representa la principal fuente de financiaciÃ³n ajena para las pymes.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Instrumentos de financiaciÃ³n ajena negociada</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuentas de crÃ©dito:</strong> Contratos con entidades bancarias que ponen a disposiciÃ³n de la empresa un lÃ­mite de dinero del que puede disponer segÃºn sus necesidades de tesorerÃ­a. Los intereses se liquidan Ãºnicamente sobre el capital efectivamente utilizado, no sobre el total concedido.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PrÃ©stamos bancarios:</strong> Operaciones de financiaciÃ³n mediante las cuales la entidad entrega una cantidad fija de dinero que la empresa se compromete a devolver en los plazos pactados, junto con el pago de los intereses correspondientes.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Leasing (o arrendamiento financiero):</strong> Contrato de alquiler de un activo a largo plazo que incluye, de forma obligatoria, una opciÃ³n de compra al finalizar el periodo pactado.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Subvenciones recibidas:</strong> Fondos no reintegrables otorgados por administraciones pÃºblicas para financiar proyectos de inversiÃ³n o actividades especÃ­ficas, condicionados al cumplimiento de determinados requisitos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Factoring:</strong> Instrumento financiero mediante el cual una empresa vende sus derechos de cobro sobre clientes (facturas) a una entidad financiera a cambio de recibir liquidez inmediata, asumiendo un coste por descuento comercial y gestiÃ³n.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos de aplicaciÃ³n</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: ClasificaciÃ³n de cuentas en el PGC Pyme</h3>
+
+<p style="margin: 0 0 1rem;">A continuaciÃ³n se clasifica una selecciÃ³n de cuentas de uso habitual en sus correspondientes grupos del PGC de Pymes:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Caja</strong> (Dinero en efectivo en la empresa): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 5. Cuentas financieras</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mobiliario</strong> (Muebles de oficina): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 2. Inmovilizado</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercaderías</strong> (Bienes destinados a la venta): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 3. Existencias</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">MercaderÃ­as</strong> (Bienes destinados a la venta): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 3. Existencias</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Clientes</strong> (Compradores con pago aplazado): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 4. Acreedores y deudores por operaciones comerciales</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Préstamos a corto plazo con entidades de crédito</strong> (Obligaciones financieras de pago inferior a un año): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 5. Cuentas financieras</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PrÃ©stamos a corto plazo con entidades de crÃ©dito</strong> (Obligaciones financieras de pago inferior a un aÃ±o): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 5. Cuentas financieras</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sueldos y salarios</strong> (Gastos de personal): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 6. Compras y gastos</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ventas de mercadería</strong> (Ingresos operativos): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 7. Ventas e ingresos</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ventas de mercaderÃ­a</strong> (Ingresos operativos): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 7. Ventas e ingresos</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bancos c/c</strong> (Saldos en cuentas corrientes bancarias): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 5. Cuentas financieras</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ingresos financieros</strong> (Rendimientos de inversiones o cuentas): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 7. Ventas e ingresos</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital</strong> (Aportaciones de los socios): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 1. Financiación básica</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital</strong> (Aportaciones de los socios): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 1. FinanciaciÃ³n bÃ¡sica</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Compra de mercaderías</strong> (Aprovisionamientos): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 6. Compras y gastos</strong></li>
-
-</ul>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Constitución de una sociedad anónima con desembolso mínimo</h3>
-
-<p style="margin: 0 0 1rem;">La sociedad KSA S.A. se constituye con un capital social de 66.000 €, dividido en acciones de 10 € de valor nominal. Los socios suscriben el 100% de las acciones y realizan el desembolso mínimo exigido por la ley para aportaciones dinerarias (25% del valor nominal) mediante transferencia bancaria.</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del desembolso inicial:</strong>
-<span class="formula-inline">66.000 \euro × 25% = 16.500 \euro</span></li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del capital pendiente:</strong>
-<span class="formula-inline">66.000 \euro × 75% = 49.500 \euro</span></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Compra de mercaderÃ­as</strong> (Aprovisionamientos): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Grupo 6. Compras y gastos</strong></li>
 
 </ul>
 
-<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Asientos contables del proceso:</h4>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: ConstituciÃ³n de una sociedad anÃ³nima con desembolso mÃ­nimo</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">1. Por la emisión de las acciones:</strong></p>
+<p style="margin: 0 0 1rem;">La sociedad KSA S.A. se constituye con un capital social de 66.000 â‚¬, dividido en acciones de 10 â‚¬ de valor nominal. Los socios suscriben el 100% de las acciones y realizan el desembolso mÃ­nimo exigido por la ley para aportaciones dinerarias (25% del valor nominal) mediante transferencia bancaria.</p>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(190) Acciones emitidas</td><td>66.000</td><td></td></tr><tr><td>a (194) Capital emitido pendiente de inscripción</td><td></td><td>66.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2. Por la suscripción y el desembolso mínimo del 25%:</strong></p>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del desembolso inicial:</strong>
+<span class="formula-inline">66.000 \euro Ã— 25% = 16.500 \euro</span></li>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(572) Bancos c/c</td><td>16.500</td><td></td></tr><tr><td>(1034) Socios por desembolsos no exigidos, cap. pendiente de inscripción</td><td>49.500</td><td></td></tr><tr><td>a (190) Acciones emitidas</td><td></td><td>66.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3. Por la inscripción en el Registro Mercantil y reclasificación definitiva:</strong></p>
-
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(194) Capital emitido pendiente de inscripción</td><td>66.000</td><td></td></tr><tr><td>a (100) Capital social</td><td></td><td>66.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Simultáneamente, se reclasifica el saldo exigible futuro de los socios:</span></p>
-
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(1030) Socios por desembolsos no exigidos, capital social</td><td>49.500</td><td></td></tr><tr><td>a (1034) Socios por desembolsos no exigidos, cap. pendiente de inscripción</td><td></td><td>49.500</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 3: Constitución con gastos de establecimiento asociados</h3>
-
-<p style="margin: 0 0 1rem;">Se realiza la constitución de una sociedad con un capital social de 400.000 €, aportándose el 25% mediante transferencia bancaria. Posteriormente, se abonan unos gastos notariales y de registro que ascienden a 5.000 € más un 21% de IVA, aplicando una retención del 15% sobre la base imponible.</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del desembolso de capital:</strong>
-<span class="formula-inline">400.000 \euro × 25% = 100.000 \euro</span></li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del capital pendiente:</strong>
-<span class="formula-inline">400.000 \euro × 75% = 300.000 \euro</span></li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculos de los gastos de constitución:</strong></li>
-
-<li style="margin-bottom: .45rem; position: relative;">Base imponible (Reservas voluntarias): 5.000 €</li>
-
-<li style="margin-bottom: .45rem; position: relative;">IVA soportado (21% de 5.000 €): 1.050 €</li>
-
-<li style="margin-bottom: .45rem; position: relative;">Retención de IRPF (15% de 5.000 €): 750 €</li>
-
-<li style="margin-bottom: .45rem; position: relative;">Líquido a pagar en banco: <span class="formula-inline">5.000 + 1.050 - 750 = 5.300 \euro</span></li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del capital pendiente:</strong>
+<span class="formula-inline">66.000 \euro Ã— 75% = 49.500 \euro</span></li>
 
 </ul>
 
 <h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Asientos contables del proceso:</h4>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">1. Emisión de las acciones:</strong></p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">1. Por la emisiÃ³n de las acciones:</strong></p>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(190) Acciones emitidas</td><td>400.000</td><td></td></tr><tr><td>a (194) Capital emitido pendiente de inscripción</td><td></td><td>400.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2. Suscripción y desembolso del capital:</strong></p>
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(190) Acciones emitidas</td><td>66.000</td><td></td></tr><tr><td>a (194) Capital emitido pendiente de inscripciÃ³n</td><td></td><td>66.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2. Por la suscripciÃ³n y el desembolso mÃ­nimo del 25%:</strong></p>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(572) Bancos c/c</td><td>100.000</td><td></td></tr><tr><td>(1034) Socios por desembolsos no exigidos, cap. pendiente de inscripción</td><td>300.000</td><td></td></tr><tr><td>a (190) Acciones emitidas</td><td></td><td>400.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3. Inscripción oficial en el Registro Mercantil:</strong></p>
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(572) Bancos c/c</td><td>16.500</td><td></td></tr><tr><td>(1034) Socios por desembolsos no exigidos, cap. pendiente de inscripciÃ³n</td><td>49.500</td><td></td></tr><tr><td>a (190) Acciones emitidas</td><td></td><td>66.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3. Por la inscripciÃ³n en el Registro Mercantil y reclasificaciÃ³n definitiva:</strong></p>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(194) Capital emitido pendiente de inscripción</td><td>400.000</td><td></td></tr><tr><td>a (100) Capital social</td><td></td><td>400.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Reclasificación de los socios:</span></p>
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(194) Capital emitido pendiente de inscripciÃ³n</td><td>66.000</td><td></td></tr><tr><td>a (100) Capital social</td><td></td><td>66.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><span class="markdown-emphasis">SimultÃ¡neamente, se reclasifica el saldo exigible futuro de los socios:</span></p>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(1030) Socios por desembolsos no exigidos, capital social</td><td>300.000</td><td></td></tr><tr><td>a (1034) Socios por desembolsos no exigidos, capital pendiente de inscripción</td><td></td><td>300.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">4. Contabilización y pago de los gastos de constitución:</strong></p>
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(1030) Socios por desembolsos no exigidos, capital social</td><td>49.500</td><td></td></tr><tr><td>a (1034) Socios por desembolsos no exigidos, cap. pendiente de inscripciÃ³n</td><td></td><td>49.500</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 3: ConstituciÃ³n con gastos de establecimiento asociados</h3>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(113) Reservas voluntarias</td><td>5.000</td><td></td></tr><tr><td>(472) Hacienda Pública, IVA soportado</td><td>1.050</td><td></td></tr><tr><td>a (4751) Hacienda Pública, acreedor por retenciones practicadas</td><td></td><td>750</td></tr><tr><td>a (572) Bancos c/c</td><td></td><td>5.300</td></tr></tbody></table>
+<p style="margin: 0 0 1rem;">Se realiza la constituciÃ³n de una sociedad con un capital social de 400.000 â‚¬, aportÃ¡ndose el 25% mediante transferencia bancaria. Posteriormente, se abonan unos gastos notariales y de registro que ascienden a 5.000 â‚¬ mÃ¡s un 21% de IVA, aplicando una retenciÃ³n del 15% sobre la base imponible.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del desembolso de capital:</strong>
+<span class="formula-inline">400.000 \euro Ã— 25% = 100.000 \euro</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del capital pendiente:</strong>
+<span class="formula-inline">400.000 \euro Ã— 75% = 300.000 \euro</span></li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculos de los gastos de constituciÃ³n:</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;">Base imponible (Reservas voluntarias): 5.000 â‚¬</li>
+
+<li style="margin-bottom: .45rem; position: relative;">IVA soportado (21% de 5.000 â‚¬): 1.050 â‚¬</li>
+
+<li style="margin-bottom: .45rem; position: relative;">RetenciÃ³n de IRPF (15% de 5.000 â‚¬): 750 â‚¬</li>
+
+<li style="margin-bottom: .45rem; position: relative;">LÃ­quido a pagar en banco: <span class="formula-inline">5.000 + 1.050 - 750 = 5.300 \euro</span></li>
+
+</ul>
+
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Asientos contables del proceso:</h4>
+
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">1. EmisiÃ³n de las acciones:</strong></p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(190) Acciones emitidas</td><td>400.000</td><td></td></tr><tr><td>a (194) Capital emitido pendiente de inscripciÃ³n</td><td></td><td>400.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2. SuscripciÃ³n y desembolso del capital:</strong></p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(572) Bancos c/c</td><td>100.000</td><td></td></tr><tr><td>(1034) Socios por desembolsos no exigidos, cap. pendiente de inscripciÃ³n</td><td>300.000</td><td></td></tr><tr><td>a (190) Acciones emitidas</td><td></td><td>400.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3. InscripciÃ³n oficial en el Registro Mercantil:</strong></p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(194) Capital emitido pendiente de inscripciÃ³n</td><td>400.000</td><td></td></tr><tr><td>a (100) Capital social</td><td></td><td>400.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><span class="markdown-emphasis">ReclasificaciÃ³n de los socios:</span></p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(1030) Socios por desembolsos no exigidos, capital social</td><td>300.000</td><td></td></tr><tr><td>a (1034) Socios por desembolsos no exigidos, capital pendiente de inscripciÃ³n</td><td></td><td>300.000</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">4. ContabilizaciÃ³n y pago de los gastos de constituciÃ³n:</strong></p>
+
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta y detalle</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>(113) Reservas voluntarias</td><td>5.000</td><td></td></tr><tr><td>(472) Hacienda PÃºblica, IVA soportado</td><td>1.050</td><td></td></tr><tr><td>a (4751) Hacienda PÃºblica, acreedor por retenciones practicadas</td><td></td><td>750</td></tr><tr><td>a (572) Bancos c/c</td><td></td><td>5.300</td></tr></tbody></table>
 </main>
 </body>
 </html>
+

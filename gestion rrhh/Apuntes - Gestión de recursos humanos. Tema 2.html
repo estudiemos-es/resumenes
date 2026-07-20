@@ -1,65 +1,95 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión de recursos humanos. Tema 2</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n de recursos humanos. Tema 2</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión de recursos humanos. Tema 2</h1>
+<h1>Apuntes - GestiÃ³n de recursos humanos. Tema 2</h1>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El contrato de trabajo: definición, características y requisitos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El contrato de trabajo: definiciÃ³n, caracterÃ­sticas y requisitos</h2>
 
-<p style="margin: 0 0 1rem;">El contrato de trabajo constituye la materialización y expresión escrita de la relación laboral entre un trabajador y un empresario. Aunque las relaciones laborales pueden establecerse de forma oral o escrita, el contrato de trabajo es el modelo formal que detalla de manera específica las condiciones en las que se desarrollará la prestación de servicios, tales como la fecha de inicio, la duración, el periodo de prueba, las vacaciones y la retribución.</p>
+<p style="margin: 0 0 1rem;">El contrato de trabajo constituye la materializaciÃ³n y expresiÃ³n escrita de la relaciÃ³n laboral entre un trabajador y un empresario. Aunque las relaciones laborales pueden establecerse de forma oral o escrita, el contrato de trabajo es el modelo formal que detalla de manera especÃ­fica las condiciones en las que se desarrollarÃ¡ la prestaciÃ³n de servicios, tales como la fecha de inicio, la duraciÃ³n, el periodo de prueba, las vacaciones y la retribuciÃ³n.</p>
 
-<p style="margin: 0 0 1rem;">La definición legal del contrato se fundamenta en el artículo 1254 del Código Civil, el cual determina que el contrato existe desde que una o varias personas consienten en obligarse, respecto de otra u otras, a dar alguna cosa o prestar algún servicio.</p>
+<p style="margin: 0 0 1rem;">La definiciÃ³n legal del contrato se fundamenta en el artÃ­culo 1254 del CÃ³digo Civil, el cual determina que el contrato existe desde que una o varias personas consienten en obligarse, respecto de otra u otras, a dar alguna cosa o prestar algÃºn servicio.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Requisitos esenciales del contrato</h3>
 
-<p style="margin: 0 0 1rem;">De acuerdo con el artículo 1261 del Código Civil, para que un contrato de trabajo sea válido debe cumplir obligatoriamente con tres requisitos esenciales:</p>
+<p style="margin: 0 0 1rem;">De acuerdo con el artÃ­culo 1261 del CÃ³digo Civil, para que un contrato de trabajo sea vÃ¡lido debe cumplir obligatoriamente con tres requisitos esenciales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Objeto</strong>: Se refiere a las funciones que el trabajador va a realizar. Este objeto debe cumplir con tres condiciones: ser determinado (que no existan dudas sobre las tareas a desempeñar), posible (que se pueda llevar a cabo) y lícito (que no vulnere las leyes ni las normas vigentes).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Objeto</strong>: Se refiere a las funciones que el trabajador va a realizar. Este objeto debe cumplir con tres condiciones: ser determinado (que no existan dudas sobre las tareas a desempeÃ±ar), posible (que se pueda llevar a cabo) y lÃ­cito (que no vulnere las leyes ni las normas vigentes).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Causa</strong>: Es la justificación de la obligación a la que ambas partes se someten de manera voluntaria. La causa debe ser siempre lícita y verdadera.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Causa</strong>: Es la justificaciÃ³n de la obligaciÃ³n a la que ambas partes se someten de manera voluntaria. La causa debe ser siempre lÃ­cita y verdadera.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Consentimiento</strong>: Hace referencia a la libre voluntad de las partes para firmar el contrato. El consentimiento se considera nulo si se obtiene bajo intimidación, dolor, violencia, o si la persona firmante carece de la capacidad legal para otorgarlo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Consentimiento</strong>: Hace referencia a la libre voluntad de las partes para firmar el contrato. El consentimiento se considera nulo si se obtiene bajo intimidaciÃ³n, dolor, violencia, o si la persona firmante carece de la capacidad legal para otorgarlo.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Formas del contrato y capacidad para contratar</h2>
 
-<p style="margin: 0 0 1rem;">La legislación laboral establece que los contratos de trabajo pueden celebrarse de forma escrita u oral. No obstante, la forma oral es una excepción muy restringida.</p>
+<p style="margin: 0 0 1rem;">La legislaciÃ³n laboral establece que los contratos de trabajo pueden celebrarse de forma escrita u oral. No obstante, la forma oral es una excepciÃ³n muy restringida.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contratos que pueden ser orales</h3>
 
-<p style="margin: 0 0 1rem;">Únicamente se permite la celebración de contratos verbales en dos supuestos específicos:</p>
+<p style="margin: 0 0 1rem;">Ãšnicamente se permite la celebraciÃ³n de contratos verbales en dos supuestos especÃ­ficos:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El contrato indefinido.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El contrato eventual por circunstancias de la producción, siempre y cuando su duración no sea superior a cuatro semanas.</li>
+<li style="margin-bottom: .45rem; position: relative;"> El contrato eventual por circunstancias de la producciÃ³n, siempre y cuando su duraciÃ³n no sea superior a cuatro semanas.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">En cualquiera de los casos, ambas partes mantienen el derecho de exigir que el contrato se formalice por escrito en cualquier momento, incluso después de haber iniciado la relación laboral.</p>
+<p style="margin: 0 0 1rem;">En cualquiera de los casos, ambas partes mantienen el derecho de exigir que el contrato se formalice por escrito en cualquier momento, incluso despuÃ©s de haber iniciado la relaciÃ³n laboral.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contratos obligatoriamente escritos</h3>
 
 <p style="margin: 0 0 1rem;">Es obligatorio formalizar por escrito los siguientes tipos de contratos de trabajo:</p>
 
-<p style="margin: 0 0 1rem;">1. Contrato indefinido adscrito a obra (sector de la construcción).</p>
+<p style="margin: 0 0 1rem;">1. Contrato indefinido adscrito a obra (sector de la construcciÃ³n).</p>
 
-<p style="margin: 0 0 1rem;">2. Contrato eventual cuya duración sea superior a cuatro semanas.</p>
+<p style="margin: 0 0 1rem;">2. Contrato eventual cuya duraciÃ³n sea superior a cuatro semanas.</p>
 
-<p style="margin: 0 0 1rem;">3. Contrato de sustitución.</p>
+<p style="margin: 0 0 1rem;">3. Contrato de sustituciÃ³n.</p>
 
-<p style="margin: 0 0 1rem;">4. Contrato en prácticas.</p>
+<p style="margin: 0 0 1rem;">4. Contrato en prÃ¡cticas.</p>
 
-<p style="margin: 0 0 1rem;">5. Contrato para la formación en alternancia.</p>
+<p style="margin: 0 0 1rem;">5. Contrato para la formaciÃ³n en alternancia.</p>
 
 <p style="margin: 0 0 1rem;">6. Contrato de relevo.</p>
 
@@ -69,296 +99,296 @@
 
 <p style="margin: 0 0 1rem;">9. Contrato fijo-discontinuo.</p>
 
-<p style="margin: 0 0 1rem;">10. Contratos de trabajadores contratados en España por empresas españolas para operar en el extranjero.</p>
+<p style="margin: 0 0 1rem;">10. Contratos de trabajadores contratados en EspaÃ±a por empresas espaÃ±olas para operar en el extranjero.</p>
 
 <p style="margin: 0 0 1rem;">11. Contrato de pescadores.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Capacidad legal para contratar</h3>
 
-<p style="margin: 0 0 1rem;">La capacidad para firmar un contrato de trabajo como empleado varía según la edad y la situación civil:</p>
+<p style="margin: 0 0 1rem;">La capacidad para firmar un contrato de trabajo como empleado varÃ­a segÃºn la edad y la situaciÃ³n civil:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Personas mayores de 18 años</strong>: Tienen plena capacidad para contratar.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Personas mayores de 18 aÃ±os</strong>: Tienen plena capacidad para contratar.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Personas de entre 16 y 18 años</strong>: Pueden firmar contratos si están emancipadas o si cuentan con la autorización de sus padres o tutores legales.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Personas de entre 16 y 18 aÃ±os</strong>: Pueden firmar contratos si estÃ¡n emancipadas o si cuentan con la autorizaciÃ³n de sus padres o tutores legales.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Personas extranjeras</strong>: Su capacidad se rige por lo establecido en la normativa de extranjería vigente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Personas extranjeras</strong>: Su capacidad se rige por lo establecido en la normativa de extranjerÃ­a vigente.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Sujetos de la relación laboral y vías de contratación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Sujetos de la relaciÃ³n laboral y vÃ­as de contrataciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">En toda relación laboral participan de manera directa dos sujetos principales:</p>
+<p style="margin: 0 0 1rem;">En toda relaciÃ³n laboral participan de manera directa dos sujetos principales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El empresario</strong>: Es la persona física, jurídica o comunidad de bienes que recibe la prestación de servicios de trabajadores asalariados a los que retribuye.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El empresario</strong>: Es la persona fÃ­sica, jurÃ­dica o comunidad de bienes que recibe la prestaciÃ³n de servicios de trabajadores asalariados a los que retribuye.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El trabajador</strong>: Es la persona física que, de manera voluntaria, presta servicios por cuenta ajena bajo la dirección del empresario a cambio de una retribución económica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El trabajador</strong>: Es la persona fÃ­sica que, de manera voluntaria, presta servicios por cuenta ajena bajo la direcciÃ³n del empresario a cambio de una retribuciÃ³n econÃ³mica.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Vías para la contratación de trabajadores</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">VÃ­as para la contrataciÃ³n de trabajadores</h3>
 
-<p style="margin: 0 0 1rem;">Para incorporar personal a su organización, el empresario dispone de diferentes mecanismos de reclutamiento y selección:</p>
+<p style="margin: 0 0 1rem;">Para incorporar personal a su organizaciÃ³n, el empresario dispone de diferentes mecanismos de reclutamiento y selecciÃ³n:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contratación directa</strong>: El propio empresario realiza la búsqueda y selección del candidato por sus propios medios.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContrataciÃ³n directa</strong>: El propio empresario realiza la bÃºsqueda y selecciÃ³n del candidato por sus propios medios.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contratación a través del Servicio de Empleo Público</strong>: Se recurre a este organismo público para reclutar candidatos utilizando su bolsa de demandantes de empleo inscritos que se ajusten al perfil solicitado.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContrataciÃ³n a travÃ©s del Servicio de Empleo PÃºblico</strong>: Se recurre a este organismo pÃºblico para reclutar candidatos utilizando su bolsa de demandantes de empleo inscritos que se ajusten al perfil solicitado.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contratación a través de agencias de colocación o Empresas de Trabajo Temporal (ETT)</strong>: Se recurre a entidades privadas. Las agencias de colocación tienen como finalidad facilitar un empleo a personas desocupadas y están reguladas por el Real Decreto 1796/2010. El Servicio Público de Empleo coordina sus actividades mediante convenios de colaboración. Cabe destacar que, desde el 5 de julio de 2014, estas agencias ya no requieren autorización previa del Servicio Público de Empleo para operar.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContrataciÃ³n a travÃ©s de agencias de colocaciÃ³n o Empresas de Trabajo Temporal (ETT)</strong>: Se recurre a entidades privadas. Las agencias de colocaciÃ³n tienen como finalidad facilitar un empleo a personas desocupadas y estÃ¡n reguladas por el Real Decreto 1796/2010. El Servicio PÃºblico de Empleo coordina sus actividades mediante convenios de colaboraciÃ³n. Cabe destacar que, desde el 5 de julio de 2014, estas agencias ya no requieren autorizaciÃ³n previa del Servicio PÃºblico de Empleo para operar.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estructura y contenido esencial del contrato</h2>
 
-<p style="margin: 0 0 1rem;">Un contrato de trabajo formal se estructura en varios bloques de información indispensables para su validez y control:</p>
+<p style="margin: 0 0 1rem;">Un contrato de trabajo formal se estructura en varios bloques de informaciÃ³n indispensables para su validez y control:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos de la empresa</strong>: Nombre o razón social, domicilio, CIF, cuenta de cotización a la Seguridad Social, actividad económica y datos identificativos del gerente o representante legal de la empresa.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos de la empresa</strong>: Nombre o razÃ³n social, domicilio, CIF, cuenta de cotizaciÃ³n a la Seguridad Social, actividad econÃ³mica y datos identificativos del gerente o representante legal de la empresa.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del centro de trabajo</strong>: Dirección física del lugar donde el empleado prestará sus servicios, el cual puede ser diferente al domicilio social de la empresa.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del centro de trabajo</strong>: DirecciÃ³n fÃ­sica del lugar donde el empleado prestarÃ¡ sus servicios, el cual puede ser diferente al domicilio social de la empresa.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del trabajador</strong>: Nombre y apellidos, DNI o NIE, fecha de nacimiento, número de afiliación a la Seguridad Social, domicilio y nivel formativo.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos del trabajador</strong>: Nombre y apellidos, DNI o NIE, fecha de nacimiento, nÃºmero de afiliaciÃ³n a la Seguridad Social, domicilio y nivel formativo.</p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cláusulas del contrato</strong>: Contienen el núcleo de las condiciones de trabajo pactadas. En un contrato indefinido, deben detallar:</p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ClÃ¡usulas del contrato</strong>: Contienen el nÃºcleo de las condiciones de trabajo pactadas. En un contrato indefinido, deben detallar:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> La denominación del puesto de trabajo, el grupo profesional correspondiente según el convenio colectivo aplicable, las funciones y la ubicación del centro de trabajo.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> La denominaciÃ³n del puesto de trabajo, el grupo profesional correspondiente segÃºn el convenio colectivo aplicable, las funciones y la ubicaciÃ³n del centro de trabajo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> La jornada de trabajo, especificando si es a tiempo completo o a tiempo parcial (indicando el horario concreto en este último caso).</li>
+<li style="margin-bottom: .45rem; position: relative;"> La jornada de trabajo, especificando si es a tiempo completo o a tiempo parcial (indicando el horario concreto en este Ãºltimo caso).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> La duración del contrato, señalando la fecha de inicio y de fin si corresponde.</li>
+<li style="margin-bottom: .45rem; position: relative;"> La duraciÃ³n del contrato, seÃ±alando la fecha de inicio y de fin si corresponde.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> El salario expresado en euros brutos anuales, mensuales o diarios, junto con los complementos o pluses salariales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Las vacaciones anuales, especificadas en 30 días naturales o 22 días laborables.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Las vacaciones anuales, especificadas en 30 dÃ­as naturales o 22 dÃ­as laborables.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> La obligación de registrar el contrato en el Servicio Público de Empleo en el plazo de 10 días, indicando si se realiza telemáticamente mediante la aplicación Contrata.</li>
+<li style="margin-bottom: .45rem; position: relative;"> La obligaciÃ³n de registrar el contrato en el Servicio PÃºblico de Empleo en el plazo de 10 dÃ­as, indicando si se realiza telemÃ¡ticamente mediante la aplicaciÃ³n Contrata.</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Firmas</strong>: Firma del trabajador, del representante de la empresa y, si procede, del representante legal del menor de edad.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Duración de los contratos de trabajo</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">DuraciÃ³n de los contratos de trabajo</h2>
 
-<p style="margin: 0 0 1rem;">Los contratos de trabajo pueden tener una duración indefinida o una duración determinada (temporal). La legislación española busca reducir la temporalidad laboral, limitando los contratos temporales a supuestos muy específicos.</p>
+<p style="margin: 0 0 1rem;">Los contratos de trabajo pueden tener una duraciÃ³n indefinida o una duraciÃ³n determinada (temporal). La legislaciÃ³n espaÃ±ola busca reducir la temporalidad laboral, limitando los contratos temporales a supuestos muy especÃ­ficos.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contratos de duración indefinida o especiales</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contratos de duraciÃ³n indefinida o especiales</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato indefinido</strong>: Se fija una fecha de inicio de la relación laboral, pero no se establece una fecha de finalización.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato indefinido</strong>: Se fija una fecha de inicio de la relaciÃ³n laboral, pero no se establece una fecha de finalizaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contratos para personas con discapacidad</strong>: Tienen una duración de entre 12 meses y 3 años, con prórrogas que no pueden ser inferiores a 12 meses.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contratos para personas con discapacidad</strong>: Tienen una duraciÃ³n de entre 12 meses y 3 aÃ±os, con prÃ³rrogas que no pueden ser inferiores a 12 meses.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de trabajo a distancia</strong>: Su duración no está predeterminada por ley y se establece por mutuo acuerdo entre las partes.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de trabajo a distancia</strong>: Su duraciÃ³n no estÃ¡ predeterminada por ley y se establece por mutuo acuerdo entre las partes.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato para personal investigador en formación</strong>: Duración de entre 1 y 4 años. Si se concierta por menos de 4 años, admite prórrogas de al menos 1 año de duración.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato para personal investigador en formaciÃ³n</strong>: DuraciÃ³n de entre 1 y 4 aÃ±os. Si se concierta por menos de 4 aÃ±os, admite prÃ³rrogas de al menos 1 aÃ±o de duraciÃ³n.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de contratos temporales y sus límites</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de contratos temporales y sus lÃ­mites</h3>
 
-<p style="margin: 0 0 1rem;">La legislación distingue cuatro modalidades principales de contratación temporal:</p>
+<p style="margin: 0 0 1rem;">La legislaciÃ³n distingue cuatro modalidades principales de contrataciÃ³n temporal:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eventual por circunstancias de la producción</strong>:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eventual por circunstancias de la producciÃ³n</strong>:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Objeto</span>: Atender actividades ocasionales previsibles de corta duración, o incrementos imprevisibles de la producción.</li>
+<span class="markdown-emphasis">Objeto</span>: Atender actividades ocasionales previsibles de corta duraciÃ³n, o incrementos imprevisibles de la producciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Duración</span>: Si es previsible, el máximo es de 90 días. Si es imprevisible, el máximo es de 6 meses. Requiere indicar fecha de fin.</li>
+<span class="markdown-emphasis">DuraciÃ³n</span>: Si es previsible, el mÃ¡ximo es de 90 dÃ­as. Si es imprevisible, el mÃ¡ximo es de 6 meses. Requiere indicar fecha de fin.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de sustitución</strong>:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de sustituciÃ³n</strong>:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <span class="markdown-emphasis">Objeto</span>: Sustituir a un trabajador con derecho a reserva de puesto de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Duración</span>: Se mantiene vigente mientras persista el objeto (es decir, hasta la reincorporación del trabajador sustituido).</li>
+<span class="markdown-emphasis">DuraciÃ³n</span>: Se mantiene vigente mientras persista el objeto (es decir, hasta la reincorporaciÃ³n del trabajador sustituido).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de formación en alternancia</strong>:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de formaciÃ³n en alternancia</strong>:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Objeto</span>: Compatibilizar la actividad laboral retribuida con procesos formativos en el ámbito de la formación profesional o universitaria.</li>
+<span class="markdown-emphasis">Objeto</span>: Compatibilizar la actividad laboral retribuida con procesos formativos en el Ã¡mbito de la formaciÃ³n profesional o universitaria.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Duración</span>: Mínimo de 3 meses y máximo de 2 años. Requiere indicar fecha de fin.</li>
+<span class="markdown-emphasis">DuraciÃ³n</span>: MÃ­nimo de 3 meses y mÃ¡ximo de 2 aÃ±os. Requiere indicar fecha de fin.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de prácticas (para la obtención de práctica profesional)</strong>:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contrato de prÃ¡cticas (para la obtenciÃ³n de prÃ¡ctica profesional)</strong>:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Objeto</span>: Proporcionar una práctica profesional adecuada al nivel de estudios cursados por el trabajador.</li>
+<span class="markdown-emphasis">Objeto</span>: Proporcionar una prÃ¡ctica profesional adecuada al nivel de estudios cursados por el trabajador.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Duración</span>: Mínimo de 6 meses y máximo de 1 año. Requiere indicar fecha de fin.</li>
+<span class="markdown-emphasis">DuraciÃ³n</span>: MÃ­nimo de 6 meses y mÃ¡ximo de 1 aÃ±o. Requiere indicar fecha de fin.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Existe una regla de limitación de la concatenación de contratos: los trabajadores que en un periodo de 24 meses hayan estado contratados de forma temporal durante más de 18 meses pasan a adquirir la condición de trabajadores indefinidos.</p>
+<p style="margin: 0 0 1rem;">Existe una regla de limitaciÃ³n de la concatenaciÃ³n de contratos: los trabajadores que en un periodo de 24 meses hayan estado contratados de forma temporal durante mÃ¡s de 18 meses pasan a adquirir la condiciÃ³n de trabajadores indefinidos.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Prórrogas de los contratos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">PrÃ³rrogas de los contratos</h3>
 
-<p style="margin: 0 0 1rem;">Cuando un contrato temporal se formaliza por una duración inferior al límite máximo permitido por la ley, las partes pueden acordar una prórroga para extender su vigencia, siempre respetando la duración máxima establecida legalmente. El Estatuto de los Trabajadores determina el número de prórrogas permitidas para cada modalidad contractual.</p>
+<p style="margin: 0 0 1rem;">Cuando un contrato temporal se formaliza por una duraciÃ³n inferior al lÃ­mite mÃ¡ximo permitido por la ley, las partes pueden acordar una prÃ³rroga para extender su vigencia, siempre respetando la duraciÃ³n mÃ¡xima establecida legalmente. El Estatuto de los Trabajadores determina el nÃºmero de prÃ³rrogas permitidas para cada modalidad contractual.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El periodo de prueba y sus particularidades</h2>
 
 <p style="margin: 0 0 1rem;">El periodo de prueba es un espacio de tiempo acordado en el contrato de trabajo que permite al empresario verificar la idoneidad profesional del trabajador para el puesto, y al trabajador comprobar si las condiciones de la empresa se adaptan a sus expectativas.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Características del periodo de prueba</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">CaracterÃ­sticas del periodo de prueba</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Forma</strong>: Debe constar obligatoriamente por escrito en el contrato. Si no se incluye de forma expresa en el documento, se entiende que no existe periodo de prueba.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Límites</strong>: No puede superar los límites establecidos en el Estatuto de los Trabajadores y los convenios colectivos. Para contratos temporales de duración determinada inferiores a 6 meses, el periodo de prueba no puede exceder de un mes, salvo disposición contraria en convenio.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">LÃ­mites</strong>: No puede superar los lÃ­mites establecidos en el Estatuto de los Trabajadores y los convenios colectivos. Para contratos temporales de duraciÃ³n determinada inferiores a 6 meses, el periodo de prueba no puede exceder de un mes, salvo disposiciÃ³n contraria en convenio.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos</strong>: Computa a efectos de antigüedad del trabajador en la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos</strong>: Computa a efectos de antigÃ¼edad del trabajador en la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rescisión</strong>: Durante este periodo, cualquiera de las partes puede dar por finalizada la relación laboral de manera unilateral, sin necesidad de preaviso y sin que el trabajador tenga derecho a percibir indemnización alguna por la extinción.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RescisiÃ³n</strong>: Durante este periodo, cualquiera de las partes puede dar por finalizada la relaciÃ³n laboral de manera unilateral, sin necesidad de preaviso y sin que el trabajador tenga derecho a percibir indemnizaciÃ³n alguna por la extinciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Derechos</strong>: El trabajador cuenta con los mismos derechos y obligaciones correspondientes a su puesto de trabajo que el resto de la plantilla.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Interrupción</strong>: Si existe acuerdo entre las partes, el cómputo del periodo de prueba puede interrumpirse en situaciones de incapacidad temporal, riesgo durante el embarazo, maternidad, adopción o acogimiento, riesgo durante la lactancia y paternidad.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InterrupciÃ³n</strong>: Si existe acuerdo entre las partes, el cÃ³mputo del periodo de prueba puede interrumpirse en situaciones de incapacidad temporal, riesgo durante el embarazo, maternidad, adopciÃ³n o acogimiento, riesgo durante la lactancia y paternidad.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Imposibilidad de aplicación</strong>: No se puede establecer un periodo de prueba si el trabajador ya ha desempeñado con anterioridad las mismas funciones para la misma empresa bajo cualquier modalidad de contratación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Imposibilidad de aplicaciÃ³n</strong>: No se puede establecer un periodo de prueba si el trabajador ya ha desempeÃ±ado con anterioridad las mismas funciones para la misma empresa bajo cualquier modalidad de contrataciÃ³n.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">La copia básica y el registro del contrato</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">La copia bÃ¡sica y el registro del contrato</h2>
 
-<p style="margin: 0 0 1rem;">La gestión de la contratación se realiza actualmente de forma telemática a través del sistema Contrata, lo que ha simplificado los trámites administrativos.</p>
+<p style="margin: 0 0 1rem;">La gestiÃ³n de la contrataciÃ³n se realiza actualmente de forma telemÃ¡tica a travÃ©s del sistema Contrata, lo que ha simplificado los trÃ¡mites administrativos.</p>
 
-<p style="margin: 0 0 1rem;">Anteriormente, se requerían tres copias del contrato de trabajo y dos copias básicas en papel para su registro físico en la oficina de empleo. Con el sistema actual, solo se necesitan dos copias físicas del contrato (una para el trabajador y otra para la empresa).</p>
+<p style="margin: 0 0 1rem;">Anteriormente, se requerÃ­an tres copias del contrato de trabajo y dos copias bÃ¡sicas en papel para su registro fÃ­sico en la oficina de empleo. Con el sistema actual, solo se necesitan dos copias fÃ­sicas del contrato (una para el trabajador y otra para la empresa).</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">La copia básica</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">La copia bÃ¡sica</h3>
 
-<p style="margin: 0 0 1rem;">La copia básica es un documento obligatorio que se formaliza de forma paralela al contrato de trabajo. Su finalidad es dar a conocer las nuevas contrataciones a la representación legal de los trabajadores (RLT) para que la firme y quede constancia de la comunicación.</p>
+<p style="margin: 0 0 1rem;">La copia bÃ¡sica es un documento obligatorio que se formaliza de forma paralela al contrato de trabajo. Su finalidad es dar a conocer las nuevas contrataciones a la representaciÃ³n legal de los trabajadores (RLT) para que la firme y quede constancia de la comunicaciÃ³n.</p>
 
-<p style="margin: 0 0 1rem;">Posteriormente, la empresa debe remitir esta copia básica firmada al Servicio Público de Empleo en un plazo máximo de 10 días desde el inicio de la relación laboral. Si la empresa no cuenta con RLT, igualmente se debe remitir la copia básica al Servicio Público de Empleo indicando dicha circunstancia. Las Empresas de Trabajo Temporal (ETT) también están obligadas a comunicar el contrato y la copia básica, además de entregar a la empresa usuaria el contrato de puesta a disposición (CPD).</p>
+<p style="margin: 0 0 1rem;">Posteriormente, la empresa debe remitir esta copia bÃ¡sica firmada al Servicio PÃºblico de Empleo en un plazo mÃ¡ximo de 10 dÃ­as desde el inicio de la relaciÃ³n laboral. Si la empresa no cuenta con RLT, igualmente se debe remitir la copia bÃ¡sica al Servicio PÃºblico de Empleo indicando dicha circunstancia. Las Empresas de Trabajo Temporal (ETT) tambiÃ©n estÃ¡n obligadas a comunicar el contrato y la copia bÃ¡sica, ademÃ¡s de entregar a la empresa usuaria el contrato de puesta a disposiciÃ³n (CPD).</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contenido de la copia básica</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contenido de la copia bÃ¡sica</h3>
 
-<p style="margin: 0 0 1rem;">Para salvaguardar el derecho a la intimidad del trabajador, la copia básica excluye datos personales sensibles como el DNI, domicilio, estado civil o cualquier otra información similar. Los datos obligatorios que sí debe contener son:</p>
+<p style="margin: 0 0 1rem;">Para salvaguardar el derecho a la intimidad del trabajador, la copia bÃ¡sica excluye datos personales sensibles como el DNI, domicilio, estado civil o cualquier otra informaciÃ³n similar. Los datos obligatorios que sÃ­ debe contener son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Datos identificativos del representante de la empresa y el nombre del trabajador.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Fecha de inicio de la relación laboral y la duración (si es un contrato temporal).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Fecha de inicio de la relaciÃ³n laboral y la duraciÃ³n (si es un contrato temporal).</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Domicilio del centro de trabajo de la empresa.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Puesto de trabajo, grupo o categoría profesional y descripción de las funciones.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Puesto de trabajo, grupo o categorÃ­a profesional y descripciÃ³n de las funciones.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Convenio colectivo aplicable.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Salario pactado.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Jornada de trabajo y su distribución horaria (si es a tiempo parcial).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Jornada de trabajo y su distribuciÃ³n horaria (si es a tiempo parcial).</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Vacaciones anuales.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Fases de la gestión de la contratación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Fases de la gestiÃ³n de la contrataciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">El proceso de contratación laboral se divide en diferentes fases con plazos administrativos estrictos que tanto la empresa como el trabajador deben cumplir en función de sus responsabilidades.</p>
+<p style="margin: 0 0 1rem;">El proceso de contrataciÃ³n laboral se divide en diferentes fases con plazos administrativos estrictos que tanto la empresa como el trabajador deben cumplir en funciÃ³n de sus responsabilidades.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fases para la empresa</h3>
 
-<p style="margin: 0 0 1rem;">Las obligaciones y plazos que debe gestionar el empresario a lo largo de la relación laboral son los siguientes:</p>
+<p style="margin: 0 0 1rem;">Las obligaciones y plazos que debe gestionar el empresario a lo largo de la relaciÃ³n laboral son los siguientes:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 1: Elección del modelo de contrato</strong>. Se debe seleccionar el tipo de contrato adecuado a las necesidades de la empresa. Plazo: Previo a la incorporación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 1: ElecciÃ³n del modelo de contrato</strong>. Se debe seleccionar el tipo de contrato adecuado a las necesidades de la empresa. Plazo: Previo a la incorporaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 2: Elaboración del contrato</strong>. Redacción del documento según el modelo oficial del Servicio Público de Empleo. Plazo: Previo a la incorporación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 2: ElaboraciÃ³n del contrato</strong>. RedacciÃ³n del documento segÃºn el modelo oficial del Servicio PÃºblico de Empleo. Plazo: Previo a la incorporaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 3: Alta en la Seguridad Social</strong>. Tramitación del alta del trabajador en el sistema de la Seguridad Social. Plazo: Previo a la incorporación (con hasta 60 días naturales de antelación).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 3: Alta en la Seguridad Social</strong>. TramitaciÃ³n del alta del trabajador en el sistema de la Seguridad Social. Plazo: Previo a la incorporaciÃ³n (con hasta 60 dÃ­as naturales de antelaciÃ³n).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 4: Entrega de la copia básica a la RLT</strong>. Solo si la empresa cuenta con representación legal de los trabajadores. Plazo: En un plazo de 10 días.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 4: Entrega de la copia bÃ¡sica a la RLT</strong>. Solo si la empresa cuenta con representaciÃ³n legal de los trabajadores. Plazo: En un plazo de 10 dÃ­as.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 5: Comunicación al Servicio Público de Empleo</strong>. Envío del contrato y de la copia básica. Plazo: Máximo de 10 días desde la fecha de inicio de la relación laboral.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 5: ComunicaciÃ³n al Servicio PÃºblico de Empleo</strong>. EnvÃ­o del contrato y de la copia bÃ¡sica. Plazo: MÃ¡ximo de 10 dÃ­as desde la fecha de inicio de la relaciÃ³n laboral.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 6: Comunicación de prórrogas o modificaciones a la Seguridad Social</strong>. Plazo: Máximo de 3 días naturales.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 6: ComunicaciÃ³n de prÃ³rrogas o modificaciones a la Seguridad Social</strong>. Plazo: MÃ¡ximo de 3 dÃ­as naturales.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 7: Comunicación de prórrogas o modificaciones al Servicio Público de Empleo</strong>. Plazo: Máximo de 10 días.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 7: ComunicaciÃ³n de prÃ³rrogas o modificaciones al Servicio PÃºblico de Empleo</strong>. Plazo: MÃ¡ximo de 10 dÃ­as.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 8: Notificación del fin de la relación laboral</strong>. Comunicación al trabajador de la extinción del contrato. Plazo límite: El último día de trabajo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 8: NotificaciÃ³n del fin de la relaciÃ³n laboral</strong>. ComunicaciÃ³n al trabajador de la extinciÃ³n del contrato. Plazo lÃ­mite: El Ãºltimo dÃ­a de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 9: Baja en la Seguridad Social</strong>. Tramitación de la baja del empleado. Plazo: Máximo de 3 días naturales desde el cese.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 9: Baja en la Seguridad Social</strong>. TramitaciÃ³n de la baja del empleado. Plazo: MÃ¡ximo de 3 dÃ­as naturales desde el cese.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fases de reclamación para el trabajador</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fases de reclamaciÃ³n para el trabajador</h3>
 
-<p style="margin: 0 0 1rem;">En caso de que el trabajador no esté de acuerdo con la extinción de su contrato o con su despido, debe seguir los siguientes pasos legales:</p>
+<p style="margin: 0 0 1rem;">En caso de que el trabajador no estÃ© de acuerdo con la extinciÃ³n de su contrato o con su despido, debe seguir los siguientes pasos legales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 1: Presentación de la papeleta de conciliación</strong>. Se interpone ante el Servicio de Mediación, Arbitraje y Conciliación (SMAC). Plazo: 20 días hábiles desde la fecha de finalización del contrato.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 1: PresentaciÃ³n de la papeleta de conciliaciÃ³n</strong>. Se interpone ante el Servicio de MediaciÃ³n, Arbitraje y ConciliaciÃ³n (SMAC). Plazo: 20 dÃ­as hÃ¡biles desde la fecha de finalizaciÃ³n del contrato.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 2: Asistencia al acto de conciliación</strong>. Comparecencia obligatoria en la fecha y hora indicadas por el SMAC para intentar alcanzar un acuerdo con la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 2: Asistencia al acto de conciliaciÃ³n</strong>. Comparecencia obligatoria en la fecha y hora indicadas por el SMAC para intentar alcanzar un acuerdo con la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 3: Presentación de demanda judicial</strong>. Solo si no se alcanza un acuerdo en el acto de conciliación del SMAC. Se interpone ante el Juzgado de lo Social. Plazo: 20 días hábiles desde la fecha de finalización del contrato (el cómputo se suspende temporalmente durante el trámite de conciliación).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase 3: PresentaciÃ³n de demanda judicial</strong>. Solo si no se alcanza un acuerdo en el acto de conciliaciÃ³n del SMAC. Se interpone ante el Juzgado de lo Social. Plazo: 20 dÃ­as hÃ¡biles desde la fecha de finalizaciÃ³n del contrato (el cÃ³mputo se suspende temporalmente durante el trÃ¡mite de conciliaciÃ³n).</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos y resoluciones de la unidad</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos y resoluciones de la unidad</h2>
 
-<p style="margin: 0 0 1rem;">A continuación, se exponen situaciones prácticas que ilustran la aplicación de la normativa laboral analizada en los apuntes.</p>
+<p style="margin: 0 0 1rem;">A continuaciÃ³n, se exponen situaciones prÃ¡cticas que ilustran la aplicaciÃ³n de la normativa laboral analizada en los apuntes.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Contratación de un trabajador extranjero</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: ContrataciÃ³n de un trabajador extranjero</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Aridane es un farmacéutico que reside en Buenos Aires, cuenta con 6 años de experiencia y posee doble nacionalidad (argentina e italiana). Ha postulado a una oferta de empleo para una empresa en Zaragoza. Si la empresa decide contratarlo, ¿cómo debe tramitarse el proceso?</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Aridane es un farmacÃ©utico que reside en Buenos Aires, cuenta con 6 aÃ±os de experiencia y posee doble nacionalidad (argentina e italiana). Ha postulado a una oferta de empleo para una empresa en Zaragoza. Si la empresa decide contratarlo, Â¿cÃ³mo debe tramitarse el proceso?</p>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: Para proceder con la contratación de manera ágil y evitar retrasos excesivos (que en el caso de trabajadores no comunitarios pueden demorarse meses), deben verificarse tres requisitos indispensables:</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n</strong>: Para proceder con la contrataciÃ³n de manera Ã¡gil y evitar retrasos excesivos (que en el caso de trabajadores no comunitarios pueden demorarse meses), deben verificarse tres requisitos indispensables:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Homologación del título académico</strong>: Aridane debe acreditar la homologación de su título de farmacéutico en España. Sin este trámite (que puede tardar entre 6 meses y 2 años), no se le puede contratar para ese puesto cualificado.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">HomologaciÃ³n del tÃ­tulo acadÃ©mico</strong>: Aridane debe acreditar la homologaciÃ³n de su tÃ­tulo de farmacÃ©utico en EspaÃ±a. Sin este trÃ¡mite (que puede tardar entre 6 meses y 2 aÃ±os), no se le puede contratar para ese puesto cualificado.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ciudadanía comunitaria</strong>: Al poseer pasaporte italiano, Aridane pertenece a la Unión Europea. Esto evita tener que iniciar un trámite de autorización de trabajo para extranjeros no comunitarios, el cual retrasaría el proceso durante meses.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CiudadanÃ­a comunitaria</strong>: Al poseer pasaporte italiano, Aridane pertenece a la UniÃ³n Europea. Esto evita tener que iniciar un trÃ¡mite de autorizaciÃ³n de trabajo para extranjeros no comunitarios, el cual retrasarÃ­a el proceso durante meses.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Trámites en España</strong>: Una vez en España, Aridane deberá empadronarse, solicitar su Número de Identidad de Extranjero (NIE) y obtener su Número de Afiliación a la Seguridad Social (NAF) para formalizar el contrato de trabajo.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TrÃ¡mites en EspaÃ±a</strong>: Una vez en EspaÃ±a, Aridane deberÃ¡ empadronarse, solicitar su NÃºmero de Identidad de Extranjero (NIE) y obtener su NÃºmero de AfiliaciÃ³n a la Seguridad Social (NAF) para formalizar el contrato de trabajo.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Rescisión del contrato en periodo de prueba</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: RescisiÃ³n del contrato en periodo de prueba</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: La empresa MARCON contrata a Octavio como técnico de laboratorio mediante un contrato eventual por circunstancias de la producción de 12 meses de duración. A los 5 meses, el gerente decide rescindir su contrato alegando la no superación del periodo de prueba. Octavio reclama argumentando que en su contrato de trabajo escrito no figura ninguna cláusula sobre el periodo de prueba, a pesar de que el convenio para titulados establece un máximo de 6 meses. ¿Cómo se resuelve esta situación?</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: La empresa MARCON contrata a Octavio como tÃ©cnico de laboratorio mediante un contrato eventual por circunstancias de la producciÃ³n de 12 meses de duraciÃ³n. A los 5 meses, el gerente decide rescindir su contrato alegando la no superaciÃ³n del periodo de prueba. Octavio reclama argumentando que en su contrato de trabajo escrito no figura ninguna clÃ¡usula sobre el periodo de prueba, a pesar de que el convenio para titulados establece un mÃ¡ximo de 6 meses. Â¿CÃ³mo se resuelve esta situaciÃ³n?</p>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: El despido se declara <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">nulo</strong> (o improcedente por defecto de forma). Aunque el Estatuto de los Trabajadores y el convenio colectivo permitan un periodo de prueba de hasta 6 meses para titulados universitarios, es un requisito obligatorio que el periodo de prueba se pacte y se recoja expresamente <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">por escrito</strong> en el contrato individual de trabajo. Al omitirse esta cláusula por un error administrativo, legalmente no existía periodo de prueba para Octavio, por lo que la empresa no podía extinguir el contrato de forma unilateral y gratuita bajo esa premisa.</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n</strong>: El despido se declara <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">nulo</strong> (o improcedente por defecto de forma). Aunque el Estatuto de los Trabajadores y el convenio colectivo permitan un periodo de prueba de hasta 6 meses para titulados universitarios, es un requisito obligatorio que el periodo de prueba se pacte y se recoja expresamente <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">por escrito</strong> en el contrato individual de trabajo. Al omitirse esta clÃ¡usula por un error administrativo, legalmente no existÃ­a periodo de prueba para Octavio, por lo que la empresa no podÃ­a extinguir el contrato de forma unilateral y gratuita bajo esa premisa.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución del caso práctico de la unidad: El contrato de formación en alternancia</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ResoluciÃ³n del caso prÃ¡ctico de la unidad: El contrato de formaciÃ³n en alternancia</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Determinar la fórmula de contratación idónea para una empresa que busca incorporar un perfil cualificado minimizando costes salariales y adaptándose a sus necesidades de plantilla.</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Determinar la fÃ³rmula de contrataciÃ³n idÃ³nea para una empresa que busca incorporar un perfil cualificado minimizando costes salariales y adaptÃ¡ndose a sus necesidades de plantilla.</p>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: La modalidad de contratación que mejor se ajusta a estas necesidades es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contrato de formación en alternancia</strong>. Sus características principales son:</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n</strong>: La modalidad de contrataciÃ³n que mejor se ajusta a estas necesidades es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contrato de formaciÃ³n en alternancia</strong>. Sus caracterÃ­sticas principales son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Duración</strong>: Tiene una duración mínima de 6 meses y máxima de 2 años.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DuraciÃ³n</strong>: Tiene una duraciÃ³n mÃ­nima de 6 meses y mÃ¡xima de 2 aÃ±os.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Retribución</strong>: El salario se calcula sobre el convenio colectivo aplicable, no pudiendo ser inferior al 60% de dicho salario durante el primer año, ni inferior al 75% durante el segundo año de vigencia del contrato.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RetribuciÃ³n</strong>: El salario se calcula sobre el convenio colectivo aplicable, no pudiendo ser inferior al 60% de dicho salario durante el primer aÃ±o, ni inferior al 75% durante el segundo aÃ±o de vigencia del contrato.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Periodo de prueba</strong>: Esta modalidad contractual no admite periodo de prueba.</li>
@@ -366,12 +396,13 @@
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos del trabajador</strong>:</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Debe tratarse de personas que carezcan de la cualificación profesional reconocida por las titulaciones o certificados requeridos para concertar un contrato formativo para la obtención de práctica profesional.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Debe tratarse de personas que carezcan de la cualificaciÃ³n profesional reconocida por las titulaciones o certificados requeridos para concertar un contrato formativo para la obtenciÃ³n de prÃ¡ctica profesional.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Debe estar vinculado a estudios de formación profesional (FP) o universitarios. Se permite con personas que posean otra titulación, siempre que no hayan tenido un contrato formativo previo en una formación del mismo nivel formativo y del mismo sector productivo.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Debe estar vinculado a estudios de formaciÃ³n profesional (FP) o universitarios. Se permite con personas que posean otra titulaciÃ³n, siempre que no hayan tenido un contrato formativo previo en una formaciÃ³n del mismo nivel formativo y del mismo sector productivo.</li>
 
 </ul>
 
 </main>
 </body>
 </html>
+

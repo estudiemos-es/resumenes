@@ -1,105 +1,135 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apuntes - Contabilidad y fiscalidad. Tema 4</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
 <h1>Apuntes - Contabilidad y fiscalidad. Tema 4</h1>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tramitación de las obligaciones fiscales</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">TramitaciÃ³n de las obligaciones fiscales</h2>
 
-<p style="margin: 0 0 1rem;">El cumplimiento de las obligaciones fiscales y contables es un pilar fundamental en la gestión de cualquier actividad económica. La correcta tramitación de los tributos garantiza la legalidad de las operaciones, evita sanciones administrativas y mantiene la transparencia financiera de las organizaciones.</p>
+<p style="margin: 0 0 1rem;">El cumplimiento de las obligaciones fiscales y contables es un pilar fundamental en la gestiÃ³n de cualquier actividad econÃ³mica. La correcta tramitaciÃ³n de los tributos garantiza la legalidad de las operaciones, evita sanciones administrativas y mantiene la transparencia financiera de las organizaciones.</p>
 
-<p style="margin: 0 0 1rem;">Los impuestos son herramientas esenciales para el sostenimiento de una sociedad, ya que proveen los recursos financieros que permiten financiar servicios públicos indispensables como la sanidad, la educación, las infraestructuras y la seguridad. Las empresas y los ciudadanos deben atender a estas obligaciones de acuerdo con los plazos estipulados en el calendario del contribuyente, el cual detalla anualmente las fechas límite para la presentación de las autoliquidaciones.</p>
+<p style="margin: 0 0 1rem;">Los impuestos son herramientas esenciales para el sostenimiento de una sociedad, ya que proveen los recursos financieros que permiten financiar servicios pÃºblicos indispensables como la sanidad, la educaciÃ³n, las infraestructuras y la seguridad. Las empresas y los ciudadanos deben atender a estas obligaciones de acuerdo con los plazos estipulados en el calendario del contribuyente, el cual detalla anualmente las fechas lÃ­mite para la presentaciÃ³n de las autoliquidaciones.</p>
 
-<p style="margin: 0 0 1rem;">Los tres impuestos principales que afectan a la actividad económica son:</p>
+<p style="margin: 0 0 1rem;">Los tres impuestos principales que afectan a la actividad econÃ³mica son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre sociedades (IS)</strong>: Grava los beneficios obtenidos por las personas jurídicas (empresas) y representa una fuente de financiación crucial para el sector público.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre sociedades (IS)</strong>: Grava los beneficios obtenidos por las personas jurÃ­dicas (empresas) y representa una fuente de financiaciÃ³n crucial para el sector pÃºblico.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre la renta de las personas físicas (IRPF)</strong>: Grava los ingresos de los individuos y constituye uno de los pilares de la recaudación fiscal estatal.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre la renta de las personas fÃ­sicas (IRPF)</strong>: Grava los ingresos de los individuos y constituye uno de los pilares de la recaudaciÃ³n fiscal estatal.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre el valor añadido (IVA)</strong>: Impuesto indirecto que recae sobre el consumo de bienes y servicios.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre el valor aÃ±adido (IVA)</strong>: Impuesto indirecto que recae sobre el consumo de bienes y servicios.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Impuestos locales y censo de obligados</h2>
 
-<p style="margin: 0 0 1rem;">Los impuestos locales son aquellos gestionados y exigidos por los ayuntamientos para financiar los servicios de carácter municipal, tales como el mantenimiento de las vías públicas, la recogida de residuos o el cuidado de parques.</p>
+<p style="margin: 0 0 1rem;">Los impuestos locales son aquellos gestionados y exigidos por los ayuntamientos para financiar los servicios de carÃ¡cter municipal, tales como el mantenimiento de las vÃ­as pÃºblicas, la recogida de residuos o el cuidado de parques.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Impuestos municipales más relevantes</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Impuestos municipales mÃ¡s relevantes</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre bienes inmuebles (IBI)</strong>: Tributo que grava la propiedad de los bienes inmuebles (viviendas, locales comerciales y terrenos). Su recaudación se destina directamente al municipio donde se localiza el inmueble.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre bienes inmuebles (IBI)</strong>: Tributo que grava la propiedad de los bienes inmuebles (viviendas, locales comerciales y terrenos). Su recaudaciÃ³n se destina directamente al municipio donde se localiza el inmueble.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre actividades económicas (IAE)</strong>: Grava el ejercicio de actividades empresariales, profesionales o artísticas en territorio nacional, con independencia de si se realizan o no en un local físico.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre actividades econÃ³micas (IAE)</strong>: Grava el ejercicio de actividades empresariales, profesionales o artÃ­sticas en territorio nacional, con independencia de si se realizan o no en un local fÃ­sico.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre vehículos de tracción mecánica (IVTM)</strong>: Grava la titularidad de los vehículos a motor aptos para circular. El importe se calcula según parámetros técnicos como la cilindrada, la potencia fiscal o el tipo de vehículo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuesto sobre vehÃ­culos de tracciÃ³n mecÃ¡nica (IVTM)</strong>: Grava la titularidad de los vehÃ­culos a motor aptos para circular. El importe se calcula segÃºn parÃ¡metros tÃ©cnicos como la cilindrada, la potencia fiscal o el tipo de vehÃ­culo.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Características y exenciones del impuesto sobre actividades económicas</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">CaracterÃ­sticas y exenciones del impuesto sobre actividades econÃ³micas</h3>
 
-<p style="margin: 0 0 1rem;">El IAE es un impuesto de carácter real y directo regulado por el Real Decreto Legislativo 2/2004, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales. Su período impositivo coincide con el año natural.</p>
+<p style="margin: 0 0 1rem;">El IAE es un impuesto de carÃ¡cter real y directo regulado por el Real Decreto Legislativo 2/2004, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales. Su perÃ­odo impositivo coincide con el aÃ±o natural.</p>
 
-<p style="margin: 0 0 1rem;">La ley establece que están exentos de abonar este impuesto:</p>
+<p style="margin: 0 0 1rem;">La ley establece que estÃ¡n exentos de abonar este impuesto:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El Estado, las comunidades autónomas y las entidades locales (como ayuntamientos y diputaciones).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El Estado, las comunidades autÃ³nomas y las entidades locales (como ayuntamientos y diputaciones).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Las personas físicas y entidades durante los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">dos primeros períodos impositivos</strong> en los que inicien su actividad económica.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Las personas fÃ­sicas y entidades durante los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">dos primeros perÃ­odos impositivos</strong> en los que inicien su actividad econÃ³mica.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Los sujetos pasivos que hayan obtenido una cifra neta de negocios <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">inferior a 1.000.000 de euros</strong> durante los dos años anteriores al devengo del impuesto.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Los sujetos pasivos que hayan obtenido una cifra neta de negocios <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">inferior a 1.000.000 de euros</strong> durante los dos aÃ±os anteriores al devengo del impuesto.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Obligaciones censales y modelos de registro</h3>
 
-<p style="margin: 0 0 1rem;">Para poder iniciar cualquier actividad económica, es obligatorio inscribirse en el censo de obligados tributarios de la Agencia Tributaria. Esta inscripción sirve también para gestionar el alta en el IAE. Los modelos oficiales para realizar este trámite son:</p>
+<p style="margin: 0 0 1rem;">Para poder iniciar cualquier actividad econÃ³mica, es obligatorio inscribirse en el censo de obligados tributarios de la Agencia Tributaria. Esta inscripciÃ³n sirve tambiÃ©n para gestionar el alta en el IAE. Los modelos oficiales para realizar este trÃ¡mite son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 036</strong>: Declaración censal general utilizada por empresarios y sociedades para darse de alta en el censo de empresarios, profesionales y retenedores.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 036</strong>: DeclaraciÃ³n censal general utilizada por empresarios y sociedades para darse de alta en el censo de empresarios, profesionales y retenedores.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 037</strong>: Versión simplificada de la declaración censal, que puede ser utilizada por personas físicas que vayan a desarrollar una actividad profesional, siempre que cumplan ciertos requisitos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 037</strong>: VersiÃ³n simplificada de la declaraciÃ³n censal, que puede ser utilizada por personas fÃ­sicas que vayan a desarrollar una actividad profesional, siempre que cumplan ciertos requisitos.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Durante los dos primeros años de actividad, el alta a través de los modelos 036 o 037 es suficiente para cumplir con las obligaciones formales del IAE.</p>
+<p style="margin: 0 0 1rem;">Durante los dos primeros aÃ±os de actividad, el alta a travÃ©s de los modelos 036 o 037 es suficiente para cumplir con las obligaciones formales del IAE.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Gestión del impuesto sobre sociedades</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">GestiÃ³n del impuesto sobre sociedades</h2>
 
-<p style="margin: 0 0 1rem;">El impuesto sobre sociedades (IS) es un tributo directo y personal que grava las rentas obtenidas por las personas jurídicas y demás entidades residentes en territorio español. Está regulado por la Ley 27/2014.</p>
+<p style="margin: 0 0 1rem;">El impuesto sobre sociedades (IS) es un tributo directo y personal que grava las rentas obtenidas por las personas jurÃ­dicas y demÃ¡s entidades residentes en territorio espaÃ±ol. EstÃ¡ regulado por la Ley 27/2014.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">directo</strong> porque se aplica sobre la totalidad de la renta obtenida por la entidad, sin importar la fuente de la que proceda.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">personal</strong> porque tiene en cuenta las circunstancias específicas de cada contribuyente a la hora de determinar la deuda tributaria.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Es <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">personal</strong> porque tiene en cuenta las circunstancias especÃ­ficas de cada contribuyente a la hora de determinar la deuda tributaria.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Elementos tributarios del impuesto sobre sociedades</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Hecho imponible</strong>: La obtención de renta por parte de los sujetos pasivos, independientemente de su procedencia.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Hecho imponible</strong>: La obtenciÃ³n de renta por parte de los sujetos pasivos, independientemente de su procedencia.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sujeto pasivo</strong>: Las personas jurídicas que tengan su residencia legal en el territorio español.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sujeto pasivo</strong>: Las personas jurÃ­dicas que tengan su residencia legal en el territorio espaÃ±ol.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Exenciones</strong>: No están obligadas a pagar el impuesto las administraciones públicas (estatales, autonómicas y locales) ni determinadas entidades sin ánimo de lucro.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Exenciones</strong>: No estÃ¡n obligadas a pagar el impuesto las administraciones pÃºblicas (estatales, autonÃ³micas y locales) ni determinadas entidades sin Ã¡nimo de lucro.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Período impositivo</strong>: Coincide con el ejercicio económico de la empresa, sin que pueda exceder en ningún caso de los 12 meses.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PerÃ­odo impositivo</strong>: Coincide con el ejercicio econÃ³mico de la empresa, sin que pueda exceder en ningÃºn caso de los 12 meses.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelos de declaración</strong>: La declaración anual se realiza a través del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 200</strong>. Los pagos fraccionados a cuenta de la liquidación anual se tramitan mediante el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 202</strong> en tres períodos específicos del año:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelos de declaraciÃ³n</strong>: La declaraciÃ³n anual se realiza a travÃ©s del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 200</strong>. Los pagos fraccionados a cuenta de la liquidaciÃ³n anual se tramitan mediante el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 202</strong> en tres perÃ­odos especÃ­ficos del aÃ±o:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Primer pago</strong>: Del 1 al 20 de abril.</li>
@@ -112,11 +142,11 @@
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Liquidación del impuesto sobre sociedades</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">LiquidaciÃ³n del impuesto sobre sociedades</h2>
 
-<p style="margin: 0 0 1rem;">La determinación de la cantidad a pagar o a devolver por el impuesto sobre sociedades se realiza siguiendo un esquema de liquidación estructurado de la siguiente forma:</p>
+<p style="margin: 0 0 1rem;">La determinaciÃ³n de la cantidad a pagar o a devolver por el impuesto sobre sociedades se realiza siguiendo un esquema de liquidaciÃ³n estructurado de la siguiente forma:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resultado contable</strong> (obtenido de la cuenta de pérdidas y ganancias)</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resultado contable</strong> (obtenido de la cuenta de pÃ©rdidas y ganancias)</p>
 
 <p style="margin: 0 0 1rem;">2. (+/-) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ajustes al resultado contable</strong></p>
 
@@ -128,11 +158,11 @@
 
 <p style="margin: 0 0 1rem;">6. (x) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo de gravamen</strong></p>
 
-<p style="margin: 0 0 1rem;">7. (=) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota íntegra</strong></p>
+<p style="margin: 0 0 1rem;">7. (=) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota Ã­ntegra</strong></p>
 
 <p style="margin: 0 0 1rem;">8. (-) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bonificaciones y deducciones</strong></p>
 
-<p style="margin: 0 0 1rem;">9. (=) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota líquida</strong></p>
+<p style="margin: 0 0 1rem;">9. (=) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota lÃ­quida</strong></p>
 
 <p style="margin: 0 0 1rem;">10. (-) <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagos fraccionados</strong></p>
 
@@ -142,75 +172,75 @@
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">La base imponible y sus ajustes</h3>
 
-<p style="margin: 0 0 1rem;">La base imponible se calcula habitualmente por el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">método directo</strong>, que toma como punto de partida el resultado contable para corregirlo mediante ajustes fiscales cuando las normas contables y las fiscales difieren. Estos ajustes pueden ser:</p>
+<p style="margin: 0 0 1rem;">La base imponible se calcula habitualmente por el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">mÃ©todo directo</strong>, que toma como punto de partida el resultado contable para corregirlo mediante ajustes fiscales cuando las normas contables y las fiscales difieren. Estos ajustes pueden ser:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ajustes permanentes</strong>: Diferencias que surgen por gastos o ingresos que la normativa fiscal no reconoce y que no se revertirán en el futuro (por ejemplo, los gastos no deducibles como las multas o sanciones).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ajustes permanentes</strong>: Diferencias que surgen por gastos o ingresos que la normativa fiscal no reconoce y que no se revertirÃ¡n en el futuro (por ejemplo, los gastos no deducibles como las multas o sanciones).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ajustes temporales</strong>: Diferencias de valoración o de imputación temporal que se compensarán en ejercicios posteriores.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ajustes temporales</strong>: Diferencias de valoraciÃ³n o de imputaciÃ³n temporal que se compensarÃ¡n en ejercicios posteriores.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Los motivos más comunes que originan estos ajustes son:</p>
+<p style="margin: 0 0 1rem;">Los motivos mÃ¡s comunes que originan estos ajustes son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Amortizaciones</strong>: La norma fiscal solo acepta ciertos métodos de amortización, como la amortización lineal, la amortización según tablas y la amortización por números dígitos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Amortizaciones</strong>: La norma fiscal solo acepta ciertos mÃ©todos de amortizaciÃ³n, como la amortizaciÃ³n lineal, la amortizaciÃ³n segÃºn tablas y la amortizaciÃ³n por nÃºmeros dÃ­gitos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deterioro de créditos comerciales</strong>: Solo se permite deducir fiscalmente las pérdidas por deterioro de créditos comerciales cuando han transcurrido más de seis meses desde su vencimiento o cuando se encuentran reclamadas por vía judicial.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deterioro de crÃ©ditos comerciales</strong>: Solo se permite deducir fiscalmente las pÃ©rdidas por deterioro de crÃ©ditos comerciales cuando han transcurrido mÃ¡s de seis meses desde su vencimiento o cuando se encuentran reclamadas por vÃ­a judicial.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gastos fiscalmente no deducibles</strong>: Gastos que contablemente se registran pero que la ley fiscal prohíbe deducir, como las multas, sanciones o recargos de apremio.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gastos fiscalmente no deducibles</strong>: Gastos que contablemente se registran pero que la ley fiscal prohÃ­be deducir, como las multas, sanciones o recargos de apremio.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuota íntegra y tipos de gravamen</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuota Ã­ntegra y tipos de gravamen</h3>
 
-<p style="margin: 0 0 1rem;">La cuota íntegra se obtiene al aplicar el tipo de gravamen correspondiente sobre la base imponible. Los tipos impositivos vigentes son:</p>
+<p style="margin: 0 0 1rem;">La cuota Ã­ntegra se obtiene al aplicar el tipo de gravamen correspondiente sobre la base imponible. Los tipos impositivos vigentes son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo general</strong>: 25%.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades de nueva creación</strong>: 15% (aplicable en los primeros períodos con base imponible positiva).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades de nueva creaciÃ³n</strong>: 15% (aplicable en los primeros perÃ­odos con base imponible positiva).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades con cifra de negocios inferior a un millón de euros</strong>: 23%.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Entidades con cifra de negocios inferior a un millÃ³n de euros</strong>: 23%.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuota líquida</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuota lÃ­quida</h3>
 
-<p style="margin: 0 0 1rem;">Se calcula restando de la cuota íntegra (siempre que esta sea positiva) las bonificaciones y deducciones en el siguiente orden estricto:</p>
+<p style="margin: 0 0 1rem;">Se calcula restando de la cuota Ã­ntegra (siempre que esta sea positiva) las bonificaciones y deducciones en el siguiente orden estricto:</p>
 
 <p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Bonificaciones</strong>: Incentivos para favorecer ciertas rentas, como las obtenidas en Ceuta y Melilla.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deducciones por doble imposición</strong>: Para evitar que una misma renta tribute en el IS español y en un impuesto similar en el extranjero.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deducciones por doble imposiciÃ³n</strong>: Para evitar que una misma renta tribute en el IS espaÃ±ol y en un impuesto similar en el extranjero.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deducciones por actividades específicas</strong>: Incentivos para fomentar la inversión en investigación y desarrollo (I+D), la creación de empleo o las aportaciones empresariales a planes de previsión social.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deducciones por actividades especÃ­ficas</strong>: Incentivos para fomentar la inversiÃ³n en investigaciÃ³n y desarrollo (I+D), la creaciÃ³n de empleo o las aportaciones empresariales a planes de previsiÃ³n social.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuota diferencial</h3>
 
-<p style="margin: 0 0 1rem;">Es el resultado final de la liquidación. Representa la cantidad que se debe ingresar o la cantidad que la Hacienda pública debe devolver:</p>
+<p style="margin: 0 0 1rem;">Es el resultado final de la liquidaciÃ³n. Representa la cantidad que se debe ingresar o la cantidad que la Hacienda pÃºblica debe devolver:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A ingresar</strong>: Si la cuota líquida es superior a las retenciones, ingresos a cuenta y pagos fraccionados realizados durante el año.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A ingresar</strong>: Si la cuota lÃ­quida es superior a las retenciones, ingresos a cuenta y pagos fraccionados realizados durante el aÃ±o.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A devolver</strong>: Si las retenciones y pagos a cuenta aportados previamente superan el importe de la cuota líquida.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A devolver</strong>: Si las retenciones y pagos a cuenta aportados previamente superan el importe de la cuota lÃ­quida.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Impuesto sobre la renta de las personas físicas</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Impuesto sobre la renta de las personas fÃ­sicas</h2>
 
-<p style="margin: 0 0 1rem;">El impuesto sobre la renta de las personas físicas (IRPF) está regulado por la Ley 35/2006. Es un tributo de carácter personal y directo que grava la renta global obtenida por las personas físicas residentes en España, teniendo en cuenta sus circunstancias personales y familiares (mínimos exentos, hijos a cargo, etc.). Este impuesto está parcialmente cedido a las comunidades autónomas, lo que les permite regular ciertas deducciones específicas.</p>
+<p style="margin: 0 0 1rem;">El impuesto sobre la renta de las personas fÃ­sicas (IRPF) estÃ¡ regulado por la Ley 35/2006. Es un tributo de carÃ¡cter personal y directo que grava la renta global obtenida por las personas fÃ­sicas residentes en EspaÃ±a, teniendo en cuenta sus circunstancias personales y familiares (mÃ­nimos exentos, hijos a cargo, etc.). Este impuesto estÃ¡ parcialmente cedido a las comunidades autÃ³nomas, lo que les permite regular ciertas deducciones especÃ­ficas.</p>
 
-<p style="margin: 0 0 1rem;">El período impositivo se corresponde con el año natural y el devengo se produce el 31 de diciembre de cada año.</p>
+<p style="margin: 0 0 1rem;">El perÃ­odo impositivo se corresponde con el aÃ±o natural y el devengo se produce el 31 de diciembre de cada aÃ±o.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Componentes de la renta (hecho imponible)</h3>
 
-<p style="margin: 0 0 1rem;">La renta del contribuyente se clasifica en diferentes categorías según su procedencia:</p>
+<p style="margin: 0 0 1rem;">La renta del contribuyente se clasifica en diferentes categorÃ­as segÃºn su procedencia:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rendimientos del trabajo</strong>: Contraprestaciones, tanto dinerarias como en especie, que derivan del trabajo personal por cuenta ajena (salarios, pensiones, prestaciones por desempleo).</li>
@@ -219,97 +249,98 @@
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rendimientos del capital</strong>: Utilidades o contraprestaciones que provienen de elementos patrimoniales, ya sean bienes inmuebles (alquileres) o bienes muebles (intereses de cuentas, dividendos).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rendimientos de actividades económicas</strong>: Ingresos obtenidos por empresarios individuales y profesionales autónomos. Se pueden determinar a través de la modalidad de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estimación directa</strong> o de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estimación objetiva</strong> (comúnmente conocida como módulos).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rendimientos de actividades econÃ³micas</strong>: Ingresos obtenidos por empresarios individuales y profesionales autÃ³nomos. Se pueden determinar a travÃ©s de la modalidad de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estimaciÃ³n directa</strong> o de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estimaciÃ³n objetiva</strong> (comÃºnmente conocida como mÃ³dulos).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ganancias y pérdidas patrimoniales</strong>: Variaciones en el valor del patrimonio del contribuyente que se ponen de manifiesto con ocasión de cualquier alteración en su composición (por ejemplo, la venta de un inmueble o de acciones).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ganancias y pÃ©rdidas patrimoniales</strong>: Variaciones en el valor del patrimonio del contribuyente que se ponen de manifiesto con ocasiÃ³n de cualquier alteraciÃ³n en su composiciÃ³n (por ejemplo, la venta de un inmueble o de acciones).</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Modelos de declaración del IRPF</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Modelos de declaraciÃ³n del IRPF</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 111</strong>: Declaración trimestral en la que las empresas e individuales ingresan las retenciones practicadas a sus trabajadores, profesionales o empresarios autónomos. Se presenta entre el 1 y el 20 de los meses de abril, julio, octubre y enero.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 111</strong>: DeclaraciÃ³n trimestral en la que las empresas e individuales ingresan las retenciones practicadas a sus trabajadores, profesionales o empresarios autÃ³nomos. Se presenta entre el 1 y el 20 de los meses de abril, julio, octubre y enero.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 130</strong>: Pago fraccionado trimestral para empresarios y profesionales en régimen de estimación directa. Se presenta en los mismos plazos que el modelo 111.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 130</strong>: Pago fraccionado trimestral para empresarios y profesionales en rÃ©gimen de estimaciÃ³n directa. Se presenta en los mismos plazos que el modelo 111.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 131</strong>: Pago fraccionado trimestral para empresarios y profesionales en régimen de estimación objetiva (módulos). Comparte plazos con los modelos 111 y 130.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 131</strong>: Pago fraccionado trimestral para empresarios y profesionales en rÃ©gimen de estimaciÃ³n objetiva (mÃ³dulos). Comparte plazos con los modelos 111 y 130.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 190</strong>: Declaración informativa anual que resume todas las retenciones practicadas y declaradas mensualmente o trimestralmente en el modelo 111. Se presenta en enero del año siguiente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 190</strong>: DeclaraciÃ³n informativa anual que resume todas las retenciones practicadas y declaradas mensualmente o trimestralmente en el modelo 111. Se presenta en enero del aÃ±o siguiente.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 100</strong>: Declaración anual del IRPF (declaración de la renta) que deben presentar todos los contribuyentes obligados para regularizar su situación fiscal del ejercicio anterior.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 100</strong>: DeclaraciÃ³n anual del IRPF (declaraciÃ³n de la renta) que deben presentar todos los contribuyentes obligados para regularizar su situaciÃ³n fiscal del ejercicio anterior.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos resueltos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos resueltos</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Obligaciones censales y exención de impuestos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: Obligaciones censales y exenciÃ³n de impuestos</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Rosa María ha finalizado sus estudios y desea comenzar a ejercer como asesora fiscal independiente para pequeños empresarios. Quiere conocer qué trámites censales debe realizar y si debe pagar alguna tarifa por el impuesto de actividades económicas (IAE).</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Rosa MarÃ­a ha finalizado sus estudios y desea comenzar a ejercer como asesora fiscal independiente para pequeÃ±os empresarios. Quiere conocer quÃ© trÃ¡mites censales debe realizar y si debe pagar alguna tarifa por el impuesto de actividades econÃ³micas (IAE).</p>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>:</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n</strong>:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Obligación censal</strong>: Rosa María debe tramitar su alta en el censo de empresarios, profesionales y retenedores utilizando el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 037</strong> (modelo simplificado), ya que va a realizar una actividad profesional como persona física.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ObligaciÃ³n censal</strong>: Rosa MarÃ­a debe tramitar su alta en el censo de empresarios, profesionales y retenedores utilizando el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo 037</strong> (modelo simplificado), ya que va a realizar una actividad profesional como persona fÃ­sica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Obligación de pago del IAE</strong>: No tendrá que abonar ninguna cuota por este impuesto. Al tratarse de un inicio de actividad, se encuentra exenta del pago del IAE durante sus dos primeros períodos impositivos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ObligaciÃ³n de pago del IAE</strong>: No tendrÃ¡ que abonar ninguna cuota por este impuesto. Al tratarse de un inicio de actividad, se encuentra exenta del pago del IAE durante sus dos primeros perÃ­odos impositivos.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Liquidación contable y fiscal del impuesto sobre sociedades</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: LiquidaciÃ³n contable y fiscal del impuesto sobre sociedades</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: La entidad PETEA, S.A. presenta un resultado contable antes de impuestos de 130.000 euros al cierre del ejercicio. Se dispone de la siguiente información adicional:</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: La entidad PETEA, S.A. presenta un resultado contable antes de impuestos de 130.000 euros al cierre del ejercicio. Se dispone de la siguiente informaciÃ³n adicional:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Ha registrado contablemente una sanción administrativa de 6.000 euros.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Ha registrado contablemente una sanciÃ³n administrativa de 6.000 euros.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Tiene derecho a compensar bases imponibles negativas de ejercicios anteriores por importe de 10.000 euros.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Soportó retenciones e ingresos a cuenta durante el ejercicio por valor de 17.000 euros.</li>
+<li style="margin-bottom: .45rem; position: relative;"> SoportÃ³ retenciones e ingresos a cuenta durante el ejercicio por valor de 17.000 euros.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Se aplica el tipo impositivo general del 25%.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de la liquidación</strong>:</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo de la liquidaciÃ³n</strong>:</p>
 
-<table class="markdown-table"><thead><tr><th>Concepto</th><th>Importe</th></tr></thead><tbody><tr><td>Resultado contable</td><td>130.000 €</td></tr><tr><td>(+) Ajustes al resultado contable (sanción no deducible)</td><td>+ 6.000 €</td></tr><tr><td>Base imponible previa</td><td>136.000 €</td></tr><tr><td>(-) Compensación de bases imponibles negativas anteriores</td><td>- 10.000 €</td></tr><tr><td>Base imponible</td><td>126.000 €</td></tr><tr><td>(x) Tipo de gravamen (25%)</td><td>x 25%</td></tr><tr><td>Cuota íntegra</td><td>31.500 €</td></tr><tr><td>(-) Bonificaciones y deducciones</td><td>0 €</td></tr><tr><td>Cuota líquida</td><td>31.500 €</td></tr><tr><td>(-) Retenciones e ingresos a cuenta</td><td>- 17.000 €</td></tr><tr><td>Cuota diferencial (a ingresar)</td><td>14.500 €</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Registro contable de la liquidación</strong>:</p>
+<table class="markdown-table"><thead><tr><th>Concepto</th><th>Importe</th></tr></thead><tbody><tr><td>Resultado contable</td><td>130.000 â‚¬</td></tr><tr><td>(+) Ajustes al resultado contable (sanciÃ³n no deducible)</td><td>+ 6.000 â‚¬</td></tr><tr><td>Base imponible previa</td><td>136.000 â‚¬</td></tr><tr><td>(-) CompensaciÃ³n de bases imponibles negativas anteriores</td><td>- 10.000 â‚¬</td></tr><tr><td>Base imponible</td><td>126.000 â‚¬</td></tr><tr><td>(x) Tipo de gravamen (25%)</td><td>x 25%</td></tr><tr><td>Cuota Ã­ntegra</td><td>31.500 â‚¬</td></tr><tr><td>(-) Bonificaciones y deducciones</td><td>0 â‚¬</td></tr><tr><td>Cuota lÃ­quida</td><td>31.500 â‚¬</td></tr><tr><td>(-) Retenciones e ingresos a cuenta</td><td>- 17.000 â‚¬</td></tr><tr><td>Cuota diferencial (a ingresar)</td><td>14.500 â‚¬</td></tr></tbody></table><p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Registro contable de la liquidaciÃ³n</strong>:</p>
 
-<table class="markdown-table"><thead><tr><th>Código de cuenta</th><th>Cuenta</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>6300</td><td>Impuesto corriente</td><td>31.500 €</td><td></td></tr><tr><td>473</td><td>Hacienda Pública, retenciones y pagos a cuenta</td><td></td><td>17.000 €</td></tr><tr><td>4752</td><td>Hacienda Pública, acreedora por impuesto sobre sociedades</td><td></td><td>14.500 €</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 3: Consecuencias del incumplimiento de las obligaciones formales</h3>
+<table class="markdown-table"><thead><tr><th>CÃ³digo de cuenta</th><th>Cuenta</th><th>Debe</th><th>Haber</th></tr></thead><tbody><tr><td>6300</td><td>Impuesto corriente</td><td>31.500 â‚¬</td><td></td></tr><tr><td>473</td><td>Hacienda PÃºblica, retenciones y pagos a cuenta</td><td></td><td>17.000 â‚¬</td></tr><tr><td>4752</td><td>Hacienda PÃºblica, acreedora por impuesto sobre sociedades</td><td></td><td>14.500 â‚¬</td></tr></tbody></table><h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 3: Consecuencias del incumplimiento de las obligaciones formales</h3>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Pablo comenzó una actividad comercial por cuenta propia, pero omitió presentar la declaración censal de inicio de actividad. ¿Qué consecuencias legales afronta?</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento</strong>: Pablo comenzÃ³ una actividad comercial por cuenta propia, pero omitiÃ³ presentar la declaraciÃ³n censal de inicio de actividad. Â¿QuÃ© consecuencias legales afronta?</p>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución</strong>: Al no presentar el modelo 036 o 037 de declaración censal en el plazo correspondiente, Pablo ha cometido una infracción tributaria formal. Según el artículo 198 de la Ley 58/2003 General Tributaria, la no presentación de declaraciones o autoliquidaciones en plazo, siempre que no se produzca un perjuicio económico para la Hacienda Pública (puesto que no se ha dejado de ingresar una deuda líquida devengada en ese instante), se califica como una infracción tributaria <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">leve</strong>. La sanción administrativa asociada a este incumplimiento asciende a un importe de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">200 euros</strong>.</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n</strong>: Al no presentar el modelo 036 o 037 de declaraciÃ³n censal en el plazo correspondiente, Pablo ha cometido una infracciÃ³n tributaria formal. SegÃºn el artÃ­culo 198 de la Ley 58/2003 General Tributaria, la no presentaciÃ³n de declaraciones o autoliquidaciones en plazo, siempre que no se produzca un perjuicio econÃ³mico para la Hacienda PÃºblica (puesto que no se ha dejado de ingresar una deuda lÃ­quida devengada en ese instante), se califica como una infracciÃ³n tributaria <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">leve</strong>. La sanciÃ³n administrativa asociada a este incumplimiento asciende a un importe de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">200 euros</strong>.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y repaso final</h2>
 
-<p style="margin: 0 0 1rem;">El sistema tributario español se asienta sobre la base de diferentes figuras impositivas que gravan la riqueza en sus distintas manifestaciones: los beneficios empresariales (impuesto sobre sociedades), los ingresos individuales (impuesto sobre la renta de las personas físicas) y las actividades de producción y consumo local (impuesto sobre actividades económicas y otros tributos municipales).</p>
+<p style="margin: 0 0 1rem;">El sistema tributario espaÃ±ol se asienta sobre la base de diferentes figuras impositivas que gravan la riqueza en sus distintas manifestaciones: los beneficios empresariales (impuesto sobre sociedades), los ingresos individuales (impuesto sobre la renta de las personas fÃ­sicas) y las actividades de producciÃ³n y consumo local (impuesto sobre actividades econÃ³micas y otros tributos municipales).</p>
 
-<p style="margin: 0 0 1rem;">Para el correcto funcionamiento de la gestión fiscal en la empresa, es indispensable recordar la correspondencia de los modelos y sus plazos:</p>
+<p style="margin: 0 0 1rem;">Para el correcto funcionamiento de la gestiÃ³n fiscal en la empresa, es indispensable recordar la correspondencia de los modelos y sus plazos:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelos censales (036 / 037)</strong>: Obligatorios antes del inicio de cualquier actividad económica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelos censales (036 / 037)</strong>: Obligatorios antes del inicio de cualquier actividad econÃ³mica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 200 y 202</strong>: Declaración anual y pagos fraccionados del impuesto sobre sociedades, respectivamente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 200 y 202</strong>: DeclaraciÃ³n anual y pagos fraccionados del impuesto sobre sociedades, respectivamente.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 111 y 190</strong>: Declaración de retenciones periódicas (mensual o trimestral) y su correspondiente resumen anual.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 111 y 190</strong>: DeclaraciÃ³n de retenciones periÃ³dicas (mensual o trimestral) y su correspondiente resumen anual.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 130 y 131</strong>: Pagos a cuenta del IRPF para autónomos, dependiendo de si tributan por estimación directa u objetiva.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 130 y 131</strong>: Pagos a cuenta del IRPF para autÃ³nomos, dependiendo de si tributan por estimaciÃ³n directa u objetiva.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 100</strong>: Declaración anual del IRPF para personas físicas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modelo 100</strong>: DeclaraciÃ³n anual del IRPF para personas fÃ­sicas.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">El conocimiento de la normativa fiscal, la correcta diferenciación entre el resultado contable y fiscal mediante la aplicación de ajustes, y el respeto estricto a los plazos del calendario del contribuyente son los elementos clave para una gestión financiera saludable y libre de contingencias sancionadoras.</p>
+<p style="margin: 0 0 1rem;">El conocimiento de la normativa fiscal, la correcta diferenciaciÃ³n entre el resultado contable y fiscal mediante la aplicaciÃ³n de ajustes, y el respeto estricto a los plazos del calendario del contribuyente son los elementos clave para una gestiÃ³n financiera saludable y libre de contingencias sancionadoras.</p>
 
 </main>
 </body>
 </html>
+

@@ -1,606 +1,637 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión financiera. Tema 9</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n financiera. Tema 9</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión financiera. Tema 9</h1>
+<h1>Apuntes - GestiÃ³n financiera. Tema 9</h1>
 
-<h2>Gestión financiera: financiación ajena a largo plazo</h2>
+<h2>GestiÃ³n financiera: financiaciÃ³n ajena a largo plazo</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción a la financiación a largo plazo</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n a la financiaciÃ³n a largo plazo</h2>
 
-<p style="margin: 0 0 1rem;">La gestión financiera a largo plazo requiere la aplicación de modelos matemáticos para determinar la viabilidad y el coste de las fuentes de financiación. Las tres herramientas principales de financiación ajena a largo plazo son el préstamo, el empréstito y el arrendamiento financiero (leasing). Debido al extenso horizonte temporal de estas operaciones, los cálculos financieros presentan una mayor complejidad estructural.</p>
+<p style="margin: 0 0 1rem;">La gestiÃ³n financiera a largo plazo requiere la aplicaciÃ³n de modelos matemÃ¡ticos para determinar la viabilidad y el coste de las fuentes de financiaciÃ³n. Las tres herramientas principales de financiaciÃ³n ajena a largo plazo son el prÃ©stamo, el emprÃ©stito y el arrendamiento financiero (leasing). Debido al extenso horizonte temporal de estas operaciones, los cÃ¡lculos financieros presentan una mayor complejidad estructural.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Conceptos fundamentales del préstamo</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Conceptos fundamentales del prÃ©stamo</h2>
 
-<p style="margin: 0 0 1rem;">Un préstamo es una operación financiera en la que una parte (prestamista) entrega una cantidad de dinero a otra (prestatario), quien se compromete a devolverla junto con los intereses devengados en un plazo de tiempo acordado.</p>
+<p style="margin: 0 0 1rem;">Un prÃ©stamo es una operaciÃ³n financiera en la que una parte (prestamista) entrega una cantidad de dinero a otra (prestatario), quien se compromete a devolverla junto con los intereses devengados en un plazo de tiempo acordado.</p>
 
-<p style="margin: 0 0 1rem;">Los elementos básicos que definen esta operación son:</p>
+<p style="margin: 0 0 1rem;">Los elementos bÃ¡sicos que definen esta operaciÃ³n son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prestamista:</strong> Persona física o jurídica que entrega el capital.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prestamista:</strong> Persona fÃ­sica o jurÃ­dica que entrega el capital.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prestatario:</strong> Persona física o jurídica que recibe el capital y asume la obligación de su devolución.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prestatario:</strong> Persona fÃ­sica o jurÃ­dica que recibe el capital y asume la obligaciÃ³n de su devoluciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital inicial (<span class="formula-inline">C<sub>0</sub></span>):</strong> Cantidad de dinero total prestada en el momento inicial.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tiempo (<span class="formula-inline">n</span>):</strong> Plazo temporal pactado para la devolución total del préstamo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tiempo (<span class="formula-inline">n</span>):</strong> Plazo temporal pactado para la devoluciÃ³n total del prÃ©stamo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Interés (<span class="formula-inline">i</span>):</strong> Porcentaje o precio que cobra el prestamista por la cesión del capital durante el tiempo acordado.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InterÃ©s (<span class="formula-inline">i</span>):</strong> Porcentaje o precio que cobra el prestamista por la cesiÃ³n del capital durante el tiempo acordado.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Elementos esenciales para el cálculo financiero</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Elementos esenciales para el cÃ¡lculo financiero</h2>
 
-<p style="margin: 0 0 1rem;">Para estructurar matemáticamente un préstamo, se parte del principio de equivalencia financiera: el valor actual de la prestación (dinero entregado por el prestamista en el momento inicial <span class="formula-inline">t<sub>0</sub></span>) debe ser igual al valor actual de las contraprestaciones (pagos realizados por el prestatario a lo largo del tiempo).</p>
+<p style="margin: 0 0 1rem;">Para estructurar matemÃ¡ticamente un prÃ©stamo, se parte del principio de equivalencia financiera: el valor actual de la prestaciÃ³n (dinero entregado por el prestamista en el momento inicial <span class="formula-inline">t<sub>0</sub></span>) debe ser igual al valor actual de las contraprestaciones (pagos realizados por el prestatario a lo largo del tiempo).</p>
 
-<p style="margin: 0 0 1rem;">Las variables fundamentales para realizar estos cálculos son:</p>
+<p style="margin: 0 0 1rem;">Las variables fundamentales para realizar estos cÃ¡lculos son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Términos amortizativos (<span class="formula-inline">a<sub>s</sub></span>):</strong> Es el pago total realizado en cada período <span class="formula-inline">s</span>. Su función es doble: pagar los intereses generados y devolver una parte del capital.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rminos amortizativos (<span class="formula-inline">a<sub>s</sub></span>):</strong> Es el pago total realizado en cada perÃ­odo <span class="formula-inline">s</span>. Su funciÃ³n es doble: pagar los intereses generados y devolver una parte del capital.</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>s</sub> = I<sub>s</sub> + A<sub>s</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota de amortización (<span class="formula-inline">A<sub>s</sub></span>):</strong> Es la parte del término amortizativo destinada exclusivamente a devolver el capital principal. La suma de todas las cuotas de amortización debe ser igual al capital inicial recibido:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota de amortizaciÃ³n (<span class="formula-inline">A<sub>s</sub></span>):</strong> Es la parte del tÃ©rmino amortizativo destinada exclusivamente a devolver el capital principal. La suma de todas las cuotas de amortizaciÃ³n debe ser igual al capital inicial recibido:</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">A<sub>1</sub> + A<sub>2</sub> + … + A<sub>n</sub> = C<sub>0</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">A<sub>1</sub> + A<sub>2</sub> + â€¦ + A<sub>n</sub> = C<sub>0</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota de interés (<span class="formula-inline">I<sub>s</sub></span>):</strong> Es la parte del término amortizativo destinada a retribuir el préstamo. Se calcula multiplicando el capital pendiente del período anterior por el tipo de interés:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuota de interÃ©s (<span class="formula-inline">I<sub>s</sub></span>):</strong> Es la parte del tÃ©rmino amortizativo destinada a retribuir el prÃ©stamo. Se calcula multiplicando el capital pendiente del perÃ­odo anterior por el tipo de interÃ©s:</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">I<sub>s</sub> = C<sub>s-1</sub> · i</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">I<sub>s</sub> = C<sub>s-1</sub> Â· i</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo o pendiente (<span class="formula-inline">C<sub>s</sub></span>):</strong> Es la cantidad de capital que aún queda por amortizar al finalizar el período <span class="formula-inline">s</span>. Se obtiene restando la cuota de amortización del período actual al capital pendiente del período anterior:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo o pendiente (<span class="formula-inline">C<sub>s</sub></span>):</strong> Es la cantidad de capital que aÃºn queda por amortizar al finalizar el perÃ­odo <span class="formula-inline">s</span>. Se obtiene restando la cuota de amortizaciÃ³n del perÃ­odo actual al capital pendiente del perÃ­odo anterior:</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>s</sub> = C<sub>s-1</sub> - A<sub>s</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital amortizado (<span class="formula-inline">M<sub>s</sub></span>):</strong> Representa la suma acumulada de las cuotas de amortización devueltas hasta el período <span class="formula-inline">s</span>. Se calcula restando el capital vivo actual al capital inicial:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital amortizado (<span class="formula-inline">M<sub>s</sub></span>):</strong> Representa la suma acumulada de las cuotas de amortizaciÃ³n devueltas hasta el perÃ­odo <span class="formula-inline">s</span>. Se calcula restando el capital vivo actual al capital inicial:</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>s</sub> = C<sub>0</sub> - C<sub>s</sub></span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tabla y métodos de amortización</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tabla y mÃ©todos de amortizaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La planificación y el seguimiento de un préstamo se registran en un documento denominado <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">tabla de amortización</strong> (o cuadro de amortización). Esta tabla se estructura de la siguiente manera:</p>
+<p style="margin: 0 0 1rem;">La planificaciÃ³n y el seguimiento de un prÃ©stamo se registran en un documento denominado <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">tabla de amortizaciÃ³n</strong> (o cuadro de amortizaciÃ³n). Esta tabla se estructura de la siguiente manera:</p>
 
-<table class="markdown-table"><thead><tr><th>Período</th><th>Término amortizativo (as)</th><th>Cuota de interés (Is)</th><th>Cuota de amortización (As)</th><th>Capital amortizado (Ms)</th><th>Capital vivo (Cs)</th></tr></thead><tbody><tr><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>C0</td></tr><tr><td>1</td><td>a1</td><td>I1</td><td>A1</td><td>M1</td><td>C1</td></tr><tr><td>2</td><td>a2</td><td>I2</td><td>A2</td><td>M2</td><td>C2</td></tr><tr><td>s</td><td>as</td><td>Is</td><td>As</td><td>Ms</td><td>Cs</td></tr><tr><td>n</td><td>an</td><td>In</td><td>An</td><td>Mn</td><td>0</td></tr></tbody></table>
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación de los métodos de amortización</h3>
+<table class="markdown-table"><thead><tr><th>PerÃ­odo</th><th>TÃ©rmino amortizativo (as)</th><th>Cuota de interÃ©s (Is)</th><th>Cuota de amortizaciÃ³n (As)</th><th>Capital amortizado (Ms)</th><th>Capital vivo (Cs)</th></tr></thead><tbody><tr><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>C0</td></tr><tr><td>1</td><td>a1</td><td>I1</td><td>A1</td><td>M1</td><td>C1</td></tr><tr><td>2</td><td>a2</td><td>I2</td><td>A2</td><td>M2</td><td>C2</td></tr><tr><td>s</td><td>as</td><td>Is</td><td>As</td><td>Ms</td><td>Cs</td></tr><tr><td>n</td><td>an</td><td>In</td><td>An</td><td>Mn</td><td>0</td></tr></tbody></table>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ClasificaciÃ³n de los mÃ©todos de amortizaciÃ³n</h3>
 
-<p style="margin: 0 0 1rem;">Los préstamos se clasifican según la modalidad de devolución del dinero en dos grandes bloques:</p>
+<p style="margin: 0 0 1rem;">Los prÃ©stamos se clasifican segÃºn la modalidad de devoluciÃ³n del dinero en dos grandes bloques:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reembolso único:</strong> Todo el capital principal se devuelve en un único pago al vencimiento del contrato.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reembolso Ãºnico:</strong> Todo el capital principal se devuelve en un Ãºnico pago al vencimiento del contrato.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagos que conforman una renta:</strong> Las cuotas tienen una composición mixta (intereses y devolución de principal) a lo largo de la vida del préstamo.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagos que conforman una renta:</strong> Las cuotas tienen una composiciÃ³n mixta (intereses y devoluciÃ³n de principal) a lo largo de la vida del prÃ©stamo.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El sistema de reembolso único</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El sistema de reembolso Ãºnico</h2>
 
-<p style="margin: 0 0 1rem;">Dentro de esta categoría existen dos modalidades principales:</p>
+<p style="margin: 0 0 1rem;">Dentro de esta categorÃ­a existen dos modalidades principales:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Préstamo simple</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">PrÃ©stamo simple</h3>
 
-<p style="margin: 0 0 1rem;">Tanto el capital principal como los intereses acumulados se pagan conjuntamente en una sola cuota al final del plazo de la operación. Durante la vida del préstamo no se realiza ningún pago intermedio.</p>
+<p style="margin: 0 0 1rem;">Tanto el capital principal como los intereses acumulados se pagan conjuntamente en una sola cuota al final del plazo de la operaciÃ³n. Durante la vida del prÃ©stamo no se realiza ningÃºn pago intermedio.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fórmula del capital final:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">FÃ³rmula del capital final:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>n</sub> = C<sub>0</sub> · (1 + i)<sup>n</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>n</sub> = C<sub>0</sub> Â· (1 + i)<sup>n</sup></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Términos amortizativos:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rminos amortizativos:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>1</sub> = a<sub>2</sub> = … = a<sub>n-1</sub> = 0</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>1</sub> = a<sub>2</sub> = â€¦ = a<sub>n-1</sub> = 0</span></p>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>n</sub> = A<sub>n</sub> + I<sub>n</sub> donde A<sub>n</sub> = C<sub>0</sub></span></p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Sistema americano</h3>
 
-<p style="margin: 0 0 1rem;">El capital principal se devuelve en su totalidad en el último período (momento de la cancelación), pero los intereses devengados se pagan periódicamente al final de cada año o período acordado.</p>
+<p style="margin: 0 0 1rem;">El capital principal se devuelve en su totalidad en el Ãºltimo perÃ­odo (momento de la cancelaciÃ³n), pero los intereses devengados se pagan periÃ³dicamente al final de cada aÃ±o o perÃ­odo acordado.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Términos amortizativos periódicos:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rminos amortizativos periÃ³dicos:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>1</sub> = a<sub>2</sub> = … = a<sub>n-1</sub> = I<sub>s</sub> = C<sub>0</sub> · i</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>1</sub> = a<sub>2</sub> = â€¦ = a<sub>n-1</sub> = I<sub>s</sub> = C<sub>0</sub> Â· i</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Término amortizativo final:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rmino amortizativo final:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>n</sub> = I<sub>n</sub> + C<sub>0</sub> = (C<sub>0</sub> · i) + C<sub>0</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>n</sub> = I<sub>n</sub> + C<sub>0</sub> = (C<sub>0</sub> Â· i) + C<sub>0</sub></span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Método de cuotas de amortización constantes</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MÃ©todo de cuotas de amortizaciÃ³n constantes</h2>
 
-<p style="margin: 0 0 1rem;">En este método (también conocido como método lineal), la cantidad destinada a amortizar el capital principal se mantiene fija durante todos los períodos del préstamo.</p>
+<p style="margin: 0 0 1rem;">En este mÃ©todo (tambiÃ©n conocido como mÃ©todo lineal), la cantidad destinada a amortizar el capital principal se mantiene fija durante todos los perÃ­odos del prÃ©stamo.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de la cuota de amortización constante (<span class="formula-inline">A</span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo de la cuota de amortizaciÃ³n constante (<span class="formula-inline">A</span>):</strong></li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">A = <span class="formula-frac"><span class="num">C<sub>0</sub></span><span class="den">n</span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comportamiento de la cuota de interés (<span class="formula-inline">I<sub>s</sub></span>):</strong> Es decreciente en cada período, debido a que el capital vivo sobre el que se calculan los intereses disminuye progresivamente tras cada pago.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comportamiento de la cuota de interÃ©s (<span class="formula-inline">I<sub>s</sub></span>):</strong> Es decreciente en cada perÃ­odo, debido a que el capital vivo sobre el que se calculan los intereses disminuye progresivamente tras cada pago.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Término amortizativo (<span class="formula-inline">a<sub>s</sub></span>):</strong> Al ser la suma de una cuota de amortización constante y una cuota de interés decreciente, los términos amortizativos son decrecientes a lo largo del tiempo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rmino amortizativo (<span class="formula-inline">a<sub>s</sub></span>):</strong> Al ser la suma de una cuota de amortizaciÃ³n constante y una cuota de interÃ©s decreciente, los tÃ©rminos amortizativos son decrecientes a lo largo del tiempo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fórmulas de control:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">FÃ³rmulas de control:</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo en el período <span class="formula-inline">s</span>:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo en el perÃ­odo <span class="formula-inline">s</span>:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>s</sub> = (n - s) · A = C<sub>0</sub> · <span class="formula-frac"><span class="num">n - s</span><span class="den">n</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>s</sub> = (n - s) Â· A = C<sub>0</sub> Â· <span class="formula-frac"><span class="num">n - s</span><span class="den">n</span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital amortizado acumulado en el período <span class="formula-inline">s</span>:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital amortizado acumulado en el perÃ­odo <span class="formula-inline">s</span>:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>s</sub> = s · A = C<sub>0</sub> · <span class="formula-frac"><span class="num">s</span><span class="den">n</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>s</sub> = s Â· A = C<sub>0</sub> Â· <span class="formula-frac"><span class="num">s</span><span class="den">n</span></span></span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Método de amortización francés</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MÃ©todo de amortizaciÃ³n francÃ©s</h2>
 
-<p style="margin: 0 0 1rem;">Es el sistema más utilizado en el ámbito financiero y comercial (por ejemplo, en las hipotecas en España). Su principal característica es que los términos amortizativos (<span class="formula-inline">a</span>) son constantes durante toda la vida de la operación.</p>
+<p style="margin: 0 0 1rem;">Es el sistema mÃ¡s utilizado en el Ã¡mbito financiero y comercial (por ejemplo, en las hipotecas en EspaÃ±a). Su principal caracterÃ­stica es que los tÃ©rminos amortizativos (<span class="formula-inline">a</span>) son constantes durante toda la vida de la operaciÃ³n.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Término amortizativo constante (<span class="formula-inline">a</span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rmino amortizativo constante (<span class="formula-inline">a</span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">C<sub>0</sub></span><span class="den">a<sub>n¬ i</sub></span></span> = C<sub>0</sub> · <span class="formula-frac"><span class="num">i</span><span class="den">1 - (1 + i)<sup>-n</sup></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">C<sub>0</sub></span><span class="den">a<sub>nÂ¬ i</sub></span></span> = C<sub>0</sub> Â· <span class="formula-frac"><span class="num">i</span><span class="den">1 - (1 + i)<sup>-n</sup></span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estructura interna:</strong> Dado que el término amortizativo es constante y el capital vivo disminuye período a período, la cuota de interés (<span class="formula-inline">I<sub>k</sub></span>) es decreciente, mientras que la cuota de amortización (<span class="formula-inline">A<sub>k</sub></span>) es creciente. Al principio del préstamo se pagan principalmente intereses, y al final se amortiza la mayor parte del capital.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estructura interna:</strong> Dado que el tÃ©rmino amortizativo es constante y el capital vivo disminuye perÃ­odo a perÃ­odo, la cuota de interÃ©s (<span class="formula-inline">I<sub>k</sub></span>) es decreciente, mientras que la cuota de amortizaciÃ³n (<span class="formula-inline">A<sub>k</sub></span>) es creciente. Al principio del prÃ©stamo se pagan principalmente intereses, y al final se amortiza la mayor parte del capital.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Relación entre cuotas de amortización consecutivas:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RelaciÃ³n entre cuotas de amortizaciÃ³n consecutivas:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">A<sub>k+1</sub> = A<sub>1</sub> · (1 + i)<sup>k</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">A<sub>k+1</sub> = A<sub>1</sub> Â· (1 + i)<sup>k</sup></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de la primera cuota de amortización (<span class="formula-inline">A<sub>1</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo de la primera cuota de amortizaciÃ³n (<span class="formula-inline">A<sub>1</sub></span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">A<sub>1</sub> = a - (C<sub>0</sub> · i) = <span class="formula-frac"><span class="num">C<sub>0</sub></span><span class="den">s<sub>n¬ i</sub></span></span> = <span class="formula-frac"><span class="num">C<sub>0</sub> · i</span><span class="den">(1 + i)<sup>n</sup> - 1</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">A<sub>1</sub> = a - (C<sub>0</sub> Â· i) = <span class="formula-frac"><span class="num">C<sub>0</sub></span><span class="den">s<sub>nÂ¬ i</sub></span></span> = <span class="formula-frac"><span class="num">C<sub>0</sub> Â· i</span><span class="den">(1 + i)<sup>n</sup> - 1</span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo (<span class="formula-inline">C<sub>k</sub></span>) al inicio del período <span class="formula-inline">k+1</span> (tres métodos de cálculo):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Capital vivo (<span class="formula-inline">C<sub>k</sub></span>) al inicio del perÃ­odo <span class="formula-inline">k+1</span> (tres mÃ©todos de cÃ¡lculo):</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Método recurrente:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">MÃ©todo recurrente:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>k</sub> = A<sub>k+1</sub> · s<sub>n-k¬ i</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>k</sub> = A<sub>k+1</sub> Â· s<sub>n-kÂ¬ i</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Método retrospectivo:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">MÃ©todo retrospectivo:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>k</sub> = C<sub>0</sub> · (1 + i)<sup>k</sup> - a · s<sub>k¬ i</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>k</sub> = C<sub>0</sub> Â· (1 + i)<sup>k</sup> - a Â· s<sub>kÂ¬ i</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Método prospectivo:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">MÃ©todo prospectivo:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>k</sub> = a · a<sub>n-k¬ i</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>k</sub> = a Â· a<sub>n-kÂ¬ i</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Intereses del período <span class="formula-inline">k+1</span>:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Intereses del perÃ­odo <span class="formula-inline">k+1</span>:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">I<sub>k+1</sub> = C<sub>k</sub> · i</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">I<sub>k+1</sub> = C<sub>k</sub> Â· i</span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Aplicación al arrendamiento financiero o leasing</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">AplicaciÃ³n al arrendamiento financiero o leasing</h2>
 
-<p style="margin: 0 0 1rem;">El arrendamiento financiero (leasing) es una operación de alquiler con una opción de compra al final del contrato. El cálculo financiero varía según cómo se pacten los pagos y la opción de compra.</p>
+<p style="margin: 0 0 1rem;">El arrendamiento financiero (leasing) es una operaciÃ³n de alquiler con una opciÃ³n de compra al final del contrato. El cÃ¡lculo financiero varÃ­a segÃºn cÃ³mo se pacten los pagos y la opciÃ³n de compra.</p>
 
-<p style="margin: 0 0 1rem;">A continuación se detallan las cuatro modalidades financieras de pago del leasing, donde <span class="formula-inline">V<sub>c</sub></span> representa el valor al contado del bien:</p>
+<p style="margin: 0 0 1rem;">A continuaciÃ³n se detallan las cuatro modalidades financieras de pago del leasing, donde <span class="formula-inline">V<sub>c</sub></span> representa el valor al contado del bien:</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Todas las cuotas son iguales</h3>
 
-<p style="margin: 0 0 1rem;">Tanto los pagos periódicos como la opción de compra (que equivale a una cuota más) tienen el mismo valor (<span class="formula-inline">k</span>). Los pagos se realizan de forma prepagable (al principio de cada período):</p>
+<p style="margin: 0 0 1rem;">Tanto los pagos periÃ³dicos como la opciÃ³n de compra (que equivale a una cuota mÃ¡s) tienen el mismo valor (<span class="formula-inline">k</span>). Los pagos se realizan de forma prepagable (al principio de cada perÃ­odo):</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k · \ddot{a}<sub>n+1¬ i</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k Â· \ddot{a}<sub>n+1Â¬ i</sub></span></p>
 
 <p style="margin: 0 0 1rem;">La cuota constante se calcula despejando <span class="formula-inline">k</span>:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub></span><span class="den">\ddot{a}<sub>n+1¬ i</sub></span></span> = <span class="formula-frac"><span class="num">V<sub>c</sub></span><span class="den">(1 + i) · <span class="formula-frac"><span class="num">1 - (1 + i)<sup>-(n+1)</sup></span><span class="den">i</span></span></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub></span><span class="den">\ddot{a}<sub>n+1Â¬ i</sub></span></span> = <span class="formula-frac"><span class="num">V<sub>c</sub></span><span class="den">(1 + i) Â· <span class="formula-frac"><span class="num">1 - (1 + i)<sup>-(n+1)</sup></span><span class="den">i</span></span></span></span></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Opción de compra no coincide con el resto de pagos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">OpciÃ³n de compra no coincide con el resto de pagos</h3>
 
-<p style="margin: 0 0 1rem;">Las cuotas periódicas de arrendamiento son constantes (<span class="formula-inline">k</span>), pero el valor residual u opción de compra (<span class="formula-inline">V<sub>r</sub></span>) al final del período <span class="formula-inline">n</span> tiene un importe diferente:</p>
+<p style="margin: 0 0 1rem;">Las cuotas periÃ³dicas de arrendamiento son constantes (<span class="formula-inline">k</span>), pero el valor residual u opciÃ³n de compra (<span class="formula-inline">V<sub>r</sub></span>) al final del perÃ­odo <span class="formula-inline">n</span> tiene un importe diferente:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k · \ddot{a}<sub>n¬ i</sub> + V<sub>r</sub> · (1 + i)<sup>-n</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k Â· \ddot{a}<sub>nÂ¬ i</sub> + V<sub>r</sub> Â· (1 + i)<sup>-n</sup></span></p>
 
-<p style="margin: 0 0 1rem;">La cuota periódica se calcula mediante:</p>
+<p style="margin: 0 0 1rem;">La cuota periÃ³dica se calcula mediante:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub> - V<sub>r</sub> · (1 + i)<sup>-n</sup></span><span class="den">\ddot{a}<sub>n¬ i</sub></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub> - V<sub>r</sub> Â· (1 + i)<sup>-n</sup></span><span class="den">\ddot{a}<sub>nÂ¬ i</sub></span></span></span></p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cuota inicial no coincide con el resto de pagos</h3>
 
-<p style="margin: 0 0 1rem;">Existe un pago inicial diferente (<span class="formula-inline">k<sub>0</sub></span>) en el momento de la firma, y las cuotas periódicas restantes son constantes e iguales a <span class="formula-inline">k</span>:</p>
+<p style="margin: 0 0 1rem;">Existe un pago inicial diferente (<span class="formula-inline">k<sub>0</sub></span>) en el momento de la firma, y las cuotas periÃ³dicas restantes son constantes e iguales a <span class="formula-inline">k</span>:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k<sub>0</sub> + k · \ddot{a}<sub>n¬ i</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k<sub>0</sub> + k Â· \ddot{a}<sub>nÂ¬ i</sub></span></p>
 
-<p style="margin: 0 0 1rem;">La cuota periódica se calcula despejando <span class="formula-inline">k</span>:</p>
+<p style="margin: 0 0 1rem;">La cuota periÃ³dica se calcula despejando <span class="formula-inline">k</span>:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub> - k<sub>0</sub></span><span class="den">\ddot{a}<sub>n¬ i</sub></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub> - k<sub>0</sub></span><span class="den">\ddot{a}<sub>nÂ¬ i</sub></span></span></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ni la opción de compra ni la cuota inicial coinciden con el resto de pagos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ni la opciÃ³n de compra ni la cuota inicial coinciden con el resto de pagos</h3>
 
-<p style="margin: 0 0 1rem;">Se realiza un pago inicial diferenciado (<span class="formula-inline">k<sub>0</sub></span>), cuotas periódicas constantes (<span class="formula-inline">k</span>) y una opción de compra final (<span class="formula-inline">OC</span>) con un valor distinto a las anteriores:</p>
+<p style="margin: 0 0 1rem;">Se realiza un pago inicial diferenciado (<span class="formula-inline">k<sub>0</sub></span>), cuotas periÃ³dicas constantes (<span class="formula-inline">k</span>) y una opciÃ³n de compra final (<span class="formula-inline">OC</span>) con un valor distinto a las anteriores:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k<sub>0</sub> + k · a<sub>n-1¬ i</sub> + OC · (1 + i)<sup>-n</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">V<sub>c</sub> = k<sub>0</sub> + k Â· a<sub>n-1Â¬ i</sub> + OC Â· (1 + i)<sup>-n</sup></span></p>
 
-<p style="margin: 0 0 1rem;">La cuota periódica se calcula mediante:</p>
+<p style="margin: 0 0 1rem;">La cuota periÃ³dica se calcula mediante:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub> - k<sub>0</sub> - OC · (1 + i)<sup>-n</sup></span><span class="den">\ddot{a}<sub>n¬ i</sub></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">k = <span class="formula-frac"><span class="num">V<sub>c</sub> - k<sub>0</sub> - OC Â· (1 + i)<sup>-n</sup></span><span class="den">\ddot{a}<sub>nÂ¬ i</sub></span></span></span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Aplicación al empréstito</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">AplicaciÃ³n al emprÃ©stito</h2>
 
-<p style="margin: 0 0 1rem;">Un empréstito es una forma de financiación colectiva a largo plazo en la que una entidad emisora divide su deuda en títulos de renta fija (obligaciones o bonos) que son adquiridos por múltiples inversores (obligacionistas).</p>
+<p style="margin: 0 0 1rem;">Un emprÃ©stito es una forma de financiaciÃ³n colectiva a largo plazo en la que una entidad emisora divide su deuda en tÃ­tulos de renta fija (obligaciones o bonos) que son adquiridos por mÃºltiples inversores (obligacionistas).</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Variables matemáticas del empréstito</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Variables matemÃ¡ticas del emprÃ©stito</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">V</span>: Precio de emisión de un título (importe pagado por el inversor).</li>
+<span class="formula-inline">V</span>: Precio de emisiÃ³n de un tÃ­tulo (importe pagado por el inversor).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">C</span>: Valor nominal de un título.</li>
+<span class="formula-inline">C</span>: Valor nominal de un tÃ­tulo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">N<sub>1</sub></span>: Número de títulos emitidos en la operación.</li>
+<span class="formula-inline">N<sub>1</sub></span>: NÃºmero de tÃ­tulos emitidos en la operaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">V · N<sub>1</sub></span>: Valor total de emisión del empréstito.</li>
+<span class="formula-inline">V Â· N<sub>1</sub></span>: Valor total de emisiÃ³n del emprÃ©stito.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">C<sub>0</sub> = C · N<sub>1</sub></span>: Valor nominal total del empréstito.</li>
+<span class="formula-inline">C<sub>0</sub> = C Â· N<sub>1</sub></span>: Valor nominal total del emprÃ©stito.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">Pe = C - V</span>: Prima de emisión por título.</li>
+<span class="formula-inline">Pe = C - V</span>: Prima de emisiÃ³n por tÃ­tulo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">n</span>: Duración en años del empréstito.</li>
+<span class="formula-inline">n</span>: DuraciÃ³n en aÃ±os del emprÃ©stito.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">i</span>: Tipo de interés del empréstito.</li>
+<span class="formula-inline">i</span>: Tipo de interÃ©s del emprÃ©stito.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">a</span>: Término amortizativo o anualidad satisfecha por el emisor.</li>
+<span class="formula-inline">a</span>: TÃ©rmino amortizativo o anualidad satisfecha por el emisor.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">I<sub>k</sub></span>: Intereses totales satisfechos en el año <span class="formula-inline">k</span> por la entidad emisora.</li>
+<span class="formula-inline">I<sub>k</sub></span>: Intereses totales satisfechos en el aÃ±o <span class="formula-inline">k</span> por la entidad emisora.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">N<sub>k</sub></span>: Número de títulos vivos en circulación al principio del período <span class="formula-inline">k</span>.</li>
+<span class="formula-inline">N<sub>k</sub></span>: NÃºmero de tÃ­tulos vivos en circulaciÃ³n al principio del perÃ­odo <span class="formula-inline">k</span>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">M<sub>k</sub></span>: Número de obligaciones amortizadas en el año <span class="formula-inline">k</span>.</li>
+<span class="formula-inline">M<sub>k</sub></span>: NÃºmero de obligaciones amortizadas en el aÃ±o <span class="formula-inline">k</span>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">A<sub>k</sub></span>: Cuota de amortización del período <span class="formula-inline">k</span>.</li>
+<span class="formula-inline">A<sub>k</sub></span>: Cuota de amortizaciÃ³n del perÃ­odo <span class="formula-inline">k</span>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">C · i</span>: Cupón periódico devengado por cada título vivo.</li>
+<span class="formula-inline">C Â· i</span>: CupÃ³n periÃ³dico devengado por cada tÃ­tulo vivo.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de empréstitos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de emprÃ©stitos</h3>
 
-<p style="margin: 0 0 1rem;">Se pueden clasificar según dos criterios principales:</p>
+<p style="margin: 0 0 1rem;">Se pueden clasificar segÃºn dos criterios principales:</p>
 
-<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Según el pago de intereses</h4>
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">SegÃºn el pago de intereses</h4>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pospagable:</strong> Los intereses devengados se pagan al final de cada período.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pospagable:</strong> Los intereses devengados se pagan al final de cada perÃ­odo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prepagable:</strong> Los intereses se abonan por adelantado (modalidad poco utilizada).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Acumulados o cupón cero:</strong> No hay pagos periódicos de intereses; estos se acumulan y se abonan en un único pago al vencimiento junto con el capital.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Acumulados o cupÃ³n cero:</strong> No hay pagos periÃ³dicos de intereses; estos se acumulan y se abonan en un Ãºnico pago al vencimiento junto con el capital.</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;">Dentro de estas modalidades, se distinguen tres tipos de comportamiento:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo I:</strong> Tanto el término amortizativo (<span class="formula-inline">a</span>) como el tipo de interés (<span class="formula-inline">i</span>) son constantes.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo I:</strong> Tanto el tÃ©rmino amortizativo (<span class="formula-inline">a</span>) como el tipo de interÃ©s (<span class="formula-inline">i</span>) son constantes.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo II:</strong> El tipo de interés (<span class="formula-inline">i</span>) es constante, pero el término amortizativo (<span class="formula-inline">a</span>) es variable (puede seguir progresiones aritméticas, geométricas o amortizar el mismo número de títulos en cada período).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo II:</strong> El tipo de interÃ©s (<span class="formula-inline">i</span>) es constante, pero el tÃ©rmino amortizativo (<span class="formula-inline">a</span>) es variable (puede seguir progresiones aritmÃ©ticas, geomÃ©tricas o amortizar el mismo nÃºmero de tÃ­tulos en cada perÃ­odo).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo III:</strong> Tanto los términos amortizativos (<span class="formula-inline">a</span>) como los tipos de interés (<span class="formula-inline">i</span>) son variables.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tipo III:</strong> Tanto los tÃ©rminos amortizativos (<span class="formula-inline">a</span>) como los tipos de interÃ©s (<span class="formula-inline">i</span>) son variables.</li>
 
 </ul>
 
-<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Según la existencia de características comerciales</h4>
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">SegÃºn la existencia de caracterÃ­sticas comerciales</h4>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Empréstitos puros o normales:</strong> Se rigen estrictamente por las condiciones financieras básicas pactadas de emisión y amortización.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EmprÃ©stitos puros o normales:</strong> Se rigen estrictamente por las condiciones financieras bÃ¡sicas pactadas de emisiÃ³n y amortizaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Empréstitos con características comerciales:</strong> Incluyen incentivos o condiciones especiales de mercado (primas de reembolso, lotes, etc.).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EmprÃ©stitos con caracterÃ­sticas comerciales:</strong> Incluyen incentivos o condiciones especiales de mercado (primas de reembolso, lotes, etc.).</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Empréstito puro con pago de intereses pospagables</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">EmprÃ©stito puro con pago de intereses pospagables</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo I (Términos amortizativos y tipos de interés constantes)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo I (TÃ©rminos amortizativos y tipos de interÃ©s constantes)</h3>
 
-<p style="margin: 0 0 1rem;">En este sistema, el emisor abona la misma cantidad total de dinero en cada período. Este pago anual constante (<span class="formula-inline">a</span>) cubre tanto el cupón de los títulos en circulación como la amortización nominal de los títulos correspondientes a ese año:</p>
+<p style="margin: 0 0 1rem;">En este sistema, el emisor abona la misma cantidad total de dinero en cada perÃ­odo. Este pago anual constante (<span class="formula-inline">a</span>) cubre tanto el cupÃ³n de los tÃ­tulos en circulaciÃ³n como la amortizaciÃ³n nominal de los tÃ­tulos correspondientes a ese aÃ±o:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a = C · i · N<sub>k</sub> + C · M<sub>k</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a = C Â· i Â· N<sub>k</sub> + C Â· M<sub>k</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del término amortizativo constante (<span class="formula-inline">a</span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del tÃ©rmino amortizativo constante (<span class="formula-inline">a</span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">C · N<sub>1</sub></span><span class="den">a<sub>n¬ i</sub></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">C Â· N<sub>1</sub></span><span class="den">a<sub>nÂ¬ i</sub></span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del número de títulos amortizados en el primer período (<span class="formula-inline">M<sub>1</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del nÃºmero de tÃ­tulos amortizados en el primer perÃ­odo (<span class="formula-inline">M<sub>1</sub></span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>1</sub> = <span class="formula-frac"><span class="num">N<sub>1</sub></span><span class="den">s<sub>n¬ i</sub></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>1</sub> = <span class="formula-frac"><span class="num">N<sub>1</sub></span><span class="den">s<sub>nÂ¬ i</sub></span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Evolución del número de títulos amortizados en cada período (<span class="formula-inline">M<sub>k+1</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EvoluciÃ³n del nÃºmero de tÃ­tulos amortizados en cada perÃ­odo (<span class="formula-inline">M<sub>k+1</sub></span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>k+1</sub> = M<sub>1</sub> · (1 + i)<sup>k</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>k+1</sub> = M<sub>1</sub> Â· (1 + i)<sup>k</sup></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total de títulos amortizados acumulados hasta el período <span class="formula-inline">k</span> (<span class="formula-inline">m<sub>k</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total de tÃ­tulos amortizados acumulados hasta el perÃ­odo <span class="formula-inline">k</span> (<span class="formula-inline">m<sub>k</sub></span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">m<sub>k</sub> = M<sub>1</sub> · s<sub>k¬ i</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">m<sub>k</sub> = M<sub>1</sub> Â· s<sub>kÂ¬ i</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de títulos vivos al principio de cada período (<span class="formula-inline">N<sub>k+1</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo de tÃ­tulos vivos al principio de cada perÃ­odo (<span class="formula-inline">N<sub>k+1</sub></span>):</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A través del número de títulos amortizados:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A travÃ©s del nÃºmero de tÃ­tulos amortizados:</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Método retrospectivo:</span>
-<span class="formula-inline">N<sub>k+1</sub> = N<sub>1</sub> - m<sub>k</sub> = N<sub>1</sub> - M<sub>1</sub> · s<sub>k¬ i</sub></span></li>
+<span class="markdown-emphasis">MÃ©todo retrospectivo:</span>
+<span class="formula-inline">N<sub>k+1</sub> = N<sub>1</sub> - m<sub>k</sub> = N<sub>1</sub> - M<sub>1</sub> Â· s<sub>kÂ¬ i</sub></span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Método prospectivo:</span>
-<span class="formula-inline">N<sub>k+1</sub> = M<sub>k+1</sub> · s<sub>n-k¬ i</sub></span></li>
+<span class="markdown-emphasis">MÃ©todo prospectivo:</span>
+<span class="formula-inline">N<sub>k+1</sub> = M<sub>k+1</sub> Â· s<sub>n-kÂ¬ i</sub></span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A través de los términos amortizativos:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">A travÃ©s de los tÃ©rminos amortizativos:</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Método retrospectivo:</span>
-<span class="formula-inline">C · N<sub>k+1</sub> = C · N<sub>1</sub> · (1 + i)<sup>k</sup> - a · s<sub>k¬ i</sub></span></li>
+<span class="markdown-emphasis">MÃ©todo retrospectivo:</span>
+<span class="formula-inline">C Â· N<sub>k+1</sub> = C Â· N<sub>1</sub> Â· (1 + i)<sup>k</sup> - a Â· s<sub>kÂ¬ i</sub></span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Método prospectivo:</span>
-<span class="formula-inline">C · N<sub>k+1</sub> = a · a<sub>n-k¬ i</sub></span></li>
+<span class="markdown-emphasis">MÃ©todo prospectivo:</span>
+<span class="formula-inline">C Â· N<sub>k+1</sub> = a Â· a<sub>n-kÂ¬ i</sub></span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cupones totales a pagar en el período <span class="formula-inline">k+1</span>:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cupones totales a pagar en el perÃ­odo <span class="formula-inline">k+1</span>:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C · i · N<sub>k+1</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C Â· i Â· N<sub>k+1</sub></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo II (Términos amortizativos variables y tipos de interés constantes)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo II (TÃ©rminos amortizativos variables y tipos de interÃ©s constantes)</h3>
 
-<p style="margin: 0 0 1rem;">El tipo de interés se mantiene fijo a lo largo del tiempo, pero los términos amortizativos destinados al pago de cupones y amortización de títulos varían en cada anualidad.</p>
+<p style="margin: 0 0 1rem;">El tipo de interÃ©s se mantiene fijo a lo largo del tiempo, pero los tÃ©rminos amortizativos destinados al pago de cupones y amortizaciÃ³n de tÃ­tulos varÃ­an en cada anualidad.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo III (Términos amortizativos y tipos de interés variables)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo III (TÃ©rminos amortizativos y tipos de interÃ©s variables)</h3>
 
-<p style="margin: 0 0 1rem;">Ambas magnitudes cambian en cada período de la operación financiera:</p>
+<p style="margin: 0 0 1rem;">Ambas magnitudes cambian en cada perÃ­odo de la operaciÃ³n financiera:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a = C · i<sub>k</sub> · N<sub>k</sub> + C · M<sub>k</sub> para 0 &lt; k ≤ n</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a = C Â· i<sub>k</sub> Â· N<sub>k</sub> + C Â· M<sub>k</sub> para 0 &lt; k â‰¤ n</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Títulos amortizados en los primeros períodos:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ­tulos amortizados en los primeros perÃ­odos:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>1</sub> = <span class="formula-frac"><span class="num">a<sub>1</sub> - C · i<sub>1</sub> · N<sub>1</sub></span><span class="den">C</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>1</sub> = <span class="formula-frac"><span class="num">a<sub>1</sub> - C Â· i<sub>1</sub> Â· N<sub>1</sub></span><span class="den">C</span></span></span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>2</sub> = <span class="formula-frac"><span class="num">a<sub>2</sub> - C · i<sub>2</sub> · (N<sub>1</sub> - M<sub>1</sub>)</span><span class="den">C</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>2</sub> = <span class="formula-frac"><span class="num">a<sub>2</sub> - C Â· i<sub>2</sub> Â· (N<sub>1</sub> - M<sub>1</sub>)</span><span class="den">C</span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total de títulos amortizados acumulados (<span class="formula-inline">m<sub>k</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Total de tÃ­tulos amortizados acumulados (<span class="formula-inline">m<sub>k</sub></span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">m<sub>k</sub> = N<sub>1</sub> - N<sub>k+1</sub> = M<sub>1</sub> + M<sub>2</sub> + … + M<sub>k</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">m<sub>k</sub> = N<sub>1</sub> - N<sub>k+1</sub> = M<sub>1</sub> + M<sub>2</sub> + â€¦ + M<sub>k</sub></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Títulos vivos al inicio del período <span class="formula-inline">k+1</span> (<span class="formula-inline">N<sub>k+1</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ­tulos vivos al inicio del perÃ­odo <span class="formula-inline">k+1</span> (<span class="formula-inline">N<sub>k+1</sub></span>):</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Método retrospectivo:</span>
+<span class="markdown-emphasis">MÃ©todo retrospectivo:</span>
 <span class="formula-inline">N<sub>k+1</sub> = N<sub>1</sub> - m<sub>k</sub></span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Método prospectivo:</span>
-<span class="formula-inline">N<sub>k+1</sub> = M<sub>k+1</sub> + M<sub>k+2</sub> + … + M<sub>n</sub></span></li>
+<span class="markdown-emphasis">MÃ©todo prospectivo:</span>
+<span class="formula-inline">N<sub>k+1</sub> = M<sub>k+1</sub> + M<sub>k+2</sub> + â€¦ + M<sub>n</sub></span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo por términos amortizativos futuros:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo por tÃ©rminos amortizativos futuros:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C · N<sub>k+1</sub> = <span class="formula-frac"><span class="num">a<sub>k+1</sub></span><span class="den">1 - i<sub>k+1</sub></span></span> + <span class="formula-frac"><span class="num">a<sub>k+2</sub></span><span class="den">(1 - i<sub>k+1</sub>) · (1 - i<sub>k+2</sub>)</span></span> + … + <span class="formula-frac"><span class="num">a<sub>n</sub></span><span class="den">(1 - i<sub>k+1</sub>) · (1 - i<sub>k+2</sub>) · … · (1 - i<sub>n</sub>)</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C Â· N<sub>k+1</sub> = <span class="formula-frac"><span class="num">a<sub>k+1</sub></span><span class="den">1 - i<sub>k+1</sub></span></span> + <span class="formula-frac"><span class="num">a<sub>k+2</sub></span><span class="den">(1 - i<sub>k+1</sub>) Â· (1 - i<sub>k+2</sub>)</span></span> + â€¦ + <span class="formula-frac"><span class="num">a<sub>n</sub></span><span class="den">(1 - i<sub>k+1</sub>) Â· (1 - i<sub>k+2</sub>) Â· â€¦ Â· (1 - i<sub>n</sub>)</span></span></span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cupones a pagar en el período <span class="formula-inline">k+1</span>:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cupones a pagar en el perÃ­odo <span class="formula-inline">k+1</span>:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C · i<sub>k+1</sub> · N<sub>k+1</sub></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C Â· i<sub>k+1</sub> Â· N<sub>k+1</sub></span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resolución de casos prácticos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ResoluciÃ³n de casos prÃ¡cticos</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Cálculo de intereses en sistema americano</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: CÃ¡lculo de intereses en sistema americano</h3>
 
-<p style="margin: 0 0 1rem;">La Sociedad Agrícola Manzano financia una envasadora de <span class="formula-inline">15.000€</span> mediante un préstamo a 5 años bajo el sistema americano, a un tipo de interés anual del <span class="formula-inline">8%</span>.</p>
+<p style="margin: 0 0 1rem;">La Sociedad AgrÃ­cola Manzano financia una envasadora de <span class="formula-inline">15.000â‚¬</span> mediante un prÃ©stamo a 5 aÃ±os bajo el sistema americano, a un tipo de interÃ©s anual del <span class="formula-inline">8%</span>.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos:</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">C<sub>0</sub> = 15.000€</span></li>
+<span class="formula-inline">C<sub>0</sub> = 15.000â‚¬</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">n = 5 años</span></li>
+<span class="formula-inline">n = 5 aÃ±os</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <span class="formula-inline">i = 0,08</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de los intereses anuales:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo de los intereses anuales:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">I<sub>s</sub> = C<sub>0</sub> · i = 15.000 · 0,08 = 1.200€ anuales</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">I<sub>s</sub> = C<sub>0</sub> Â· i = 15.000 Â· 0,08 = 1.200â‚¬ anuales</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desembolso del último año (año 5):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desembolso del Ãºltimo aÃ±o (aÃ±o 5):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>5</sub> = C<sub>0</sub> + I<sub>5</sub> = 15.000 + 1.200 = 16.200€</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a<sub>5</sub> = C<sub>0</sub> + I<sub>5</sub> = 15.000 + 1.200 = 16.200â‚¬</span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Amortización de un empréstito Tipo I</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: AmortizaciÃ³n de un emprÃ©stito Tipo I</h3>
 
-<p style="margin: 0 0 1rem;">Se emite un empréstito de <span class="formula-inline">200.000</span> títulos con un valor nominal unitario de <span class="formula-inline">1.000€</span>, un tipo de interés del <span class="formula-inline">14%</span> y un plazo de amortización de 5 años. Se retribuye mediante un cupón periódico constante y término amortizativo constante.</p>
+<p style="margin: 0 0 1rem;">Se emite un emprÃ©stito de <span class="formula-inline">200.000</span> tÃ­tulos con un valor nominal unitario de <span class="formula-inline">1.000â‚¬</span>, un tipo de interÃ©s del <span class="formula-inline">14%</span> y un plazo de amortizaciÃ³n de 5 aÃ±os. Se retribuye mediante un cupÃ³n periÃ³dico constante y tÃ©rmino amortizativo constante.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos:</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">N<sub>1</sub> = 200.000</span> títulos</li>
+<span class="formula-inline">N<sub>1</sub> = 200.000</span> tÃ­tulos</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">C = 1.000€</span></li>
+<span class="formula-inline">C = 1.000â‚¬</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <span class="formula-inline">i = 0,14</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">n = 5 años</span></li>
+<span class="formula-inline">n = 5 aÃ±os</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del término amortizativo (<span class="formula-inline">a</span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del tÃ©rmino amortizativo (<span class="formula-inline">a</span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">C · N<sub>1</sub></span><span class="den">a<sub>5¬ 0,14</sub></span></span> = <span class="formula-frac"><span class="num">200.000.000</span><span class="den">3,43308</span></span> = 58.256.709,30€</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">C Â· N<sub>1</sub></span><span class="den">a<sub>5Â¬ 0,14</sub></span></span> = <span class="formula-frac"><span class="num">200.000.000</span><span class="den">3,43308</span></span> = 58.256.709,30â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo de títulos amortizados en el primer año (<span class="formula-inline">M<sub>1</sub></span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo de tÃ­tulos amortizados en el primer aÃ±o (<span class="formula-inline">M<sub>1</sub></span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>1</sub> = <span class="formula-frac"><span class="num">N<sub>1</sub></span><span class="den">s<sub>5¬ 0,14</sub></span></span> = <span class="formula-frac"><span class="num">200.000</span><span class="den">6,8728</span></span> = 29.128,35 títulos</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">M<sub>1</sub> = <span class="formula-frac"><span class="num">N<sub>1</sub></span><span class="den">s<sub>5Â¬ 0,14</sub></span></span> = <span class="formula-frac"><span class="num">200.000</span><span class="den">6,8728</span></span> = 29.128,35 tÃ­tulos</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tabla de amortización del empréstito:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tabla de amortizaciÃ³n del emprÃ©stito:</strong></li>
 
 </ul>
 
-<table class="markdown-table"><thead><tr><th>Año</th><th>Títulos vivos (Nk)</th><th>Títulos amortizados (Mk)</th><th>Total amortizados (mk)</th><th>Intereses (Ik)</th><th>Amortización (Ak)</th><th>Término amortizativo (a)</th></tr></thead><tbody><tr><td>1</td><td>200.000,00</td><td>30.256,71</td><td>30.256,71</td><td>28.000.000,00€</td><td>30.256.709,30€</td><td>58.256.709,30€</td></tr><tr><td>2</td><td>169.743,29</td><td>34.492,65</td><td>64.749,36</td><td>23.764.060,70€</td><td>34.492.648,60€</td><td>58.256.709,30€</td></tr><tr><td>3</td><td>135.250,64</td><td>39.321,62</td><td>104.070,98</td><td>18.935.089,89€</td><td>39.321.619,40€</td><td>58.256.709,30€</td></tr><tr><td>4</td><td>95.929,02</td><td>44.826,65</td><td>148.897,62</td><td>13.430.063,18€</td><td>44.826.646,12€</td><td>58.256.709,30€</td></tr><tr><td>5</td><td>51.102,38</td><td>51.102,38</td><td>200.000,00</td><td>7.154.332,72€</td><td>51.102.376,58€</td><td>58.256.709,30€</td></tr></tbody></table>
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Comparativa práctica: sistema americano frente a sistema francés</h2>
+<table class="markdown-table"><thead><tr><th>AÃ±o</th><th>TÃ­tulos vivos (Nk)</th><th>TÃ­tulos amortizados (Mk)</th><th>Total amortizados (mk)</th><th>Intereses (Ik)</th><th>AmortizaciÃ³n (Ak)</th><th>TÃ©rmino amortizativo (a)</th></tr></thead><tbody><tr><td>1</td><td>200.000,00</td><td>30.256,71</td><td>30.256,71</td><td>28.000.000,00â‚¬</td><td>30.256.709,30â‚¬</td><td>58.256.709,30â‚¬</td></tr><tr><td>2</td><td>169.743,29</td><td>34.492,65</td><td>64.749,36</td><td>23.764.060,70â‚¬</td><td>34.492.648,60â‚¬</td><td>58.256.709,30â‚¬</td></tr><tr><td>3</td><td>135.250,64</td><td>39.321,62</td><td>104.070,98</td><td>18.935.089,89â‚¬</td><td>39.321.619,40â‚¬</td><td>58.256.709,30â‚¬</td></tr><tr><td>4</td><td>95.929,02</td><td>44.826,65</td><td>148.897,62</td><td>13.430.063,18â‚¬</td><td>44.826.646,12â‚¬</td><td>58.256.709,30â‚¬</td></tr><tr><td>5</td><td>51.102,38</td><td>51.102,38</td><td>200.000,00</td><td>7.154.332,72â‚¬</td><td>51.102.376,58â‚¬</td><td>58.256.709,30â‚¬</td></tr></tbody></table>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Comparativa prÃ¡ctica: sistema americano frente a sistema francÃ©s</h2>
 
-<p style="margin: 0 0 1rem;">Se analiza la amortización de un préstamo de <span class="formula-inline">20.000€</span> a un tipo de interés del <span class="formula-inline">6%</span> anual durante un plazo de 4 años, comparando los dos sistemas principales.</p>
+<p style="margin: 0 0 1rem;">Se analiza la amortizaciÃ³n de un prÃ©stamo de <span class="formula-inline">20.000â‚¬</span> a un tipo de interÃ©s del <span class="formula-inline">6%</span> anual durante un plazo de 4 aÃ±os, comparando los dos sistemas principales.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Opción A: Sistema americano</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">OpciÃ³n A: Sistema americano</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Interés anual constante:</strong>
-<span class="formula-inline">20.000 · 0,06 = 1.200€</span></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InterÃ©s anual constante:</strong>
+<span class="formula-inline">20.000 Â· 0,06 = 1.200â‚¬</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Término amortizativo final:</strong>
-<span class="formula-inline">20.000 + 1.200 = 21.200€</span></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rmino amortizativo final:</strong>
+<span class="formula-inline">20.000 + 1.200 = 21.200â‚¬</span></li>
 
 </ul>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tabla de amortización (americano):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tabla de amortizaciÃ³n (americano):</strong></li>
 
 </ul>
 
-<table class="markdown-table"><thead><tr><th>Año</th><th>Término amortizativo (as)</th><th>Cuota de interés (Is)</th><th>Cuota de amortización (As)</th><th>Capital amortizado (Ms)</th><th>Capital vivo (Cs)</th></tr></thead><tbody><tr><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>20.000€</td></tr><tr><td>1</td><td>1.200€</td><td>1.200€</td><td>0€</td><td>0€</td><td>20.000€</td></tr><tr><td>2</td><td>1.200€</td><td>1.200€</td><td>0€</td><td>0€</td><td>20.000€</td></tr><tr><td>3</td><td>1.200€</td><td>1.200€</td><td>0€</td><td>0€</td><td>20.000€</td></tr><tr><td>4</td><td>21.200€</td><td>1.200€</td><td>20.000€</td><td>20.000€</td><td>0€</td></tr><tr><td>Total</td><td>24.800€</td><td>4.800€</td><td>20.000€</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Opción B: Sistema francés</h3>
+<table class="markdown-table"><thead><tr><th>AÃ±o</th><th>TÃ©rmino amortizativo (as)</th><th>Cuota de interÃ©s (Is)</th><th>Cuota de amortizaciÃ³n (As)</th><th>Capital amortizado (Ms)</th><th>Capital vivo (Cs)</th></tr></thead><tbody><tr><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>20.000â‚¬</td></tr><tr><td>1</td><td>1.200â‚¬</td><td>1.200â‚¬</td><td>0â‚¬</td><td>0â‚¬</td><td>20.000â‚¬</td></tr><tr><td>2</td><td>1.200â‚¬</td><td>1.200â‚¬</td><td>0â‚¬</td><td>0â‚¬</td><td>20.000â‚¬</td></tr><tr><td>3</td><td>1.200â‚¬</td><td>1.200â‚¬</td><td>0â‚¬</td><td>0â‚¬</td><td>20.000â‚¬</td></tr><tr><td>4</td><td>21.200â‚¬</td><td>1.200â‚¬</td><td>20.000â‚¬</td><td>20.000â‚¬</td><td>0â‚¬</td></tr><tr><td>Total</td><td>24.800â‚¬</td><td>4.800â‚¬</td><td>20.000â‚¬</td><td>-</td><td>-</td></tr></tbody></table>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">OpciÃ³n B: Sistema francÃ©s</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Término amortizativo constante (<span class="formula-inline">a</span>):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ©rmino amortizativo constante (<span class="formula-inline">a</span>):</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">20.000</span><span class="den">a<sub>4¬ 0,06</sub></span></span> = 5.772€</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">a = <span class="formula-frac"><span class="num">20.000</span><span class="den">a<sub>4Â¬ 0,06</sub></span></span> = 5.772â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tabla de amortización (francés):</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Tabla de amortizaciÃ³n (francÃ©s):</strong></li>
 
 </ul>
 
-<table class="markdown-table"><thead><tr><th>Año</th><th>Término amortizativo (as)</th><th>Cuota de interés (Is)</th><th>Cuota de amortización (As)</th><th>Capital amortizado (Ms)</th><th>Capital vivo (Cs)</th></tr></thead><tbody><tr><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>20.000€</td></tr><tr><td>1</td><td>5.772€</td><td>1.200€</td><td>4.572€</td><td>4.572€</td><td>15.428€</td></tr><tr><td>2</td><td>5.772€</td><td>926€</td><td>4.846€</td><td>9.418€</td><td>10.582€</td></tr><tr><td>3</td><td>5.772€</td><td>635€</td><td>5.137€</td><td>14.555€</td><td>5.445€</td></tr><tr><td>4</td><td>5.772€</td><td>327€</td><td>5.445€</td><td>20.000€</td><td>0€</td></tr><tr><td>Total</td><td>23.087€</td><td>3.087€</td><td>20.000€</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Conclusión del análisis comparativo</h3>
+<table class="markdown-table"><thead><tr><th>AÃ±o</th><th>TÃ©rmino amortizativo (as)</th><th>Cuota de interÃ©s (Is)</th><th>Cuota de amortizaciÃ³n (As)</th><th>Capital amortizado (Ms)</th><th>Capital vivo (Cs)</th></tr></thead><tbody><tr><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>20.000â‚¬</td></tr><tr><td>1</td><td>5.772â‚¬</td><td>1.200â‚¬</td><td>4.572â‚¬</td><td>4.572â‚¬</td><td>15.428â‚¬</td></tr><tr><td>2</td><td>5.772â‚¬</td><td>926â‚¬</td><td>4.846â‚¬</td><td>9.418â‚¬</td><td>10.582â‚¬</td></tr><tr><td>3</td><td>5.772â‚¬</td><td>635â‚¬</td><td>5.137â‚¬</td><td>14.555â‚¬</td><td>5.445â‚¬</td></tr><tr><td>4</td><td>5.772â‚¬</td><td>327â‚¬</td><td>5.445â‚¬</td><td>20.000â‚¬</td><td>0â‚¬</td></tr><tr><td>Total</td><td>23.087â‚¬</td><td>3.087â‚¬</td><td>20.000â‚¬</td><td>-</td><td>-</td></tr></tbody></table>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ConclusiÃ³n del anÃ¡lisis comparativo</h3>
 
-<p style="margin: 0 0 1rem;">La elección de uno u otro método no depende de un ahorro directo en el coste financiero si se evalúa bajo la equivalencia de tipos, sino de la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">disponibilidad de liquidez</strong> de la empresa:</p>
+<p style="margin: 0 0 1rem;">La elecciÃ³n de uno u otro mÃ©todo no depende de un ahorro directo en el coste financiero si se evalÃºa bajo la equivalencia de tipos, sino de la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">disponibilidad de liquidez</strong> de la empresa:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">sistema americano</strong> exige un esfuerzo de tesorería nulo para devolver el principal durante los primeros años, pero requiere un gran desembolso final (<span class="formula-inline">21.200€</span>).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">sistema americano</strong> exige un esfuerzo de tesorerÃ­a nulo para devolver el principal durante los primeros aÃ±os, pero requiere un gran desembolso final (<span class="formula-inline">21.200â‚¬</span>).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">sistema francés</strong> distribuye la carga de la devolución del capital de manera homogénea a lo largo de los 4 años (<span class="formula-inline">5.772€</span> anuales), lo que permite una planificación de tesorería más estable y reduce el total de intereses pagados a nivel global (<span class="formula-inline">3.087€</span> frente a los <span class="formula-inline">4.800€</span> del sistema americano).</li>
+<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">sistema francÃ©s</strong> distribuye la carga de la devoluciÃ³n del capital de manera homogÃ©nea a lo largo de los 4 aÃ±os (<span class="formula-inline">5.772â‚¬</span> anuales), lo que permite una planificaciÃ³n de tesorerÃ­a mÃ¡s estable y reduce el total de intereses pagados a nivel global (<span class="formula-inline">3.087â‚¬</span> frente a los <span class="formula-inline">4.800â‚¬</span> del sistema americano).</li>
 
 </ul>
 
 </main>
 </body>
 </html>
+

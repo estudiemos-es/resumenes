@@ -1,189 +1,220 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apuntes - Sostenibilidad aplicada al sistema productivo. Tema 4</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
 <h1>Apuntes - Sostenibilidad aplicada al sistema productivo. Tema 4</h1>
 
-<h2>Sostenibilidad aplicada al sistema productivo: superpoblación y consumo de recursos</h2>
+<h2>Sostenibilidad aplicada al sistema productivo: superpoblaciÃ³n y consumo de recursos</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción al problema de la superpoblación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n al problema de la superpoblaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La superpoblación representa uno de los mayores desafíos para la humanidad en su camino hacia el desarrollo sostenible. El acelerado incremento de la población humana ejerce una presión sin precedentes sobre los recursos naturales del planeta, los cuales están siendo consumidos a un ritmo muy superior al de su capacidad de regeneración natural.</p>
+<p style="margin: 0 0 1rem;">La superpoblaciÃ³n representa uno de los mayores desafÃ­os para la humanidad en su camino hacia el desarrollo sostenible. El acelerado incremento de la poblaciÃ³n humana ejerce una presiÃ³n sin precedentes sobre los recursos naturales del planeta, los cuales estÃ¡n siendo consumidos a un ritmo muy superior al de su capacidad de regeneraciÃ³n natural.</p>
 
-<p style="margin: 0 0 1rem;">Para abordar esta problemática de manera efectiva, es fundamental coordinar políticas y acciones a nivel global orientadas al cumplimiento de los Objetivos de Desarrollo Sostenible y la Agenda 2030, mitigando así los efectos adversos derivados de la sobreexplotación de los recursos.</p>
+<p style="margin: 0 0 1rem;">Para abordar esta problemÃ¡tica de manera efectiva, es fundamental coordinar polÃ­ticas y acciones a nivel global orientadas al cumplimiento de los Objetivos de Desarrollo Sostenible y la Agenda 2030, mitigando asÃ­ los efectos adversos derivados de la sobreexplotaciÃ³n de los recursos.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Concepto y consecuencias de la superpoblación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Concepto y consecuencias de la superpoblaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La superpoblación, también denominada sobrepoblación, se define como aquella situación en la que la cantidad de individuos de una especie en un espacio determinado excede la capacidad de los recursos disponibles para cubrir sus necesidades básicas. En el caso de los seres humanos, estas necesidades abarcan elementos esenciales como:</p>
+<p style="margin: 0 0 1rem;">La superpoblaciÃ³n, tambiÃ©n denominada sobrepoblaciÃ³n, se define como aquella situaciÃ³n en la que la cantidad de individuos de una especie en un espacio determinado excede la capacidad de los recursos disponibles para cubrir sus necesidades bÃ¡sicas. En el caso de los seres humanos, estas necesidades abarcan elementos esenciales como:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Alimentos</strong> y agua potable.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vivienda</strong> digna.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Servicios básicos</strong> de salud, educación y saneamiento.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Servicios bÃ¡sicos</strong> de salud, educaciÃ³n y saneamiento.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Aunque este término se asocia comúnmente a la especie humana, la Real Academia Española señala que es aplicable a cualquier conjunto de especies. Un crecimiento demográfico descontrolado desencadena múltiples efectos negativos, entre los que destacan:</p>
+<p style="margin: 0 0 1rem;">Aunque este tÃ©rmino se asocia comÃºnmente a la especie humana, la Real Academia EspaÃ±ola seÃ±ala que es aplicable a cualquier conjunto de especies. Un crecimiento demogrÃ¡fico descontrolado desencadena mÃºltiples efectos negativos, entre los que destacan:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Escasez de alimentos</strong> y agotamiento acelerado de materias primas.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Degradación del medio natural</strong> y pérdida crítica de biodiversidad.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DegradaciÃ³n del medio natural</strong> y pÃ©rdida crÃ­tica de biodiversidad.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Competencia intensa</strong> por el control de los recursos naturales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Saturación y presión extrema</strong> sobre las infraestructuras y los servicios públicos.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SaturaciÃ³n y presiÃ³n extrema</strong> sobre las infraestructuras y los servicios pÃºblicos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Propagación de nuevas enfermedades</strong> y aparición de pandemias.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PropagaciÃ³n de nuevas enfermedades</strong> y apariciÃ³n de pandemias.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conflictos socioeconómicos</strong> y tensiones geopolíticas territoriales.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conflictos socioeconÃ³micos</strong> y tensiones geopolÃ­ticas territoriales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movimientos migratorios</strong> masivos y desplazamientos forzados de población.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estimaciones de crecimiento demográfico para 2050</h2>
-
-<p style="margin: 0 0 1rem;">Las Naciones Unidas realizan proyecciones constantes sobre la evolución de la población mundial, advirtiendo que el crecimiento global se produce de manera muy heterogénea según la región geográfica.</p>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Crecimiento poblacional heterogéneo</h3>
-
-<p style="margin: 0 0 1rem;">En el año 2023, la población mundial alcanzó los 8.000 millones de personas. Las estimaciones oficiales prevén una trayectoria ascendente continua en las próximas décadas:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Año 2030:</strong> 8.500 millones de personas.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Año 2050:</strong> 9.700 millones de personas.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Año 2100:</strong> 10.900 millones de personas.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Movimientos migratorios</strong> masivos y desplazamientos forzados de poblaciÃ³n.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Este incremento no será uniforme. Los datos del Fondo de Población de las Naciones Unidas reflejan que los países con menores recursos económicos experimentarán los mayores picos de crecimiento. India y China lideran históricamente la lista de naciones más pobladas. En 2023, ambos países contaban con aproximadamente 1.430 millones de habitantes cada uno, siendo India el país que superó a China. Para el año 2058, se proyecta una población mundial de 10.000 millones de personas, donde India alcanzará los 1.690 millones y China descenderá a los 1.230 millones de habitantes.</p>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estimaciones de crecimiento demogrÃ¡fico para 2050</h2>
 
-<p style="margin: 0 0 1rem;">Este crecimiento concentrado en las regiones en vías de desarrollo dificulta la consecución de los Objetivos de Desarrollo Sostenible, especialmente en lo relativo a la erradicación de la pobreza, la igualdad de género, el combate contra el hambre y la mejora de los sistemas de salud y educación.</p>
+<p style="margin: 0 0 1rem;">Las Naciones Unidas realizan proyecciones constantes sobre la evoluciÃ³n de la poblaciÃ³n mundial, advirtiendo que el crecimiento global se produce de manera muy heterogÃ©nea segÃºn la regiÃ³n geogrÃ¡fica.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Crecimiento poblacional heterogÃ©neo</h3>
+
+<p style="margin: 0 0 1rem;">En el aÃ±o 2023, la poblaciÃ³n mundial alcanzÃ³ los 8.000 millones de personas. Las estimaciones oficiales prevÃ©n una trayectoria ascendente continua en las prÃ³ximas dÃ©cadas:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AÃ±o 2030:</strong> 8.500 millones de personas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AÃ±o 2050:</strong> 9.700 millones de personas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AÃ±o 2100:</strong> 10.900 millones de personas.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Este incremento no serÃ¡ uniforme. Los datos del Fondo de PoblaciÃ³n de las Naciones Unidas reflejan que los paÃ­ses con menores recursos econÃ³micos experimentarÃ¡n los mayores picos de crecimiento. India y China lideran histÃ³ricamente la lista de naciones mÃ¡s pobladas. En 2023, ambos paÃ­ses contaban con aproximadamente 1.430 millones de habitantes cada uno, siendo India el paÃ­s que superÃ³ a China. Para el aÃ±o 2058, se proyecta una poblaciÃ³n mundial de 10.000 millones de personas, donde India alcanzarÃ¡ los 1.690 millones y China descenderÃ¡ a los 1.230 millones de habitantes.</p>
+
+<p style="margin: 0 0 1rem;">Este crecimiento concentrado en las regiones en vÃ­as de desarrollo dificulta la consecuciÃ³n de los Objetivos de Desarrollo Sostenible, especialmente en lo relativo a la erradicaciÃ³n de la pobreza, la igualdad de gÃ©nero, el combate contra el hambre y la mejora de los sistemas de salud y educaciÃ³n.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tasas de fertilidad globales</h3>
 
-<p style="margin: 0 0 1rem;">Aunque la tasa media de fecundidad a nivel mundial muestra una tendencia a la baja, registrando una media de 2,3 nacimientos por mujer en 2023, las diferencias regionales son muy marcadas. Las tasas más elevadas se concentran en las siguientes zonas:</p>
+<p style="margin: 0 0 1rem;">Aunque la tasa media de fecundidad a nivel mundial muestra una tendencia a la baja, registrando una media de 2,3 nacimientos por mujer en 2023, las diferencias regionales son muy marcadas. Las tasas mÃ¡s elevadas se concentran en las siguientes zonas:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">África subsahariana:</strong> 4,6 nacimientos por mujer.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ãfrica subsahariana:</strong> 4,6 nacimientos por mujer.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Oceanía</strong> (excluyendo Australia y Nueva Zelanda): 3,4 nacimientos por mujer.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">OceanÃ­a</strong> (excluyendo Australia y Nueva Zelanda): 3,4 nacimientos por mujer.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">África del Norte y Asia occidental:</strong> 2,9 nacimientos por mujer.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ãfrica del Norte y Asia occidental:</strong> 2,9 nacimientos por mujer.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Asia central y meridional:</strong> 2,4 nacimientos por mujer.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">La evolución demográfica final de cada territorio dependerá del equilibrio entre estas tasas de fecundidad y el incremento de la longevidad de su población.</p>
+<p style="margin: 0 0 1rem;">La evoluciÃ³n demogrÃ¡fica final de cada territorio dependerÃ¡ del equilibrio entre estas tasas de fecundidad y el incremento de la longevidad de su poblaciÃ³n.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Factores demográficos adicionales y desigualdades</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Factores demogrÃ¡ficos adicionales y desigualdades</h2>
 
-<p style="margin: 0 0 1rem;">El análisis demográfico hacia el año 2050 revela otros factores determinantes que alteran la estructura social y económica del planeta.</p>
+<p style="margin: 0 0 1rem;">El anÃ¡lisis demogrÃ¡fico hacia el aÃ±o 2050 revela otros factores determinantes que alteran la estructura social y econÃ³mica del planeta.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Esperanza de vida desigual</h3>
 
-<p style="margin: 0 0 1rem;">La esperanza de vida global aumentó de manera significativa, pasando de los valores de 1990 a situarse en 72,8 años en 2019, con una previsión de alcanzar los 77,2 años en 2050. No obstante, persiste una brecha profunda: los habitantes de los países más pobres viven, de media, 7 años menos que la población de los países desarrollados. Esta disparidad se debe principalmente a las altas tasas de mortalidad infantil y materna, la violencia, los conflictos armados y la incidencia de enfermedades como el VIH.</p>
+<p style="margin: 0 0 1rem;">La esperanza de vida global aumentÃ³ de manera significativa, pasando de los valores de 1990 a situarse en 72,8 aÃ±os en 2019, con una previsiÃ³n de alcanzar los 77,2 aÃ±os en 2050. No obstante, persiste una brecha profunda: los habitantes de los paÃ­ses mÃ¡s pobres viven, de media, 7 aÃ±os menos que la poblaciÃ³n de los paÃ­ses desarrollados. Esta disparidad se debe principalmente a las altas tasas de mortalidad infantil y materna, la violencia, los conflictos armados y la incidencia de enfermedades como el VIH.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Envejecimiento poblacional</h3>
 
-<p style="margin: 0 0 1rem;">Para el año 2050, se estima que el 16% de la población mundial tendrá más de 65 años. Este proceso de envejecimiento duplicará su presencia entre 2019 y 2050 en regiones como el norte de África, Asia occidental, Asia central, meridional, oriental y sudoriental, así como en América Latina y el Caribe. La reducción progresiva de la población en edad laboral y el aumento de la población de la tercera edad generarán fuertes presiones financieras sobre los sistemas económicos y sanitarios globales.</p>
+<p style="margin: 0 0 1rem;">Para el aÃ±o 2050, se estima que el 16% de la poblaciÃ³n mundial tendrÃ¡ mÃ¡s de 65 aÃ±os. Este proceso de envejecimiento duplicarÃ¡ su presencia entre 2019 y 2050 en regiones como el norte de Ãfrica, Asia occidental, Asia central, meridional, oriental y sudoriental, asÃ­ como en AmÃ©rica Latina y el Caribe. La reducciÃ³n progresiva de la poblaciÃ³n en edad laboral y el aumento de la poblaciÃ³n de la tercera edad generarÃ¡n fuertes presiones financieras sobre los sistemas econÃ³micos y sanitarios globales.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Impacto de la migración internacional</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Impacto de la migraciÃ³n internacional</h3>
 
-<p style="margin: 0 0 1rem;">Aunque la migración internacional tiene un peso menor en los cambios demográficos globales en comparación con los nacimientos y las muertes, resulta de gran relevancia para determinados países. Los flujos migratorios están motivados principalmente por la búsqueda de oportunidades económicas, los movimientos de refugiados que huyen de la violencia o conflictos armados, la inseguridad y la demanda de mano de obra en los países receptores.</p>
+<p style="margin: 0 0 1rem;">Aunque la migraciÃ³n internacional tiene un peso menor en los cambios demogrÃ¡ficos globales en comparaciÃ³n con los nacimientos y las muertes, resulta de gran relevancia para determinados paÃ­ses. Los flujos migratorios estÃ¡n motivados principalmente por la bÃºsqueda de oportunidades econÃ³micas, los movimientos de refugiados que huyen de la violencia o conflictos armados, la inseguridad y la demanda de mano de obra en los paÃ­ses receptores.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Desafíos de la superpoblación en el desarrollo sostenible</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">DesafÃ­os de la superpoblaciÃ³n en el desarrollo sostenible</h2>
 
-<p style="margin: 0 0 1rem;">La presión demográfica exige la adopción de medidas coordinadas en los ámbitos social, económico y ambiental. El impacto ecológico es la consecuencia más crítica de la superpoblación, manifestándose a través de dos problemas principales:</p>
+<p style="margin: 0 0 1rem;">La presiÃ³n demogrÃ¡fica exige la adopciÃ³n de medidas coordinadas en los Ã¡mbitos social, econÃ³mico y ambiental. El impacto ecolÃ³gico es la consecuencia mÃ¡s crÃ­tica de la superpoblaciÃ³n, manifestÃ¡ndose a travÃ©s de dos problemas principales:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El agotamiento de los recursos naturales:</strong> Se consumen materias primas a una velocidad muy superior a su ritmo de regeneración natural, generando un déficit ecológico. En los países en vías de desarrollo, la escasez de recursos esenciales puede derivar en conflictos geopolíticos y guerras por el control de bienes como el agua.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El agotamiento de los recursos naturales:</strong> Se consumen materias primas a una velocidad muy superior a su ritmo de regeneraciÃ³n natural, generando un dÃ©ficit ecolÃ³gico. En los paÃ­ses en vÃ­as de desarrollo, la escasez de recursos esenciales puede derivar en conflictos geopolÃ­ticos y guerras por el control de bienes como el agua.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El incremento de emisiones de carbono:</strong> La necesidad de abastecer a una población creciente dispara la demanda de combustibles fósiles (carbón, petróleo y gas natural) para la producción industrial y energética. Esto incrementa las emisiones de gases de efecto invernadero, acelerando el calentamiento global y provocando fenómenos como la deforestación, la desertización y la pérdida masiva de biodiversidad.</li>
-
-</ul>
-
-<p style="margin: 0 0 1rem;">Para mitigar estos impactos en proyectos de gran envergadura, se recurre a herramientas como la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">evaluación de impacto ambiental</strong>, la cual resulta clave para planificar el desarrollo territorial minimizando los daños sobre los ecosistemas. Asimismo, la implementación de medidas de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">innovación verde</strong> es indispensable para aportar soluciones tecnológicas y sostenibles a los nuevos retos de abastecimiento.</p>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Consumo de recursos y sobreexplotación</h2>
-
-<p style="margin: 0 0 1rem;">En el último medio siglo, el crecimiento de la actividad humana ha seguido una tendencia exponencial: la población mundial se ha duplicado, la extracción de recursos naturales se ha triplicado y el producto interno bruto global se ha cuadruplicado.</p>
-
-<p style="margin: 0 0 1rem;">Esta explotación intensiva e industrial, acelerada especialmente en las últimas dos décadas, es la responsable directa de:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Más del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90% de la pérdida de biodiversidad</strong> del planeta.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">El incremento del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estrés hídrico</strong> en múltiples regiones.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">Aproximadamente la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">mitad de los impactos asociados al cambio climático</strong>.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El incremento de emisiones de carbono:</strong> La necesidad de abastecer a una poblaciÃ³n creciente dispara la demanda de combustibles fÃ³siles (carbÃ³n, petrÃ³leo y gas natural) para la producciÃ³n industrial y energÃ©tica. Esto incrementa las emisiones de gases de efecto invernadero, acelerando el calentamiento global y provocando fenÃ³menos como la deforestaciÃ³n, la desertizaciÃ³n y la pÃ©rdida masiva de biodiversidad.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">A pesar de las advertencias científicas, la demanda global de recursos materiales no ha mostrado indicios de estabilización ni de reducción en los últimos 50 años.</p>
+<p style="margin: 0 0 1rem;">Para mitigar estos impactos en proyectos de gran envergadura, se recurre a herramientas como la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">evaluaciÃ³n de impacto ambiental</strong>, la cual resulta clave para planificar el desarrollo territorial minimizando los daÃ±os sobre los ecosistemas. Asimismo, la implementaciÃ³n de medidas de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">innovaciÃ³n verde</strong> es indispensable para aportar soluciones tecnolÃ³gicas y sostenibles a los nuevos retos de abastecimiento.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El agua como recurso finito y crítico</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Consumo de recursos y sobreexplotaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">El agua es el recurso natural más importante para el sostenimiento de la vida y constituye un pilar básico para el desarrollo social, económico y ambiental. Sus funciones principales abarcan:</p>
+<p style="margin: 0 0 1rem;">En el Ãºltimo medio siglo, el crecimiento de la actividad humana ha seguido una tendencia exponencial: la poblaciÃ³n mundial se ha duplicado, la extracciÃ³n de recursos naturales se ha triplicado y el producto interno bruto global se ha cuadruplicado.</p>
+
+<p style="margin: 0 0 1rem;">Esta explotaciÃ³n intensiva e industrial, acelerada especialmente en las Ãºltimas dos dÃ©cadas, es la responsable directa de:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">MÃ¡s del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90% de la pÃ©rdida de biodiversidad</strong> del planeta.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">El incremento del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estrÃ©s hÃ­drico</strong> en mÃºltiples regiones.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">Aproximadamente la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">mitad de los impactos asociados al cambio climÃ¡tico</strong>.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">A pesar de las advertencias cientÃ­ficas, la demanda global de recursos materiales no ha mostrado indicios de estabilizaciÃ³n ni de reducciÃ³n en los Ãºltimos 50 aÃ±os.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El agua como recurso finito y crÃ­tico</h2>
+
+<p style="margin: 0 0 1rem;">El agua es el recurso natural mÃ¡s importante para el sostenimiento de la vida y constituye un pilar bÃ¡sico para el desarrollo social, econÃ³mico y ambiental. Sus funciones principales abarcan:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sustento de la vida y salud:</strong> Es indispensable para la supervivencia de plantas, animales y seres humanos, garantizando la higiene, el bienestar y la seguridad alimentaria.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Motor económico:</strong> Es un recurso clave para la agricultura, el consumo doméstico, la industria y la generación de energía.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Motor econÃ³mico:</strong> Es un recurso clave para la agricultura, el consumo domÃ©stico, la industria y la generaciÃ³n de energÃ­a.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Soporte de ecosistemas:</strong> Ríos, lagos, humedales y océanos albergan una inmensa biodiversidad y proporcionan hábitats esenciales.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Soporte de ecosistemas:</strong> RÃ­os, lagos, humedales y ocÃ©anos albergan una inmensa biodiversidad y proporcionan hÃ¡bitats esenciales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Regulación climática:</strong> Participa activamente en el ciclo climático global y los cuerpos de agua actúan como sumideros de carbono, mitigando el calentamiento global.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RegulaciÃ³n climÃ¡tica:</strong> Participa activamente en el ciclo climÃ¡tico global y los cuerpos de agua actÃºan como sumideros de carbono, mitigando el calentamiento global.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">El acceso equitativo al agua está directamente vinculado al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ODS 6</strong> (Agua limpia y saneamiento). Sin embargo, muchas regiones sufren de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estrés hídrico</strong>, situación que ocurre cuando la demanda de agua es mayor que la cantidad disponible en un periodo determinado, o cuando su uso se ve limitado debido a su baja calidad.</p>
+<p style="margin: 0 0 1rem;">El acceso equitativo al agua estÃ¡ directamente vinculado al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ODS 6</strong> (Agua limpia y saneamiento). Sin embargo, muchas regiones sufren de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">estrÃ©s hÃ­drico</strong>, situaciÃ³n que ocurre cuando la demanda de agua es mayor que la cantidad disponible en un periodo determinado, o cuando su uso se ve limitado debido a su baja calidad.</p>
 
-<p style="margin: 0 0 1rem;">Las industrias que demandan un mayor volumen de recursos hídricos son la industria química, la agroalimentaria, las explotaciones ganaderas, la producción y transformación de metales, las industrias minerales y aquellas que emplean disolventes orgánicos. Con el fin de coordinar esfuerzos globales para su conservación, la Organización de las Naciones Unidas impulsó la iniciativa <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Action Water Decade (2018-2028)</strong>, un decenio dedicado a promover la gestión integrada de los recursos hídricos y acelerar el cumplimiento de las metas de la Agenda 2030.</p>
+<p style="margin: 0 0 1rem;">Las industrias que demandan un mayor volumen de recursos hÃ­dricos son la industria quÃ­mica, la agroalimentaria, las explotaciones ganaderas, la producciÃ³n y transformaciÃ³n de metales, las industrias minerales y aquellas que emplean disolventes orgÃ¡nicos. Con el fin de coordinar esfuerzos globales para su conservaciÃ³n, la OrganizaciÃ³n de las Naciones Unidas impulsÃ³ la iniciativa <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Action Water Decade (2018-2028)</strong>, un decenio dedicado a promover la gestiÃ³n integrada de los recursos hÃ­dricos y acelerar el cumplimiento de las metas de la Agenda 2030.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Indicadores de impacto ambiental</h2>
 
-<p style="margin: 0 0 1rem;">Para medir y evaluar cuantitativamente el impacto de las actividades humanas sobre el planeta, se utilizan diversos indicadores ecológicos:</p>
+<p style="margin: 0 0 1rem;">Para medir y evaluar cuantitativamente el impacto de las actividades humanas sobre el planeta, se utilizan diversos indicadores ecolÃ³gicos:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huella ecológica:</strong> Este indicador mide la superficie de tierra y agua productivas necesarias para generar los recursos que consume un individuo, población o actividad económica, así como para absorber los residuos que genera, de acuerdo con la capacidad de regeneración de la Tierra. Se expresa en hectáreas globales. Una huella elevada refleja un estilo de vida insostenible.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huella ecolÃ³gica:</strong> Este indicador mide la superficie de tierra y agua productivas necesarias para generar los recursos que consume un individuo, poblaciÃ³n o actividad econÃ³mica, asÃ­ como para absorber los residuos que genera, de acuerdo con la capacidad de regeneraciÃ³n de la Tierra. Se expresa en hectÃ¡reas globales. Una huella elevada refleja un estilo de vida insostenible.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huella de carbono:</strong> Mide la totalidad de gases de efecto invernadero emitidos de forma directa o indirecta por las actividades humanas, expresada en toneladas de dióxido de carbono equivalente. Es fundamental para evaluar el impacto del transporte, la industria y la producción energética.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huella de carbono:</strong> Mide la totalidad de gases de efecto invernadero emitidos de forma directa o indirecta por las actividades humanas, expresada en toneladas de diÃ³xido de carbono equivalente. Es fundamental para evaluar el impacto del transporte, la industria y la producciÃ³n energÃ©tica.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huella hídrica:</strong> Cuantifica el volumen total de agua dulce que se utiliza, consume o contamina para producir los bienes y servicios consumidos por un individuo, comunidad o empresa a lo largo de toda su cadena de suministro.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Huella hÃ­drica:</strong> Cuantifica el volumen total de agua dulce que se utiliza, consume o contamina para producir los bienes y servicios consumidos por un individuo, comunidad o empresa a lo largo de toda su cadena de suministro.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día de la Deuda Ecológica:</strong> También conocido como el día de la sobrecapacidad de la Tierra, marca la fecha del calendario en la que la humanidad ha consumido la totalidad de los recursos ecológicos que el planeta es capaz de regenerar en un año completo. A partir de ese día, la población opera bajo un déficit ecológico, consumiendo recursos de manera insostenible.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DÃ­a de la Deuda EcolÃ³gica:</strong> TambiÃ©n conocido como el dÃ­a de la sobrecapacidad de la Tierra, marca la fecha del calendario en la que la humanidad ha consumido la totalidad de los recursos ecolÃ³gicos que el planeta es capaz de regenerar en un aÃ±o completo. A partir de ese dÃ­a, la poblaciÃ³n opera bajo un dÃ©ficit ecolÃ³gico, consumiendo recursos de manera insostenible.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen de datos clave y conclusiones</h2>
 
-<p style="margin: 0 0 1rem;">La superpoblación y el consumo desmedido de recursos ponen en riesgo la viabilidad ecológica del planeta. Los datos recopilados por organismos internacionales como la Organización Mundial de la Salud, Unicef, Unesco y la FAO evidencian la urgencia de actuar sobre la gestión de los recursos naturales, especialmente el agua:</p>
+<p style="margin: 0 0 1rem;">La superpoblaciÃ³n y el consumo desmedido de recursos ponen en riesgo la viabilidad ecolÃ³gica del planeta. Los datos recopilados por organismos internacionales como la OrganizaciÃ³n Mundial de la Salud, Unicef, Unesco y la FAO evidencian la urgencia de actuar sobre la gestiÃ³n de los recursos naturales, especialmente el agua:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2.200 millones de personas</strong> carecen de acceso a servicios seguros de agua potable.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2.000 millones de personas</strong> reciben atención en centros de salud que no cuentan con servicios básicos de agua.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2.000 millones de personas</strong> reciben atenciÃ³n en centros de salud que no cuentan con servicios bÃ¡sicos de agua.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">4.200 millones de personas</strong> no disponen de servicios de saneamiento gestionados de forma segura.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Cerca de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">300.000 niños menores de 5 años</strong> mueren anualmente debido a enfermedades diarreicas causadas por la insalubridad del agua y la falta de higiene.</li>
+<li style="margin-bottom: .45rem; position: relative;">Cerca de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">300.000 niÃ±os menores de 5 aÃ±os</strong> mueren anualmente debido a enfermedades diarreicas causadas por la insalubridad del agua y la falta de higiene.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2.000 millones de personas</strong> habitan en países sometidos a escasez de agua.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2.000 millones de personas</strong> habitan en paÃ­ses sometidos a escasez de agua.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90% de los desastres naturales</strong> del planeta están relacionados con fenómenos hídricos.</li>
+<li style="margin-bottom: .45rem; position: relative;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90% de los desastres naturales</strong> del planeta estÃ¡n relacionados con fenÃ³menos hÃ­dricos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">La agricultura representa el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">70% de la extracción mundial de agua</strong>.</li>
+<li style="margin-bottom: .45rem; position: relative;">La agricultura representa el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">70% de la extracciÃ³n mundial de agua</strong>.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">80% de las aguas residuales</strong> de origen humano se vierten a los ecosistemas sin haber recibido ningún tipo de tratamiento previo.</li>
+<li style="margin-bottom: .45rem; position: relative;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">80% de las aguas residuales</strong> de origen humano se vierten a los ecosistemas sin haber recibido ningÃºn tipo de tratamiento previo.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Para concienciar sobre la gravedad de estas cifras y promover soluciones conjuntas, se han establecido fechas conmemorativas de relevancia global, tales como el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día Mundial del Agua</strong> (22 de marzo) y el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Día Mundial del Retrete</strong> (19 de noviembre), orientadas a visibilizar la importancia crítica del saneamiento y el agua limpia en la sociedad moderna.</p>
+<p style="margin: 0 0 1rem;">Para concienciar sobre la gravedad de estas cifras y promover soluciones conjuntas, se han establecido fechas conmemorativas de relevancia global, tales como el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DÃ­a Mundial del Agua</strong> (22 de marzo) y el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DÃ­a Mundial del Retrete</strong> (19 de noviembre), orientadas a visibilizar la importancia crÃ­tica del saneamiento y el agua limpia en la sociedad moderna.</p>
 
 </main>
 </body>
 </html>
+

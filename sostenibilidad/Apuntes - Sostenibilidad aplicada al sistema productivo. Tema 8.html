@@ -1,293 +1,324 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apuntes - Sostenibilidad aplicada al sistema productivo. Tema 8</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
 <h1>Apuntes - Sostenibilidad aplicada al sistema productivo. Tema 8</h1>
 
-<h2>Contaminación y gestión de residuos</h2>
+<h2>ContaminaciÃ³n y gestiÃ³n de residuos</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n y contextualizaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La actividad humana es la causa principal de la degradación y contaminación que sufren actualmente los suelos, las aguas y la atmósfera. Este impacto ambiental se manifiesta de diversas maneras, desde la acumulación de desechos que no reciben una gestión adecuada y las emisiones contaminantes de los vehículos, hasta los vertidos de aguas residuales y otras alteraciones menos visibles pero igualmente dañinas para los entornos naturales.</p>
+<p style="margin: 0 0 1rem;">La actividad humana es la causa principal de la degradaciÃ³n y contaminaciÃ³n que sufren actualmente los suelos, las aguas y la atmÃ³sfera. Este impacto ambiental se manifiesta de diversas maneras, desde la acumulaciÃ³n de desechos que no reciben una gestiÃ³n adecuada y las emisiones contaminantes de los vehÃ­culos, hasta los vertidos de aguas residuales y otras alteraciones menos visibles pero igualmente daÃ±inas para los entornos naturales.</p>
 
-<p style="margin: 0 0 1rem;">Para abordar estas problemáticas de manera integral, es necesario estudiar detalladamente los diferentes tipos de contaminación, identificar cuáles son sus fuentes y principales agentes, comprender la naturaleza de los residuos y analizar los métodos de clasificación y gestión que existen bajo criterios de sostenibilidad.</p>
+<p style="margin: 0 0 1rem;">Para abordar estas problemÃ¡ticas de manera integral, es necesario estudiar detalladamente los diferentes tipos de contaminaciÃ³n, identificar cuÃ¡les son sus fuentes y principales agentes, comprender la naturaleza de los residuos y analizar los mÃ©todos de clasificaciÃ³n y gestiÃ³n que existen bajo criterios de sostenibilidad.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contaminación atmosférica</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ContaminaciÃ³n atmosfÃ©rica</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de contaminación atmosférica</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de contaminaciÃ³n atmosfÃ©rica</h3>
 
-<p style="margin: 0 0 1rem;">La contaminación atmosférica consiste en la presencia en el aire de sustancias, materias, formas de energía o elementos que implican un riesgo, daño o molestia grave para la salud de las personas, los ecosistemas y el medio ambiente en general. Estos agentes nocivos se conocen como contaminantes y pueden tener dos orígenes:</p>
+<p style="margin: 0 0 1rem;">La contaminaciÃ³n atmosfÃ©rica consiste en la presencia en el aire de sustancias, materias, formas de energÃ­a o elementos que implican un riesgo, daÃ±o o molestia grave para la salud de las personas, los ecosistemas y el medio ambiente en general. Estos agentes nocivos se conocen como contaminantes y pueden tener dos orÃ­genes:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Origen natural:</strong> Emisiones que provienen de procesos de la propia naturaleza sin intervención humana, como las erupciones volcánicas o los incendios forestales naturales.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Origen natural:</strong> Emisiones que provienen de procesos de la propia naturaleza sin intervenciÃ³n humana, como las erupciones volcÃ¡nicas o los incendios forestales naturales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Origen antropogénico:</strong> Emisiones generadas por las actividades humanas, entre las que destacan la quema de combustibles fósiles, la actividad industrial, la agricultura y el transporte.</li>
-
-</ul>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación de los contaminantes atmosféricos</h3>
-
-<p style="margin: 0 0 1rem;">Entre los contaminantes más comunes presentes en la atmósfera se encuentran el dióxido de carbono, los óxidos de nitrógeno, los óxidos de azufre, las partículas en suspensión, los compuestos orgánicos volátiles y los metales pesados. Estos elementos se clasifican en dos grandes grupos según su formación:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminantes primarios:</strong> Son aquellos compuestos químicos que se liberan de forma directa a la atmósfera desde su fuente de emisión original, como la chimenea de una fábrica o el tubo de escape de un vehículo.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminantes secundarios:</strong> Son compuestos químicos que no se emiten de manera directa. Se forman en la propia atmósfera a partir de reacciones químicas y fotoquímicas que ocurren entre los contaminantes primarios y otros componentes normales del aire, bajo la influencia de factores como la luz solar.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Origen antropogÃ©nico:</strong> Emisiones generadas por las actividades humanas, entre las que destacan la quema de combustibles fÃ³siles, la actividad industrial, la agricultura y el transporte.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la contaminación atmosférica</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ClasificaciÃ³n de los contaminantes atmosfÃ©ricos</h3>
 
-<p style="margin: 0 0 1rem;">Los impactos derivados de la presencia de contaminantes en el aire son muy diversos y afectan a múltiples ámbitos:</p>
+<p style="margin: 0 0 1rem;">Entre los contaminantes mÃ¡s comunes presentes en la atmÃ³sfera se encuentran el diÃ³xido de carbono, los Ã³xidos de nitrÃ³geno, los Ã³xidos de azufre, las partÃ­culas en suspensiÃ³n, los compuestos orgÃ¡nicos volÃ¡tiles y los metales pesados. Estos elementos se clasifican en dos grandes grupos segÃºn su formaciÃ³n:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la vegetación:</strong> Provoca la aparición de manchas y necrosis en los tejidos de las plantas, además de alterar sus funciones metabólicas esenciales, lo que afecta directamente a su crecimiento.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminantes primarios:</strong> Son aquellos compuestos quÃ­micos que se liberan de forma directa a la atmÃ³sfera desde su fuente de emisiÃ³n original, como la chimenea de una fÃ¡brica o el tubo de escape de un vehÃ­culo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre los materiales:</strong> Causa la corrosión de infraestructuras debido a los óxidos de azufre, daños estructurales por compuestos azufrados y la decoloración de superficies debido a la acción de los óxidos de nitrógeno.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre los ecosistemas:</strong> Contribuye de forma directa al calentamiento global mediante el efecto invernadero, al deterioro y agujero de la capa de ozono, a la acidificación de las aguas y los suelos a través de la lluvia ácida, y a la disminución generalizada de la visibilidad.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la salud humana:</strong> Produce afecciones graves y crónicas en el sistema respiratorio y en el sistema cardiovascular de las personas.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminantes secundarios:</strong> Son compuestos quÃ­micos que no se emiten de manera directa. Se forman en la propia atmÃ³sfera a partir de reacciones quÃ­micas y fotoquÃ­micas que ocurren entre los contaminantes primarios y otros componentes normales del aire, bajo la influencia de factores como la luz solar.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contaminación acústica</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la contaminaciÃ³n atmosfÃ©rica</h3>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de contaminación acústica</h3>
+<p style="margin: 0 0 1rem;">Los impactos derivados de la presencia de contaminantes en el aire son muy diversos y afectan a mÃºltiples Ã¡mbitos:</p>
 
-<p style="margin: 0 0 1rem;">El ruido se define formalmente como un sonido no deseado o una sensación auditiva que resulta molesta y desagradable. La contaminación acústica hace referencia a la presencia de ruidos o vibraciones en el ambiente exterior, sin importar cuál sea su origen, que impliquen molestia, riesgo o daño para las personas, que dificulten el desarrollo de sus actividades cotidianas, que dañen bienes de cualquier tipo o que causen un impacto negativo significativo sobre el medio ambiente.</p>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la vegetaciÃ³n:</strong> Provoca la apariciÃ³n de manchas y necrosis en los tejidos de las plantas, ademÃ¡s de alterar sus funciones metabÃ³licas esenciales, lo que afecta directamente a su crecimiento.</li>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la contaminación acústica</h3>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre los materiales:</strong> Causa la corrosiÃ³n de infraestructuras debido a los Ã³xidos de azufre, daÃ±os estructurales por compuestos azufrados y la decoloraciÃ³n de superficies debido a la acciÃ³n de los Ã³xidos de nitrÃ³geno.</li>
 
-<p style="margin: 0 0 1rem;">La exposición prolongada a niveles de ruido excesivos genera consecuencias perjudiciales tanto físicas como psicológicas en los seres humanos:</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre los ecosistemas:</strong> Contribuye de forma directa al calentamiento global mediante el efecto invernadero, al deterioro y agujero de la capa de ozono, a la acidificaciÃ³n de las aguas y los suelos a travÃ©s de la lluvia Ã¡cida, y a la disminuciÃ³n generalizada de la visibilidad.</li>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos auditivos:</strong> Puede causar una pérdida de audición que puede ser temporal o permanente, además de la aparición de tinnitus, que consiste en la percepción de un zumbido o pitido constante en los oídos.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Trastornos del sueño:</strong> Provoca dificultades para conciliar el sueño e insomnio, impidiendo un descanso reparador.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estrés:</strong> Desencadena un estado de tensión continua que afecta negativamente al sistema inmunológico, mental y cardiovascular.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Problemas cardiovasculares:</strong> Se asocia directamente con el desarrollo de hipertensión arterial, enfermedades del corazón y un mayor riesgo de sufrir accidentes cerebrovasculares.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Problemas cognitivos:</strong> Disminuye de forma notable la capacidad de concentración, afecta a la memoria y reduce el rendimiento académico y laboral.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Malestar psicológico:</strong> Favorece la aparición de estados de irritabilidad, cuadros de ansiedad y depresión.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desarrollo infantil:</strong> Puede provocar retrasos en la adquisición y desarrollo del habla y del lenguaje, así como dificultades generales en el aprendizaje.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la salud humana:</strong> Produce afecciones graves y crÃ³nicas en el sistema respiratorio y en el sistema cardiovascular de las personas.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico: la gran niebla de Londres</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ContaminaciÃ³n acÃºstica</h2>
 
-<p style="margin: 0 0 1rem;">El fenómeno del smog fotoquímico ocurre cuando la niebla natural se combina con el humo y otras partículas contaminantes suspendidas en la atmósfera, especialmente en zonas urbanas o industrializadas con altos niveles de emisiones. Este proceso se intensifica cuando determinados gases y compuestos químicos experimentan reacciones fotoquímicas al verse expuestos a la radiación solar, lo que genera una atmósfera densa, de olor particular y con tonalidades que varían entre el gris, el naranja y el rojizo.</p>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de contaminaciÃ³n acÃºstica</h3>
 
-<p style="margin: 0 0 1rem;">Un ejemplo histórico de extrema gravedad ocurrió el 5 de diciembre de 1952 en la ciudad de Londres. La coincidencia de un invierno extremadamente frío, una densa niebla natural, la ausencia total de viento y la acumulación de humo tóxico procedente del carbón de baja calidad que los ciudadanos quemaban en sus hogares para calentarse, dio lugar a la conocida como la Gran Niebla.</p>
+<p style="margin: 0 0 1rem;">El ruido se define formalmente como un sonido no deseado o una sensaciÃ³n auditiva que resulta molesta y desagradable. La contaminaciÃ³n acÃºstica hace referencia a la presencia de ruidos o vibraciones en el ambiente exterior, sin importar cuÃ¡l sea su origen, que impliquen molestia, riesgo o daÃ±o para las personas, que dificulten el desarrollo de sus actividades cotidianas, que daÃ±en bienes de cualquier tipo o que causen un impacto negativo significativo sobre el medio ambiente.</p>
 
-<p style="margin: 0 0 1rem;">La ciudad quedó completamente paralizada bajo una nube tóxica de gran densidad. La visibilidad se redujo a unos pocos metros, lo que obligó a detener por completo el transporte terrestre y aéreo. Los ciudadanos debían usar mascarillas para poder respirar y los conductores se veían obligados a abandonar sus coches en las carreteras. Se calcula que este desastre ambiental provocó la muerte de unas 12.000 personas, afectando principalmente a recién nacidos y ancianos debido a infecciones pulmonares graves y a la obstrucción de las vías respiratorias.</p>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la contaminaciÃ³n acÃºstica</h3>
 
-<p style="margin: 0 0 1rem;">Tras cinco días de emergencia, un fuerte viento disipó la nube hacia el mar del Norte. Este trágico suceso obligó al Parlamento británico a intervenir mediante la aprobación de normativas legales estrictas para limitar el uso de combustibles fósiles en la industria y reducir la contaminación del aire.</p>
+<p style="margin: 0 0 1rem;">La exposiciÃ³n prolongada a niveles de ruido excesivos genera consecuencias perjudiciales tanto fÃ­sicas como psicolÃ³gicas en los seres humanos:</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contaminación por radiación</h2>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos auditivos:</strong> Puede causar una pÃ©rdida de audiciÃ³n que puede ser temporal o permanente, ademÃ¡s de la apariciÃ³n de tinnitus, que consiste en la percepciÃ³n de un zumbido o pitido constante en los oÃ­dos.</li>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de radiación y contaminación</h3>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Trastornos del sueÃ±o:</strong> Provoca dificultades para conciliar el sueÃ±o e insomnio, impidiendo un descanso reparador.</li>
 
-<p style="margin: 0 0 1rem;">La radiación es el proceso físico mediante el cual se emite y propaga energía en forma de ondas electromagnéticas o de partículas a través de cualquier medio o del vacío. Por su parte, la contaminación por radiación consiste en la presencia y dispersión no deseada de sustancias de carácter radiactivo en el medio ambiente.</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EstrÃ©s:</strong> Desencadena un estado de tensiÃ³n continua que afecta negativamente al sistema inmunolÃ³gico, mental y cardiovascular.</li>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de radiación</h3>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Problemas cardiovasculares:</strong> Se asocia directamente con el desarrollo de hipertensiÃ³n arterial, enfermedades del corazÃ³n y un mayor riesgo de sufrir accidentes cerebrovasculares.</li>
 
-<p style="margin: 0 0 1rem;">Las radiaciones electromagnéticas se dividen en dos grandes categorías según su capacidad para alterar la materia:</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Problemas cognitivos:</strong> Disminuye de forma notable la capacidad de concentraciÃ³n, afecta a la memoria y reduce el rendimiento acadÃ©mico y laboral.</li>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Radiaciones no ionizantes:</strong> Son aquellas que no poseen la energía suficiente para romper los enlaces atómicos de la materia que atraviesan y, por tanto, no provocan ionización. Un ejemplo común son las microondas.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Malestar psicolÃ³gico:</strong> Favorece la apariciÃ³n de estados de irritabilidad, cuadros de ansiedad y depresiÃ³n.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Radiaciones ionizantes:</strong> Cuentan con una energía tan elevada que son capaces de ionizar los átomos de la materia con la que interactúan, alterando su estructura. Un ejemplo de estas son los rayos X. Los dispositivos o materiales capaces de emitir este tipo de energía se denominan fuentes de radiación.</li>
-
-</ul>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fuentes de radiación</h3>
-
-<p style="margin: 0 0 1rem;">Las fuentes de radiación que causan contaminación pueden clasificarse según su procedencia en:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes naturales:</strong> Provienen de materiales radiactivos presentes de forma natural en la corteza terrestre. Un ejemplo muy común es el gas radón, cuya presencia es habitual en zonas geográficas con abundancia de rocas graníticas.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes artificiales:</strong> Son creadas y empleadas por el ser humano para diversas aplicaciones. Destacan los rayos X utilizados en el ámbito de la medicina y las centrales nucleares, donde se genera energía eléctrica mediante reacciones de fisión y fusión nuclear.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desarrollo infantil:</strong> Puede provocar retrasos en la adquisiciÃ³n y desarrollo del habla y del lenguaje, asÃ­ como dificultades generales en el aprendizaje.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la radiación</h3>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico: la gran niebla de Londres</h2>
 
-<p style="margin: 0 0 1rem;">La exposición a los diferentes tipos de radiación genera impactos perjudiciales en diversos ámbitos:</p>
+<p style="margin: 0 0 1rem;">El fenÃ³meno del smog fotoquÃ­mico ocurre cuando la niebla natural se combina con el humo y otras partÃ­culas contaminantes suspendidas en la atmÃ³sfera, especialmente en zonas urbanas o industrializadas con altos niveles de emisiones. Este proceso se intensifica cuando determinados gases y compuestos quÃ­micos experimentan reacciones fotoquÃ­micas al verse expuestos a la radiaciÃ³n solar, lo que genera una atmÃ³sfera densa, de olor particular y con tonalidades que varÃ­an entre el gris, el naranja y el rojizo.</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la salud humana por radiaciones ionizantes:</strong> Puede causar la caída del cabello, quemaduras graves en la piel, desarrollo de cáncer y alteraciones o mutaciones genéticas.</li>
+<p style="margin: 0 0 1rem;">Un ejemplo histÃ³rico de extrema gravedad ocurriÃ³ el 5 de diciembre de 1952 en la ciudad de Londres. La coincidencia de un invierno extremadamente frÃ­o, una densa niebla natural, la ausencia total de viento y la acumulaciÃ³n de humo tÃ³xico procedente del carbÃ³n de baja calidad que los ciudadanos quemaban en sus hogares para calentarse, dio lugar a la conocida como la Gran Niebla.</p>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la salud humana por radiaciones no ionizantes:</strong> Puede provocar náuseas, dolores de cabeza constantes (cefaleas), aparición de cataratas, interrupción de los ciclos de sueño, esterilidad en el género masculino, aumento del riesgo de alzhéimer, arritmias cardíacas y el desarrollo de electrosensibilidad, considerada una enfermedad autoinmune.</li>
+<p style="margin: 0 0 1rem;">La ciudad quedÃ³ completamente paralizada bajo una nube tÃ³xica de gran densidad. La visibilidad se redujo a unos pocos metros, lo que obligÃ³ a detener por completo el transporte terrestre y aÃ©reo. Los ciudadanos debÃ­an usar mascarillas para poder respirar y los conductores se veÃ­an obligados a abandonar sus coches en las carreteras. Se calcula que este desastre ambiental provocÃ³ la muerte de unas 12.000 personas, afectando principalmente a reciÃ©n nacidos y ancianos debido a infecciones pulmonares graves y a la obstrucciÃ³n de las vÃ­as respiratorias.</p>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre el medio ambiente:</strong> Causa la contaminación directa de los suelos y las fuentes de agua, lo que perjudica gravemente a la flora y la fauna. Asimismo, produce la bioacumulación de radionucleidos a lo largo de la cadena alimentaria, desestabilizando los ecosistemas.</li>
+<p style="margin: 0 0 1rem;">Tras cinco dÃ­as de emergencia, un fuerte viento disipÃ³ la nube hacia el mar del Norte. Este trÃ¡gico suceso obligÃ³ al Parlamento britÃ¡nico a intervenir mediante la aprobaciÃ³n de normativas legales estrictas para limitar el uso de combustibles fÃ³siles en la industria y reducir la contaminaciÃ³n del aire.</p>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos psicológicos y sociales:</strong> Genera altos niveles de estrés y ansiedad en la población, además de obligar al desplazamiento y reubicación de comunidades enteras de las zonas afectadas.</li>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ContaminaciÃ³n por radiaciÃ³n</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de radiaciÃ³n y contaminaciÃ³n</h3>
+
+<p style="margin: 0 0 1rem;">La radiaciÃ³n es el proceso fÃ­sico mediante el cual se emite y propaga energÃ­a en forma de ondas electromagnÃ©ticas o de partÃ­culas a travÃ©s de cualquier medio o del vacÃ­o. Por su parte, la contaminaciÃ³n por radiaciÃ³n consiste en la presencia y dispersiÃ³n no deseada de sustancias de carÃ¡cter radiactivo en el medio ambiente.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de radiaciÃ³n</h3>
+
+<p style="margin: 0 0 1rem;">Las radiaciones electromagnÃ©ticas se dividen en dos grandes categorÃ­as segÃºn su capacidad para alterar la materia:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Radiaciones no ionizantes:</strong> Son aquellas que no poseen la energÃ­a suficiente para romper los enlaces atÃ³micos de la materia que atraviesan y, por tanto, no provocan ionizaciÃ³n. Un ejemplo comÃºn son las microondas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Radiaciones ionizantes:</strong> Cuentan con una energÃ­a tan elevada que son capaces de ionizar los Ã¡tomos de la materia con la que interactÃºan, alterando su estructura. Un ejemplo de estas son los rayos X. Los dispositivos o materiales capaces de emitir este tipo de energÃ­a se denominan fuentes de radiaciÃ³n.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contaminación del agua</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fuentes de radiaciÃ³n</h3>
+
+<p style="margin: 0 0 1rem;">Las fuentes de radiaciÃ³n que causan contaminaciÃ³n pueden clasificarse segÃºn su procedencia en:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes naturales:</strong> Provienen de materiales radiactivos presentes de forma natural en la corteza terrestre. Un ejemplo muy comÃºn es el gas radÃ³n, cuya presencia es habitual en zonas geogrÃ¡ficas con abundancia de rocas granÃ­ticas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes artificiales:</strong> Son creadas y empleadas por el ser humano para diversas aplicaciones. Destacan los rayos X utilizados en el Ã¡mbito de la medicina y las centrales nucleares, donde se genera energÃ­a elÃ©ctrica mediante reacciones de fisiÃ³n y fusiÃ³n nuclear.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la radiaciÃ³n</h3>
+
+<p style="margin: 0 0 1rem;">La exposiciÃ³n a los diferentes tipos de radiaciÃ³n genera impactos perjudiciales en diversos Ã¡mbitos:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la salud humana por radiaciones ionizantes:</strong> Puede causar la caÃ­da del cabello, quemaduras graves en la piel, desarrollo de cÃ¡ncer y alteraciones o mutaciones genÃ©ticas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre la salud humana por radiaciones no ionizantes:</strong> Puede provocar nÃ¡useas, dolores de cabeza constantes (cefaleas), apariciÃ³n de cataratas, interrupciÃ³n de los ciclos de sueÃ±o, esterilidad en el gÃ©nero masculino, aumento del riesgo de alzhÃ©imer, arritmias cardÃ­acas y el desarrollo de electrosensibilidad, considerada una enfermedad autoinmune.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sobre el medio ambiente:</strong> Causa la contaminaciÃ³n directa de los suelos y las fuentes de agua, lo que perjudica gravemente a la flora y la fauna. Asimismo, produce la bioacumulaciÃ³n de radionucleidos a lo largo de la cadena alimentaria, desestabilizando los ecosistemas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos psicolÃ³gicos y sociales:</strong> Genera altos niveles de estrÃ©s y ansiedad en la poblaciÃ³n, ademÃ¡s de obligar al desplazamiento y reubicaciÃ³n de comunidades enteras de las zonas afectadas.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ContaminaciÃ³n del agua</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de agua contaminada</h3>
 
-<p style="margin: 0 0 1rem;">De acuerdo con la Organización Mundial de la Salud (OMS), el agua contaminada es aquella que ha sufrido modificaciones en su composición natural de manera que queda inservible para las actividades y usos a los que estaba destinada. El consumo y uso de agua en estas condiciones representa un grave peligro de insalubridad pública, siendo la causa directa de más de 500.000 muertes anuales en el mundo debido a la propagación de enfermedades de transmisión hídrica como la diarrea, el cólera, la disentería, la fiebre tifoidea y la poliomielitis.</p>
+<p style="margin: 0 0 1rem;">De acuerdo con la OrganizaciÃ³n Mundial de la Salud (OMS), el agua contaminada es aquella que ha sufrido modificaciones en su composiciÃ³n natural de manera que queda inservible para las actividades y usos a los que estaba destinada. El consumo y uso de agua en estas condiciones representa un grave peligro de insalubridad pÃºblica, siendo la causa directa de mÃ¡s de 500.000 muertes anuales en el mundo debido a la propagaciÃ³n de enfermedades de transmisiÃ³n hÃ­drica como la diarrea, el cÃ³lera, la disenterÃ­a, la fiebre tifoidea y la poliomielitis.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de contaminación de las aguas</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de contaminaciÃ³n de las aguas</h3>
 
-<p style="margin: 0 0 1rem;">La contaminación del agua se puede catalogar según la forma en que se introduce el contaminante en el medio acuático:</p>
+<p style="margin: 0 0 1rem;">La contaminaciÃ³n del agua se puede catalogar segÃºn la forma en que se introduce el contaminante en el medio acuÃ¡tico:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminación puntual:</strong> Se produce cuando los contaminantes se vierten desde una fuente única, directa y claramente identificable, como las tuberías de descarga de una industria o las plantas depuradoras de aguas residuales.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaminaciÃ³n puntual:</strong> Se produce cuando los contaminantes se vierten desde una fuente Ãºnica, directa y claramente identificable, como las tuberÃ­as de descarga de una industria o las plantas depuradoras de aguas residuales.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminación difusa:</strong> Ocurre de forma indirecta y dispersa sobre el territorio, lo que dificulta la localización de un único punto de origen. Un ejemplo de esto es el arrastre de nutrientes y plaguicidas procedentes de campos de cultivo o la escorrentía de contaminantes industriales.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaminaciÃ³n difusa:</strong> Ocurre de forma indirecta y dispersa sobre el territorio, lo que dificulta la localizaciÃ³n de un Ãºnico punto de origen. Un ejemplo de esto es el arrastre de nutrientes y plaguicidas procedentes de campos de cultivo o la escorrentÃ­a de contaminantes industriales.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fuentes de contaminación del agua</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fuentes de contaminaciÃ³n del agua</h3>
 
 <p style="margin: 0 0 1rem;">Las sustancias que alteran la calidad del agua proceden de dos tipos de fuentes:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes naturales:</strong> Son las menos habituales y ocurren cuando la propia naturaleza introduce elementos contaminantes en el agua, como puede ser la presencia natural de depósitos de mercurio.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes naturales:</strong> Son las menos habituales y ocurren cuando la propia naturaleza introduce elementos contaminantes en el agua, como puede ser la presencia natural de depÃ³sitos de mercurio.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes antropogénicas:</strong> Son el resultado directo de las actividades del ser humano y constituyen la principal causa de deterioro del agua. Incluyen los vertidos de aguas residuales sin tratar en entornos urbanos, la actividad de las estaciones depuradoras, los vertidos industriales, las prácticas ganaderas y agrícolas (mediante el uso de fertilizantes y pesticidas), los derrames accidentales de hidrocarburos como el petróleo y el funcionamiento de las centrales eléctricas.</li>
-
-</ul>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la contaminación hídrica</h3>
-
-<p style="margin: 0 0 1rem;">La pérdida de calidad del agua tiene consecuencias críticas que afectan a la sociedad, la naturaleza y la economía:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Económicos:</strong> Frena el desarrollo y crecimiento económico de los países y acentúa notablemente la pobreza y las desigualdades sociales.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pérdida de biodiversidad:</strong> Altera y destruye los ecosistemas acuáticos, favoreciendo procesos como la eutrofización, que consiste en el crecimiento excesivo de algas por abundancia de nutrientes, lo que agota el oxígeno del agua y asfixia a las especies acuáticas.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cadena alimentaria:</strong> Las sustancias tóxicas presentes en el agua se transmiten a los organismos marinos y terrestres, incorporándose a los alimentos que finalmente consumen los seres humanos.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Escasez de agua potable:</strong> Reduce drásticamente la disponibilidad de agua segura para el consumo y el saneamiento básico, una problemática especialmente grave en entornos rurales.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mortalidad infantil:</strong> Las enfermedades diarreicas provocadas por el consumo de agua insalubre causan la muerte de aproximadamente mil niños al día en todo el planeta.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuentes antropogÃ©nicas:</strong> Son el resultado directo de las actividades del ser humano y constituyen la principal causa de deterioro del agua. Incluyen los vertidos de aguas residuales sin tratar en entornos urbanos, la actividad de las estaciones depuradoras, los vertidos industriales, las prÃ¡cticas ganaderas y agrÃ­colas (mediante el uso de fertilizantes y pesticidas), los derrames accidentales de hidrocarburos como el petrÃ³leo y el funcionamiento de las centrales elÃ©ctricas.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Gestión de residuos</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Efectos de la contaminaciÃ³n hÃ­drica</h3>
+
+<p style="margin: 0 0 1rem;">La pÃ©rdida de calidad del agua tiene consecuencias crÃ­ticas que afectan a la sociedad, la naturaleza y la economÃ­a:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EconÃ³micos:</strong> Frena el desarrollo y crecimiento econÃ³mico de los paÃ­ses y acentÃºa notablemente la pobreza y las desigualdades sociales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PÃ©rdida de biodiversidad:</strong> Altera y destruye los ecosistemas acuÃ¡ticos, favoreciendo procesos como la eutrofizaciÃ³n, que consiste en el crecimiento excesivo de algas por abundancia de nutrientes, lo que agota el oxÃ­geno del agua y asfixia a las especies acuÃ¡ticas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cadena alimentaria:</strong> Las sustancias tÃ³xicas presentes en el agua se transmiten a los organismos marinos y terrestres, incorporÃ¡ndose a los alimentos que finalmente consumen los seres humanos.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Escasez de agua potable:</strong> Reduce drÃ¡sticamente la disponibilidad de agua segura para el consumo y el saneamiento bÃ¡sico, una problemÃ¡tica especialmente grave en entornos rurales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mortalidad infantil:</strong> Las enfermedades diarreicas provocadas por el consumo de agua insalubre causan la muerte de aproximadamente mil niÃ±os al dÃ­a en todo el planeta.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">GestiÃ³n de residuos</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de residuo</h3>
 
-<p style="margin: 0 0 1rem;">Un residuo es cualquier material, objeto o sustancia que, tras haber cumplido con la función para la que fue diseñado originalmente, se desecha y se destina a la eliminación debido a que ha perdido su valor de uso inicial. No obstante, bajo los enfoques modernos de sostenibilidad y economía circular, este concepto ha evolucionado de manera que muchos de estos materiales ya no se consideran desechos inútiles, sino recursos que pueden ser sometidos a procesos de reciclaje o reutilización para recibir una segunda vida útil.</p>
+<p style="margin: 0 0 1rem;">Un residuo es cualquier material, objeto o sustancia que, tras haber cumplido con la funciÃ³n para la que fue diseÃ±ado originalmente, se desecha y se destina a la eliminaciÃ³n debido a que ha perdido su valor de uso inicial. No obstante, bajo los enfoques modernos de sostenibilidad y economÃ­a circular, este concepto ha evolucionado de manera que muchos de estos materiales ya no se consideran desechos inÃºtiles, sino recursos que pueden ser sometidos a procesos de reciclaje o reutilizaciÃ³n para recibir una segunda vida Ãºtil.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación de los residuos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ClasificaciÃ³n de los residuos</h3>
 
 <p style="margin: 0 0 1rem;">Para poder gestionar los residuos de forma adecuada, es necesario clasificarlos atendiendo a distintos criterios:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Según su procedencia:</strong></li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SegÃºn su procedencia:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Domésticos:</strong> Generados en los hogares, tales como envases, restos de comida, ropa, vidrio, pilas, muebles y dispositivos electrónicos de uso doméstico.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DomÃ©sticos:</strong> Generados en los hogares, tales como envases, restos de comida, ropa, vidrio, pilas, muebles y dispositivos electrÃ³nicos de uso domÃ©stico.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Municipales:</strong> Residuos procedentes de la limpieza viaria, mantenimiento de áreas verdes y jardines, entre otros servicios urbanos.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Municipales:</strong> Residuos procedentes de la limpieza viaria, mantenimiento de Ã¡reas verdes y jardines, entre otros servicios urbanos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comerciales:</strong> Producidos por la actividad de comercios, tiendas, mercados, oficinas y restaurantes.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Industriales:</strong> Resultantes de los procesos de fabricación, transformación, producción o consumo dentro del sector industrial.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Industriales:</strong> Resultantes de los procesos de fabricaciÃ³n, transformaciÃ³n, producciÃ³n o consumo dentro del sector industrial.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">De construcción y demolición:</strong> Desechos generados en obras de edificación, reformas y derribos.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">De construcciÃ³n y demoliciÃ³n:</strong> Desechos generados en obras de edificaciÃ³n, reformas y derribos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mineros:</strong> Residuos que se obtienen de las actividades de prospección y explotación de recursos geológicos.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mineros:</strong> Residuos que se obtienen de las actividades de prospecciÃ³n y explotaciÃ³n de recursos geolÃ³gicos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Radiactivos:</strong> Materiales que contienen elementos químicos radiactivos para los que no se prevé ningún uso.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Radiactivos:</strong> Materiales que contienen elementos quÃ­micos radiactivos para los que no se prevÃ© ningÃºn uso.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sanitarios:</strong> Desechos generados en centros de salud, clínicas, laboratorios y hospitales.</li>
-
-</ul>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Según su composición:</strong></li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Orgánicos:</strong> Materia de origen biológico que es biodegradable, como los restos de alimentos, frutas, verduras y hojas.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inorgánicos:</strong> Materiales que no se degradan de forma natural o que requieren periodos de tiempo extremadamente largos para hacerlo, como los plásticos, metales, latas, vidrio, aceites, pilas, baterías y fibras textiles sintéticas.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sanitarios:</strong> Desechos generados en centros de salud, clÃ­nicas, laboratorios y hospitales.</li>
 
 </ul>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Según su peligrosidad:</strong></li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SegÃºn su composiciÃ³n:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inertes:</strong> Residuos que, una vez depositados en un vertedero, no experimentan ninguna transformación física, química o biológica significativa, por lo que no resultan reactivos.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">OrgÃ¡nicos:</strong> Materia de origen biolÃ³gico que es biodegradable, como los restos de alimentos, frutas, verduras y hojas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InorgÃ¡nicos:</strong> Materiales que no se degradan de forma natural o que requieren periodos de tiempo extremadamente largos para hacerlo, como los plÃ¡sticos, metales, latas, vidrio, aceites, pilas, baterÃ­as y fibras textiles sintÃ©ticas.</li>
+
+</ul>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SegÃºn su peligrosidad:</strong></li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inertes:</strong> Residuos que, una vez depositados en un vertedero, no experimentan ninguna transformaciÃ³n fÃ­sica, quÃ­mica o biolÃ³gica significativa, por lo que no resultan reactivos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No peligrosos:</strong> Aquellos que no presentan un riesgo directo ni significativo para la salud de las personas o para el equilibrio del medio ambiente.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Peligrosos:</strong> Residuos que representan un riesgo elevado para la salud humana y el entorno natural debido a que poseen propiedades de toxicidad, inflamabilidad, corrosividad o reactividad química.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Peligrosos:</strong> Residuos que representan un riesgo elevado para la salud humana y el entorno natural debido a que poseen propiedades de toxicidad, inflamabilidad, corrosividad o reactividad quÃ­mica.</li>
 
 </ul>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Según su capacidad de degradación:</strong></li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SegÃºn su capacidad de degradaciÃ³n:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Biodegradables:</strong> Materiales que se descomponen de forma natural en el medio ambiente mediante la acción de organismos vivos y microorganismos.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Biodegradables:</strong> Materiales que se descomponen de forma natural en el medio ambiente mediante la acciÃ³n de organismos vivos y microorganismos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No biodegradables:</strong> Elementos que resisten la descomposición natural, como los metales, el vidrio y los plásticos. En este grupo destacan los microplásticos (partículas de plástico con un tamaño inferior a 5 milímetros) y los nanoplásticos (partículas de tamaño inferior a 1 micra que se originan por la fragmentación de los microplásticos y que contaminan el agua, el suelo y el aire de forma invisible).</li>
-
-</ul>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Según su estado físico:</strong></li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sólidos:</strong> Residuos que se presentan en estado sólido o semisólido.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Líquidos:</strong> Fluidos desechados, como las aguas residuales de procesos urbanos o industriales y los aceites usados.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gaseosos:</strong> Gases, humos y vapores liberados a la atmósfera.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No biodegradables:</strong> Elementos que resisten la descomposiciÃ³n natural, como los metales, el vidrio y los plÃ¡sticos. En este grupo destacan los microplÃ¡sticos (partÃ­culas de plÃ¡stico con un tamaÃ±o inferior a 5 milÃ­metros) y los nanoplÃ¡sticos (partÃ­culas de tamaÃ±o inferior a 1 micra que se originan por la fragmentaciÃ³n de los microplÃ¡sticos y que contaminan el agua, el suelo y el aire de forma invisible).</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Jerarquía de los residuos</h3>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SegÃºn su estado fÃ­sico:</strong></li>
 
-<p style="margin: 0 0 1rem;">La jerarquía de residuos es un modelo prioritario que establece el orden de preferencia en las acciones de gestión para minimizar el impacto ambiental de los desechos. Consta de tres pilares fundamentales que deben aplicarse antes de que las administraciones públicas procedan a la recogida, transporte y tratamiento final en planta:</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SÃ³lidos:</strong> Residuos que se presentan en estado sÃ³lido o semisÃ³lido.</li>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prevención:</strong> Consiste en evitar la generación del residuo desde el origen. Se logra reduciendo el uso de plásticos de un solo uso o diseñando aparatos electrónicos que tengan una mayor vida útil y durabilidad.</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">LÃ­quidos:</strong> Fluidos desechados, como las aguas residuales de procesos urbanos o industriales y los aceites usados.</li>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reutilización o reacondicionamiento:</strong> Implica dar un nuevo uso a los objetos antes de desecharlos, como por ejemplo utilizar botes de vidrio vacíos para almacenar otros materiales o alimentos.</p>
-
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reciclaje adecuado:</strong> Se basa en la separación selectiva de los residuos en el origen para facilitar su posterior tratamiento. Esto incluye depositar los envases ligeros en el contenedor amarillo, el papel y cartón en el contenedor azul, y llevar los aparatos electrónicos inservibles a los puntos limpios autorizados.</p>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Desafíos globales relacionados con los residuos</h3>
-
-<p style="margin: 0 0 1rem;">La acumulación descontrolada de residuos, en particular de los plásticos, representa uno de los mayores problemas ecológicos actuales:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impacto en ecosistemas marinos:</strong> Provoca la muerte de fauna marina por ingesta o atrapamiento, destruye hábitats naturales, deteriora la calidad del agua y genera importantes pérdidas económicas en sectores como el turismo y la pesca.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos en la salud humana:</strong> Se produce una contaminación alimentaria debida a la presencia de microplásticos y toxinas que se bioacumulan en las especies marinas que luego consume el ser humano. Además, los vertederos incontrolados favorecen la proliferación de bacterias y organismos patógenos que transmiten enfermedades.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gaseosos:</strong> Gases, humos y vapores liberados a la atmÃ³sfera.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Para contrarrestar estos efectos, es imprescindible integrar los principios de la economía circular en todos los sectores productivos, diseñando productos que puedan ser fácilmente reparados, reutilizados y reciclados al final de su vida útil.</p>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">JerarquÃ­a de los residuos</h3>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico: gestión de residuos en EcoTech S.A.</h2>
+<p style="margin: 0 0 1rem;">La jerarquÃ­a de residuos es un modelo prioritario que establece el orden de preferencia en las acciones de gestiÃ³n para minimizar el impacto ambiental de los desechos. Consta de tres pilares fundamentales que deben aplicarse antes de que las administraciones pÃºblicas procedan a la recogida, transporte y tratamiento final en planta:</p>
 
-<p style="margin: 0 0 1rem;">La empresa de componentes electrónicos EcoTech S.A. se enfrentaba a severas sanciones económicas debido a una gestión ineficaz e inadecuada de sus residuos industriales, los cuales incluían metales pesados, plásticos y sustancias químicas peligrosas. Para solucionar este problema y cumplir con las normativas vigentes, la dirección decidió diseñar e implementar un plan integral de gestión de residuos estructurado en las siguientes fases:</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PrevenciÃ³n:</strong> Consiste en evitar la generaciÃ³n del residuo desde el origen. Se logra reduciendo el uso de plÃ¡sticos de un solo uso o diseÃ±ando aparatos electrÃ³nicos que tengan una mayor vida Ãºtil y durabilidad.</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Diagnóstico inicial:</strong> Se llevó a cabo un inventario detallado de todos los residuos generados en la fábrica y se analizaron los puntos críticos del proceso de producción donde se producía la mayor cantidad de desechos.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ReutilizaciÃ³n o reacondicionamiento:</strong> Implica dar un nuevo uso a los objetos antes de desecharlos, como por ejemplo utilizar botes de vidrio vacÃ­os para almacenar otros materiales o alimentos.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estrategias de reducción:</strong> Se modificaron los procesos productivos para hacerlos más limpios, se sustituyeron materias primas tóxicas por alternativas más seguras y se impartieron cursos de capacitación a los empleados para asegurar la correcta separación de los residuos en sus puestos de trabajo.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reciclaje adecuado:</strong> Se basa en la separaciÃ³n selectiva de los residuos en el origen para facilitar su posterior tratamiento. Esto incluye depositar los envases ligeros en el contenedor amarillo, el papel y cartÃ³n en el contenedor azul, y llevar los aparatos electrÃ³nicos inservibles a los puntos limpios autorizados.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reciclaje y reutilización:</strong> Se establecieron acuerdos y convenios de colaboración con empresas autorizadas de reciclaje y se creó un sistema interno para recuperar y reutilizar aquellos componentes que presentaban pequeños defectos pero que eran técnicamente viables dentro de un modelo de economía circular.</p>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">DesafÃ­os globales relacionados con los residuos</h3>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cumplimiento normativo:</strong> La empresa se aseguró de que todas sus operaciones de almacenamiento y gestión de residuos se ajustaran estrictamente a las leyes ambientales, manteniendo un registro documental detallado de cada proceso.</p>
+<p style="margin: 0 0 1rem;">La acumulaciÃ³n descontrolada de residuos, en particular de los plÃ¡sticos, representa uno de los mayores problemas ecolÃ³gicos actuales:</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Monitoreo y evaluación:</strong> Se definieron indicadores clave de rendimiento y se programaron auditorías internas de carácter periódico para evaluar la efectividad del plan.</p>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impacto en ecosistemas marinos:</strong> Provoca la muerte de fauna marina por ingesta o atrapamiento, destruye hÃ¡bitats naturales, deteriora la calidad del agua y genera importantes pÃ©rdidas econÃ³micas en sectores como el turismo y la pesca.</li>
 
-<p style="margin: 0 0 1rem;">Como resultado de la aplicación de este plan durante un año, EcoTech S.A. logró reducir drásticamente la generación de residuos y aumentó su tasa de reciclaje en un 50%. Las sanciones gubernamentales cesaron y la empresa obtuvo el reconocimiento público de la comunidad.</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Efectos en la salud humana:</strong> Se produce una contaminaciÃ³n alimentaria debida a la presencia de microplÃ¡sticos y toxinas que se bioacumulan en las especies marinas que luego consume el ser humano. AdemÃ¡s, los vertederos incontrolados favorecen la proliferaciÃ³n de bacterias y organismos patÃ³genos que transmiten enfermedades.</li>
 
-<p style="margin: 0 0 1rem;">Esta experiencia demuestra que una gestión sostenible de residuos aporta beneficios en tres dimensiones: ambientales (reducción de la contaminación local), económicos (ahorro de costes de gestión y obtención de ingresos por la venta de materiales reciclables) y sociales (mejora de la reputación de la empresa y mayor satisfacción de los trabajadores y de la comunidad vecina).</p>
+</ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resolución del caso práctico de la unidad</h2>
+<p style="margin: 0 0 1rem;">Para contrarrestar estos efectos, es imprescindible integrar los principios de la economÃ­a circular en todos los sectores productivos, diseÃ±ando productos que puedan ser fÃ¡cilmente reparados, reutilizados y reciclados al final de su vida Ãºtil.</p>
 
-<p style="margin: 0 0 1rem;">Los bombardeos atómicos sobre las ciudades de Hiroshima y Nagasaki durante la Segunda Guerra Mundial constituyen uno de los ejemplos históricos más devastadores del impacto y los efectos de la contaminación por radiación a gran escala.</p>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico: gestiÃ³n de residuos en EcoTech S.A.</h2>
 
-<p style="margin: 0 0 1rem;">En la ciudad de Hiroshima, la explosión nuclear arrasó de forma instantánea una superficie de aproximadamente 13 kilómetros cuadrados. Cerca de 70.000 personas fallecieron en el momento del impacto y decenas de miles sufrieron heridas de extrema gravedad. A medio y largo plazo, los efectos de la radiación ionizante y las severas quemaduras térmicas continuaron cobrándose vidas durante los meses y años posteriores, estimándose que el número total de víctimas mortales ascendió a 140.000 para finales del año 1945.</p>
+<p style="margin: 0 0 1rem;">La empresa de componentes electrÃ³nicos EcoTech S.A. se enfrentaba a severas sanciones econÃ³micas debido a una gestiÃ³n ineficaz e inadecuada de sus residuos industriales, los cuales incluÃ­an metales pesados, plÃ¡sticos y sustancias quÃ­micas peligrosas. Para solucionar este problema y cumplir con las normativas vigentes, la direcciÃ³n decidiÃ³ diseÃ±ar e implementar un plan integral de gestiÃ³n de residuos estructurado en las siguientes fases:</p>
 
-<p style="margin: 0 0 1rem;">En Nagasaki, la orografía montañosa del terreno actuó como una barrera natural que limitó la destrucción del impacto a un área de unos 7 kilómetros cuadrados. A pesar de esta limitación geográfica, unas 40.000 personas perdieron la vida de forma inmediata y decenas de miles resultaron heridas. Al igual que ocurrió en Hiroshima, la exposición a la radiación ionizante residual provocó enfermedades graves como el cáncer y diversas mutaciones genéticas en los supervivientes, elevando la cifra total de fallecidos a unas 70.000 personas para finales de 1945.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DiagnÃ³stico inicial:</strong> Se llevÃ³ a cabo un inventario detallado de todos los residuos generados en la fÃ¡brica y se analizaron los puntos crÃ­ticos del proceso de producciÃ³n donde se producÃ­a la mayor cantidad de desechos.</p>
 
-<p style="margin: 0 0 1rem;">Estos acontecimientos históricos evidenciaron ante la comunidad internacional el poder de destrucción masiva de la energía nuclear aplicada al armamento y marcaron el inicio de la era nuclear, quedando en la memoria colectiva como una advertencia sobre las consecuencias humanitarias y ambientales del uso de estas tecnologías.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estrategias de reducciÃ³n:</strong> Se modificaron los procesos productivos para hacerlos mÃ¡s limpios, se sustituyeron materias primas tÃ³xicas por alternativas mÃ¡s seguras y se impartieron cursos de capacitaciÃ³n a los empleados para asegurar la correcta separaciÃ³n de los residuos en sus puestos de trabajo.</p>
+
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reciclaje y reutilizaciÃ³n:</strong> Se establecieron acuerdos y convenios de colaboraciÃ³n con empresas autorizadas de reciclaje y se creÃ³ un sistema interno para recuperar y reutilizar aquellos componentes que presentaban pequeÃ±os defectos pero que eran tÃ©cnicamente viables dentro de un modelo de economÃ­a circular.</p>
+
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cumplimiento normativo:</strong> La empresa se asegurÃ³ de que todas sus operaciones de almacenamiento y gestiÃ³n de residuos se ajustaran estrictamente a las leyes ambientales, manteniendo un registro documental detallado de cada proceso.</p>
+
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Monitoreo y evaluaciÃ³n:</strong> Se definieron indicadores clave de rendimiento y se programaron auditorÃ­as internas de carÃ¡cter periÃ³dico para evaluar la efectividad del plan.</p>
+
+<p style="margin: 0 0 1rem;">Como resultado de la aplicaciÃ³n de este plan durante un aÃ±o, EcoTech S.A. logrÃ³ reducir drÃ¡sticamente la generaciÃ³n de residuos y aumentÃ³ su tasa de reciclaje en un 50%. Las sanciones gubernamentales cesaron y la empresa obtuvo el reconocimiento pÃºblico de la comunidad.</p>
+
+<p style="margin: 0 0 1rem;">Esta experiencia demuestra que una gestiÃ³n sostenible de residuos aporta beneficios en tres dimensiones: ambientales (reducciÃ³n de la contaminaciÃ³n local), econÃ³micos (ahorro de costes de gestiÃ³n y obtenciÃ³n de ingresos por la venta de materiales reciclables) y sociales (mejora de la reputaciÃ³n de la empresa y mayor satisfacciÃ³n de los trabajadores y de la comunidad vecina).</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ResoluciÃ³n del caso prÃ¡ctico de la unidad</h2>
+
+<p style="margin: 0 0 1rem;">Los bombardeos atÃ³micos sobre las ciudades de Hiroshima y Nagasaki durante la Segunda Guerra Mundial constituyen uno de los ejemplos histÃ³ricos mÃ¡s devastadores del impacto y los efectos de la contaminaciÃ³n por radiaciÃ³n a gran escala.</p>
+
+<p style="margin: 0 0 1rem;">En la ciudad de Hiroshima, la explosiÃ³n nuclear arrasÃ³ de forma instantÃ¡nea una superficie de aproximadamente 13 kilÃ³metros cuadrados. Cerca de 70.000 personas fallecieron en el momento del impacto y decenas de miles sufrieron heridas de extrema gravedad. A medio y largo plazo, los efectos de la radiaciÃ³n ionizante y las severas quemaduras tÃ©rmicas continuaron cobrÃ¡ndose vidas durante los meses y aÃ±os posteriores, estimÃ¡ndose que el nÃºmero total de vÃ­ctimas mortales ascendiÃ³ a 140.000 para finales del aÃ±o 1945.</p>
+
+<p style="margin: 0 0 1rem;">En Nagasaki, la orografÃ­a montaÃ±osa del terreno actuÃ³ como una barrera natural que limitÃ³ la destrucciÃ³n del impacto a un Ã¡rea de unos 7 kilÃ³metros cuadrados. A pesar de esta limitaciÃ³n geogrÃ¡fica, unas 40.000 personas perdieron la vida de forma inmediata y decenas de miles resultaron heridas. Al igual que ocurriÃ³ en Hiroshima, la exposiciÃ³n a la radiaciÃ³n ionizante residual provocÃ³ enfermedades graves como el cÃ¡ncer y diversas mutaciones genÃ©ticas en los supervivientes, elevando la cifra total de fallecidos a unas 70.000 personas para finales de 1945.</p>
+
+<p style="margin: 0 0 1rem;">Estos acontecimientos histÃ³ricos evidenciaron ante la comunidad internacional el poder de destrucciÃ³n masiva de la energÃ­a nuclear aplicada al armamento y marcaron el inicio de la era nuclear, quedando en la memoria colectiva como una advertencia sobre las consecuencias humanitarias y ambientales del uso de estas tecnologÃ­as.</p>
 
 </main>
 </body>
 </html>
+

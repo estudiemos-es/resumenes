@@ -1,291 +1,322 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión de recursos humanos. Tema 5</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n de recursos humanos. Tema 5</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión de recursos humanos. Tema 5</h1>
+<h1>Apuntes - GestiÃ³n de recursos humanos. Tema 5</h1>
 
-<h2>Documentación en el proceso de contratación</h2>
+<h2>DocumentaciÃ³n en el proceso de contrataciÃ³n</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción al proceso de contratación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n al proceso de contrataciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La contratación de un trabajador requiere de un procedimiento riguroso en el que es fundamental recopilar, revisar y gestionar de forma estricta toda la documentación del empleado antes de su incorporación. Seguir detalladamente cada paso evita problemas legales y asegura el respeto a los derechos de ambas partes.</p>
+<p style="margin: 0 0 1rem;">La contrataciÃ³n de un trabajador requiere de un procedimiento riguroso en el que es fundamental recopilar, revisar y gestionar de forma estricta toda la documentaciÃ³n del empleado antes de su incorporaciÃ³n. Seguir detalladamente cada paso evita problemas legales y asegura el respeto a los derechos de ambas partes.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Documentación previa al proceso de contratación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">DocumentaciÃ³n previa al proceso de contrataciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">Aunque cada departamento de recursos humanos establece su propio protocolo y no existe un criterio homogéneo para estructurar el expediente del trabajador, todas las empresas coinciden en la necesidad de solicitar una documentación básica para formalizar cualquier contratación:</p>
+<p style="margin: 0 0 1rem;">Aunque cada departamento de recursos humanos establece su propio protocolo y no existe un criterio homogÃ©neo para estructurar el expediente del trabajador, todas las empresas coinciden en la necesidad de solicitar una documentaciÃ³n bÃ¡sica para formalizar cualquier contrataciÃ³n:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Documento de identidad:</strong> DNI o NIE por ambas caras. En su defecto, se puede aportar una copia del pasaporte.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Número de afiliación a la Seguridad Social (NUSS):</strong> Es el identificador único del trabajador ante el sistema de seguridad social.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">NÃºmero de afiliaciÃ³n a la Seguridad Social (NUSS):</strong> Es el identificador Ãºnico del trabajador ante el sistema de seguridad social.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta bancaria:</strong> El candidato debe figurar obligatoriamente como titular de la cuenta donde se ingresará la nómina.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cuenta bancaria:</strong> El candidato debe figurar obligatoriamente como titular de la cuenta donde se ingresarÃ¡ la nÃ³mina.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Título académico:</strong> Se exige únicamente cuando la posesión de una titulación específica sea un requisito obligatorio para el desempeño del puesto o para la modalidad contractual (como ocurre en el contrato en prácticas).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ­tulo acadÃ©mico:</strong> Se exige Ãºnicamente cuando la posesiÃ³n de una titulaciÃ³n especÃ­fica sea un requisito obligatorio para el desempeÃ±o del puesto o para la modalidad contractual (como ocurre en el contrato en prÃ¡cticas).</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Adicionalmente, algunas empresas pueden solicitar un informe de vida laboral, el currículum actualizado, una ficha de datos del empleado, cartas de recomendación o copias de otros títulos académicos de formación reglada o privada.</p>
+<p style="margin: 0 0 1rem;">Adicionalmente, algunas empresas pueden solicitar un informe de vida laboral, el currÃ­culum actualizado, una ficha de datos del empleado, cartas de recomendaciÃ³n o copias de otros tÃ­tulos acadÃ©micos de formaciÃ³n reglada o privada.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Verificación de la validez de los documentos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">VerificaciÃ³n de la validez de los documentos</h3>
 
-<p style="margin: 0 0 1rem;">Es responsabilidad exclusiva del departamento de recursos humanos comprobar la validez de la documentación aportada:</p>
+<p style="margin: 0 0 1rem;">Es responsabilidad exclusiva del departamento de recursos humanos comprobar la validez de la documentaciÃ³n aportada:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estado de los documentos:</strong> No se debe aceptar ningún documento deteriorado, ilegible o caducado.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estado de los documentos:</strong> No se debe aceptar ningÃºn documento deteriorado, ilegible o caducado.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DNI/NIE:</strong> Se debe verificar que se encuentre en vigor. La fecha de nacimiento es clave si la edad es un requisito para una modalidad contractual específica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DNI/NIE:</strong> Se debe verificar que se encuentre en vigor. La fecha de nacimiento es clave si la edad es un requisito para una modalidad contractual especÃ­fica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">NIE para ciudadanos de la Unión Europea:</strong> Debe comprobarse que esté vigente y que no sea un documento de carácter temporal. Aunque un ciudadano de la Unión Europea puede ser dado de alta inicialmente con su pasaporte, es sumamente recomendable que facilite su NIE lo antes posible.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">NIE para ciudadanos de la UniÃ³n Europea:</strong> Debe comprobarse que estÃ© vigente y que no sea un documento de carÃ¡cter temporal. Aunque un ciudadano de la UniÃ³n Europea puede ser dado de alta inicialmente con su pasaporte, es sumamente recomendable que facilite su NIE lo antes posible.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comprobación del número de afiliación a la Seguridad Social:</strong> Si el candidato aporta una fotografía de su tarjeta sanitaria o un documento similar, se debe verificar que el número no finalice con la letra <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">B</strong>. Esta letra indica que el número corresponde al de un beneficiario (asociado a un progenitor o tutor) y no al del propio titular como trabajador. Es posible tener un número de afiliación sin haber trabajado nunca (como beneficiario), pero para ser contratado se debe solicitar un número propio y definitivo de afiliación activa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ComprobaciÃ³n del nÃºmero de afiliaciÃ³n a la Seguridad Social:</strong> Si el candidato aporta una fotografÃ­a de su tarjeta sanitaria o un documento similar, se debe verificar que el nÃºmero no finalice con la letra <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">B</strong>. Esta letra indica que el nÃºmero corresponde al de un beneficiario (asociado a un progenitor o tutor) y no al del propio titular como trabajador. Es posible tener un nÃºmero de afiliaciÃ³n sin haber trabajado nunca (como beneficiario), pero para ser contratado se debe solicitar un nÃºmero propio y definitivo de afiliaciÃ³n activa.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Renuncia a horas complementarias</h3>
 
-<p style="margin: 0 0 1rem;">En los contratos a tiempo parcial, el trabajador tiene derecho a renunciar a la realización de horas complementarias. Para ello, debe comunicarlo con <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 días de antelación</strong> y siempre que haya transcurrido <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">un año</strong> desde la firma del pacto. Los motivos válidos para esta renuncia son:</p>
+<p style="margin: 0 0 1rem;">En los contratos a tiempo parcial, el trabajador tiene derecho a renunciar a la realizaciÃ³n de horas complementarias. Para ello, debe comunicarlo con <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 dÃ­as de antelaciÃ³n</strong> y siempre que haya transcurrido <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">un aÃ±o</strong> desde la firma del pacto. Los motivos vÃ¡lidos para esta renuncia son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Incompatibilidad con otro contrato de trabajo a tiempo parcial.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Necesidades de carácter formativo.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Necesidades de carÃ¡cter formativo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Atención de responsabilidades familiares.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Documentación asociada al proceso de contratación</h2>
-
-<p style="margin: 0 0 1rem;">Una vez seleccionado el candidato y aportada la documentación, se inicia la fase de tramitación. Antes del primer día de trabajo, además del propio contrato de trabajo para su firma, la empresa tiene la obligación de facilitar al empleado la siguiente información y documentación:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgos específicos del puesto de trabajo (PRL):</strong> Se deben explicar y entregar por escrito los riesgos asociados a su puesto. La empresa debe conservar una copia firmada por el trabajador que acredite dicha entrega.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgos del centro de trabajo y medidas de emergencia:</strong> Información sobre las instalaciones, planes de evacuación, salidas de emergencia y puntos de encuentro.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Consentimiento para el tratamiento de datos personales:</strong> Conforme al Reglamento General de Protección de Datos (RGPD), el consentimiento se gestiona de forma transparente, y quienes deseen denegar el uso de sus datos deben manifestarlo expresamente.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Información sobre la mutua de accidentes de trabajo:</strong> Datos de la mutua colaboradora (nombre, dirección, teléfono de urgencias, horarios y centros asistenciales disponibles).</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reconocimiento médico:</strong> Documento de consentimiento o renuncia para someterse a la vigilancia de la salud, salvo que el convenio colectivo de aplicación establezca que dicho reconocimiento es obligatorio.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Información corporativa relevante:</strong> Entrega del manual de bienvenida, instrucciones técnicas de trabajo o normativas internas de la empresa.</li>
+<li style="margin-bottom: .45rem; position: relative;"> AtenciÃ³n de responsabilidades familiares.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Trámites con los principales organismos públicos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">DocumentaciÃ³n asociada al proceso de contrataciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">La digitalización ha transformado la gestión de recursos humanos, haciendo que la mayoría de los trámites con la administración se realicen de manera telemática, lo que agiliza los tiempos y mejora la eficiencia de los procesos.</p>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">1. Trámites con la Seguridad Social</h3>
-
-<p style="margin: 0 0 1rem;">Las empresas están obligadas a comunicar los movimientos de afiliación de sus trabajadores (altas, bajas y variaciones de datos) a través del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sistema Red</strong>:</p>
+<p style="margin: 0 0 1rem;">Una vez seleccionado el candidato y aportada la documentaciÃ³n, se inicia la fase de tramitaciÃ³n. Antes del primer dÃ­a de trabajo, ademÃ¡s del propio contrato de trabajo para su firma, la empresa tiene la obligaciÃ³n de facilitar al empleado la siguiente informaciÃ³n y documentaciÃ³n:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Alta del trabajador:</strong> Se puede tramitar de forma previa hasta <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">60 días antes</strong> del inicio de la relación laboral. Como límite, debe comunicarse obligatoriamente el mismo día de la incorporación, antes de que el trabajador inicie su jornada laboral. El sistema requiere especificar la hora exacta de entrada si el alta se procesa el mismo día de inicio.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgos especÃ­ficos del puesto de trabajo (PRL):</strong> Se deben explicar y entregar por escrito los riesgos asociados a su puesto. La empresa debe conservar una copia firmada por el trabajador que acredite dicha entrega.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Baja del trabajador:</strong> Existe un plazo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 días naturales</strong> desde el cese de la actividad laboral para comunicarla.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgos del centro de trabajo y medidas de emergencia:</strong> InformaciÃ³n sobre las instalaciones, planes de evacuaciÃ³n, salidas de emergencia y puntos de encuentro.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Variación de datos:</strong> Cualquier modificación de las condiciones del trabajador debe notificarse en un plazo máximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 días naturales</strong>.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Consentimiento para el tratamiento de datos personales:</strong> Conforme al Reglamento General de ProtecciÃ³n de Datos (RGPD), el consentimiento se gestiona de forma transparente, y quienes deseen denegar el uso de sus datos deben manifestarlo expresamente.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InformaciÃ³n sobre la mutua de accidentes de trabajo:</strong> Datos de la mutua colaboradora (nombre, direcciÃ³n, telÃ©fono de urgencias, horarios y centros asistenciales disponibles).</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reconocimiento mÃ©dico:</strong> Documento de consentimiento o renuncia para someterse a la vigilancia de la salud, salvo que el convenio colectivo de aplicaciÃ³n establezca que dicho reconocimiento es obligatorio.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InformaciÃ³n corporativa relevante:</strong> Entrega del manual de bienvenida, instrucciones tÃ©cnicas de trabajo o normativas internas de la empresa.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">2. Trámites con el Servicio Público de Empleo Estatal (SEPE)</h3>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">TrÃ¡mites con los principales organismos pÃºblicos</h2>
 
-<p style="margin: 0 0 1rem;">Las empresas deben comunicar los contratos de trabajo en un plazo máximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10 días</strong> desde su formalización.</p>
+<p style="margin: 0 0 1rem;">La digitalizaciÃ³n ha transformado la gestiÃ³n de recursos humanos, haciendo que la mayorÃ­a de los trÃ¡mites con la administraciÃ³n se realicen de manera telemÃ¡tica, lo que agiliza los tiempos y mejora la eficiencia de los procesos.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">1. TrÃ¡mites con la Seguridad Social</h3>
+
+<p style="margin: 0 0 1rem;">Las empresas estÃ¡n obligadas a comunicar los movimientos de afiliaciÃ³n de sus trabajadores (altas, bajas y variaciones de datos) a travÃ©s del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sistema Red</strong>:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plataforma Contrat@:</strong> Es el canal telemático utilizado para comunicar contratos, prórrogas, copias básicas, llamamientos de fijos-discontinuos o pactos de horas extraordinarias. La comunicación se puede realizar mediante la introducción directa de datos, el envío de ficheros XML o servicios web.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Alta del trabajador:</strong> Se puede tramitar de forma previa hasta <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">60 dÃ­as antes</strong> del inicio de la relaciÃ³n laboral. Como lÃ­mite, debe comunicarse obligatoriamente el mismo dÃ­a de la incorporaciÃ³n, antes de que el trabajador inicie su jornada laboral. El sistema requiere especificar la hora exacta de entrada si el alta se procesa el mismo dÃ­a de inicio.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Acceso a Contrat@:</strong> Requiere la cumplimentación previa de una solicitud de autorización. Una vez aprobada, se accede mediante certificado digital, DNI electrónico, o con el identificador de la empresa junto a la clave personal asignada.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Baja del trabajador:</strong> Existe un plazo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 dÃ­as naturales</strong> desde el cese de la actividad laboral para comunicarla.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Copia básica:</strong> Se puede registrar de manera telemática simultáneamente con la comunicación del contrato.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VariaciÃ³n de datos:</strong> Cualquier modificaciÃ³n de las condiciones del trabajador debe notificarse en un plazo mÃ¡ximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 dÃ­as naturales</strong>.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">3. Trámites con la Representación Legal de los Trabajadores (RLT)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">2. TrÃ¡mites con el Servicio PÃºblico de Empleo Estatal (SEPE)</h3>
 
-<p style="margin: 0 0 1rem;">La empresa tiene la obligación de informar a los representantes de los trabajadores mediante la entrega de la copia básica de los contratos. Asimismo, debe informar obligatoriamente cuando se celebren <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contratos de puesta a disposición (CPD)</strong> con empresas de trabajo temporal o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contratos de alta dirección</strong>.</p>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Códigos de mecanización de los contratos</h2>
-
-<p style="margin: 0 0 1rem;">Para la cumplimentación formal de los contratos de trabajo y su posterior registro en el SEPE, se utiliza un sistema de codificación estandarizado:</p>
+<p style="margin: 0 0 1rem;">Las empresas deben comunicar los contratos de trabajo en un plazo mÃ¡ximo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10 dÃ­as</strong> desde su formalizaciÃ³n.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código de Cuenta de Cotización (CCC):</strong> Es el código numérico que la Seguridad Social asigna a la empresa al inscribirse. Sirve para identificar al empleador y controlar el cumplimiento de sus obligaciones de cotización.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plataforma Contrat@:</strong> Es el canal telemÃ¡tico utilizado para comunicar contratos, prÃ³rrogas, copias bÃ¡sicas, llamamientos de fijos-discontinuos o pactos de horas extraordinarias. La comunicaciÃ³n se puede realizar mediante la introducciÃ³n directa de datos, el envÃ­o de ficheros XML o servicios web.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código de contrato:</strong> Se ubica en la esquina superior derecha del modelo oficial de contrato para identificar la modalidad contractual correspondiente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Acceso a Contrat@:</strong> Requiere la cumplimentaciÃ³n previa de una solicitud de autorizaciÃ³n. Una vez aprobada, se accede mediante certificado digital, DNI electrÃ³nico, o con el identificador de la empresa junto a la clave personal asignada.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código de país:</strong> En el campo del país de nacionalidad o residencia se introduce un código numérico estándar. Por ejemplo, el código correspondiente a España es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">724</strong>.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código de actividad económica:</strong> Existen 100 códigos que clasifican la actividad económica principal que desarrolla la empresa.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código de municipio:</strong> Los municipios están codificados según las tablas del Instituto Nacional de Estadística (INE). Por ejemplo, el municipio de Martos en Jaén se identifica con el código <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">060</strong>.</li>
-
-<li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Código de ocupación:</strong> El SEPE dispone de un catálogo de ocupaciones codificadas para registrar de forma precisa el puesto y las funciones que desempeñará el trabajador.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Copia bÃ¡sica:</strong> Se puede registrar de manera telemÃ¡tica simultÃ¡neamente con la comunicaciÃ³n del contrato.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Otros documentos de la contratación</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">3. TrÃ¡mites con la RepresentaciÃ³n Legal de los Trabajadores (RLT)</h3>
 
-<p style="margin: 0 0 1rem;">La relación laboral puede requerir la firma de otros documentos adicionales a lo largo de su vigencia:</p>
+<p style="margin: 0 0 1rem;">La empresa tiene la obligaciÃ³n de informar a los representantes de los trabajadores mediante la entrega de la copia bÃ¡sica de los contratos. Asimismo, debe informar obligatoriamente cuando se celebren <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contratos de puesta a disposiciÃ³n (CPD)</strong> con empresas de trabajo temporal o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contratos de alta direcciÃ³n</strong>.</p>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">CÃ³digos de mecanizaciÃ³n de los contratos</h2>
+
+<p style="margin: 0 0 1rem;">Para la cumplimentaciÃ³n formal de los contratos de trabajo y su posterior registro en el SEPE, se utiliza un sistema de codificaciÃ³n estandarizado:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La prórroga:</strong> Documento que se formaliza para dar continuidad a un contrato de duración determinada que llega a su fecha de vencimiento, siempre dentro de los límites legales.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ³digo de Cuenta de CotizaciÃ³n (CCC):</strong> Es el cÃ³digo numÃ©rico que la Seguridad Social asigna a la empresa al inscribirse. Sirve para identificar al empleador y controlar el cumplimiento de sus obligaciones de cotizaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La transformación de contratos temporales en indefinidos:</strong> Documento para convertir un vínculo temporal en estable. Se realiza por motivos estratégicos de retención de talento (crear <span class="markdown-emphasis">engagement</span>), por imperativo legal al agotarse las prórrogas, o para acogerse a bonificaciones del SEPE.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ³digo de contrato:</strong> Se ubica en la esquina superior derecha del modelo oficial de contrato para identificar la modalidad contractual correspondiente.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pactos de horas complementarias:</strong> Exclusivos para contratos a tiempo parcial. Se formalizan por escrito (ya sea al inicio o durante la relación laboral) y deben comunicarse a la RLT. El empresario debe avisar al trabajador con <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 días de antelación</strong> para su realización. Se retribuyen como horas ordinarias y respetan siempre los descansos mínimos establecidos. Existen dos modalidades:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ³digo de paÃ­s:</strong> En el campo del paÃ­s de nacionalidad o residencia se introduce un cÃ³digo numÃ©rico estÃ¡ndar. Por ejemplo, el cÃ³digo correspondiente a EspaÃ±a es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">724</strong>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Horas complementarias voluntarias:</span> En contratos indefinidos a tiempo parcial. No pueden exceder del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15%</strong> de las horas ordinarias del contrato (el contrato debe ser de al menos 10 horas semanales en cómputo anual).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ³digo de actividad econÃ³mica:</strong> Existen 100 cÃ³digos que clasifican la actividad econÃ³mica principal que desarrolla la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ³digo de municipio:</strong> Los municipios estÃ¡n codificados segÃºn las tablas del Instituto Nacional de EstadÃ­stica (INE). Por ejemplo, el municipio de Martos en JaÃ©n se identifica con el cÃ³digo <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">060</strong>.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ³digo de ocupaciÃ³n:</strong> El SEPE dispone de un catÃ¡logo de ocupaciones codificadas para registrar de forma precisa el puesto y las funciones que desempeÃ±arÃ¡ el trabajador.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Otros documentos de la contrataciÃ³n</h2>
+
+<p style="margin: 0 0 1rem;">La relaciÃ³n laboral puede requerir la firma de otros documentos adicionales a lo largo de su vigencia:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La prÃ³rroga:</strong> Documento que se formaliza para dar continuidad a un contrato de duraciÃ³n determinada que llega a su fecha de vencimiento, siempre dentro de los lÃ­mites legales.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La transformaciÃ³n de contratos temporales en indefinidos:</strong> Documento para convertir un vÃ­nculo temporal en estable. Se realiza por motivos estratÃ©gicos de retenciÃ³n de talento (crear <span class="markdown-emphasis">engagement</span>), por imperativo legal al agotarse las prÃ³rrogas, o para acogerse a bonificaciones del SEPE.</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pactos de horas complementarias:</strong> Exclusivos para contratos a tiempo parcial. Se formalizan por escrito (ya sea al inicio o durante la relaciÃ³n laboral) y deben comunicarse a la RLT. El empresario debe avisar al trabajador con <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">3 dÃ­as de antelaciÃ³n</strong> para su realizaciÃ³n. Se retribuyen como horas ordinarias y respetan siempre los descansos mÃ­nimos establecidos. Existen dos modalidades:</li>
+
+<li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Horas complementarias voluntarias:</span> En contratos indefinidos a tiempo parcial. No pueden exceder del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15%</strong> de las horas ordinarias del contrato (el contrato debe ser de al menos 10 horas semanales en cÃ³mputo anual).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <span class="markdown-emphasis">Horas complementarias pactadas:</span> No pueden exceder del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30%</strong> de las horas del contrato de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Llamamientos a la actividad de fijos-discontinuos:</strong> Notificación formal para que el trabajador se reincorpore a su actividad según las pautas del convenio colectivo (por ejemplo, por orden de antigüedad).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Llamamientos a la actividad de fijos-discontinuos:</strong> NotificaciÃ³n formal para que el trabajador se reincorpore a su actividad segÃºn las pautas del convenio colectivo (por ejemplo, por orden de antigÃ¼edad).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Si el trabajador rechaza la incorporación, debe firmar una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">baja voluntaria</strong>.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Si el trabajador rechaza la incorporaciÃ³n, debe firmar una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">baja voluntaria</strong>.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Si el trabajador se encuentra en situación de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">incapacidad temporal (baja médica)</strong>, la empresa tiene la obligación de realizar el llamamiento y tramitar su alta en la Seguridad Social para evitar que se considere un despido improcedente; de forma paralela, se tramita la baja por incapacidad temporal correspondiente.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Si el trabajador se encuentra en situaciÃ³n de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">incapacidad temporal (baja mÃ©dica)</strong>, la empresa tiene la obligaciÃ³n de realizar el llamamiento y tramitar su alta en la Seguridad Social para evitar que se considere un despido improcedente; de forma paralela, se tramita la baja por incapacidad temporal correspondiente.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Registro y archivo de la documentación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Registro y archivo de la documentaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">El departamento de recursos humanos tiene la responsabilidad legal de archivar y custodiar la información personal de los empleados. Bajo el Reglamento General de Protección de Datos (RGPD), las empresas deben implantar medidas de seguridad como la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">seudonimización</strong> y cumplir con los principios de responsabilidad activa, protección de datos por defecto y desde el diseño, y transparencia.</p>
+<p style="margin: 0 0 1rem;">El departamento de recursos humanos tiene la responsabilidad legal de archivar y custodiar la informaciÃ³n personal de los empleados. Bajo el Reglamento General de ProtecciÃ³n de Datos (RGPD), las empresas deben implantar medidas de seguridad como la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">seudonimizaciÃ³n</strong> y cumplir con los principios de responsabilidad activa, protecciÃ³n de datos por defecto y desde el diseÃ±o, y transparencia.</p>
 
-<p style="margin: 0 0 1rem;">Aunque coexisten sistemas mixtos (físico y digital), la tendencia actual es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">archivo 100% digital</strong>, ya que reduce el espacio de almacenamiento, facilita la actualización de datos y agiliza las consultas.</p>
+<p style="margin: 0 0 1rem;">Aunque coexisten sistemas mixtos (fÃ­sico y digital), la tendencia actual es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">archivo 100% digital</strong>, ya que reduce el espacio de almacenamiento, facilita la actualizaciÃ³n de datos y agiliza las consultas.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contenido mínimo del expediente del trabajador</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contenido mÃ­nimo del expediente del trabajador</h3>
 
-<p style="margin: 0 0 1rem;">El expediente de cada empleado debe contener, al menos, la siguiente documentación:</p>
+<p style="margin: 0 0 1rem;">El expediente de cada empleado debe contener, al menos, la siguiente documentaciÃ³n:</p>
 
-<p style="margin: 0 0 1rem;">1. Currículum vitae o ficha de datos del empleado.</p>
+<p style="margin: 0 0 1rem;">1. CurrÃ­culum vitae o ficha de datos del empleado.</p>
 
-<p style="margin: 0 0 1rem;">2. Copia del DNI/NIE, número de afiliación a la Seguridad Social (NUSS) y número de cuenta corriente.</p>
+<p style="margin: 0 0 1rem;">2. Copia del DNI/NIE, nÃºmero de afiliaciÃ³n a la Seguridad Social (NUSS) y nÃºmero de cuenta corriente.</p>
 
-<p style="margin: 0 0 1rem;">3. Contrato de trabajo, copia básica, prórrogas, pactos de horas complementarias, transformaciones a indefinido, notificaciones de fin de contrato, comunicaciones a la RLT y la huella de registro telemático de los contratos.</p>
+<p style="margin: 0 0 1rem;">3. Contrato de trabajo, copia bÃ¡sica, prÃ³rrogas, pactos de horas complementarias, transformaciones a indefinido, notificaciones de fin de contrato, comunicaciones a la RLT y la huella de registro telemÃ¡tico de los contratos.</p>
 
 <p style="margin: 0 0 1rem;">4. Documentos de alta y baja en la Seguridad Social.</p>
 
-<p style="margin: 0 0 1rem;">5. Justificantes de entrega de Equipos de Protección Individual (EPI), ficha de evaluación de riesgos del puesto e instrucciones técnicas de trabajo.</p>
+<p style="margin: 0 0 1rem;">5. Justificantes de entrega de Equipos de ProtecciÃ³n Individual (EPI), ficha de evaluaciÃ³n de riesgos del puesto e instrucciones tÃ©cnicas de trabajo.</p>
 
-<p style="margin: 0 0 1rem;">6. Registros de la formación recibida.</p>
+<p style="margin: 0 0 1rem;">6. Registros de la formaciÃ³n recibida.</p>
 
-<p style="margin: 0 0 1rem;">7. Documento firmado de información y consentimiento de protección de datos (RGPD).</p>
+<p style="margin: 0 0 1rem;">7. Documento firmado de informaciÃ³n y consentimiento de protecciÃ³n de datos (RGPD).</p>
 
-<p style="margin: 0 0 1rem;">8. Solicitudes y concesiones de vacaciones, partes médicos de baja, confirmación o alta por incapacidad temporal, justificantes de permisos retribuidos, licencias, ausencias o excedencias.</p>
+<p style="margin: 0 0 1rem;">8. Solicitudes y concesiones de vacaciones, partes mÃ©dicos de baja, confirmaciÃ³n o alta por incapacidad temporal, justificantes de permisos retribuidos, licencias, ausencias o excedencias.</p>
 
-<p style="margin: 0 0 1rem;">9. Recibos de salarios (nóminas) y propuestas de finiquito.</p>
+<p style="margin: 0 0 1rem;">9. Recibos de salarios (nÃ³minas) y propuestas de finiquito.</p>
 
-<p style="margin: 0 0 1rem;">Para la gestión de trámites específicos con la Seguridad Social, como la solicitud de asignación de un número de seguridad social, se utiliza el servicio <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CASIA</strong> dentro del entorno del Sistema Red.</p>
+<p style="margin: 0 0 1rem;">Para la gestiÃ³n de trÃ¡mites especÃ­ficos con la Seguridad Social, como la solicitud de asignaciÃ³n de un nÃºmero de seguridad social, se utiliza el servicio <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CASIA</strong> dentro del entorno del Sistema Red.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos de aplicación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos de aplicaciÃ³n</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Tramitación del primer empleo</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: TramitaciÃ³n del primer empleo</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Ferrán es seleccionado para trabajar en un evento deportivo en Madrid. Al ser su primer empleo, entrega una copia de su tarjeta sanitaria donde figura el número `471215178964B`. La empresa le notifica que no puede tramitar su alta porque ese número corresponde a su condición de beneficiario (indicado por la letra B al final) y no de cotizante activo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> FerrÃ¡n es seleccionado para trabajar en un evento deportivo en Madrid. Al ser su primer empleo, entrega una copia de su tarjeta sanitaria donde figura el nÃºmero `471215178964B`. La empresa le notifica que no puede tramitar su alta porque ese nÃºmero corresponde a su condiciÃ³n de beneficiario (indicado por la letra B al final) y no de cotizante activo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Ferrán debe acudir a la Administración de la Tesorería General de la Seguridad Social (TGSS) o acceder a sus servicios electrónicos para solicitar su propio número de afiliación. Para ello, debe cumplimentar el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo TA1</strong> y presentar su DNI. Una vez obtenido su número definitivo, debe facilitarlo a la empresa para que esta proceda con el alta previa a la contratación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> FerrÃ¡n debe acudir a la AdministraciÃ³n de la TesorerÃ­a General de la Seguridad Social (TGSS) o acceder a sus servicios electrÃ³nicos para solicitar su propio nÃºmero de afiliaciÃ³n. Para ello, debe cumplimentar el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">modelo TA1</strong> y presentar su DNI. Una vez obtenido su nÃºmero definitivo, debe facilitarlo a la empresa para que esta proceda con el alta previa a la contrataciÃ³n.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Llamamiento de fijos-discontinuos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: Llamamiento de fijos-discontinuos</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> La empresa Piscis (Cantabria), regida por el convenio agropecuario de Cantabria, debe reiniciar su actividad y llamar a 5 trabajadores fijos-discontinuos con diferentes situaciones:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 1 (5 años de antigüedad):</span> No desea incorporarse.</li>
+<span class="markdown-emphasis">Operario 1 (5 aÃ±os de antigÃ¼edad):</span> No desea incorporarse.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 2 (2,5 años de antigüedad):</span> Decide finalmente no incorporarse.</li>
+<span class="markdown-emphasis">Operario 2 (2,5 aÃ±os de antigÃ¼edad):</span> Decide finalmente no incorporarse.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 3 (6 años de antigüedad):</span> Se incorporará.</li>
+<span class="markdown-emphasis">Operario 3 (6 aÃ±os de antigÃ¼edad):</span> Se incorporarÃ¡.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 4 (9 años de antigüedad):</span> Se incorporará.</li>
+<span class="markdown-emphasis">Operario 4 (9 aÃ±os de antigÃ¼edad):</span> Se incorporarÃ¡.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 5 (1 año de antigüedad):</span> La empresa olvida enviarle el burofax de llamamiento.</li>
+<span class="markdown-emphasis">Operario 5 (1 aÃ±o de antigÃ¼edad):</span> La empresa olvida enviarle el burofax de llamamiento.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> El llamamiento debe realizarse por un medio fehaciente (burofax con acuse de recibo) y con la antelación de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 días</strong> fijada por el convenio aplicable. Los trabajadores disponen de un plazo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 días</strong> para contestar. El resultado de la gestión es:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> El llamamiento debe realizarse por un medio fehaciente (burofax con acuse de recibo) y con la antelaciÃ³n de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">30 dÃ­as</strong> fijada por el convenio aplicable. Los trabajadores disponen de un plazo de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15 dÃ­as</strong> para contestar. El resultado de la gestiÃ³n es:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 1 y Operario 2:</span> Causan <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">baja voluntaria</strong> al manifestar su rechazo a la incorporación.</li>
+<span class="markdown-emphasis">Operario 1 y Operario 2:</span> Causan <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">baja voluntaria</strong> al manifestar su rechazo a la incorporaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <span class="markdown-emphasis">Operario 3 y Operario 4:</span> Se tramita su <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">alta en la empresa</strong> para el inicio de la actividad.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Operario 5:</span> Al no haber recibido la comunicación formal por olvido de la empresa, se incurre en una falta de llamamiento que legalmente se califica como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">despido improcedente</strong>.</li>
+<span class="markdown-emphasis">Operario 5:</span> Al no haber recibido la comunicaciÃ³n formal por olvido de la empresa, se incurre en una falta de llamamiento que legalmente se califica como <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">despido improcedente</strong>.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico de la unidad: Incorporación de personal extranjero</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico de la unidad: IncorporaciÃ³n de personal extranjero</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Nicoletta, de nacionalidad extranjera, va a ser contratada por la empresa &quot;Con mucho sabor S.L.&quot; (sin representación legal de los trabajadores). Es su primer empleo en España.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Planteamiento:</strong> Nicoletta, de nacionalidad extranjera, va a ser contratada por la empresa &quot;Con mucho sabor S.L.&quot; (sin representaciÃ³n legal de los trabajadores). Es su primer empleo en EspaÃ±a.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Trámites de Nicoletta:</strong> Debe empadronarse en su municipio de residencia, solicitar cita en la comisaría de policía para obtener su NIE, abrir una cuenta bancaria en una entidad financiera española y acudir a la Tesorería General de la Seguridad Social para solicitar su número de afiliación. Finalmente, entregará toda esta documentación junto con su currículum a la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TrÃ¡mites de Nicoletta:</strong> Debe empadronarse en su municipio de residencia, solicitar cita en la comisarÃ­a de policÃ­a para obtener su NIE, abrir una cuenta bancaria en una entidad financiera espaÃ±ola y acudir a la TesorerÃ­a General de la Seguridad Social para solicitar su nÃºmero de afiliaciÃ³n. Finalmente, entregarÃ¡ toda esta documentaciÃ³n junto con su currÃ­culum a la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Trámites de la empresa:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TrÃ¡mites de la empresa:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">1. Tramitar el alta de Nicoletta en la Seguridad Social a través del Sistema Red de forma previa a su incorporación.</p>
+<p style="margin: 0 0 1rem;">1. Tramitar el alta de Nicoletta en la Seguridad Social a travÃ©s del Sistema Red de forma previa a su incorporaciÃ³n.</p>
 
-<p style="margin: 0 0 1rem;">2. Registrar el contrato de trabajo y la copia básica en el SEPE mediante la aplicación Contrat@ en el plazo de 10 días.</p>
+<p style="margin: 0 0 1rem;">2. Registrar el contrato de trabajo y la copia bÃ¡sica en el SEPE mediante la aplicaciÃ³n Contrat@ en el plazo de 10 dÃ­as.</p>
 
-<p style="margin: 0 0 1rem;">3. Informar y formar a la trabajadora sobre los riesgos de su puesto de trabajo y del centro, entregándole el plan de emergencia.</p>
+<p style="margin: 0 0 1rem;">3. Informar y formar a la trabajadora sobre los riesgos de su puesto de trabajo y del centro, entregÃ¡ndole el plan de emergencia.</p>
 
-<p style="margin: 0 0 1rem;">4. Facilitar las instrucciones técnicas del puesto.</p>
+<p style="margin: 0 0 1rem;">4. Facilitar las instrucciones tÃ©cnicas del puesto.</p>
 
 <p style="margin: 0 0 1rem;">5. Recoger la firma del consentimiento para el tratamiento de datos (RGPD).</p>
 
-<p style="margin: 0 0 1rem;">6. Informar sobre la mutua de accidentes de trabajo y gestionar el documento de aceptación o renuncia al reconocimiento médico.</p>
+<p style="margin: 0 0 1rem;">6. Informar sobre la mutua de accidentes de trabajo y gestionar el documento de aceptaciÃ³n o renuncia al reconocimiento mÃ©dico.</p>
 
 <p style="margin: 0 0 1rem;">7. Crear el expediente del trabajador para archivar de forma segura todos los documentos generados.</p>
 
 </main>
 </body>
 </html>
+

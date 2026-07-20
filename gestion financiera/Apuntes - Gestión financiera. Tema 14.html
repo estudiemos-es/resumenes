@@ -1,75 +1,105 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión financiera. Tema 14</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n financiera. Tema 14</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión financiera. Tema 14</h1>
+<h1>Apuntes - GestiÃ³n financiera. Tema 14</h1>
 
-<h2>Presupuestos y gestión financiera</h2>
+<h2>Presupuestos y gestiÃ³n financiera</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción al proceso presupuestario</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n al proceso presupuestario</h2>
 
-<p style="margin: 0 0 1rem;">En el entorno empresarial, las organizaciones se marcan metas con el fin de alcanzarlas de la manera más eficiente posible. La estructura de una empresa suele dividirse en diferentes unidades organizativas, cada una dirigida por un responsable y con sus propios objetivos específicos. Para que estas metas particulares no entren en conflicto con la visión general de la organización, es imprescindible una coordinación rigurosa.</p>
+<p style="margin: 0 0 1rem;">En el entorno empresarial, las organizaciones se marcan metas con el fin de alcanzarlas de la manera mÃ¡s eficiente posible. La estructura de una empresa suele dividirse en diferentes unidades organizativas, cada una dirigida por un responsable y con sus propios objetivos especÃ­ficos. Para que estas metas particulares no entren en conflicto con la visiÃ³n general de la organizaciÃ³n, es imprescindible una coordinaciÃ³n rigurosa.</p>
 
-<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">proceso presupuestario</strong> es la técnica que permite plasmar de forma cuantitativa, mediante presupuestos, los objetivos fijados a corto plazo sin perder de vista el largo plazo. Este proceso se fundamenta en las previsiones de los directivos de cada área y culmina con el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">control presupuestario</strong>, una actividad periódica que compara los datos reales con los previstos para detectar y analizar cualquier desviación.</p>
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">proceso presupuestario</strong> es la tÃ©cnica que permite plasmar de forma cuantitativa, mediante presupuestos, los objetivos fijados a corto plazo sin perder de vista el largo plazo. Este proceso se fundamenta en las previsiones de los directivos de cada Ã¡rea y culmina con el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">control presupuestario</strong>, una actividad periÃ³dica que compara los datos reales con los previstos para detectar y analizar cualquier desviaciÃ³n.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Concepto de presupuesto</h2>
 
-<p style="margin: 0 0 1rem;">Un presupuesto es la valoración expresada en términos financieros de los recursos y de las operaciones necesarias para alcanzar los objetivos de la empresa en un período de tiempo determinado.</p>
+<p style="margin: 0 0 1rem;">Un presupuesto es la valoraciÃ³n expresada en tÃ©rminos financieros de los recursos y de las operaciones necesarias para alcanzar los objetivos de la empresa en un perÃ­odo de tiempo determinado.</p>
 
-<p style="margin: 0 0 1rem;">De esta definición se desprenden tres aspectos fundamentales:</p>
+<p style="margin: 0 0 1rem;">De esta definiciÃ³n se desprenden tres aspectos fundamentales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Objetivos fijados:</strong> Deben guardar coherencia tanto con la estrategia global de la empresa como con las responsabilidades y la estructura de las distintas unidades organizativas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horizonte temporal:</strong> El período de tiempo que abarca el presupuesto suele coincidir de forma general con el ejercicio económico de la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Horizonte temporal:</strong> El perÃ­odo de tiempo que abarca el presupuesto suele coincidir de forma general con el ejercicio econÃ³mico de la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Valoración económica:</strong> Toda la planificación se traduce y expresa formalmente en unidades monetarias.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ValoraciÃ³n econÃ³mica:</strong> Toda la planificaciÃ³n se traduce y expresa formalmente en unidades monetarias.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Planificación del presupuesto</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">PlanificaciÃ³n del presupuesto</h2>
 
-<p style="margin: 0 0 1rem;">El proceso de elaboración del presupuesto no es idéntico en todas las organizaciones, sino que se adapta a las particularidades de cada empresa. No obstante, se pueden identificar seis etapas de carácter general:</p>
+<p style="margin: 0 0 1rem;">El proceso de elaboraciÃ³n del presupuesto no es idÃ©ntico en todas las organizaciones, sino que se adapta a las particularidades de cada empresa. No obstante, se pueden identificar seis etapas de carÃ¡cter general:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Definición y transmisión de las directrices generales:</strong> La dirección general inicia el proceso comunicando a cada área las instrucciones generales para que puedan diseñar sus planes y presupuestos de manera coordinada.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DefiniciÃ³n y transmisiÃ³n de las directrices generales:</strong> La direcciÃ³n general inicia el proceso comunicando a cada Ã¡rea las instrucciones generales para que puedan diseÃ±ar sus planes y presupuestos de manera coordinada.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Elaboración de planes, programas y presupuestos:</strong> Cada responsable de departamento diseña el presupuesto de su unidad para alcanzar tanto los objetivos específicos de su área como los globales de la organización.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ElaboraciÃ³n de planes, programas y presupuestos:</strong> Cada responsable de departamento diseÃ±a el presupuesto de su unidad para alcanzar tanto los objetivos especÃ­ficos de su Ã¡rea como los globales de la organizaciÃ³n.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Negociación de los presupuestos:</strong> Se produce un proceso ascendente (de abajo hacia arriba) en el que los responsables de área negocian con sus superiores jerárquicos para ir consolidando los presupuestos aceptados.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">NegociaciÃ³n de los presupuestos:</strong> Se produce un proceso ascendente (de abajo hacia arriba) en el que los responsables de Ã¡rea negocian con sus superiores jerÃ¡rquicos para ir consolidando los presupuestos aceptados.</p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coordinación de los presupuestos con los planes y programas:</strong> Se comprueba la coherencia de todos los planes individuales para integrarlos en un único presupuesto global. En esta fase se realizan los ajustes necesarios para equilibrar las distintas áreas y se confeccionan los presupuestos de tesorería, el estado de origen y aplicación de fondos previsionales, y el balance de situación previsional.</p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CoordinaciÃ³n de los presupuestos con los planes y programas:</strong> Se comprueba la coherencia de todos los planes individuales para integrarlos en un Ãºnico presupuesto global. En esta fase se realizan los ajustes necesarios para equilibrar las distintas Ã¡reas y se confeccionan los presupuestos de tesorerÃ­a, el estado de origen y aplicaciÃ³n de fondos previsionales, y el balance de situaciÃ³n previsional.</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Aprobación del presupuesto por la dirección:</strong> El nivel jerárquico más alto aprueba el documento definitivo, el cual se convierte en una guía de comportamiento, una herramienta de evaluación continua y una autorización formal para realizar los gastos e inversiones planificados.</p>
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AprobaciÃ³n del presupuesto por la direcciÃ³n:</strong> El nivel jerÃ¡rquico mÃ¡s alto aprueba el documento definitivo, el cual se convierte en una guÃ­a de comportamiento, una herramienta de evaluaciÃ³n continua y una autorizaciÃ³n formal para realizar los gastos e inversiones planificados.</p>
 
-<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Seguimiento y control presupuestario:</strong> Dado que el presupuesto es un elemento dinámico, se realiza un seguimiento continuo a lo largo del ejercicio para calcular y analizar las desviaciones que vayan surgiendo.</p>
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Seguimiento y control presupuestario:</strong> Dado que el presupuesto es un elemento dinÃ¡mico, se realiza un seguimiento continuo a lo largo del ejercicio para calcular y analizar las desviaciones que vayan surgiendo.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Objetivos, elementos y características</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Objetivos, elementos y caracterÃ­sticas</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Objetivos</h3>
 
-<p style="margin: 0 0 1rem;">La implantación de un sistema presupuestario busca alcanzar las siguientes metas en la organización:</p>
+<p style="margin: 0 0 1rem;">La implantaciÃ³n de un sistema presupuestario busca alcanzar las siguientes metas en la organizaciÃ³n:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Obtener información relevante para facilitar la toma de decisiones.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Obtener informaciÃ³n relevante para facilitar la toma de decisiones.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Planificar de forma detallada las actividades de cada centro o departamento.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Coordinar las tareas de las áreas para fomentar el trabajo en equipo.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Coordinar las tareas de las Ã¡reas para fomentar el trabajo en equipo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Comunicar con claridad los objetivos a todos los niveles de la empresa.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Motivar a los responsables de cada departamento al hacerlos partícipes del funcionamiento global.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Motivar a los responsables de cada departamento al hacerlos partÃ­cipes del funcionamiento global.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Evaluar el grado de consecución de las metas y el rendimiento del personal y sus directivos.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Evaluar el grado de consecuciÃ³n de las metas y el rendimiento del personal y sus directivos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Incrementar las oportunidades de formación y desarrollo personal de los empleados.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Incrementar las oportunidades de formaciÃ³n y desarrollo personal de los empleados.</li>
 
 </ul>
 
@@ -78,37 +108,37 @@
 <p style="margin: 0 0 1rem;">Los componentes esenciales que definen a cualquier presupuesto son:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos económicos:</strong> El registro detallado de los ingresos y gastos previstos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos econÃ³micos:</strong> El registro detallado de los ingresos y gastos previstos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Recursos:</strong> La determinación de los medios necesarios para generar dichos ingresos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Recursos:</strong> La determinaciÃ³n de los medios necesarios para generar dichos ingresos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Integración:</strong> La unificación de todos los departamentos en un plan común.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IntegraciÃ³n:</strong> La unificaciÃ³n de todos los departamentos en un plan comÃºn.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coordinación:</strong> La armonización de los presupuestos de las diferentes áreas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CoordinaciÃ³n:</strong> La armonizaciÃ³n de los presupuestos de las diferentes Ã¡reas.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Características</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">CaracterÃ­sticas</h3>
 
 <p style="margin: 0 0 1rem;">Para que un presupuesto sea plenamente operativo, debe cumplir con las siguientes propiedades:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Economicidad:</strong> Debe reflejar con precisión la dimensión financiera de ingresos y gastos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Economicidad:</strong> Debe reflejar con precisiÃ³n la dimensiÃ³n financiera de ingresos y gastos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fiabilidad:</strong> La información utilizada para su elaboración debe ser veraz y contrastada.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fiabilidad:</strong> La informaciÃ³n utilizada para su elaboraciÃ³n debe ser veraz y contrastada.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Participación:</strong> Debe involucrar a todos los centros de la empresa para asegurar el compromiso colectivo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ParticipaciÃ³n:</strong> Debe involucrar a todos los centros de la empresa para asegurar el compromiso colectivo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pronosticabilidad:</strong> Debe permitir realizar estimaciones de futuro fundamentadas en los datos recopilados.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Revisabilidad:</strong> Debe facilitar la comprobación periódica del cumplimiento de las metas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Revisabilidad:</strong> Debe facilitar la comprobaciÃ³n periÃ³dica del cumplimiento de las metas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Flexibilidad:</strong> Debe contar con la capacidad de ser modificado ante variaciones o imprevistos del entorno.</li>
@@ -119,78 +149,78 @@
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Beneficios del presupuesto</h3>
 
-<p style="margin: 0 0 1rem;">El proceso presupuestario aporta ventajas sustanciales tanto a la gestión general como a la calidad de la información de la empresa:</p>
+<p style="margin: 0 0 1rem;">El proceso presupuestario aporta ventajas sustanciales tanto a la gestiÃ³n general como a la calidad de la informaciÃ³n de la empresa:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">En la gestión:</strong> Incrementa la eficacia organizativa al ofrecer una visión de conjunto, asignar responsabilidades claras y fomentar una cultura de mejora continua. Además, eleva la motivación, actúa como instrumento de simulación de escenarios (aportando prudencia) y obliga a la coordinación y comunicación interna.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">En la gestiÃ³n:</strong> Incrementa la eficacia organizativa al ofrecer una visiÃ³n de conjunto, asignar responsabilidades claras y fomentar una cultura de mejora continua. AdemÃ¡s, eleva la motivaciÃ³n, actÃºa como instrumento de simulaciÃ³n de escenarios (aportando prudencia) y obliga a la coordinaciÃ³n y comunicaciÃ³n interna.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">En la información:</strong> Facilita datos clave para planificar de manera realista, establecer programas de actuación y medir con exactitud el nivel de cumplimiento de las metas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">En la informaciÃ³n:</strong> Facilita datos clave para planificar de manera realista, establecer programas de actuaciÃ³n y medir con exactitud el nivel de cumplimiento de las metas.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fases de la elaboración</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Fases de la elaboraciÃ³n</h3>
 
 <p style="margin: 0 0 1rem;">El proceso se divide en dos grandes etapas:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase de planificación:</strong> Consiste en relacionar los objetivos con los recursos disponibles. Implica conocer los objetivos de cada unidad, determinar las necesidades de producción, planificar las compras y la tesorería necesarias para esa producción, y obtener finalmente la cuenta de resultados previsional.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase de planificaciÃ³n:</strong> Consiste en relacionar los objetivos con los recursos disponibles. Implica conocer los objetivos de cada unidad, determinar las necesidades de producciÃ³n, planificar las compras y la tesorerÃ­a necesarias para esa producciÃ³n, y obtener finalmente la cuenta de resultados previsional.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase de control:</strong> Consiste en verificar si se están cumpliendo las metas mediante la comparación constante entre los resultados reales y las estimaciones presupuestadas.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fase de control:</strong> Consiste en verificar si se estÃ¡n cumpliendo las metas mediante la comparaciÃ³n constante entre los resultados reales y las estimaciones presupuestadas.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tipos de presupuestos</h2>
 
 <p style="margin: 0 0 1rem;">Los presupuestos se pueden clasificar bajo distintos criterios:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según los cambios en el nivel de actividad</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">SegÃºn los cambios en el nivel de actividad</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto fijo o rígido:</strong> Se diseña para un único volumen de actividad constante. No se realizan modificaciones aunque la actividad real difiera de la planificada. Es útil únicamente en empresas con desviaciones poco significativas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto fijo o rÃ­gido:</strong> Se diseÃ±a para un Ãºnico volumen de actividad constante. No se realizan modificaciones aunque la actividad real difiera de la planificada. Es Ãºtil Ãºnicamente en empresas con desviaciones poco significativas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto flexible:</strong> Se elabora para diferentes niveles de actividad, distinguiendo claramente entre costes fijos (que permanecen constantes) y costes variables (que fluctúan según la actividad). Permite adaptar las previsiones a la realidad operativa de la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto flexible:</strong> Se elabora para diferentes niveles de actividad, distinguiendo claramente entre costes fijos (que permanecen constantes) y costes variables (que fluctÃºan segÃºn la actividad). Permite adaptar las previsiones a la realidad operativa de la empresa.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según su contenido</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">SegÃºn su contenido</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto maestro:</strong> El plan global que unifica todas las áreas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto maestro:</strong> El plan global que unifica todas las Ã¡reas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto operativo:</strong> Centrado en las actividades del día a día.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto operativo:</strong> Centrado en las actividades del dÃ­a a dÃ­a.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto de inversión:</strong> Detalla las necesidades de adquisición de bienes de capital (activo no corriente).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuesto de inversiÃ³n:</strong> Detalla las necesidades de adquisiciÃ³n de bienes de capital (activo no corriente).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estados previsionales:</strong> Proyecciones de los estados financieros al cierre del ejercicio.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Según la técnica de elaboración</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">SegÃºn la tÃ©cnica de elaboraciÃ³n</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuestos incrementales:</strong> Se asignan los fondos a los centros o departamentos tomando como punto de partida el presupuesto del año anterior, al cual se le aplican ajustes o incrementos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuestos incrementales:</strong> Se asignan los fondos a los centros o departamentos tomando como punto de partida el presupuesto del aÃ±o anterior, al cual se le aplican ajustes o incrementos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuestos por programas:</strong> Los recursos se distribuyen en función de los programas específicos diseñados para alcanzar las metas, identificando los recursos requeridos para cada proyecto.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuestos por programas:</strong> Los recursos se distribuyen en funciÃ³n de los programas especÃ­ficos diseÃ±ados para alcanzar las metas, identificando los recursos requeridos para cada proyecto.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuestos base cero (PBC):</strong> Se fundamentan en el análisis coste-beneficio. Ninguna partida se da por sentada; cada área debe demostrar que el beneficio derivado de sus actividades supera el coste de los recursos solicitados. Se aplica habitualmente en áreas de soporte (finanzas, control de calidad, mantenimiento) y no en la producción directa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Presupuestos base cero (PBC):</strong> Se fundamentan en el anÃ¡lisis coste-beneficio. Ninguna partida se da por sentada; cada Ã¡rea debe demostrar que el beneficio derivado de sus actividades supera el coste de los recursos solicitados. Se aplica habitualmente en Ã¡reas de soporte (finanzas, control de calidad, mantenimiento) y no en la producciÃ³n directa.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El presupuesto maestro: operativos y de inversiones</h2>
 
-<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">presupuesto maestro</strong> unifica todas las previsiones de la empresa. Su estructura y presentación son idénticas a las de los estados financieros anuales. Para confeccionarlo, es necesario desarrollar previamente dos grandes bloques de presupuestos intermedios:</p>
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">presupuesto maestro</strong> unifica todas las previsiones de la empresa. Su estructura y presentaciÃ³n son idÃ©nticas a las de los estados financieros anuales. Para confeccionarlo, es necesario desarrollar previamente dos grandes bloques de presupuestos intermedios:</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Presupuestos operativos</h3>
 
-<p style="margin: 0 0 1rem;">Son aquellos que detallan la actividad diaria de los departamentos de la empresa y sirven para elaborar la cuenta de resultados previsional y el presupuesto de tesorería. Incluyen:</p>
+<p style="margin: 0 0 1rem;">Son aquellos que detallan la actividad diaria de los departamentos de la empresa y sirven para elaborar la cuenta de resultados previsional y el presupuesto de tesorerÃ­a. Incluyen:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Presupuesto de ventas (considerado el punto de partida de toda la presupuestación).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Presupuesto de ventas (considerado el punto de partida de toda la presupuestaciÃ³n).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Presupuesto de producción.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Presupuesto de producciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Presupuesto de compras.</li>
 
@@ -198,31 +228,31 @@
 
 <li style="margin-bottom: .45rem; position: relative;"> Presupuesto de publicidad.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Presupuesto de investigación y desarrollo (I+D).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Presupuesto de investigaciÃ³n y desarrollo (I+D).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Presupuesto de administración.</li>
+<li style="margin-bottom: .45rem; position: relative;"> Presupuesto de administraciÃ³n.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Presupuestos de inversiones</h3>
 
-<p style="margin: 0 0 1rem;">Cuantifican las necesidades de adquisición de bienes de equipo y capital derivadas de la planificación estratégica. Estos presupuestos determinan los cobros y pagos que afectarán al presupuesto de tesorería y quedan reflejados en el balance de situación previsional.</p>
+<p style="margin: 0 0 1rem;">Cuantifican las necesidades de adquisiciÃ³n de bienes de equipo y capital derivadas de la planificaciÃ³n estratÃ©gica. Estos presupuestos determinan los cobros y pagos que afectarÃ¡n al presupuesto de tesorerÃ­a y quedan reflejados en el balance de situaciÃ³n previsional.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Control presupuestario</h2>
 
-<p style="margin: 0 0 1rem;">El control presupuestario es el proceso continuo de comparación entre los resultados reales obtenidos y las previsiones del presupuesto, con el fin de detectar diferencias, analizar sus causas y aplicar medidas correctoras.</p>
+<p style="margin: 0 0 1rem;">El control presupuestario es el proceso continuo de comparaciÃ³n entre los resultados reales obtenidos y las previsiones del presupuesto, con el fin de detectar diferencias, analizar sus causas y aplicar medidas correctoras.</p>
 
-<p style="margin: 0 0 1rem;">Para que el control presupuestario sea plenamente eficaz, debe cumplir con las siguientes premisas básicas:</p>
+<p style="margin: 0 0 1rem;">Para que el control presupuestario sea plenamente eficaz, debe cumplir con las siguientes premisas bÃ¡sicas:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Los objetivos de partida deben ser realistas y alcanzables.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> La información debe ser objetiva y permitir asignar responsabilidades claras sin ambigüedades.</li>
+<li style="margin-bottom: .45rem; position: relative;"> La informaciÃ³n debe ser objetiva y permitir asignar responsabilidades claras sin ambigÃ¼edades.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> La revisión debe realizarse con rapidez para corregir las desviaciones a tiempo.</li>
+<li style="margin-bottom: .45rem; position: relative;"> La revisiÃ³n debe realizarse con rapidez para corregir las desviaciones a tiempo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El sistema de revisión debe ser sencillo y comprensible para todos los implicados.</li>
+<li style="margin-bottom: .45rem; position: relative;"> El sistema de revisiÃ³n debe ser sencillo y comprensible para todos los implicados.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El análisis debe centrarse prioritariamente en los factores controlables por la empresa, obviando aquellos que dependan exclusivamente del azar o del entorno externo incontrolable.</li>
+<li style="margin-bottom: .45rem; position: relative;"> El anÃ¡lisis debe centrarse prioritariamente en los factores controlables por la empresa, obviando aquellos que dependan exclusivamente del azar o del entorno externo incontrolable.</li>
 
 </ul>
 
@@ -230,200 +260,201 @@
 
 <p style="margin: 0 0 1rem;">El proceso de control se ejecuta en tres etapas sucesivas:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comparación:</strong> Contraste directo entre los datos reales obtenidos y los datos que fueron presupuestados.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ComparaciÃ³n:</strong> Contraste directo entre los datos reales obtenidos y los datos que fueron presupuestados.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Análisis:</strong> Estudio detallado para identificar y comprender las causas que han originado las diferencias detectadas.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AnÃ¡lisis:</strong> Estudio detallado para identificar y comprender las causas que han originado las diferencias detectadas.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Corrección:</strong> Implementación de las medidas oportunas, que pueden consistir en la modificación del propio presupuesto para adaptarlo a la nueva realidad o en la rectificación de las líneas de actuación operativa de la empresa.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CorrecciÃ³n:</strong> ImplementaciÃ³n de las medidas oportunas, que pueden consistir en la modificaciÃ³n del propio presupuesto para adaptarlo a la nueva realidad o en la rectificaciÃ³n de las lÃ­neas de actuaciÃ³n operativa de la empresa.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Análisis de desviaciones</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">AnÃ¡lisis de desviaciones</h2>
 
-<p style="margin: 0 0 1rem;">El análisis de desviaciones busca explicar de forma detallada los motivos por los que el beneficio real difiere del previsto, permitiendo la adopción de medidas correctoras. Las causas de estas variaciones se agrupan en las siguientes categorías:</p>
+<p style="margin: 0 0 1rem;">El anÃ¡lisis de desviaciones busca explicar de forma detallada los motivos por los que el beneficio real difiere del previsto, permitiendo la adopciÃ³n de medidas correctoras. Las causas de estas variaciones se agrupan en las siguientes categorÃ­as:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Defectos de previsión:</strong> Errores en los cálculos matemáticos, utilización de datos de partida incorrectos o dificultad intrínseca para predecir el comportamiento del mercado.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Defectos de previsiÃ³n:</strong> Errores en los cÃ¡lculos matemÃ¡ticos, utilizaciÃ³n de datos de partida incorrectos o dificultad intrÃ­nseca para predecir el comportamiento del mercado.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Diferencias de criterio contable y presupuestario:</strong> Registro de transacciones en periodos temporales distintos a los previstos o el empleo de métodos de valoración diferentes.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Diferencias de criterio contable y presupuestario:</strong> Registro de transacciones en periodos temporales distintos a los previstos o el empleo de mÃ©todos de valoraciÃ³n diferentes.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Diferencias en la fijación de objetivos:</strong> Establecimiento de metas excesivamente optimistas (inasumibles) o demasiado conservadoras.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Diferencias en la fijaciÃ³n de objetivos:</strong> Establecimiento de metas excesivamente optimistas (inasumibles) o demasiado conservadoras.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El azar:</strong> Circunstancias imprevistas y ajenas a la gestión de la empresa, como la entrada o cierre inesperado de un competidor en el mercado.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El azar:</strong> Circunstancias imprevistas y ajenas a la gestiÃ³n de la empresa, como la entrada o cierre inesperado de un competidor en el mercado.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mala gestión o ejecución:</strong> Deficiencias en el desempeño diario que pueden afectar a tres áreas:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mala gestiÃ³n o ejecuciÃ³n:</strong> Deficiencias en el desempeÃ±o diario que pueden afectar a tres Ã¡reas:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Ingresos:</span> Desviaciones causadas por alteraciones en el volumen o precio de venta, variaciones en la demanda real, o sobrecostes en distribución y promoción.</li>
+<span class="markdown-emphasis">Ingresos:</span> Desviaciones causadas por alteraciones en el volumen o precio de venta, variaciones en la demanda real, o sobrecostes en distribuciÃ³n y promociÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Producción:</span> Desviaciones debidas a cambios en los precios o en el consumo de materias primas, ineficiencias en la productividad, costes de aprovisionamiento elevados o variaciones en los costes indirectos de fabricación.</li>
+<span class="markdown-emphasis">ProducciÃ³n:</span> Desviaciones debidas a cambios en los precios o en el consumo de materias primas, ineficiencias en la productividad, costes de aprovisionamiento elevados o variaciones en los costes indirectos de fabricaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Inversión:</span> Desviaciones por incrementos no planificados en los costes de obra, proyectos o compromisos de pago.</li>
+<span class="markdown-emphasis">InversiÃ³n:</span> Desviaciones por incrementos no planificados en los costes de obra, proyectos o compromisos de pago.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos de aplicación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos de aplicaciÃ³n</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Metodología de implantación presupuestaria</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: MetodologÃ­a de implantaciÃ³n presupuestaria</h3>
 
-<p style="margin: 0 0 1rem;">En una empresa con estructura organizada (dirección general y áreas de finanzas, contabilidad, producción, marketing y logística), el proceso de diseño presupuestario debe ejecutarse siguiendo este orden:</p>
+<p style="margin: 0 0 1rem;">En una empresa con estructura organizada (direcciÃ³n general y Ã¡reas de finanzas, contabilidad, producciÃ³n, marketing y logÃ­stica), el proceso de diseÃ±o presupuestario debe ejecutarse siguiendo este orden:</p>
 
-<p style="margin: 0 0 1rem;">1. La dirección general transmite las directrices estratégicas de la compañía a todos los departamentos.</p>
+<p style="margin: 0 0 1rem;">1. La direcciÃ³n general transmite las directrices estratÃ©gicas de la compaÃ±Ã­a a todos los departamentos.</p>
 
-<p style="margin: 0 0 1rem;">2. Cada responsable de área elabora el presupuesto específico de su departamento.</p>
+<p style="margin: 0 0 1rem;">2. Cada responsable de Ã¡rea elabora el presupuesto especÃ­fico de su departamento.</p>
 
-<p style="margin: 0 0 1rem;">3. Se inicia un proceso de negociación y consenso entre los jefes de departamento y la dirección general.</p>
+<p style="margin: 0 0 1rem;">3. Se inicia un proceso de negociaciÃ³n y consenso entre los jefes de departamento y la direcciÃ³n general.</p>
 
 <p style="margin: 0 0 1rem;">4. Se integran todos los presupuestos sectoriales para dar forma al presupuesto global, realizando los ajustes necesarios para garantizar el equilibrio.</p>
 
-<p style="margin: 0 0 1rem;">5. Se confeccionan los documentos previsionales de síntesis: el presupuesto de tesorería, el estado de origen y aplicación de fondos previsionales, y el balance de situación previsional.</p>
+<p style="margin: 0 0 1rem;">5. Se confeccionan los documentos previsionales de sÃ­ntesis: el presupuesto de tesorerÃ­a, el estado de origen y aplicaciÃ³n de fondos previsionales, y el balance de situaciÃ³n previsional.</p>
 
-<p style="margin: 0 0 1rem;">6. La dirección general aprueba formalmente el presupuesto maestro.</p>
+<p style="margin: 0 0 1rem;">6. La direcciÃ³n general aprueba formalmente el presupuesto maestro.</p>
 
-<p style="margin: 0 0 1rem;">7. Se inicia el seguimiento y control periódico del presupuesto para corregir desviaciones durante el ejercicio.</p>
+<p style="margin: 0 0 1rem;">7. Se inicia el seguimiento y control periÃ³dico del presupuesto para corregir desviaciones durante el ejercicio.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Cálculo matemático de desviaciones en ventas</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: CÃ¡lculo matemÃ¡tico de desviaciones en ventas</h3>
 
 <p style="margin: 0 0 1rem;">Una empresa presenta los siguientes datos de venta al finalizar su ejercicio:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos presupuestados:</strong> 8.000 unidades a un precio unitario de 10 € (Facturación prevista: 80.000 €).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos presupuestados:</strong> 8.000 unidades a un precio unitario de 10 â‚¬ (FacturaciÃ³n prevista: 80.000 â‚¬).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos reales:</strong> 11.000 unidades a un precio unitario de 9 € (Facturación real: 99.000 €).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos reales:</strong> 11.000 unidades a un precio unitario de 9 â‚¬ (FacturaciÃ³n real: 99.000 â‚¬).</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">La desviación global de la facturación presenta un saldo positivo de 19.000 € (99.000 € reales menos 80.000 € presupuestados). Para analizar las causas de este resultado, se desglosa la desviación en dos factores:</p>
+<p style="margin: 0 0 1rem;">La desviaciÃ³n global de la facturaciÃ³n presenta un saldo positivo de 19.000 â‚¬ (99.000 â‚¬ reales menos 80.000 â‚¬ presupuestados). Para analizar las causas de este resultado, se desglosa la desviaciÃ³n en dos factores:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviación por volumen de unidades vendidas:</strong> Mide el impacto del cambio en la cantidad de unidades vendidas valoradas al precio estimado en el presupuesto.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesviaciÃ³n por volumen de unidades vendidas:</strong> Mide el impacto del cambio en la cantidad de unidades vendidas valoradas al precio estimado en el presupuesto.</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Desviación volumen = (Unidades reales - Unidades presupuestadas) × Precio presupuestado</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">DesviaciÃ³n volumen = (Unidades reales - Unidades presupuestadas) Ã— Precio presupuestado</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Desviación volumen = (11.000 - 8.000) × 10 = 3.000 × 10 = 30.000 € (Desviación favorable)</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">DesviaciÃ³n volumen = (11.000 - 8.000) Ã— 10 = 3.000 Ã— 10 = 30.000 â‚¬ (DesviaciÃ³n favorable)</span></p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviación por precio de venta:</strong> Mide el impacto de la variación del precio de venta aplicado sobre las unidades reales vendidas.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesviaciÃ³n por precio de venta:</strong> Mide el impacto de la variaciÃ³n del precio de venta aplicado sobre las unidades reales vendidas.</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Desviación precio = (Precio real - Precio presupuestado) × Unidades reales</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">DesviaciÃ³n precio = (Precio real - Precio presupuestado) Ã— Unidades reales</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Desviación precio = (9 - 10) × 11.000 = -1 × 11.000 = -11.000 € (Desviación desfavorable)</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">DesviaciÃ³n precio = (9 - 10) Ã— 11.000 = -1 Ã— 11.000 = -11.000 â‚¬ (DesviaciÃ³n desfavorable)</span></p>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comprobación de la desviación global:</strong></p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ComprobaciÃ³n de la desviaciÃ³n global:</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Desviación global = Desviación volumen + Desviación precio</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">DesviaciÃ³n global = DesviaciÃ³n volumen + DesviaciÃ³n precio</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Desviación global = 30.000 € + (-11.000 €) = 19.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">DesviaciÃ³n global = 30.000 â‚¬ + (-11.000 â‚¬) = 19.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Análisis del caso:</span> El incremento en el volumen de ventas (eficacia en la consecución de objetivos de mercado) compensó la pérdida de ingresos derivada de la reducción del precio unitario de venta.</p>
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">AnÃ¡lisis del caso:</span> El incremento en el volumen de ventas (eficacia en la consecuciÃ³n de objetivos de mercado) compensÃ³ la pÃ©rdida de ingresos derivada de la reducciÃ³n del precio unitario de venta.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución de las desviaciones del caso práctico de la unidad</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ResoluciÃ³n de las desviaciones del caso prÃ¡ctico de la unidad</h3>
 
-<p style="margin: 0 0 1rem;">A partir de los datos globales de la unidad, se detallan los resultados del análisis de desviaciones financieras:</p>
+<p style="margin: 0 0 1rem;">A partir de los datos globales de la unidad, se detallan los resultados del anÃ¡lisis de desviaciones financieras:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviación global:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesviaciÃ³n global:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">460.000 - 1.500.000 = -540.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">460.000 - 1.500.000 = -540.000 â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviación en costes variables:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesviaciÃ³n en costes variables:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">-20.000 €</span></p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Efecto precio:</span></li>
-
-</ul>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">(5,2 - 5) × 3.000.000 = 600.000 €</span></p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">(5,8 - 5,5) × 2.200.000 = 660.000 €</span></p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto precio = 1.260.000 €</span></p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Efecto volumen:</span></li>
-
-</ul>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) × 5 = 1.000.000 €</span></p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) × 5,5 = -2.200.000 €</span></p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto volumen = -1.200.000 €</span></p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<span class="markdown-emphasis">Efecto mixto:</span></li>
-
-</ul>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) × (5,2 - 5) = 40.000 €</span></p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) × (5,8 - 5,5) = -120.000 €</span></p>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto mixto = -80.000 €</span></p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviación en ventas:</strong></li>
-
-</ul>
-
-<p style="margin: 0 0 1rem;"><span class="formula-block">-560.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">-20.000 â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <span class="markdown-emphasis">Efecto precio:</span></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">(7,5 - 7) × 3.000.000 = 1.500.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">(5,2 - 5) Ã— 3.000.000 = 600.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">(7,8 - 8) × 2.200.000 = -440.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">(5,8 - 5,5) Ã— 2.200.000 = 660.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto precio = 1.060.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto precio = 1.260.000 â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <span class="markdown-emphasis">Efecto volumen:</span></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) × 7 = 1.400.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) Ã— 5 = 1.000.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) × 8 = -3.200.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) Ã— 5,5 = -2.200.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto volumen = -1.800.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto volumen = -1.200.000 â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <span class="markdown-emphasis">Efecto mixto:</span></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) × (5,2 - 5) = 100.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) Ã— (5,2 - 5) = 40.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) × (5,8 - 5,5) = 80.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) Ã— (5,8 - 5,5) = -120.000 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto mixto = 180.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto mixto = -80.000 â‚¬</span></p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desviación en costes fijos:</strong></li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesviaciÃ³n en ventas:</strong></li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">-500.000 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">-560.000 â‚¬</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Efecto precio:</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">(7,5 - 7) Ã— 3.000.000 = 1.500.000 â‚¬</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">(7,8 - 8) Ã— 2.200.000 = -440.000 â‚¬</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto precio = 1.060.000 â‚¬</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Efecto volumen:</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) Ã— 7 = 1.400.000 â‚¬</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) Ã— 8 = -3.200.000 â‚¬</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto volumen = -1.800.000 â‚¬</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<span class="markdown-emphasis">Efecto mixto:</span></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">(3.200.000 - 3.000.000) Ã— (5,2 - 5) = 100.000 â‚¬</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">(1.800.000 - 2.200.000) Ã— (5,8 - 5,5) = 80.000 â‚¬</span></p>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">Total efecto mixto = 180.000 â‚¬</span></p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesviaciÃ³n en costes fijos:</strong></li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;"><span class="formula-block">-500.000 â‚¬</span></p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Repaso final</h2>
 
-<p style="margin: 0 0 1rem;">El proceso presupuestario constituye una herramienta de gestión indispensable para la planificación estratégica y operativa de las organizaciones. Su éxito reside en la coordinación de las diferentes áreas de la empresa y en el compromiso de sus responsables.</p>
+<p style="margin: 0 0 1rem;">El proceso presupuestario constituye una herramienta de gestiÃ³n indispensable para la planificaciÃ³n estratÃ©gica y operativa de las organizaciones. Su Ã©xito reside en la coordinaciÃ³n de las diferentes Ã¡reas de la empresa y en el compromiso de sus responsables.</p>
 
-<p style="margin: 0 0 1rem;">A través de la planificación se definen el presupuesto maestro, los presupuestos operativos y los de inversiones, traduciendo los objetivos organizacionales a unidades monetarias. Por su parte, el control presupuestario y el análisis de desviaciones (ya sean por volumen, precio, fallos de previsión o gestión) garantizan que la empresa pueda reaccionar a tiempo ante las variaciones del entorno, asegurando la viabilidad financiera y la consecución de las metas corporativas.</p>
+<p style="margin: 0 0 1rem;">A travÃ©s de la planificaciÃ³n se definen el presupuesto maestro, los presupuestos operativos y los de inversiones, traduciendo los objetivos organizacionales a unidades monetarias. Por su parte, el control presupuestario y el anÃ¡lisis de desviaciones (ya sean por volumen, precio, fallos de previsiÃ³n o gestiÃ³n) garantizan que la empresa pueda reaccionar a tiempo ante las variaciones del entorno, asegurando la viabilidad financiera y la consecuciÃ³n de las metas corporativas.</p>
 
 </main>
 </body>
 </html>
+

@@ -1,271 +1,302 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión de recursos humanos. Tema 3</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n de recursos humanos. Tema 3</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión de recursos humanos. Tema 3</h1>
+<h1>Apuntes - GestiÃ³n de recursos humanos. Tema 3</h1>
 
-<h2>Modalidades de contratación y gestión del tiempo de trabajo</h2>
+<h2>Modalidades de contrataciÃ³n y gestiÃ³n del tiempo de trabajo</h2>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Jornada de trabajo</h2>
 
-<p style="margin: 0 0 1rem;">La jornada de trabajo representa el tiempo durante el cual un trabajador realiza sus funciones en la empresa. Este cómputo temporal puede estructurarse en horas diarias, semanales o anuales, y se pacta formalmente a través de los convenios colectivos o directamente en los contratos de trabajo.</p>
+<p style="margin: 0 0 1rem;">La jornada de trabajo representa el tiempo durante el cual un trabajador realiza sus funciones en la empresa. Este cÃ³mputo temporal puede estructurarse en horas diarias, semanales o anuales, y se pacta formalmente a travÃ©s de los convenios colectivos o directamente en los contratos de trabajo.</p>
 
-<p style="margin: 0 0 1rem;">La legislación establece límites estrictos para proteger la salud y seguridad del empleado:</p>
+<p style="margin: 0 0 1rem;">La legislaciÃ³n establece lÃ­mites estrictos para proteger la salud y seguridad del empleado:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Duración máxima diaria:</strong> Con carácter general, el límite se establece en un máximo de 9 horas de trabajo efectivo, a menos que por convenio colectivo o acuerdo entre la empresa y los representantes de los trabajadores se establezca otra distribución.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DuraciÃ³n mÃ¡xima diaria:</strong> Con carÃ¡cter general, el lÃ­mite se establece en un mÃ¡ximo de 9 horas de trabajo efectivo, a menos que por convenio colectivo o acuerdo entre la empresa y los representantes de los trabajadores se establezca otra distribuciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Duración máxima semanal:</strong> El límite promedio se sitúa en 40 horas semanales.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DuraciÃ³n mÃ¡xima semanal:</strong> El lÃ­mite promedio se sitÃºa en 40 horas semanales.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipos de jornada laboral</h3>
 
-<p style="margin: 0 0 1rem;">Existen diferentes formas de organizar el tiempo de trabajo según las necesidades organizativas y la naturaleza del puesto:</p>
+<p style="margin: 0 0 1rem;">Existen diferentes formas de organizar el tiempo de trabajo segÃºn las necesidades organizativas y la naturaleza del puesto:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada completa:</strong> Aquella en la que se alcanza el límite estándar de 40 horas de trabajo a la semana.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada completa:</strong> Aquella en la que se alcanza el lÃ­mite estÃ¡ndar de 40 horas de trabajo a la semana.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada parcial:</strong> Toda aquella jornada que suponga una prestación de servicios con una duración inferior a las 40 horas semanales.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada parcial:</strong> Toda aquella jornada que suponga una prestaciÃ³n de servicios con una duraciÃ³n inferior a las 40 horas semanales.</p>
 
 <p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada continua:</strong> Modalidad en la que el trabajo se realiza de forma ininterrumpida, sin realizar una pausa prolongada para la comida.</p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada partida:</strong> Aquella en la que el tiempo de trabajo se divide en dos segmentos, existiendo una interrupción intermedia para la comida.</p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada partida:</strong> Aquella en la que el tiempo de trabajo se divide en dos segmentos, existiendo una interrupciÃ³n intermedia para la comida.</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada de trabajo nocturno:</strong> Se considera trabajo nocturno el realizado en el período comprendido entre las 22:00 horas y las 06:00 horas del día siguiente.</p>
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada de trabajo nocturno:</strong> Se considera trabajo nocturno el realizado en el perÃ­odo comprendido entre las 22:00 horas y las 06:00 horas del dÃ­a siguiente.</p>
 
-<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada de trabajo a turnos:</strong> Organización del trabajo en equipo en la que los profesionales ocupan sucesivamente los mismos puestos de trabajo de manera escalonada, siguiendo un ritmo continuo o discontinuo. Esto implica que el empleado debe prestar sus servicios en horas diferentes en un período determinado de días o semanas.</p>
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Jornada de trabajo a turnos:</strong> OrganizaciÃ³n del trabajo en equipo en la que los profesionales ocupan sucesivamente los mismos puestos de trabajo de manera escalonada, siguiendo un ritmo continuo o discontinuo. Esto implica que el empleado debe prestar sus servicios en horas diferentes en un perÃ­odo determinado de dÃ­as o semanas.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Descansos obligatorios</h3>
 
-<p style="margin: 0 0 1rem;">El descanso es un derecho irrenunciable que se divide en dos categorías principales:</p>
+<p style="margin: 0 0 1rem;">El descanso es un derecho irrenunciable que se divide en dos categorÃ­as principales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descanso dentro de la jornada:</strong> Si la jornada diaria continuada es de 6 horas o más, el trabajador tiene derecho a un descanso mínimo de 15 minutos. En el caso de menores de 18 años, si la jornada continuada supera las 4 horas y media, el descanso debe ser de al menos 30 minutos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descanso dentro de la jornada:</strong> Si la jornada diaria continuada es de 6 horas o mÃ¡s, el trabajador tiene derecho a un descanso mÃ­nimo de 15 minutos. En el caso de menores de 18 aÃ±os, si la jornada continuada supera las 4 horas y media, el descanso debe ser de al menos 30 minutos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descanso entre jornadas:</strong> Debe existir un mínimo de 12 horas de desconexión y descanso desde que el trabajador finaliza su jornada laboral hasta que comienza la siguiente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descanso entre jornadas:</strong> Debe existir un mÃ­nimo de 12 horas de desconexiÃ³n y descanso desde que el trabajador finaliza su jornada laboral hasta que comienza la siguiente.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Registro de la jornada laboral</h3>
 
-<p style="margin: 0 0 1rem;">Desde el año 2019, es obligatorio para todas las empresas registrar de forma diaria la jornada de trabajo de sus empleados. Este registro debe indicar expresamente la hora de inicio y de finalización de la jornada.</p>
+<p style="margin: 0 0 1rem;">Desde el aÃ±o 2019, es obligatorio para todas las empresas registrar de forma diaria la jornada de trabajo de sus empleados. Este registro debe indicar expresamente la hora de inicio y de finalizaciÃ³n de la jornada.</p>
 
-<p style="margin: 0 0 1rem;">La empresa tiene la libertad de elegir el sistema de fichaje que considere más oportuno, pero tiene el deber de conservar estos registros durante un período de 4 años, manteniéndolos a disposición de los propios trabajadores, de sus representantes legales y de la Inspección de Trabajo.</p>
+<p style="margin: 0 0 1rem;">La empresa tiene la libertad de elegir el sistema de fichaje que considere mÃ¡s oportuno, pero tiene el deber de conservar estos registros durante un perÃ­odo de 4 aÃ±os, manteniÃ©ndolos a disposiciÃ³n de los propios trabajadores, de sus representantes legales y de la InspecciÃ³n de Trabajo.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Particularidades específicas</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Particularidades especÃ­ficas</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sectores especiales:</strong> Existen sectores regulados que permiten ampliaciones de la jornada (como el trabajo en el campo) o reducciones de la misma (como el trabajo interior en las minas).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Menores de 18 años:</strong> No pueden realizar más de 8 horas diarias de trabajo efectivo. Este límite incluye el tiempo dedicado a la formación y se aplica de forma acumulativa si el menor trabaja para varios empleadores.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Menores de 18 aÃ±os:</strong> No pueden realizar mÃ¡s de 8 horas diarias de trabajo efectivo. Este lÃ­mite incluye el tiempo dedicado a la formaciÃ³n y se aplica de forma acumulativa si el menor trabaja para varios empleadores.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El calendario laboral</h2>
 
-<p style="margin: 0 0 1rem;">El calendario laboral es el documento oficial en el que se establecen anualmente los días festivos e inhábiles para el trabajo. El Ministerio de Trabajo y Economía Social se encarga de su elaboración y posterior publicación en el Boletín Oficial del Estado.</p>
+<p style="margin: 0 0 1rem;">El calendario laboral es el documento oficial en el que se establecen anualmente los dÃ­as festivos e inhÃ¡biles para el trabajo. El Ministerio de Trabajo y EconomÃ­a Social se encarga de su elaboraciÃ³n y posterior publicaciÃ³n en el BoletÃ­n Oficial del Estado.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Distribución de los días festivos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">DistribuciÃ³n de los dÃ­as festivos</h3>
 
-<p style="margin: 0 0 1rem;">Los días festivos no pueden superar un máximo de 14 días al año, distribuidos de la siguiente manera:</p>
+<p style="margin: 0 0 1rem;">Los dÃ­as festivos no pueden superar un mÃ¡ximo de 14 dÃ­as al aÃ±o, distribuidos de la siguiente manera:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">8 festivos nacionales:</strong> Determinados a nivel estatal.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">4 festivos autonómicos:</strong> Fijados por cada comunidad autónoma.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">4 festivos autonÃ³micos:</strong> Fijados por cada comunidad autÃ³noma.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2 festivos locales:</strong> Determinados por los ayuntamientos o administraciones municipales.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Obligaciones de la empresa y características</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Obligaciones de la empresa y caracterÃ­sticas</h3>
 
-<p style="margin: 0 0 1rem;">Según el Estatuto de los Trabajadores, las empresas deben elaborar el calendario laboral de forma anual y colocar una copia visible en el centro de trabajo. El incumplimiento de esta norma se tipifica como una infracción leve, con sanciones económicas que oscilan entre los 60 euros y los 625 euros. Si la empresa cuenta con representación legal de los trabajadores, esta debe participar activamente en su elaboración.</p>
+<p style="margin: 0 0 1rem;">SegÃºn el Estatuto de los Trabajadores, las empresas deben elaborar el calendario laboral de forma anual y colocar una copia visible en el centro de trabajo. El incumplimiento de esta norma se tipifica como una infracciÃ³n leve, con sanciones econÃ³micas que oscilan entre los 60 euros y los 625 euros. Si la empresa cuenta con representaciÃ³n legal de los trabajadores, esta debe participar activamente en su elaboraciÃ³n.</p>
 
-<p style="margin: 0 0 1rem;">Las condiciones de los días festivos incluyen:</p>
+<p style="margin: 0 0 1rem;">Las condiciones de los dÃ­as festivos incluyen:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Carácter retribuido y no recuperable:</strong> Los festivos son días pagados y el trabajador no tiene la obligación de recuperar las horas no prestadas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CarÃ¡cter retribuido y no recuperable:</strong> Los festivos son dÃ­as pagados y el trabajador no tiene la obligaciÃ³n de recuperar las horas no prestadas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Traslado de festivos:</strong> Si un día festivo coincide en domingo, se traslada automáticamente al lunes inmediatamente posterior.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Traslado de festivos:</strong> Si un dÃ­a festivo coincide en domingo, se traslada automÃ¡ticamente al lunes inmediatamente posterior.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sustitución autonómica:</strong> Las comunidades autónomas pueden sustituir ciertos festivos nacionales por otros tradicionales de su región, siempre sin exceder el límite de 14 días anuales.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SustituciÃ³n autonÃ³mica:</strong> Las comunidades autÃ³nomas pueden sustituir ciertos festivos nacionales por otros tradicionales de su regiÃ³n, siempre sin exceder el lÃ­mite de 14 dÃ­as anuales.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Festivos recuperables:</strong> Si una comunidad autónoma desea añadir una fiesta tradicional y no dispone de margen dentro de los 14 días, puede añadirla con carácter recuperable, lo que significa que el trabajador deberá recuperar esas horas a lo largo del año sin que computen como horas extraordinarias.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Festivos recuperables:</strong> Si una comunidad autÃ³noma desea aÃ±adir una fiesta tradicional y no dispone de margen dentro de los 14 dÃ­as, puede aÃ±adirla con carÃ¡cter recuperable, lo que significa que el trabajador deberÃ¡ recuperar esas horas a lo largo del aÃ±o sin que computen como horas extraordinarias.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Evolución de las modalidades de contratación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">EvoluciÃ³n de las modalidades de contrataciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">El marco de la contratación laboral en España ha sufrido transformaciones significativas a través de sucesivas reformas legales orientadas a simplificar el sistema y reducir la precarización laboral:</p>
+<p style="margin: 0 0 1rem;">El marco de la contrataciÃ³n laboral en EspaÃ±a ha sufrido transformaciones significativas a travÃ©s de sucesivas reformas legales orientadas a simplificar el sistema y reducir la precarizaciÃ³n laboral:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reforma laboral de 2012:</strong> Centró sus objetivos en fomentar la creación de empleo y dotar a las empresas de mecanismos de flexibilidad interna como alternativa a la destrucción de puestos de trabajo en épocas de crisis.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reforma laboral de 2012:</strong> CentrÃ³ sus objetivos en fomentar la creaciÃ³n de empleo y dotar a las empresas de mecanismos de flexibilidad interna como alternativa a la destrucciÃ³n de puestos de trabajo en Ã©pocas de crisis.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reforma de 2014:</strong> Simplificó la excesiva variedad de contratos existentes en la legislación (que alcanzaban los 42 modelos) reduciéndolos a cuatro grandes grupos: indefinido, temporal, de formación y aprendizaje, y en prácticas.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reforma de 2014:</strong> SimplificÃ³ la excesiva variedad de contratos existentes en la legislaciÃ³n (que alcanzaban los 42 modelos) reduciÃ©ndolos a cuatro grandes grupos: indefinido, temporal, de formaciÃ³n y aprendizaje, y en prÃ¡cticas.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reforma laboral de diciembre de 2021 (plena aplicación desde el 30 de marzo de 2022):</strong> Tuvo como meta prioritaria atajar la temporalidad y el empleo precario. Introdujo restricciones severas a la concatenación de contratos temporales y eliminó por completo el histórico contrato por obra o servicio determinado.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reforma laboral de diciembre de 2021 (plena aplicaciÃ³n desde el 30 de marzo de 2022):</strong> Tuvo como meta prioritaria atajar la temporalidad y el empleo precario. Introdujo restricciones severas a la concatenaciÃ³n de contratos temporales y eliminÃ³ por completo el histÃ³rico contrato por obra o servicio determinado.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contratos de duración determinada</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contratos de duraciÃ³n determinada</h2>
 
-<p style="margin: 0 0 1rem;">Tras la última reforma laboral, las opciones de contratación temporal se han restringido de forma notable para evitar el uso abusivo de la temporalidad. Los contratos de duración determinada vigentes son los siguientes:</p>
+<p style="margin: 0 0 1rem;">Tras la Ãºltima reforma laboral, las opciones de contrataciÃ³n temporal se han restringido de forma notable para evitar el uso abusivo de la temporalidad. Los contratos de duraciÃ³n determinada vigentes son los siguientes:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato por circunstancias de la producción</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato por circunstancias de la producciÃ³n</h3>
 
-<p style="margin: 0 0 1rem;">Se utiliza exclusivamente para atender incrementos de actividad de carácter coyuntural y se subdivide en dos situaciones:</p>
+<p style="margin: 0 0 1rem;">Se utiliza exclusivamente para atender incrementos de actividad de carÃ¡cter coyuntural y se subdivide en dos situaciones:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situaciones ocasionales imprevisibles:</strong> Para cubrir desajustes temporales y fluctuaciones de la demanda que no se pueden prever. Su duración máxima es de 6 meses, ampliable a un año si el convenio colectivo de ámbito sectorial lo autoriza.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situaciones ocasionales imprevisibles:</strong> Para cubrir desajustes temporales y fluctuaciones de la demanda que no se pueden prever. Su duraciÃ³n mÃ¡xima es de 6 meses, ampliable a un aÃ±o si el convenio colectivo de Ã¡mbito sectorial lo autoriza.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situaciones ocasionales previsibles:</strong> Diseñado para atender necesidades muy concretas y de corta duración (como campañas navideñas o agrícolas). Las empresas pueden utilizarlo durante un máximo de 90 días naturales al año, los cuales no pueden ser utilizados de manera continuada.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situaciones ocasionales previsibles:</strong> DiseÃ±ado para atender necesidades muy concretas y de corta duraciÃ³n (como campaÃ±as navideÃ±as o agrÃ­colas). Las empresas pueden utilizarlo durante un mÃ¡ximo de 90 dÃ­as naturales al aÃ±o, los cuales no pueden ser utilizados de manera continuada.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato por sustitución de la persona trabajadora</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato por sustituciÃ³n de la persona trabajadora</h3>
 
-<p style="margin: 0 0 1rem;">Sustituye al antiguo contrato de interinidad. Su finalidad es reservar el puesto de trabajo de un empleado que tiene derecho a reserva de puesto, o para cubrir temporalmente un puesto durante un proceso de selección. Su duración queda vinculada al tiempo que persista la causa que motivó la sustitución.</p>
+<p style="margin: 0 0 1rem;">Sustituye al antiguo contrato de interinidad. Su finalidad es reservar el puesto de trabajo de un empleado que tiene derecho a reserva de puesto, o para cubrir temporalmente un puesto durante un proceso de selecciÃ³n. Su duraciÃ³n queda vinculada al tiempo que persista la causa que motivÃ³ la sustituciÃ³n.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Medidas de control y penalizaciones contra la temporalidad</h3>
 
-<p style="margin: 0 0 1rem;">Para desincentivar la contratación temporal abusiva, la legislación vigente establece:</p>
+<p style="margin: 0 0 1rem;">Para desincentivar la contrataciÃ³n temporal abusiva, la legislaciÃ³n vigente establece:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Penalización económica:</strong> Se aplica un recargo en la cotización a la Seguridad Social para aquellos contratos temporales que tengan una duración inferior a 30 días.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PenalizaciÃ³n econÃ³mica:</strong> Se aplica un recargo en la cotizaciÃ³n a la Seguridad Social para aquellos contratos temporales que tengan una duraciÃ³n inferior a 30 dÃ­as.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conversión automática a indefinido:</strong> Adquieren la condición de trabajadores indefinidos aquellos que hayan estado contratados durante más de 18 meses en un período de 24 meses, ya sea para el mismo o distinto puesto de trabajo, mediante dos o más contratos por circunstancias de la producción (incluyendo los contratos realizados a través de Empresas de Trabajo Temporal).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ConversiÃ³n automÃ¡tica a indefinido:</strong> Adquieren la condiciÃ³n de trabajadores indefinidos aquellos que hayan estado contratados durante mÃ¡s de 18 meses en un perÃ­odo de 24 meses, ya sea para el mismo o distinto puesto de trabajo, mediante dos o mÃ¡s contratos por circunstancias de la producciÃ³n (incluyendo los contratos realizados a travÃ©s de Empresas de Trabajo Temporal).</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contratos indefinidos</h2>
 
-<p style="margin: 0 0 1rem;">Un contrato indefinido es aquel que se concierta sin establecer un límite de tiempo en la prestación de los servicios. No implica una vinculación inquebrantable de por vida, puesto que puede ser rescindido bajo las causas legales de despido o extinción contractual, pero garantiza la estabilidad del empleo mientras dure la relación laboral.</p>
+<p style="margin: 0 0 1rem;">Un contrato indefinido es aquel que se concierta sin establecer un lÃ­mite de tiempo en la prestaciÃ³n de los servicios. No implica una vinculaciÃ³n inquebrantable de por vida, puesto que puede ser rescindido bajo las causas legales de despido o extinciÃ³n contractual, pero garantiza la estabilidad del empleo mientras dure la relaciÃ³n laboral.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato indefinido ordinario</h3>
 
-<p style="margin: 0 0 1rem;">Es la modalidad de contratación general y prioritaria. Se caracteriza por no tener fecha de finalización y por contemplar una indemnización por despido por causas objetivas de 20 días de salario por año trabajado, con un límite máximo de 12 mensualidades.</p>
+<p style="margin: 0 0 1rem;">Es la modalidad de contrataciÃ³n general y prioritaria. Se caracteriza por no tener fecha de finalizaciÃ³n y por contemplar una indemnizaciÃ³n por despido por causas objetivas de 20 dÃ­as de salario por aÃ±o trabajado, con un lÃ­mite mÃ¡ximo de 12 mensualidades.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato fijo-discontinuo</h3>
 
-<p style="margin: 0 0 1rem;">Es un contrato de carácter indefinido que se concierta para realizar trabajos que tengan naturaleza estacional o estén vinculados a actividades productivas de temporada. El trabajador forma parte de la plantilla permanente de la empresa, pero presta sus servicios únicamente durante los períodos de actividad (ya sean continuados o intermitentes).</p>
+<p style="margin: 0 0 1rem;">Es un contrato de carÃ¡cter indefinido que se concierta para realizar trabajos que tengan naturaleza estacional o estÃ©n vinculados a actividades productivas de temporada. El trabajador forma parte de la plantilla permanente de la empresa, pero presta sus servicios Ãºnicamente durante los perÃ­odos de actividad (ya sean continuados o intermitentes).</p>
 
-<p style="margin: 0 0 1rem;">La reforma laboral amplió el uso de esta modalidad para dar cobertura a:</p>
+<p style="margin: 0 0 1rem;">La reforma laboral ampliÃ³ el uso de esta modalidad para dar cobertura a:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Actividades de temporada o con períodos de ejecución ciertos, determinados o indeterminados.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Actividades de temporada o con perÃ­odos de ejecuciÃ³n ciertos, determinados o indeterminados.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Prestación de servicios en el marco de contratas mercantiles o administrativas que sean previsibles y formen parte de la actividad ordinaria de la empresa.</li>
+<li style="margin-bottom: .45rem; position: relative;"> PrestaciÃ³n de servicios en el marco de contratas mercantiles o administrativas que sean previsibles y formen parte de la actividad ordinaria de la empresa.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Contratos de puesta a disposición vinculados a necesidades temporales a través de Empresas de Trabajo Temporal (ETT).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Contratos de puesta a disposiciÃ³n vinculados a necesidades temporales a travÃ©s de Empresas de Trabajo Temporal (ETT).</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Contratos formativos</h2>
 
-<p style="margin: 0 0 1rem;">La formación práctica en el entorno laboral se canaliza a través de dos modalidades contractuales bien diferenciadas:</p>
+<p style="margin: 0 0 1rem;">La formaciÃ³n prÃ¡ctica en el entorno laboral se canaliza a travÃ©s de dos modalidades contractuales bien diferenciadas:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato de formación en alternancia</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato de formaciÃ³n en alternancia</h3>
 
-<p style="margin: 0 0 1rem;">Tiene por objeto compatibilizar la actividad laboral retribuida con los procesos formativos correspondientes en el sistema de formación profesional o el sistema universitario.</p>
+<p style="margin: 0 0 1rem;">Tiene por objeto compatibilizar la actividad laboral retribuida con los procesos formativos correspondientes en el sistema de formaciÃ³n profesional o el sistema universitario.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Duración:</strong> El límite mínimo es de 3 meses y el máximo de 2 años.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DuraciÃ³n:</strong> El lÃ­mite mÃ­nimo es de 3 meses y el mÃ¡ximo de 2 aÃ±os.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos:</strong> La formación teórica debe estar directamente vinculada con la actividad laboral desempeñada. Solo se permite un contrato por cada ciclo formativo o titulación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos:</strong> La formaciÃ³n teÃ³rica debe estar directamente vinculada con la actividad laboral desempeÃ±ada. Solo se permite un contrato por cada ciclo formativo o titulaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Distribución del tiempo:</strong> El trabajo efectivo no puede superar el 65% de la jornada máxima legal durante el primer año, ni el 85% durante el segundo año. El resto del tiempo se destina a la formación teórica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DistribuciÃ³n del tiempo:</strong> El trabajo efectivo no puede superar el 65% de la jornada mÃ¡xima legal durante el primer aÃ±o, ni el 85% durante el segundo aÃ±o. El resto del tiempo se destina a la formaciÃ³n teÃ³rica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Retribución:</strong> El salario no puede ser inferior al 60% en el primer año, ni al 75% en el segundo año, de la cantidad fijada en el convenio para ese grupo profesional.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RetribuciÃ³n:</strong> El salario no puede ser inferior al 60% en el primer aÃ±o, ni al 75% en el segundo aÃ±o, de la cantidad fijada en el convenio para ese grupo profesional.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Limitaciones:</strong> Está prohibida la realización de horas extraordinarias y no se admite el establecimiento de un período de prueba.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Limitaciones:</strong> EstÃ¡ prohibida la realizaciÃ³n de horas extraordinarias y no se admite el establecimiento de un perÃ­odo de prueba.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato para la obtención de la práctica profesional</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contrato para la obtenciÃ³n de la prÃ¡ctica profesional</h3>
 
-<p style="margin: 0 0 1rem;">Está dirigido a personas que ya poseen un título académico y buscan adquirir práctica profesional adecuada a su nivel de estudios.</p>
+<p style="margin: 0 0 1rem;">EstÃ¡ dirigido a personas que ya poseen un tÃ­tulo acadÃ©mico y buscan adquirir prÃ¡ctica profesional adecuada a su nivel de estudios.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Duración:</strong> Mínimo de 6 meses y máximo de 1 año.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DuraciÃ³n:</strong> MÃ­nimo de 6 meses y mÃ¡ximo de 1 aÃ±o.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos de acceso:</strong> El trabajador debe estar en posesión de un título universitario, máster profesional, título de grado medio o superior, o equivalente. Debe formalizarse dentro de los 3 años siguientes a la obtención del título (5 años en caso de personas con discapacidad).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos de acceso:</strong> El trabajador debe estar en posesiÃ³n de un tÃ­tulo universitario, mÃ¡ster profesional, tÃ­tulo de grado medio o superior, o equivalente. Debe formalizarse dentro de los 3 aÃ±os siguientes a la obtenciÃ³n del tÃ­tulo (5 aÃ±os en caso de personas con discapacidad).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Limitaciones contractuales:</strong> Solo se puede firmar un contrato de este tipo por cada titulación. Si el trabajador ya ha estado contratado bajo esta modalidad en otra empresa por más de 3 meses, ese tiempo se resta del límite máximo de un año.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Limitaciones contractuales:</strong> Solo se puede firmar un contrato de este tipo por cada titulaciÃ³n. Si el trabajador ya ha estado contratado bajo esta modalidad en otra empresa por mÃ¡s de 3 meses, ese tiempo se resta del lÃ­mite mÃ¡ximo de un aÃ±o.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Período de prueba:</strong> Se establece un período de prueba estándar de 1 mes, salvo que el convenio colectivo determine una duración diferente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PerÃ­odo de prueba:</strong> Se establece un perÃ­odo de prueba estÃ¡ndar de 1 mes, salvo que el convenio colectivo determine una duraciÃ³n diferente.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resolución de casos prácticos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ResoluciÃ³n de casos prÃ¡cticos</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 1: Acceso al registro de jornada</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situación:</strong> Una trabajadora solicita copia de sus registros de fichaje diarios debido a discrepancias con el sistema de control de la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SituaciÃ³n:</strong> Una trabajadora solicita copia de sus registros de fichaje diarios debido a discrepancias con el sistema de control de la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> De acuerdo con la normativa del registro de jornada, la empresa tiene la obligación legal de conservar los registros durante 4 años y mantenerlos a disposición de los trabajadores. No obstante, la ley no impone un formato de entrega específico. Por tanto, la empresa actúa conforme a derecho al no facilitar una copia física individual a cada empleado, siempre que garantice el acceso directo y la consulta de dichos datos a través de sus sistemas informáticos o terminales de consulta.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> De acuerdo con la normativa del registro de jornada, la empresa tiene la obligaciÃ³n legal de conservar los registros durante 4 aÃ±os y mantenerlos a disposiciÃ³n de los trabajadores. No obstante, la ley no impone un formato de entrega especÃ­fico. Por tanto, la empresa actÃºa conforme a derecho al no facilitar una copia fÃ­sica individual a cada empleado, siempre que garantice el acceso directo y la consulta de dichos datos a travÃ©s de sus sistemas informÃ¡ticos o terminales de consulta.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 2: Descanso mínimo entre jornadas</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 2: Descanso mÃ­nimo entre jornadas</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situación:</strong> Debido a problemas de producción, una fábrica pretende cambiar el turno de un grupo de trabajadores para que finalicen su jornada a las 22:00 horas y comiencen la siguiente a las 06:00 horas del día siguiente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SituaciÃ³n:</strong> Debido a problemas de producciÃ³n, una fÃ¡brica pretende cambiar el turno de un grupo de trabajadores para que finalicen su jornada a las 22:00 horas y comiencen la siguiente a las 06:00 horas del dÃ­a siguiente.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Esta práctica es ilegal. La legislación laboral establece de forma imperativa que debe existir un descanso mínimo de 12 horas entre el final de una jornada de trabajo y el inicio de la siguiente. Entre las 22:00 y las 06:00 horas solo transcurren 8 horas de intervalo, por lo que la empresa incurriría en una infracción grave de la normativa laboral si lleva a cabo dicha modificación horaria.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> Esta prÃ¡ctica es ilegal. La legislaciÃ³n laboral establece de forma imperativa que debe existir un descanso mÃ­nimo de 12 horas entre el final de una jornada de trabajo y el inicio de la siguiente. Entre las 22:00 y las 06:00 horas solo transcurren 8 horas de intervalo, por lo que la empresa incurrirÃ­a en una infracciÃ³n grave de la normativa laboral si lleva a cabo dicha modificaciÃ³n horaria.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 3: Cobertura de vacaciones y picos de producción</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso 3: Cobertura de vacaciones y picos de producciÃ³n</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Situación:</strong> Una empresa necesita contratar personal para cubrir el período vacacional de la plantilla y, al mismo tiempo, atender un incremento puntual de la producción por un pedido extraordinario.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">SituaciÃ³n:</strong> Una empresa necesita contratar personal para cubrir el perÃ­odo vacacional de la plantilla y, al mismo tiempo, atender un incremento puntual de la producciÃ³n por un pedido extraordinario.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> La empresa debe recurrir a la modalidad de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contrato por circunstancias de la producción</strong>. Para la cobertura de vacaciones y el incremento de pedidos, se formalizarán estos contratos temporales utilizando los códigos correspondientes: contrato 402 (eventual a jornada completa) o contrato 502 (eventual a jornada parcial). El contrato debe constar por escrito de manera obligatoria si su duración supera las 4 semanas o si se concierta a jornada parcial.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> La empresa debe recurrir a la modalidad de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">contrato por circunstancias de la producciÃ³n</strong>. Para la cobertura de vacaciones y el incremento de pedidos, se formalizarÃ¡n estos contratos temporales utilizando los cÃ³digos correspondientes: contrato 402 (eventual a jornada completa) o contrato 502 (eventual a jornada parcial). El contrato debe constar por escrito de manera obligatoria si su duraciÃ³n supera las 4 semanas o si se concierta a jornada parcial.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen conceptual</h2>
 
-<p style="margin: 0 0 1rem;">El diseño de las relaciones laborales en la empresa requiere un equilibrio riguroso entre la flexibilidad organizativa y el cumplimiento de los límites legales:</p>
+<p style="margin: 0 0 1rem;">El diseÃ±o de las relaciones laborales en la empresa requiere un equilibrio riguroso entre la flexibilidad organizativa y el cumplimiento de los lÃ­mites legales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La jornada de trabajo</strong> cuenta con límites diarios (9 horas) y semanales (40 horas), con la obligación estricta de registrar diariamente el inicio y fin de la actividad para evitar el fraude laboral.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La jornada de trabajo</strong> cuenta con lÃ­mites diarios (9 horas) y semanales (40 horas), con la obligaciÃ³n estricta de registrar diariamente el inicio y fin de la actividad para evitar el fraude laboral.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El calendario laboral</strong> organiza los 14 festivos anuales obligatorios (retribuidos y no recuperables), garantizando el descanso de los trabajadores y la previsibilidad para la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La reforma de la contratación</strong> busca de forma activa erradicar los contratos temporales injustificados. Se elimina el contrato de obra o servicio, potenciando el contrato indefinido ordinario y el fijo-discontinuo para actividades estacionales, y reduciendo las opciones temporales a las circunstancias de la producción y de sustitución.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La reforma de la contrataciÃ³n</strong> busca de forma activa erradicar los contratos temporales injustificados. Se elimina el contrato de obra o servicio, potenciando el contrato indefinido ordinario y el fijo-discontinuo para actividades estacionales, y reduciendo las opciones temporales a las circunstancias de la producciÃ³n y de sustituciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Los contratos formativos</strong> (alternancia y práctica profesional) se redefinen para asegurar que el componente de aprendizaje y la inserción laboral se realicen bajo condiciones de trabajo dignas, con límites claros de duración, salarios mínimos proporcionales y prohibición de realizar horas extraordinarias.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Los contratos formativos</strong> (alternancia y prÃ¡ctica profesional) se redefinen para asegurar que el componente de aprendizaje y la inserciÃ³n laboral se realicen bajo condiciones de trabajo dignas, con lÃ­mites claros de duraciÃ³n, salarios mÃ­nimos proporcionales y prohibiciÃ³n de realizar horas extraordinarias.</li>
 
 </ul>
 
 </main>
 </body>
 </html>
+

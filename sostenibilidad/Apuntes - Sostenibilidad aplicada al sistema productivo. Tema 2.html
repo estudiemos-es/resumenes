@@ -1,261 +1,292 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apuntes - Sostenibilidad aplicada al sistema productivo. Tema 2</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
 <h1>Apuntes - Sostenibilidad aplicada al sistema productivo. Tema 2</h1>
 
-<h2>Sostenibilidad aplicada al sistema productivo: los desafíos globales</h2>
+<h2>Sostenibilidad aplicada al sistema productivo: los desafÃ­os globales</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización práctica</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n y contextualizaciÃ³n prÃ¡ctica</h2>
 
-<p style="margin: 0 0 1rem;">La sociedad actual se enfrenta a una serie de desafíos globales de diversa naturaleza que generan impactos significativos y comprometen el bienestar de la humanidad tanto a corto como a largo plazo. Para abordar de manera efectiva estos retos, primero es necesario identificarlos con precisión y, posteriormente, articular una respuesta integral y colaborativa. Esta respuesta exige la coordinación de múltiples actores clave, entre los que se incluyen los gobiernos, las organizaciones internacionales, la sociedad civil y el sector privado.</p>
+<p style="margin: 0 0 1rem;">La sociedad actual se enfrenta a una serie de desafÃ­os globales de diversa naturaleza que generan impactos significativos y comprometen el bienestar de la humanidad tanto a corto como a largo plazo. Para abordar de manera efectiva estos retos, primero es necesario identificarlos con precisiÃ³n y, posteriormente, articular una respuesta integral y colaborativa. Esta respuesta exige la coordinaciÃ³n de mÃºltiples actores clave, entre los que se incluyen los gobiernos, las organizaciones internacionales, la sociedad civil y el sector privado.</p>
 
-<p style="margin: 0 0 1rem;">El estudio de estos desafíos se estructura en torno a tres objetivos fundamentales:</p>
+<p style="margin: 0 0 1rem;">El estudio de estos desafÃ­os se estructura en torno a tres objetivos fundamentales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Conocer los principales riesgos globales que amenazan a la humanidad.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Identificar los organismos y mecanismos de gobernanza dentro de las Naciones Unidas diseñados para hacer frente a estos retos.</li>
+<li style="margin-bottom: .45rem; position: relative;">Identificar los organismos y mecanismos de gobernanza dentro de las Naciones Unidas diseÃ±ados para hacer frente a estos retos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Comprender las diferentes estrategias y planes de acción desarrollados tanto a nivel de la Unión Europea como en España para mitigar estos impactos.</li>
+<li style="margin-bottom: .45rem; position: relative;">Comprender las diferentes estrategias y planes de acciÃ³n desarrollados tanto a nivel de la UniÃ³n Europea como en EspaÃ±a para mitigar estos impactos.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Los riesgos globales</h2>
 
-<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Foro Económico Mundial</strong> (FEM), conocido en inglés como <span class="markdown-emphasis">World Economic Forum</span> (WEF), es el organismo encargado de elaborar y publicar de forma anual el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Informe de Riesgos Globales</strong> (<span class="markdown-emphasis">Global Risk Report</span>). Este documento identifica y analiza los riesgos emergentes a los que se enfrenta la sociedad, actualizándose en cada edición gracias a la participación de líderes destacados del ámbito económico y empresarial. Su propósito es ofrecer una perspectiva consensuada que sirva de herramienta para anticipar obstáculos mundiales y trazar las líneas de desarrollo futuro de la humanidad.</p>
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Foro EconÃ³mico Mundial</strong> (FEM), conocido en inglÃ©s como <span class="markdown-emphasis">World Economic Forum</span> (WEF), es el organismo encargado de elaborar y publicar de forma anual el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Informe de Riesgos Globales</strong> (<span class="markdown-emphasis">Global Risk Report</span>). Este documento identifica y analiza los riesgos emergentes a los que se enfrenta la sociedad, actualizÃ¡ndose en cada ediciÃ³n gracias a la participaciÃ³n de lÃ­deres destacados del Ã¡mbito econÃ³mico y empresarial. Su propÃ³sito es ofrecer una perspectiva consensuada que sirva de herramienta para anticipar obstÃ¡culos mundiales y trazar las lÃ­neas de desarrollo futuro de la humanidad.</p>
 
-<p style="margin: 0 0 1rem;">En el marco de estos informes se ha popularizado el término <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Década de la Acción</strong>. Este concepto enfatiza la necesidad urgente de adoptar medidas concretas, significativas y colaborativas entre gobiernos, empresas y sociedad civil para atajar desafíos críticos como el cambio climático, la desigualdad económica y la ciberseguridad. En lugar de limitarse a la identificación de los problemas, se prioriza la implementación de soluciones reales.</p>
+<p style="margin: 0 0 1rem;">En el marco de estos informes se ha popularizado el tÃ©rmino <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DÃ©cada de la AcciÃ³n</strong>. Este concepto enfatiza la necesidad urgente de adoptar medidas concretas, significativas y colaborativas entre gobiernos, empresas y sociedad civil para atajar desafÃ­os crÃ­ticos como el cambio climÃ¡tico, la desigualdad econÃ³mica y la ciberseguridad. En lugar de limitarse a la identificaciÃ³n de los problemas, se prioriza la implementaciÃ³n de soluciones reales.</p>
 
-<p style="margin: 0 0 1rem;">Dentro de este histórico de riesgos, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">cambio climático</strong> ha sido un factor recurrente. Su primera aparición en los informes del Foro Económico Mundial se remonta al año 2011. Desde entonces, la transición climática ha estado marcada por una tensión constante entre lo urgente y lo importante, lo que ha llevado en ocasiones a una transición desordenada. En el informe del año 2022, de hecho, se señalaron explícitamente los fracasos en la acción climática como una de las mayores amenazas para la humanidad a medio y largo plazo.</p>
+<p style="margin: 0 0 1rem;">Dentro de este histÃ³rico de riesgos, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">cambio climÃ¡tico</strong> ha sido un factor recurrente. Su primera apariciÃ³n en los informes del Foro EconÃ³mico Mundial se remonta al aÃ±o 2011. Desde entonces, la transiciÃ³n climÃ¡tica ha estado marcada por una tensiÃ³n constante entre lo urgente y lo importante, lo que ha llevado en ocasiones a una transiciÃ³n desordenada. En el informe del aÃ±o 2022, de hecho, se seÃ±alaron explÃ­citamente los fracasos en la acciÃ³n climÃ¡tica como una de las mayores amenazas para la humanidad a medio y largo plazo.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El informe de riesgos globales de 2024</h2>
 
-<p style="margin: 0 0 1rem;">El Informe de Riesgos Globales de 2024 contextualiza la situación mundial actual tras las secuelas de la pandemia de la COVID-19, la guerra entre Rusia y Ucrania, y los conflictos en regiones como Níger, Sudán, Gaza e Israel. A pesar de estas fracturas sociales y geopolíticas, el informe destaca que el sistema global ha mostrado una notable resiliencia.</p>
+<p style="margin: 0 0 1rem;">El Informe de Riesgos Globales de 2024 contextualiza la situaciÃ³n mundial actual tras las secuelas de la pandemia de la COVID-19, la guerra entre Rusia y Ucrania, y los conflictos en regiones como NÃ­ger, SudÃ¡n, Gaza e Israel. A pesar de estas fracturas sociales y geopolÃ­ticas, el informe destaca que el sistema global ha mostrado una notable resiliencia.</p>
 
-<p style="margin: 0 0 1rem;">Para la elaboración de este informe se utilizó la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Encuesta de Percepción de Riesgos 2023-2024</strong>, cuyos resultados muestran un panorama preocupante y marcadamente más pesimista a largo plazo que a corto plazo:</p>
+<p style="margin: 0 0 1rem;">Para la elaboraciÃ³n de este informe se utilizÃ³ la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Encuesta de PercepciÃ³n de Riesgos 2023-2024</strong>, cuyos resultados muestran un panorama preocupante y marcadamente mÃ¡s pesimista a largo plazo que a corto plazo:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Perspectiva a corto plazo (2 años):</strong> El 54% de los encuestados prevé cierta inestabilidad y riesgo de catástrofes globales, el 27% augura un elevado riesgo de catástrofes y el 3% anticipa riesgos catastróficos inmediatos. Solo un 16% espera una situación estable o tranquila.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Perspectiva a corto plazo (2 aÃ±os):</strong> El 54% de los encuestados prevÃ© cierta inestabilidad y riesgo de catÃ¡strofes globales, el 27% augura un elevado riesgo de catÃ¡strofes y el 3% anticipa riesgos catastrÃ³ficos inmediatos. Solo un 16% espera una situaciÃ³n estable o tranquila.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Perspectiva a largo plazo (10 años):</strong> Las expectativas empeoran notablemente. El 63% de los encuestados prevé una situación de elevado riesgo de catástrofes, mientras que menos del 10% proyecta un escenario de calma o estabilidad. Esto sugiere que la próxima década someterá la capacidad de adaptación humana a sus límites.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Perspectiva a largo plazo (10 aÃ±os):</strong> Las expectativas empeoran notablemente. El 63% de los encuestados prevÃ© una situaciÃ³n de elevado riesgo de catÃ¡strofes, mientras que menos del 10% proyecta un escenario de calma o estabilidad. Esto sugiere que la prÃ³xima dÃ©cada someterÃ¡ la capacidad de adaptaciÃ³n humana a sus lÃ­mites.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Cabe destacar que el término <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Década de la Acción</strong> también es utilizado por las Naciones Unidas en referencia a los Objetivos de Desarrollo Sostenible (ODS), señalando al año 2020 como el punto de partida para acelerar los esfuerzos destinados a alcanzar las metas de la Agenda 2030.</p>
+<p style="margin: 0 0 1rem;">Cabe destacar que el tÃ©rmino <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DÃ©cada de la AcciÃ³n</strong> tambiÃ©n es utilizado por las Naciones Unidas en referencia a los Objetivos de Desarrollo Sostenible (ODS), seÃ±alando al aÃ±o 2020 como el punto de partida para acelerar los esfuerzos destinados a alcanzar las metas de la Agenda 2030.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Clasificación de los riesgos globales en 2024</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ClasificaciÃ³n de los riesgos globales en 2024</h3>
 
-<p style="margin: 0 0 1rem;">Los riesgos se clasifican según su gravedad y se agrupan por categorías (tecnológica, medioambiental, social, geopolítica y económica). Los riesgos medioambientales dominan de forma clara las preocupaciones, especialmente en las proyecciones a largo plazo.</p>
+<p style="margin: 0 0 1rem;">Los riesgos se clasifican segÃºn su gravedad y se agrupan por categorÃ­as (tecnolÃ³gica, medioambiental, social, geopolÃ­tica y econÃ³mica). Los riesgos medioambientales dominan de forma clara las preocupaciones, especialmente en las proyecciones a largo plazo.</p>
 
-<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Riesgos a corto plazo (2 años)</h4>
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Riesgos a corto plazo (2 aÃ±os)</h4>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de información y desinformación</strong> (Tecnológico)</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de informaciÃ³n y desinformaciÃ³n</strong> (TecnolÃ³gico)</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eventos climáticos extremos</strong> (Medioambiental)</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eventos climÃ¡ticos extremos</strong> (Medioambiental)</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Polarización social</strong> (Social)</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PolarizaciÃ³n social</strong> (Social)</p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ciberseguridad</strong> (Tecnológico)</p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ciberseguridad</strong> (TecnolÃ³gico)</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conflicto armado interestatal</strong> (Geopolítico)</p>
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conflicto armado interestatal</strong> (GeopolÃ­tico)</p>
 
-<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de oportunidades económicas</strong> (Social)</p>
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de oportunidades econÃ³micas</strong> (Social)</p>
 
-<p style="margin: 0 0 1rem;">7. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inflación</strong> (Económico)</p>
+<p style="margin: 0 0 1rem;">7. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InflaciÃ³n</strong> (EconÃ³mico)</p>
 
-<p style="margin: 0 0 1rem;">8. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Migración involuntaria</strong> (Social)</p>
+<p style="margin: 0 0 1rem;">8. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">MigraciÃ³n involuntaria</strong> (Social)</p>
 
-<p style="margin: 0 0 1rem;">9. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Caída económica</strong> (Económico)</p>
+<p style="margin: 0 0 1rem;">9. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CaÃ­da econÃ³mica</strong> (EconÃ³mico)</p>
 
-<p style="margin: 0 0 1rem;">10. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminación</strong> (Medioambiental)</p>
+<p style="margin: 0 0 1rem;">10. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaminaciÃ³n</strong> (Medioambiental)</p>
 
-<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Riesgos a largo plazo (10 años)</h4>
+<h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Riesgos a largo plazo (10 aÃ±os)</h4>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eventos climáticos extremos</strong> (Medioambiental)</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Eventos climÃ¡ticos extremos</strong> (Medioambiental)</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cambio crítico en los sistemas terrestres</strong> (Medioambiental)</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cambio crÃ­tico en los sistemas terrestres</strong> (Medioambiental)</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pérdida de biodiversidad y colapso de ecosistemas</strong> (Medioambiental)</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">PÃ©rdida de biodiversidad y colapso de ecosistemas</strong> (Medioambiental)</p>
 
 <p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Escasez de recursos naturales</strong> (Medioambiental)</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de información y desinformación</strong> (Tecnológico)</p>
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de informaciÃ³n y desinformaciÃ³n</strong> (TecnolÃ³gico)</p>
 
-<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resultados adversos de las tecnologías de inteligencia artificial</strong> (Tecnológico)</p>
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resultados adversos de las tecnologÃ­as de inteligencia artificial</strong> (TecnolÃ³gico)</p>
 
-<p style="margin: 0 0 1rem;">7. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Migración involuntaria</strong> (Social)</p>
+<p style="margin: 0 0 1rem;">7. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">MigraciÃ³n involuntaria</strong> (Social)</p>
 
-<p style="margin: 0 0 1rem;">8. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ciberseguridad</strong> (Tecnológico)</p>
+<p style="margin: 0 0 1rem;">8. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ciberseguridad</strong> (TecnolÃ³gico)</p>
 
-<p style="margin: 0 0 1rem;">9. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Caída económica</strong> (Social)</p>
+<p style="margin: 0 0 1rem;">9. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CaÃ­da econÃ³mica</strong> (Social)</p>
 
-<p style="margin: 0 0 1rem;">10. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Contaminación</strong> (Medioambiental)</p>
+<p style="margin: 0 0 1rem;">10. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ContaminaciÃ³n</strong> (Medioambiental)</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Comparativa histórica: informe de 2022 frente a 2024</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Comparativa histÃ³rica: informe de 2022 frente a 2024</h3>
 
-<p style="margin: 0 0 1rem;">Si se analizan los riesgos a largo plazo (horizonte de 5 a 10 años) presentados en el informe de 2022, se observa que los cinco primeros puestos estaban ocupados en su totalidad por la categoría medioambiental:</p>
+<p style="margin: 0 0 1rem;">Si se analizan los riesgos a largo plazo (horizonte de 5 a 10 aÃ±os) presentados en el informe de 2022, se observa que los cinco primeros puestos estaban ocupados en su totalidad por la categorÃ­a medioambiental:</p>
 
-<p style="margin: 0 0 1rem;">1. Fracaso de la acción climática</p>
+<p style="margin: 0 0 1rem;">1. Fracaso de la acciÃ³n climÃ¡tica</p>
 
 <p style="margin: 0 0 1rem;">2. Clima extremo</p>
 
-<p style="margin: 0 0 1rem;">3. Pérdida de biodiversidad</p>
+<p style="margin: 0 0 1rem;">3. PÃ©rdida de biodiversidad</p>
 
 <p style="margin: 0 0 1rem;">4. Crisis de recursos naturales</p>
 
-<p style="margin: 0 0 1rem;">5. Daño ambiental humano</p>
+<p style="margin: 0 0 1rem;">5. DaÃ±o ambiental humano</p>
 
 <p style="margin: 0 0 1rem;">Al comparar ambos informes, se extraen varias conclusiones:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">crisis climática y medioambiental</strong> sigue siendo la preocupación central y persistente en el tiempo (el clima extremo, la pérdida de biodiversidad y la escasez de recursos se repiten de forma sistemática).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">crisis climÃ¡tica y medioambiental</strong> sigue siendo la preocupaciÃ³n central y persistente en el tiempo (el clima extremo, la pÃ©rdida de biodiversidad y la escasez de recursos se repiten de forma sistemÃ¡tica).</li>
 
-<li style="margin-bottom: .45rem; position: relative;">A nivel social, problemas como las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">migraciones involuntarias</strong> y la erosión de la cohesión social se mantienen como desafíos críticos.</li>
+<li style="margin-bottom: .45rem; position: relative;">A nivel social, problemas como las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">migraciones involuntarias</strong> y la erosiÃ³n de la cohesiÃ³n social se mantienen como desafÃ­os crÃ­ticos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">En el plano tecnológico, se evidencia una preocupación emergente y acelerada por los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">avances tecnológicos adversos</strong>, especialmente aquellos relacionados con la inteligencia artificial y la desinformación.</li>
+<li style="margin-bottom: .45rem; position: relative;">En el plano tecnolÃ³gico, se evidencia una preocupaciÃ³n emergente y acelerada por los <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">avances tecnolÃ³gicos adversos</strong>, especialmente aquellos relacionados con la inteligencia artificial y la desinformaciÃ³n.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Gobernanza de las Naciones Unidas ante los grandes retos</h2>
 
-<p style="margin: 0 0 1rem;">Debido a que el cambio climático y la pérdida de biodiversidad comprometen la prosperidad mundial y la supervivencia de las generaciones futuras, las Naciones Unidas disponen de una estructura de gobernanza específica para coordinar la acción internacional.</p>
+<p style="margin: 0 0 1rem;">Debido a que el cambio climÃ¡tico y la pÃ©rdida de biodiversidad comprometen la prosperidad mundial y la supervivencia de las generaciones futuras, las Naciones Unidas disponen de una estructura de gobernanza especÃ­fica para coordinar la acciÃ³n internacional.</p>
 
-<p style="margin: 0 0 1rem;">La organización de las Naciones Unidas para hacer frente a estos desafíos se divide en tres componentes principales:</p>
+<p style="margin: 0 0 1rem;">La organizaciÃ³n de las Naciones Unidas para hacer frente a estos desafÃ­os se divide en tres componentes principales:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Paneles de científicos internacionales:</strong> Son organismos dedicados a realizar investigaciones y estudios periódicos y objetivos sobre el estado del planeta.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Paneles de cientÃ­ficos internacionales:</strong> Son organismos dedicados a realizar investigaciones y estudios periÃ³dicos y objetivos sobre el estado del planeta.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IPCC</strong> (<span class="markdown-emphasis">Intergovernmental Panel on Climate Change</span>): Realiza estudios periódicos sobre el estado del clima.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IPCC</strong> (<span class="markdown-emphasis">Intergovernmental Panel on Climate Change</span>): Realiza estudios periÃ³dicos sobre el estado del clima.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IPBES</strong> (<span class="markdown-emphasis">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services</span>): Realiza estudios periódicos sobre el estado de la biodiversidad.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IPBES</strong> (<span class="markdown-emphasis">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services</span>): Realiza estudios periÃ³dicos sobre el estado de la biodiversidad.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Convenciones:</strong> Son marcos de trabajo que elaboran informes de diagnóstico y marcan las hojas de ruta para mitigar los problemas detectados. Tienen su origen en los acuerdos alcanzados tras la Cumbre de la Tierra de Río de Janeiro para dar un enfoque conjunto a los problemas del suelo, el clima y la biodiversidad:</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Convenciones:</strong> Son marcos de trabajo que elaboran informes de diagnÃ³stico y marcan las hojas de ruta para mitigar los problemas detectados. Tienen su origen en los acuerdos alcanzados tras la Cumbre de la Tierra de RÃ­o de Janeiro para dar un enfoque conjunto a los problemas del suelo, el clima y la biodiversidad:</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">UNCCD</strong> (<span class="markdown-emphasis">United Nations Convention to Combat Desertification</span>): Convención de las Naciones Unidas para la Lucha contra la Desertificación.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">UNCCD</strong> (<span class="markdown-emphasis">United Nations Convention to Combat Desertification</span>): ConvenciÃ³n de las Naciones Unidas para la Lucha contra la DesertificaciÃ³n.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CMNUCC</strong> (<span class="markdown-emphasis">Convención Marco de las Naciones Unidas sobre el Cambio Climático</span>).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CMNUCC</strong> (<span class="markdown-emphasis">ConvenciÃ³n Marco de las Naciones Unidas sobre el Cambio ClimÃ¡tico</span>).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CDB</strong> (<span class="markdown-emphasis">Convenio sobre la Diversidad Biológica</span>).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CDB</strong> (<span class="markdown-emphasis">Convenio sobre la Diversidad BiolÃ³gica</span>).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conferencias de las partes (COP):</strong> Son las reuniones periódicas donde los países firmantes de las convenciones (como la CMNUCC o el CDB) se reúnen para debatir, negociar y aprobar medidas vinculantes entre las partes.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Desacoplamiento del crecimiento económico y el consumo de recursos</h2>
-
-<p style="margin: 0 0 1rem;">Para garantizar un desarrollo sostenible, es imprescindible implementar el concepto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">desacoplamiento</strong> o desvinculación. Este enfoque persigue separar la actividad económica y el bienestar humano de la explotación de los recursos naturales y de los impactos ambientales negativos.</p>
-
-<p style="margin: 0 0 1rem;">El objetivo de este concepto es doble: por un lado, desvincular el bienestar humano del uso de recursos y, por otro, desacoplar el uso de recursos de los impactos ambientales asociados. Existen dos tipos de desvinculación:</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desvinculación relativa:</strong> Ocurre cuando el uso de recursos, la presión ambiental o el bienestar humano aumentan a un ritmo menor que la actividad económica que los genera.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desvinculación absoluta:</strong> Se produce cuando el uso de recursos y los impactos ambientales disminuyen de manera efectiva, a pesar de que la actividad económica continúe creciendo.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conferencias de las partes (COP):</strong> Son las reuniones periÃ³dicas donde los paÃ­ses firmantes de las convenciones (como la CMNUCC o el CDB) se reÃºnen para debatir, negociar y aprobar medidas vinculantes entre las partes.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Para lograr una desvinculación absoluta no basta con mejorar la eficiencia aislada en el uso de los recursos. Es necesario transformar los métodos de extracción y procesamiento, optimizar el manejo y eliminación de desechos, y aplicar estrategias integrales que abarquen todo el ciclo de vida de los productos (reutilización, reciclaje y combinación de ciclos de vida).</p>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Desacoplamiento del crecimiento econÃ³mico y el consumo de recursos</h2>
 
-<p style="margin: 0 0 1rem;">En el entorno corporativo, una de las herramientas más eficaces para aplicar este enfoque es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">análisis de la cadena de valor</strong>, el cual permite a las organizaciones identificar oportunidades de eficiencia y sostenibilidad en cada fase de su actividad productiva.</p>
+<p style="margin: 0 0 1rem;">Para garantizar un desarrollo sostenible, es imprescindible implementar el concepto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">desacoplamiento</strong> o desvinculaciÃ³n. Este enfoque persigue separar la actividad econÃ³mica y el bienestar humano de la explotaciÃ³n de los recursos naturales y de los impactos ambientales negativos.</p>
+
+<p style="margin: 0 0 1rem;">El objetivo de este concepto es doble: por un lado, desvincular el bienestar humano del uso de recursos y, por otro, desacoplar el uso de recursos de los impactos ambientales asociados. Existen dos tipos de desvinculaciÃ³n:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesvinculaciÃ³n relativa:</strong> Ocurre cuando el uso de recursos, la presiÃ³n ambiental o el bienestar humano aumentan a un ritmo menor que la actividad econÃ³mica que los genera.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DesvinculaciÃ³n absoluta:</strong> Se produce cuando el uso de recursos y los impactos ambientales disminuyen de manera efectiva, a pesar de que la actividad econÃ³mica continÃºe creciendo.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para lograr una desvinculaciÃ³n absoluta no basta con mejorar la eficiencia aislada en el uso de los recursos. Es necesario transformar los mÃ©todos de extracciÃ³n y procesamiento, optimizar el manejo y eliminaciÃ³n de desechos, y aplicar estrategias integrales que abarquen todo el ciclo de vida de los productos (reutilizaciÃ³n, reciclaje y combinaciÃ³n de ciclos de vida).</p>
+
+<p style="margin: 0 0 1rem;">En el entorno corporativo, una de las herramientas mÃ¡s eficaces para aplicar este enfoque es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">anÃ¡lisis de la cadena de valor</strong>, el cual permite a las organizaciones identificar oportunidades de eficiencia y sostenibilidad en cada fase de su actividad productiva.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estrategias europeas: el pacto verde europeo</h2>
 
-<p style="margin: 0 0 1rem;">La Unión Europea ha asumido un papel de liderazgo en la acción climática global, comprometiéndose a alcanzar la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">neutralidad climática para el año 2050</strong>, en consonancia con los objetivos del Acuerdo de París. La estrategia diseñada para guiar esta transición ecológica es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pacto Verde Europeo</strong> (<span class="markdown-emphasis">European Green Deal</span>), presentado ante el Parlamento Europeo el 11 de diciembre de 2019 y aprobado por el Consejo Europeo al día siguiente.</p>
+<p style="margin: 0 0 1rem;">La UniÃ³n Europea ha asumido un papel de liderazgo en la acciÃ³n climÃ¡tica global, comprometiÃ©ndose a alcanzar la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">neutralidad climÃ¡tica para el aÃ±o 2050</strong>, en consonancia con los objetivos del Acuerdo de ParÃ­s. La estrategia diseÃ±ada para guiar esta transiciÃ³n ecolÃ³gica es el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pacto Verde Europeo</strong> (<span class="markdown-emphasis">European Green Deal</span>), presentado ante el Parlamento Europeo el 11 de diciembre de 2019 y aprobado por el Consejo Europeo al dÃ­a siguiente.</p>
 
-<p style="margin: 0 0 1rem;">El Pacto Verde Europeo funciona como una hoja de ruta con un enfoque holístico que transforma los desafíos ambientales en oportunidades de desarrollo en todas las áreas políticas. Promueve una transición efectiva, justa e inclusiva bajo la premisa de &quot;no dejar a nadie atrás&quot;. Sus iniciativas abarcan el clima, la economía circular, la biodiversidad, el medioambiente y el bienestar social, lo que lo vincula estrechamente con la consecución de la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Agenda 2030</strong>. Su meta principal es lograr una reducción del 100% de las emisiones netas de gases de efecto invernadero en un plazo de 30 años (para 2050).</p>
+<p style="margin: 0 0 1rem;">El Pacto Verde Europeo funciona como una hoja de ruta con un enfoque holÃ­stico que transforma los desafÃ­os ambientales en oportunidades de desarrollo en todas las Ã¡reas polÃ­ticas. Promueve una transiciÃ³n efectiva, justa e inclusiva bajo la premisa de &quot;no dejar a nadie atrÃ¡s&quot;. Sus iniciativas abarcan el clima, la economÃ­a circular, la biodiversidad, el medioambiente y el bienestar social, lo que lo vincula estrechamente con la consecuciÃ³n de la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Agenda 2030</strong>. Su meta principal es lograr una reducciÃ³n del 100% de las emisiones netas de gases de efecto invernadero en un plazo de 30 aÃ±os (para 2050).</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">El paquete de medidas Objetivo 55 (<span class="markdown-emphasis">Fit for 55</span>)</h3>
 
-<p style="margin: 0 0 1rem;">Dentro del marco del Pacto Verde, el paquete de medidas <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Objetivo 55</strong> busca revisar y actualizar la legislación de la Unión Europea para asegurar que sus políticas estén alineadas con la meta intermedia de reducir las emisiones netas de gases de efecto invernadero en al menos un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">55% para el año 2030</strong>.</p>
+<p style="margin: 0 0 1rem;">Dentro del marco del Pacto Verde, el paquete de medidas <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Objetivo 55</strong> busca revisar y actualizar la legislaciÃ³n de la UniÃ³n Europea para asegurar que sus polÃ­ticas estÃ©n alineadas con la meta intermedia de reducir las emisiones netas de gases de efecto invernadero en al menos un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">55% para el aÃ±o 2030</strong>.</p>
 
-<p style="margin: 0 0 1rem;">Las medidas concretas del Objetivo 55 incluyen las siguientes líneas de actuación:</p>
+<p style="margin: 0 0 1rem;">Las medidas concretas del Objetivo 55 incluyen las siguientes lÃ­neas de actuaciÃ³n:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Régimen de comercio de derechos de emisión de la UE (RCDE):</strong> Consolidación de un mercado de carbono europeo.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">RÃ©gimen de comercio de derechos de emisiÃ³n de la UE (RCDE):</strong> ConsolidaciÃ³n de un mercado de carbono europeo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo Social para el Clima:</strong> Creado para mitigar los efectos sociales y distributivos del nuevo régimen de comercio de derechos de emisión en los colectivos más vulnerables.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fondo Social para el Clima:</strong> Creado para mitigar los efectos sociales y distributivos del nuevo rÃ©gimen de comercio de derechos de emisiÃ³n en los colectivos mÃ¡s vulnerables.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mecanismo de ajuste en frontera por carbono:</strong> Diseñado para evitar la fuga de carbono y garantizar la conformidad con las normas de comercio internacional.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mecanismo de ajuste en frontera por carbono:</strong> DiseÃ±ado para evitar la fuga de carbono y garantizar la conformidad con las normas de comercio internacional.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reducción de emisiones de los Estados miembros:</strong> Asignación de objetivos de reducción en sectores que no están cubiertos por el régimen de comercio de derechos de emisión.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ReducciÃ³n de emisiones de los Estados miembros:</strong> AsignaciÃ³n de objetivos de reducciÃ³n en sectores que no estÃ¡n cubiertos por el rÃ©gimen de comercio de derechos de emisiÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Uso de la tierra y silvicultura:</strong> Medidas para reducir las emisiones e incrementar las absorciones de CO2 resultantes del uso de la tierra, el cambio de uso de la tierra y la silvicultura.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Normas de emisión para vehículos:</strong> Endurecimiento de los límites de emisiones de CO2 para turismos y furgonetas.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Normas de emisiÃ³n para vehÃ­culos:</strong> Endurecimiento de los lÃ­mites de emisiones de CO2 para turismos y furgonetas.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reducción de emisiones de metano:</strong> Control y mitigación del metano en el sector energético.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ReducciÃ³n de emisiones de metano:</strong> Control y mitigaciÃ³n del metano en el sector energÃ©tico.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descarbonización del transporte:</strong> Fomento del uso de combustibles descarbonizados en el transporte marítimo y regulación de los combustibles de aviación.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DescarbonizaciÃ³n del transporte:</strong> Fomento del uso de combustibles descarbonizados en el transporte marÃ­timo y regulaciÃ³n de los combustibles de aviaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Infraestructura alternativa:</strong> Despliegue de infraestructura para el repostaje con combustibles alternativos.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Energías renovables y eficiencia:</strong> Potenciación del uso de fuentes de energía renovables e incremento de la eficiencia energética.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EnergÃ­as renovables y eficiencia:</strong> PotenciaciÃ³n del uso de fuentes de energÃ­a renovables e incremento de la eficiencia energÃ©tica.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercados de hidrógeno:</strong> Impulso al desarrollo y consolidación de los mercados de hidrógeno verde.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estrategias en España para enfrentar los desafíos</h2>
-
-<p style="margin: 0 0 1rem;">España ha desarrollado su propio marco estratégico alineado con las directrices europeas e internacionales. En este proceso, además de la acción estatal, las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comunidades Autónomas</strong> desempeñan un papel fundamental, ya que sus competencias legislativas les permiten adaptar los objetivos de sostenibilidad nacionales a las realidades y necesidades locales.</p>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Plan nacional integrado de energía y clima (PNIEC)</h3>
-
-<p style="margin: 0 0 1rem;">Definido en el año 2020, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plan Nacional Integrado de Energía y Clima</strong> establece la hoja de ruta para que España alcance la neutralidad de emisiones de gases de efecto invernadero (GEI) para el año 2050.</p>
-
-<p style="margin: 0 0 1rem;">Para el horizonte del año <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2030</strong>, el PNIEC fija los siguientes objetivos cuantitativos (tomando como referencia el año 1990):</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">23% de reducción</strong> de las emisiones de gases de efecto invernadero (lo que equivale a eliminar una de cada tres toneladas de GEI emitidas actualmente).</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">42% de cuota de energía renovable</strong> sobre el uso final de la energía.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">39,5% de mejora</strong> en la eficiencia energética.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">74% de presencia de energía renovable</strong> en la generación eléctrica.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mercados de hidrÃ³geno:</strong> Impulso al desarrollo y consolidaciÃ³n de los mercados de hidrÃ³geno verde.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Para asegurar la meta final de neutralidad de emisiones en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2050</strong>, el plan establece la necesidad de reducir en al menos un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90% las emisiones brutas totales de GEI</strong> respecto a los niveles de 1990, además de lograr un sistema de generación eléctrica basado en un 100% en fuentes renovables.</p>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estrategias en EspaÃ±a para enfrentar los desafÃ­os</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ley de cambio climático y transición energética</h3>
+<p style="margin: 0 0 1rem;">EspaÃ±a ha desarrollado su propio marco estratÃ©gico alineado con las directrices europeas e internacionales. En este proceso, ademÃ¡s de la acciÃ³n estatal, las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comunidades AutÃ³nomas</strong> desempeÃ±an un papel fundamental, ya que sus competencias legislativas les permiten adaptar los objetivos de sostenibilidad nacionales a las realidades y necesidades locales.</p>
 
-<p style="margin: 0 0 1rem;">La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ley 7/2021, de 20 de mayo, de cambio climático y transición energética</strong> es el instrumento normativo diseñado para dar cumplimiento al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ODS 13</strong> (Acción por el clima) en España. Su propósito fundamental es guiar la descarbonización de la economía nacional, ofreciendo oportunidades estructuradas en dos niveles:</p>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Plan nacional integrado de energÃ­a y clima (PNIEC)</h3>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Económico:</strong> Impulsa la modernización, la digitalización y la competitividad de los sectores productivos del país.</li>
+<p style="margin: 0 0 1rem;">Definido en el aÃ±o 2020, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Plan Nacional Integrado de EnergÃ­a y Clima</strong> establece la hoja de ruta para que EspaÃ±a alcance la neutralidad de emisiones de gases de efecto invernadero (GEI) para el aÃ±o 2050.</p>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Social:</strong> Persigue una distribución equitativa de la riqueza y una transición justa que proteja a los sectores y regiones más vulnerables.</li>
+<p style="margin: 0 0 1rem;">Para el horizonte del aÃ±o <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2030</strong>, el PNIEC fija los siguientes objetivos cuantitativos (tomando como referencia el aÃ±o 1990):</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">23% de reducciÃ³n</strong> de las emisiones de gases de efecto invernadero (lo que equivale a eliminar una de cada tres toneladas de GEI emitidas actualmente).</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">42% de cuota de energÃ­a renovable</strong> sobre el uso final de la energÃ­a.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">39,5% de mejora</strong> en la eficiencia energÃ©tica.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">74% de presencia de energÃ­a renovable</strong> en la generaciÃ³n elÃ©ctrica.</li>
+
+</ul>
+
+<p style="margin: 0 0 1rem;">Para asegurar la meta final de neutralidad de emisiones en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">2050</strong>, el plan establece la necesidad de reducir en al menos un <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">90% las emisiones brutas totales de GEI</strong> respecto a los niveles de 1990, ademÃ¡s de lograr un sistema de generaciÃ³n elÃ©ctrica basado en un 100% en fuentes renovables.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ley de cambio climÃ¡tico y transiciÃ³n energÃ©tica</h3>
+
+<p style="margin: 0 0 1rem;">La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ley 7/2021, de 20 de mayo, de cambio climÃ¡tico y transiciÃ³n energÃ©tica</strong> es el instrumento normativo diseÃ±ado para dar cumplimiento al <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ODS 13</strong> (AcciÃ³n por el clima) en EspaÃ±a. Su propÃ³sito fundamental es guiar la descarbonizaciÃ³n de la economÃ­a nacional, ofreciendo oportunidades estructuradas en dos niveles:</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">EconÃ³mico:</strong> Impulsa la modernizaciÃ³n, la digitalizaciÃ³n y la competitividad de los sectores productivos del paÃ­s.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Social:</strong> Persigue una distribuciÃ³n equitativa de la riqueza y una transiciÃ³n justa que proteja a los sectores y regiones mÃ¡s vulnerables.</li>
 
 </ul>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen de la gobernanza y estrategias</h2>
 
-<p style="margin: 0 0 1rem;">Para afianzar la comprensión de la materia, se presenta el siguiente esquema que sintetiza las relaciones entre los organismos internacionales, los marcos de gobernanza y las estrategias de mitigación:</p>
+<p style="margin: 0 0 1rem;">Para afianzar la comprensiÃ³n de la materia, se presenta el siguiente esquema que sintetiza las relaciones entre los organismos internacionales, los marcos de gobernanza y las estrategias de mitigaciÃ³n:</p>
 
 <p style="margin: 0 0 1rem;">```</p>
 
-<p style="margin: 0 0 1rem;">[Desafíos Globales]</p>
+<p style="margin: 0 0 1rem;">[DesafÃ­os Globales]</p>
 
-<p style="margin: 0 0 1rem;">│</p>
+<p style="margin: 0 0 1rem;">â”‚</p>
 
-<p style="margin: 0 0 1rem;">┌─────────────────┴─────────────────┐</p>
+<p style="margin: 0 0 1rem;">â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”</p>
 
-<p style="margin: 0 0 1rem;">[Riesgos Globales] [Gobernanza y Acción]</p>
+<p style="margin: 0 0 1rem;">[Riesgos Globales] [Gobernanza y AcciÃ³n]</p>
 
-<p style="margin: 0 0 1rem;">(Evaluados por) │</p>
+<p style="margin: 0 0 1rem;">(Evaluados por) â”‚</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Foro Económico Mundial ├─► Naciones Unidas (IPCC, IPBES, CMNUCC, CDB, COPs)</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Foro EconÃ³mico Mundial â”œâ”€â–º Naciones Unidas (IPCC, IPBES, CMNUCC, CDB, COPs)</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Encuesta de Percepción ├─► Unión Europea (Pacto Verde Europeo, Objetivo 55)</li>
+<li style="margin-bottom: .45rem; position: relative;">Encuesta de PercepciÃ³n â”œâ”€â–º UniÃ³n Europea (Pacto Verde Europeo, Objetivo 55)</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Informes de Riesgos (2022 y 2024) └─► España (PNIEC, Ley 7/2021, CC.AA.)</li>
+<li style="margin-bottom: .45rem; position: relative;">Informes de Riesgos (2022 y 2024) â””â”€â–º EspaÃ±a (PNIEC, Ley 7/2021, CC.AA.)</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;">```</p>
 
-<p style="margin: 0 0 1rem;">Este sistema coordinado busca que, mediante el principio de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">desacoplamiento</strong>, se logre un desarrollo económico capaz de regenerar el medioambiente, reducir los riesgos tecnológicos y sociales, y asegurar la neutralidad climática a mediados del siglo XXI.</p>
+<p style="margin: 0 0 1rem;">Este sistema coordinado busca que, mediante el principio de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">desacoplamiento</strong>, se logre un desarrollo econÃ³mico capaz de regenerar el medioambiente, reducir los riesgos tecnolÃ³gicos y sociales, y asegurar la neutralidad climÃ¡tica a mediados del siglo XXI.</p>
 
 </main>
 </body>
 </html>
+

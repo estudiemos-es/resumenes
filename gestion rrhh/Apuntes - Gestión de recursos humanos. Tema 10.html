@@ -1,280 +1,311 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - Gestión de recursos humanos. Tema 10</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<title>Apuntes - GestiÃ³n de recursos humanos. Tema 10</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width: none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - Gestión de recursos humanos. Tema 10</h1>
+<h1>Apuntes - GestiÃ³n de recursos humanos. Tema 10</h1>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción a la extinción del contrato de trabajo</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n a la extinciÃ³n del contrato de trabajo</h2>
 
-<p style="margin: 0 0 1rem;">La extinción del contrato de trabajo consiste en la resolución de la relación laboral entre la empresa y el trabajador. Este acto pone fin a las obligaciones principales de ambas partes: la obligación del empresario de abonar el salario y la del empleado de prestar sus servicios.</p>
+<p style="margin: 0 0 1rem;">La extinciÃ³n del contrato de trabajo consiste en la resoluciÃ³n de la relaciÃ³n laboral entre la empresa y el trabajador. Este acto pone fin a las obligaciones principales de ambas partes: la obligaciÃ³n del empresario de abonar el salario y la del empleado de prestar sus servicios.</p>
 
-<p style="margin: 0 0 1rem;">A pesar de la finalización del contrato, existen ciertas cláusulas contractuales que pueden seguir teniendo vigencia y surtiendo efectos, como los pactos de no competencia o los acuerdos de confidencialidad.</p>
+<p style="margin: 0 0 1rem;">A pesar de la finalizaciÃ³n del contrato, existen ciertas clÃ¡usulas contractuales que pueden seguir teniendo vigencia y surtiendo efectos, como los pactos de no competencia o los acuerdos de confidencialidad.</p>
 
-<p style="margin: 0 0 1rem;">Para gestionar correctamente la extinción de una relación laboral, se deben analizar cinco elementos fundamentales:</p>
+<p style="margin: 0 0 1rem;">Para gestionar correctamente la extinciÃ³n de una relaciÃ³n laboral, se deben analizar cinco elementos fundamentales:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La causa:</strong> El motivo legal que origina la finalización del contrato.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La causa:</strong> El motivo legal que origina la finalizaciÃ³n del contrato.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El preaviso:</strong> El plazo de tiempo obligatorio que debe transcurrir entre la notificación de la extinción y su fecha de efecto.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">El preaviso:</strong> El plazo de tiempo obligatorio que debe transcurrir entre la notificaciÃ³n de la extinciÃ³n y su fecha de efecto.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La actuación del trabajador:</strong> La postura y acciones que adopta el empleado al recibir la comunicación o al presentar su baja.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La actuaciÃ³n del trabajador:</strong> La postura y acciones que adopta el empleado al recibir la comunicaciÃ³n o al presentar su baja.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La calificación del despido:</strong> La determinación jurídica del despido, que puede ser procedente, improcedente o nulo.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La calificaciÃ³n del despido:</strong> La determinaciÃ³n jurÃ­dica del despido, que puede ser procedente, improcedente o nulo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La cuantía de la indemnización o readmisión:</strong> Las compensaciones económicas o la reincorporación del trabajador según corresponda por ley.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Trámites y documentación en organismos públicos</h2>
-
-<p style="margin: 0 0 1rem;">Cuando se produce la extinción de un contrato, tanto la empresa como el trabajador deben realizar una serie de comunicaciones y trámites obligatorios.</p>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Comunicación entre las partes</h3>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa de la empresa:</strong> Si la rescisión es decisión de la empresa, el departamento de recursos humanos debe comunicar la resolución de forma escrita al trabajador mediante una carta de despido o de extinción.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa del trabajador:</strong> Si parte del empleado, este debe presentar formalmente una carta de baja voluntaria. En caso de que la causa sea la impugnación de una modificación sustancial de las condiciones de trabajo, la empresa será requerida directamente por la autoridad competente.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">La cuantÃ­a de la indemnizaciÃ³n o readmisiÃ³n:</strong> Las compensaciones econÃ³micas o la reincorporaciÃ³n del trabajador segÃºn corresponda por ley.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Trámites con la administración pública</h3>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">TrÃ¡mites y documentaciÃ³n en organismos pÃºblicos</h2>
 
-<p style="margin: 0 0 1rem;">La empresa tiene la obligación legal de comunicar la baja del trabajador a los siguientes organismos:</p>
+<p style="margin: 0 0 1rem;">Cuando se produce la extinciÃ³n de un contrato, tanto la empresa como el trabajador deben realizar una serie de comunicaciones y trÃ¡mites obligatorios.</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Seguridad Social:</strong> Se debe comunicar la fecha efectiva de la baja a través del Sistema RED en un plazo máximo de 3 días naturales a partir de la fecha de efectos de dicha baja.</li>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ComunicaciÃ³n entre las partes</h3>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Servicio Público de Empleo Estatal (SEPE):</strong> Se debe enviar el certificado de empresa debidamente cumplimentado. Este documento debe recoger los datos identificativos de la empresa y del trabajador, la causa de la extinción, la fecha de efectos y las bases de cotización correspondientes a los últimos 180 días trabajados.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa de la empresa:</strong> Si la rescisiÃ³n es decisiÃ³n de la empresa, el departamento de recursos humanos debe comunicar la resoluciÃ³n de forma escrita al trabajador mediante una carta de despido o de extinciÃ³n.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Iniciativa del trabajador:</strong> Si parte del empleado, este debe presentar formalmente una carta de baja voluntaria. En caso de que la causa sea la impugnaciÃ³n de una modificaciÃ³n sustancial de las condiciones de trabajo, la empresa serÃ¡ requerida directamente por la autoridad competente.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Extinción por causas objetivas</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">TrÃ¡mites con la administraciÃ³n pÃºblica</h3>
 
-<p style="margin: 0 0 1rem;">La extinción por causas objetivas se produce cuando la empresa decide unilateralmente resolver el contrato debido a circunstancias ajenas a la culpabilidad del trabajador.</p>
+<p style="margin: 0 0 1rem;">La empresa tiene la obligaciÃ³n legal de comunicar la baja del trabajador a los siguientes organismos:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Supuestos legales para la extinción objetiva</h3>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Seguridad Social:</strong> Se debe comunicar la fecha efectiva de la baja a travÃ©s del Sistema RED en un plazo mÃ¡ximo de 3 dÃ­as naturales a partir de la fecha de efectos de dicha baja.</li>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Causas económicas, técnicas, organizativas o de producción (ETOP):</strong> Circunstancias que afectan a la viabilidad o al funcionamiento óptimo de la empresa.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Servicio PÃºblico de Empleo Estatal (SEPE):</strong> Se debe enviar el certificado de empresa debidamente cumplimentado. Este documento debe recoger los datos identificativos de la empresa y del trabajador, la causa de la extinciÃ³n, la fecha de efectos y las bases de cotizaciÃ³n correspondientes a los Ãºltimos 180 dÃ­as trabajados.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No adaptación del trabajador a las modificaciones técnicas:</strong> Ocurre cuando se introducen cambios tecnológicos o digitales en el puesto de trabajo y el empleado no logra adaptarse o dominar las nuevas herramientas.</li>
+</ul>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ineptitud del trabajador:</strong> Puede ser conocida (como una discapacidad que impida realizar las tareas) o sobrevenida (como la pérdida de la autorización legal para trabajar en el caso de trabajadores extranjeros).</li>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ExtinciÃ³n por causas objetivas</h2>
+
+<p style="margin: 0 0 1rem;">La extinciÃ³n por causas objetivas se produce cuando la empresa decide unilateralmente resolver el contrato debido a circunstancias ajenas a la culpabilidad del trabajador.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Supuestos legales para la extinciÃ³n objetiva</h3>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Causas econÃ³micas, tÃ©cnicas, organizativas o de producciÃ³n (ETOP):</strong> Circunstancias que afectan a la viabilidad o al funcionamiento Ã³ptimo de la empresa.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">No adaptaciÃ³n del trabajador a las modificaciones tÃ©cnicas:</strong> Ocurre cuando se introducen cambios tecnolÃ³gicos o digitales en el puesto de trabajo y el empleado no logra adaptarse o dominar las nuevas herramientas.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ineptitud del trabajador:</strong> Puede ser conocida (como una discapacidad que impida realizar las tareas) o sobrevenida (como la pÃ©rdida de la autorizaciÃ³n legal para trabajar en el caso de trabajadores extranjeros).</li>
 
 </ul>
 
 <p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota importante:</span> La falta de asistencia al trabajo como causa de despido objetivo fue derogada por la Ley 1/2020.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento de comunicación</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento de comunicaciÃ³n</h3>
 
-<p style="margin: 0 0 1rem;">Para que la extinción por causas objetivas sea válida, la empresa debe cumplir los siguientes requisitos formales:</p>
+<p style="margin: 0 0 1rem;">Para que la extinciÃ³n por causas objetivas sea vÃ¡lida, la empresa debe cumplir los siguientes requisitos formales:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Entregar la comunicación por escrito al trabajador, detallando de forma clara y expresa la causa que motiva la decisión.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Entregar la comunicaciÃ³n por escrito al trabajador, detallando de forma clara y expresa la causa que motiva la decisiÃ³n.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Poner a disposición del trabajador, de forma simultánea a la entrega de la carta, la indemnización legal de 20 días de salario por año de servicio.</li>
+<li style="margin-bottom: .45rem; position: relative;">Poner a disposiciÃ³n del trabajador, de forma simultÃ¡nea a la entrega de la carta, la indemnizaciÃ³n legal de 20 dÃ­as de salario por aÃ±o de servicio.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Conceder un plazo de preaviso mínimo de 15 días, computados desde la fecha de entrega de la comunicación hasta la fecha efectiva de la extinción.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Extinción por mutuo acuerdo y otras causas bilaterales</h2>
-
-<p style="margin: 0 0 1rem;">El Estatuto de los Trabajadores, en su artículo 49.1, contempla que la relación laboral puede finalizar por el acuerdo común o por condiciones previamente pactadas.</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mutuo acuerdo:</strong> Es la rescisión voluntaria y conjunta del contrato por ambas partes, la cual debe realizarse libremente y sin coacciones. El empresario debe facilitar el documento de liquidación o finiquito. Salvo pacto en contrario, esta modalidad no conlleva el pago de indemnizaciones y el trabajador no tendrá derecho a percibir la prestación por desempleo, al considerarse una baja por voluntad propia.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Condición resolutoria:</strong> El contrato se extingue al cumplirse una condición o circunstancia expresamente consignada en el redactado del contrato. Para que sea válida, la condición no debe ser contraria a la ley, debe ser de posible cumplimiento y no puede suponer un abuso de derecho por parte del empleador.</li>
+<li style="margin-bottom: .45rem; position: relative;">Conceder un plazo de preaviso mÃ­nimo de 15 dÃ­as, computados desde la fecha de entrega de la comunicaciÃ³n hasta la fecha efectiva de la extinciÃ³n.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Extinción por voluntad del trabajador</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ExtinciÃ³n por mutuo acuerdo y otras causas bilaterales</h2>
 
-<p style="margin: 0 0 1rem;">El trabajador puede extinguir la relación laboral de manera unilateral o como respuesta a un incumplimiento empresarial.</p>
+<p style="margin: 0 0 1rem;">El Estatuto de los Trabajadores, en su artÃ­culo 49.1, contempla que la relaciÃ³n laboral puede finalizar por el acuerdo comÃºn o por condiciones previamente pactadas.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mutuo acuerdo:</strong> Es la rescisiÃ³n voluntaria y conjunta del contrato por ambas partes, la cual debe realizarse libremente y sin coacciones. El empresario debe facilitar el documento de liquidaciÃ³n o finiquito. Salvo pacto en contrario, esta modalidad no conlleva el pago de indemnizaciones y el trabajador no tendrÃ¡ derecho a percibir la prestaciÃ³n por desempleo, al considerarse una baja por voluntad propia.</li>
+
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CondiciÃ³n resolutoria:</strong> El contrato se extingue al cumplirse una condiciÃ³n o circunstancia expresamente consignada en el redactado del contrato. Para que sea vÃ¡lida, la condiciÃ³n no debe ser contraria a la ley, debe ser de posible cumplimiento y no puede suponer un abuso de derecho por parte del empleador.</li>
+
+</ul>
+
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ExtinciÃ³n por voluntad del trabajador</h2>
+
+<p style="margin: 0 0 1rem;">El trabajador puede extinguir la relaciÃ³n laboral de manera unilateral o como respuesta a un incumplimiento empresarial.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">La baja voluntaria</h3>
 
-<p style="margin: 0 0 1rem;">El empleado puede solicitar la rescisión de su contrato sin necesidad de alegar o justificar los motivos de su decisión. Sus obligaciones principales son:</p>
+<p style="margin: 0 0 1rem;">El empleado puede solicitar la rescisiÃ³n de su contrato sin necesidad de alegar o justificar los motivos de su decisiÃ³n. Sus obligaciones principales son:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Comunicación:</strong> Informar de su decisión a la empresa, ya sea de forma verbal o escrita (siendo la vía escrita la recomendada profesionalmente).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ComunicaciÃ³n:</strong> Informar de su decisiÃ³n a la empresa, ya sea de forma verbal o escrita (siendo la vÃ­a escrita la recomendada profesionalmente).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Preaviso:</strong> Respetar el plazo de preaviso establecido en el convenio colectivo o en el contrato de trabajo (habitualmente 15 días). El incumplimiento de este preaviso faculta a la empresa a descontar de la liquidación los días no respetados en concepto de daños y perjuicios.</li>
-
-</ul>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Otras causas de extinción a instancia del trabajador</h3>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de incorporación en fijos-discontinuos:</strong> No responder al llamamiento de la empresa para reincorporarse a la actividad equivale a una baja voluntaria.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Víctimas de violencia de género:</strong> Las trabajadoras que sufran esta situación pueden resolver su contrato laboral de forma voluntaria.</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Modificación sustancial de las condiciones de trabajo:</strong> El trabajador puede solicitar la rescisión de su relación con derecho a indemnización si las modificaciones impuestas por la empresa perjudican su trayectoria o condiciones.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Preaviso:</strong> Respetar el plazo de preaviso establecido en el convenio colectivo o en el contrato de trabajo (habitualmente 15 dÃ­as). El incumplimiento de este preaviso faculta a la empresa a descontar de la liquidaciÃ³n los dÃ­as no respetados en concepto de daÃ±os y perjuicios.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Extinción por voluntad del empresario</h2>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Otras causas de extinciÃ³n a instancia del trabajador</h3>
 
-<p style="margin: 0 0 1rem;">El empresario puede extinguir la relación laboral mediante las siguientes modalidades:</p>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Falta de incorporaciÃ³n en fijos-discontinuos:</strong> No responder al llamamiento de la empresa para reincorporarse a la actividad equivale a una baja voluntaria.</li>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Despido objetivo:</strong> Basado en las causas técnicas, económicas, organizativas, de producción o de ineptitud explicadas anteriormente.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VÃ­ctimas de violencia de gÃ©nero:</strong> Las trabajadoras que sufran esta situaciÃ³n pueden resolver su contrato laboral de forma voluntaria.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Despido disciplinario:</strong> Se fundamenta en un incumplimiento grave y culpable del trabajador (artículo 54 del Estatuto de los Trabajadores). Las faltas, su gravedad y su prescripción se regulan en el convenio colectivo aplicable. Las causas principales son: faltas repetidas e injustificadas de asistencia o puntualidad, indisciplina o desobediencia, ofensas verbales o físicas, transgresión de la buena fe contractual, disminución voluntaria y continuada del rendimiento, embriaguez habitual o toxicomanía, y acoso (por razones de sexo, raza, religión, discapacidad u orientación sexual).</li>
-
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuerza mayor:</strong> Circunstancias inevitables y extraordinarias que imposibilitan definitivamente la prestación del trabajo (como incendios, inundaciones o expropiaciones). Requiere la constatación y aprobación previa de la autoridad laboral competente.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ModificaciÃ³n sustancial de las condiciones de trabajo:</strong> El trabajador puede solicitar la rescisiÃ³n de su relaciÃ³n con derecho a indemnizaciÃ³n si las modificaciones impuestas por la empresa perjudican su trayectoria o condiciones.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El acto de conciliación</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ExtinciÃ³n por voluntad del empresario</h2>
 
-<p style="margin: 0 0 1rem;">Cuando un trabajador es despedido y no está de acuerdo con la decisión de la empresa, tiene derecho a reclamar. Antes de interponer una demanda judicial, es obligatorio agotar la vía administrativa previa mediante el acto de conciliación o mediación. Este trámite es rápido, tiene un coste bajo y no exige acudir con representación de un abogado.</p>
+<p style="margin: 0 0 1rem;">El empresario puede extinguir la relaciÃ³n laboral mediante las siguientes modalidades:</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento del acto de conciliación</h3>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Despido objetivo:</strong> Basado en las causas tÃ©cnicas, econÃ³micas, organizativas, de producciÃ³n o de ineptitud explicadas anteriormente.</li>
 
-<p style="margin: 0 0 1rem;">1. El trabajador presenta la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">papeleta de conciliación</strong> ante el servicio de mediación correspondiente dentro del plazo de 20 días hábiles desde la notificación del despido. La presentación de la papeleta paraliza el cómputo de este plazo.</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Despido disciplinario:</strong> Se fundamenta en un incumplimiento grave y culpable del trabajador (artÃ­culo 54 del Estatuto de los Trabajadores). Las faltas, su gravedad y su prescripciÃ³n se regulan en el convenio colectivo aplicable. Las causas principales son: faltas repetidas e injustificadas de asistencia o puntualidad, indisciplina o desobediencia, ofensas verbales o fÃ­sicas, transgresiÃ³n de la buena fe contractual, disminuciÃ³n voluntaria y continuada del rendimiento, embriaguez habitual o toxicomanÃ­a, y acoso (por razones de sexo, raza, religiÃ³n, discapacidad u orientaciÃ³n sexual).</li>
 
-<p style="margin: 0 0 1rem;">2. Las partes reciben la citación con el día y la hora para el acto.</p>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fuerza mayor:</strong> Circunstancias inevitables y extraordinarias que imposibilitan definitivamente la prestaciÃ³n del trabajo (como incendios, inundaciones o expropiaciones). Requiere la constataciÃ³n y aprobaciÃ³n previa de la autoridad laboral competente.</li>
 
-<p style="margin: 0 0 1rem;">3. Se celebra el acto ante un funcionario público que actúa registrando lo acontecido (no ejerce de mediador activo, sino que levanta acta del resultado).</p>
+</ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Posibles resultados del acto de conciliación</h3>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">El acto de conciliaciÃ³n</h2>
+
+<p style="margin: 0 0 1rem;">Cuando un trabajador es despedido y no estÃ¡ de acuerdo con la decisiÃ³n de la empresa, tiene derecho a reclamar. Antes de interponer una demanda judicial, es obligatorio agotar la vÃ­a administrativa previa mediante el acto de conciliaciÃ³n o mediaciÃ³n. Este trÃ¡mite es rÃ¡pido, tiene un coste bajo y no exige acudir con representaciÃ³n de un abogado.</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Procedimiento del acto de conciliaciÃ³n</h3>
+
+<p style="margin: 0 0 1rem;">1. El trabajador presenta la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">papeleta de conciliaciÃ³n</strong> ante el servicio de mediaciÃ³n correspondiente dentro del plazo de 20 dÃ­as hÃ¡biles desde la notificaciÃ³n del despido. La presentaciÃ³n de la papeleta paraliza el cÃ³mputo de este plazo.</p>
+
+<p style="margin: 0 0 1rem;">2. Las partes reciben la citaciÃ³n con el dÃ­a y la hora para el acto.</p>
+
+<p style="margin: 0 0 1rem;">3. Se celebra el acto ante un funcionario pÃºblico que actÃºa registrando lo acontecido (no ejerce de mediador activo, sino que levanta acta del resultado).</p>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Posibles resultados del acto de conciliaciÃ³n</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Con acuerdo:</strong> Se redacta el acta con las condiciones acordadas y se cierra el conflicto.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sin acuerdo:</strong> El trabajador dispone del resto de los días del plazo de 20 días hábiles para interponer la demanda ante el Juzgado de lo Social.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sin acuerdo:</strong> El trabajador dispone del resto de los dÃ­as del plazo de 20 dÃ­as hÃ¡biles para interponer la demanda ante el Juzgado de lo Social.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incomparecencia del trabajador:</strong> Si está correctamente citado y no justifica su ausencia, se le tiene por desistido de su reclamación, archivándose las actuaciones.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incomparecencia del trabajador:</strong> Si estÃ¡ correctamente citado y no justifica su ausencia, se le tiene por desistido de su reclamaciÃ³n, archivÃ¡ndose las actuaciones.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incomparecencia de la empresa:</strong> Se tiene el acto por intentado sin efecto. El trabajador deberá proceder a interponer la demanda judicial.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incomparecencia de la empresa:</strong> Se tiene el acto por intentado sin efecto. El trabajador deberÃ¡ proceder a interponer la demanda judicial.</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Incomparecencia de ambas partes:</strong> Se procede al archivo definitivo del expediente.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Gestión y calificación del despido</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">GestiÃ³n y calificaciÃ³n del despido</h2>
 
-<p style="margin: 0 0 1rem;">Cada tipo de despido exige unos requisitos formales de gestión específicos y puede dar lugar a diferentes calificaciones jurídicas.</p>
+<p style="margin: 0 0 1rem;">Cada tipo de despido exige unos requisitos formales de gestiÃ³n especÃ­ficos y puede dar lugar a diferentes calificaciones jurÃ­dicas.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Requisitos de gestión por tipo de despido</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Requisitos de gestiÃ³n por tipo de despido</h3>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gestión del despido disciplinario:</strong> El empresario debe redactar una carta de despido donde consten de forma clara y detallada los hechos que lo motivan y la fecha de efectos. Debe entregarse en mano o por burofax. Si el trabajador se niega a firmar el recibí, se puede recurrir a dos testigos que acrediten la entrega firmando la carta con sus datos (nombre, apellidos y DNI). Se debe notificar obligatoriamente a la Representación Legal de los Trabajadores (RLT).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">GestiÃ³n del despido disciplinario:</strong> El empresario debe redactar una carta de despido donde consten de forma clara y detallada los hechos que lo motivan y la fecha de efectos. Debe entregarse en mano o por burofax. Si el trabajador se niega a firmar el recibÃ­, se puede recurrir a dos testigos que acrediten la entrega firmando la carta con sus datos (nombre, apellidos y DNI). Se debe notificar obligatoriamente a la RepresentaciÃ³n Legal de los Trabajadores (RLT).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gestión del despido objetivo:</strong> Requiere una carta de despido con expresión de la causa, un preaviso mínimo de 15 días y la puesta a disposición de la indemnización de 20 días por año trabajado.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">GestiÃ³n del despido objetivo:</strong> Requiere una carta de despido con expresiÃ³n de la causa, un preaviso mÃ­nimo de 15 dÃ­as y la puesta a disposiciÃ³n de la indemnizaciÃ³n de 20 dÃ­as por aÃ±o trabajado.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gestión del despido por fuerza mayor:</strong> El empresario solicita la constatación de la fuerza mayor a la autoridad laboral, aportando las pruebas necesarias. La autoridad laboral debe resolver en un plazo de 5 días. Tras la aprobación, la empresa entrega la carta de despido a cada trabajador junto con la indemnización de 20 días por año trabajado.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">GestiÃ³n del despido por fuerza mayor:</strong> El empresario solicita la constataciÃ³n de la fuerza mayor a la autoridad laboral, aportando las pruebas necesarias. La autoridad laboral debe resolver en un plazo de 5 dÃ­as. Tras la aprobaciÃ³n, la empresa entrega la carta de despido a cada trabajador junto con la indemnizaciÃ³n de 20 dÃ­as por aÃ±o trabajado.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Calificaciones del despido y sus consecuencias</h3>
 
-<p style="margin: 0 0 1rem;">En caso de impugnación, el despido puede ser calificado judicialmente de tres formas:</p>
+<p style="margin: 0 0 1rem;">En caso de impugnaciÃ³n, el despido puede ser calificado judicialmente de tres formas:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Procedente:</strong> El despido está plenamente justificado. El trabajador percibe la liquidación (finiquito) pero no tiene derecho a indemnización (en el caso disciplinario). Sí genera derecho a percibir la prestación por desempleo.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Procedente:</strong> El despido estÃ¡ plenamente justificado. El trabajador percibe la liquidaciÃ³n (finiquito) pero no tiene derecho a indemnizaciÃ³n (en el caso disciplinario). SÃ­ genera derecho a percibir la prestaciÃ³n por desempleo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Improcedente:</strong> El despido no está justificado o no cumple con los requisitos formales. La empresa tiene un plazo para optar entre readmitir al trabajador o abonar una indemnización de 33 días de salario por año trabajado. Da derecho a la prestación por desempleo.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Improcedente:</strong> El despido no estÃ¡ justificado o no cumple con los requisitos formales. La empresa tiene un plazo para optar entre readmitir al trabajador o abonar una indemnizaciÃ³n de 33 dÃ­as de salario por aÃ±o trabajado. Da derecho a la prestaciÃ³n por desempleo.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Nulo:</strong> Se produce cuando el despido viola derechos fundamentales o libertades públicas, o se realiza bajo supuestos de discriminación prohibidos. Conlleva la readmisión inmediata del trabajador y el abono de los salarios de tramitación (salarios dejados de percibir desde la fecha del despido hasta la readmisión).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Nulo:</strong> Se produce cuando el despido viola derechos fundamentales o libertades pÃºblicas, o se realiza bajo supuestos de discriminaciÃ³n prohibidos. Conlleva la readmisiÃ³n inmediata del trabajador y el abono de los salarios de tramitaciÃ³n (salarios dejados de percibir desde la fecha del despido hasta la readmisiÃ³n).</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Conceptos y cálculo del finiquito</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Conceptos y cÃ¡lculo del finiquito</h2>
 
-<p style="margin: 0 0 1rem;">El finiquito, o recibo de liquidación, es el documento que cuantifica las cantidades económicas pendientes de pago que la empresa debe abonar al trabajador al finalizar la relación laboral.</p>
+<p style="margin: 0 0 1rem;">El finiquito, o recibo de liquidaciÃ³n, es el documento que cuantifica las cantidades econÃ³micas pendientes de pago que la empresa debe abonar al trabajador al finalizar la relaciÃ³n laboral.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Conceptos incluidos en el finiquito</h3>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario mensual:</strong> Los días trabajados en el mes en que se produce la baja y que aún no han sido cobrados.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario mensual:</strong> Los dÃ­as trabajados en el mes en que se produce la baja y que aÃºn no han sido cobrados.</p>
 
 <p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Pagas extraordinarias:</strong> La parte proporcional de las pagas extras devengadas y no percibidas hasta la fecha de la baja.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vacaciones no disfrutadas:</strong> Compensación económica por los días de vacaciones generados durante el año que el empleado no ha podido disfrutar.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vacaciones no disfrutadas:</strong> CompensaciÃ³n econÃ³mica por los dÃ­as de vacaciones generados durante el aÃ±o que el empleado no ha podido disfrutar.</p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conceptos a mes vencido:</strong> Comisiones, horas extraordinarias, gastos de representación u otros pluses pendientes de liquidar.</p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Conceptos a mes vencido:</strong> Comisiones, horas extraordinarias, gastos de representaciÃ³n u otros pluses pendientes de liquidar.</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Otras deudas:</strong> Cualquier otra cantidad económica que la empresa deba al trabajador.</p>
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Otras deudas:</strong> Cualquier otra cantidad econÃ³mica que la empresa deba al trabajador.</p>
 
-<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Indemnización:</strong> Si el tipo de despido o extinción conlleva indemnización por ley, se incluye también su importe.</p>
+<p style="margin: 0 0 1rem;">6. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IndemnizaciÃ³n:</strong> Si el tipo de despido o extinciÃ³n conlleva indemnizaciÃ³n por ley, se incluye tambiÃ©n su importe.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tabla de indemnizaciones según la causa de extinción</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tabla de indemnizaciones segÃºn la causa de extinciÃ³n</h3>
 
-<table class="markdown-table"><thead><tr><th>Causa de la extinción</th><th>Indemnización por año trabajado</th><th>Límite máximo</th></tr></thead><tbody><tr><td>Despido objetivo</td><td>20 días de salario</td><td>12 mensualidades</td></tr><tr><td>Despido colectivo</td><td>20 días de salario</td><td>12 mensualidades</td></tr><tr><td>Despido improcedente</td><td>33 días de salario</td><td>24 mensualidades</td></tr><tr><td>Despido disciplinario</td><td>Sin indemnización</td><td>No aplica</td></tr><tr><td>Fuerza mayor</td><td>20 días de salario</td><td>12 mensualidades</td></tr><tr><td>Causas ETOP</td><td>20 días de salario</td><td>12 mensualidades</td></tr><tr><td>Fin de obra / contrato temporal</td><td>12 días de salario</td><td>12 mensualidades</td></tr><tr><td>Muerte del trabajador</td><td>15 días de salario</td><td>No aplica</td></tr><tr><td>Incapacidad, jubilación o muerte del empresario</td><td>30 días de salario</td><td>No aplica</td></tr></tbody></table>
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Metodología para el cálculo del finiquito</h3>
+<table class="markdown-table"><thead><tr><th>Causa de la extinciÃ³n</th><th>IndemnizaciÃ³n por aÃ±o trabajado</th><th>LÃ­mite mÃ¡ximo</th></tr></thead><tbody><tr><td>Despido objetivo</td><td>20 dÃ­as de salario</td><td>12 mensualidades</td></tr><tr><td>Despido colectivo</td><td>20 dÃ­as de salario</td><td>12 mensualidades</td></tr><tr><td>Despido improcedente</td><td>33 dÃ­as de salario</td><td>24 mensualidades</td></tr><tr><td>Despido disciplinario</td><td>Sin indemnizaciÃ³n</td><td>No aplica</td></tr><tr><td>Fuerza mayor</td><td>20 dÃ­as de salario</td><td>12 mensualidades</td></tr><tr><td>Causas ETOP</td><td>20 dÃ­as de salario</td><td>12 mensualidades</td></tr><tr><td>Fin de obra / contrato temporal</td><td>12 dÃ­as de salario</td><td>12 mensualidades</td></tr><tr><td>Muerte del trabajador</td><td>15 dÃ­as de salario</td><td>No aplica</td></tr><tr><td>Incapacidad, jubilaciÃ³n o muerte del empresario</td><td>30 dÃ­as de salario</td><td>No aplica</td></tr></tbody></table>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">MetodologÃ­a para el cÃ¡lculo del finiquito</h3>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario diario:</strong> Se calcula multiplicando el salario bruto mensual por 12 meses y dividiendo el resultado entre 365 días (o dividiendo el salario bruto anual entre 365 días).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario diario:</strong> Se calcula multiplicando el salario bruto mensual por 12 meses y dividiendo el resultado entre 365 dÃ­as (o dividiendo el salario bruto anual entre 365 dÃ­as).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Días de salario pendientes:</strong> Se multiplica el salario diario por los días trabajados en el mes en curso hasta la fecha de efectos de la baja.</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DÃ­as de salario pendientes:</strong> Se multiplica el salario diario por los dÃ­as trabajados en el mes en curso hasta la fecha de efectos de la baja.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vacaciones no disfrutadas:</strong> Se realiza una regla de tres tomando como referencia que al trabajador le corresponden 30 días de vacaciones por cada año completo de servicio (360 días de referencia de cotización).</li>
+<li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vacaciones no disfrutadas:</strong> Se realiza una regla de tres tomando como referencia que al trabajador le corresponden 30 dÃ­as de vacaciones por cada aÃ±o completo de servicio (360 dÃ­as de referencia de cotizaciÃ³n).</li>
 
 <li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Prorrata de pagas extraordinarias:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"><span class="markdown-emphasis">Devengo anual:</span> Se calculan los días transcurridos desde el día siguiente al último cobro de la paga extra hasta la fecha de efectos de la extinción, utilizando la referencia de 30 días al mes y 360 días al año.</li>
+<li style="margin-bottom: .45rem; position: relative;"><span class="markdown-emphasis">Devengo anual:</span> Se calculan los dÃ­as transcurridos desde el dÃ­a siguiente al Ãºltimo cobro de la paga extra hasta la fecha de efectos de la extinciÃ³n, utilizando la referencia de 30 dÃ­as al mes y 360 dÃ­as al aÃ±o.</li>
 
-<li style="margin-bottom: .45rem; position: relative;"><span class="markdown-emphasis">Devengo semestral:</span> Se divide el año en dos semestres de 180 días cada uno. Solo se calcula la parte proporcional de la paga extra correspondiente al semestre en el que se produce la rescisión contractual, multiplicando el salario diario de la paga por los días trabajados dentro de ese semestre.</li>
-
-</ul>
-
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos resueltos</h2>
-
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 1: Fraude en el despido</h3>
-
-<p style="margin: 0 0 1rem;">Un trabajador que desea abandonar voluntariamente la empresa solicita al departamento de recursos humanos que simule un despido objetivo o disciplinario para poder cobrar la prestación por desempleo, evitando que la empresa pague indemnización.</p>
-
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> El departamento de recursos humanos debe rechazar firmemente esta solicitud. Simular un despido para obtener prestaciones públicas constituye un fraude de ley grave que está estrechamente vigilado por la Inspección de Trabajo y Seguridad Social, acarreando sanciones severas tanto para la empresa como para el propio trabajador. La única vía legal si el trabajador desea marchar voluntariamente es la presentación de su carta de baja voluntaria con 15 días de preaviso, asumiendo que no tendrá derecho inmediato a la prestación por desempleo.</li>
+<li style="margin-bottom: .45rem; position: relative;"><span class="markdown-emphasis">Devengo semestral:</span> Se divide el aÃ±o en dos semestres de 180 dÃ­as cada uno. Solo se calcula la parte proporcional de la paga extra correspondiente al semestre en el que se produce la rescisiÃ³n contractual, multiplicando el salario diario de la paga por los dÃ­as trabajados dentro de ese semestre.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: Cierre patronal sin comunicación</h3>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos resueltos</h2>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: Fraude en el despido</h3>
+
+<p style="margin: 0 0 1rem;">Un trabajador que desea abandonar voluntariamente la empresa solicita al departamento de recursos humanos que simule un despido objetivo o disciplinario para poder cobrar la prestaciÃ³n por desempleo, evitando que la empresa pague indemnizaciÃ³n.</p>
+
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> El departamento de recursos humanos debe rechazar firmemente esta solicitud. Simular un despido para obtener prestaciones pÃºblicas constituye un fraude de ley grave que estÃ¡ estrechamente vigilado por la InspecciÃ³n de Trabajo y Seguridad Social, acarreando sanciones severas tanto para la empresa como para el propio trabajador. La Ãºnica vÃ­a legal si el trabajador desea marchar voluntariamente es la presentaciÃ³n de su carta de baja voluntaria con 15 dÃ­as de preaviso, asumiendo que no tendrÃ¡ derecho inmediato a la prestaciÃ³n por desempleo.</li>
+
+</ul>
+
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: Cierre patronal sin comunicaciÃ³n</h3>
 
 <p style="margin: 0 0 1rem;">Una trabajadora llamada Jenni llega a su oficina y encuentra las puertas cerradas, las luces apagadas y no puede acceder con sus llaves. La empresa no ha comunicado nada a la plantilla, no atiende llamadas y ha cesado su actividad de facto.</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Ante una situación de cierre patronal sin comunicación, la trabajadora debe actuar de la siguiente manera para proteger sus derechos:</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> Ante una situaciÃ³n de cierre patronal sin comunicaciÃ³n, la trabajadora debe actuar de la siguiente manera para proteger sus derechos:</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">1. Presentar de inmediato una papeleta de conciliación ante el Servicio de Mediación, Arbitraje y Conciliación (SMAC).</p>
+<p style="margin: 0 0 1rem;">1. Presentar de inmediato una papeleta de conciliaciÃ³n ante el Servicio de MediaciÃ³n, Arbitraje y ConciliaciÃ³n (SMAC).</p>
 
-<p style="margin: 0 0 1rem;">2. Si transcurridos 15 días no se celebra el acto de conciliación o no hay acuerdo, interponer una demanda ante el Juzgado de lo Social.</p>
+<p style="margin: 0 0 1rem;">2. Si transcurridos 15 dÃ­as no se celebra el acto de conciliaciÃ³n o no hay acuerdo, interponer una demanda ante el Juzgado de lo Social.</p>
 
-<p style="margin: 0 0 1rem;">3. Solicitar la prestación por desempleo en un plazo máximo de 15 días desde el cierre. Si la empresa no ha enviado el certificado de empresa, la propia administración se encargará de requerírselo de oficio.</p>
+<p style="margin: 0 0 1rem;">3. Solicitar la prestaciÃ³n por desempleo en un plazo mÃ¡ximo de 15 dÃ­as desde el cierre. Si la empresa no ha enviado el certificado de empresa, la propia administraciÃ³n se encargarÃ¡ de requerÃ­rselo de oficio.</p>
 
-<p style="margin: 0 0 1rem;">4. En caso de insolvencia de la empresa, los salarios e indemnizaciones pendientes quedarán protegidos y cubiertos por el Fondo de Garantía Salarial (FOGASA).</p>
+<p style="margin: 0 0 1rem;">4. En caso de insolvencia de la empresa, los salarios e indemnizaciones pendientes quedarÃ¡n protegidos y cubiertos por el Fondo de GarantÃ­a Salarial (FOGASA).</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 3: Jubilación del empresario (Cálculo de indemnización)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 3: JubilaciÃ³n del empresario (CÃ¡lculo de indemnizaciÃ³n)</h3>
 
 <p style="margin: 0 0 1rem;">El propietario de una empresa con menos de 5 trabajadores se jubila y debe extinguir los contratos de sus empleados de forma individual. Entre ellos se encuentra Constantino.</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resolución:</strong> Al tratarse de una empresa con menos de 5 empleados, la extinción por jubilación del empresario se tramita como un despido objetivo individual. A los trabajadores les corresponde una indemnización de 20 días de salario por año trabajado, con un límite máximo de 12 mensualidades.</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ResoluciÃ³n:</strong> Al tratarse de una empresa con menos de 5 empleados, la extinciÃ³n por jubilaciÃ³n del empresario se tramita como un despido objetivo individual. A los trabajadores les corresponde una indemnizaciÃ³n de 20 dÃ­as de salario por aÃ±o trabajado, con un lÃ­mite mÃ¡ximo de 12 mensualidades.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos para el cálculo de Constantino:</strong></p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Datos para el cÃ¡lculo de Constantino:</strong></p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Salario bruto anual: 25.000 €</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">Salario bruto anual: 25.000 â‚¬</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Periodo trabajado en el año de extinción: Del 02/04/2020 al 30/10/2020.</li>
+<li style="margin-bottom: .45rem; position: relative;">Periodo trabajado en el aÃ±o de extinciÃ³n: Del 02/04/2020 al 30/10/2020.</li>
 
-<li style="margin-bottom: .45rem; position: relative;">Antigüedad total reconocida: 10,59 años (calculada sumando sus años completos anteriores más la fracción del último año, donde los días del último periodo del 2 de abril al 30 de octubre suman 211 días. Al dividir 211 entre 360, se obtiene la fracción de 0,59 años).</li>
+<li style="margin-bottom: .45rem; position: relative;">AntigÃ¼edad total reconocida: 10,59 aÃ±os (calculada sumando sus aÃ±os completos anteriores mÃ¡s la fracciÃ³n del Ãºltimo aÃ±o, donde los dÃ­as del Ãºltimo periodo del 2 de abril al 30 de octubre suman 211 dÃ­as. Al dividir 211 entre 360, se obtiene la fracciÃ³n de 0,59 aÃ±os).</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo paso a paso:</strong></p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo paso a paso:</strong></p>
 
 <p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salario diario:</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Salario diario = <span class="formula-frac"><span class="num">25.000 €</span><span class="den">360 días</span></span> = 69,44 €/día</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Salario diario = <span class="formula-frac"><span class="num">25.000 â‚¬</span><span class="den">360 dÃ­as</span></span> = 69,44 â‚¬/dÃ­a</span></p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Indemnización por año:</strong></p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IndemnizaciÃ³n por aÃ±o:</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Indemnización anual = 69,44 €/día × 20 días = 1.388,88 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">IndemnizaciÃ³n anual = 69,44 â‚¬/dÃ­a Ã— 20 dÃ­as = 1.388,88 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Indemnización total por antigüedad:</strong></p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">IndemnizaciÃ³n total por antigÃ¼edad:</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Indemnización total = 1.388,88 € × 10,59 años = 14.708,33 €</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">IndemnizaciÃ³n total = 1.388,88 â‚¬ Ã— 10,59 aÃ±os = 14.708,33 â‚¬</span></p>
 
-<p style="margin: 0 0 1rem;">Finalmente, el departamento de recursos humanos debe verificar que la cantidad resultante de 14.708,33 € no supere el límite máximo legal de 12 mensualidades de salario del trabajador.</p>
+<p style="margin: 0 0 1rem;">Finalmente, el departamento de recursos humanos debe verificar que la cantidad resultante de 14.708,33 â‚¬ no supere el lÃ­mite mÃ¡ximo legal de 12 mensualidades de salario del trabajador.</p>
 
 </main>
 </body>
 </html>
+

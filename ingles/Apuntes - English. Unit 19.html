@@ -1,60 +1,90 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apuntes - English. Unit 19</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+/* Mobile readability overrides */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.sheet { max-width: 1120px; margin: 0 auto; }
+.markdown-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.markdown-table th, .markdown-table td { min-width: 7rem; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+@media (max-width: 700px) {
+  body { padding: 0; font-size: 18px; line-height: 1.65rem; background: var(--paper); }
+  .sheet { width: 100%; min-width: 0; margin: 0; padding: 20px 14px 42px 30px; border-radius: 0; box-shadow: none; background-size: 100% 1.65rem; }
+  .sheet:before { left: 18px; width: 1px; }
+  h1 { font-size: 2.15rem; line-height: 2.35rem; padding-bottom: 10px; overflow-wrap: anywhere; }
+  h2, .sheet h2, h2[style] { font-size: 1.75rem !important; line-height: 1.95rem; margin-top: 1.55rem; overflow-wrap: anywhere; }
+  h3, .sheet h3, h3[style] { font-size: 1.45rem !important; line-height: 1.7rem; overflow-wrap: anywhere; }
+  h4, .sheet h4 { font-size: 1.18rem; line-height: 1.45rem; }
+  p, li, .sheet li { line-height: 1.65rem; overflow-wrap: anywhere; word-break: normal; }
+  .sheet ul, ul[style] { margin-left: .75rem !important; padding-left: .9rem !important; }
+  li::before { left: -1.05rem; }
+  .formula-block { white-space: normal; overflow-wrap: anywhere; line-height: 1.65rem; padding: .55rem .65rem; }
+  .formula-inline { max-width: 100%; overflow-wrap: anywhere; }
+  .markdown-table { font-size: .82em; line-height: 1.25; margin-left: -16px; width: calc(100% + 16px); }
+  .markdown-table th, .markdown-table td { padding: .32rem .38rem; min-width: 6.5rem; }
+}
+@media (max-width: 380px) {
+  body { font-size: 17px; }
+  .sheet { padding-left: 26px; padding-right: 10px; }
+  .sheet:before { left: 15px; }
+  h1 { font-size: 1.9rem; line-height: 2.1rem; }
+}
+</style>
 </head>
 <body>
 <main class="sheet">
 <h1>Apuntes - English. Unit 19</h1>
 
-<h2>Apuntes de inglés: Ofertas de empleo en revistas y periódicos (Unidad 19)</h2>
+<h2>Apuntes de inglÃ©s: Ofertas de empleo en revistas y periÃ³dicos (Unidad 19)</h2>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Introducción y contextualización</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">IntroducciÃ³n y contextualizaciÃ³n</h2>
 
-<p style="margin: 0 0 1rem;">Esta unidad didáctica se sumerge de lleno en el entorno laboral. Tras haber abordado en temas previos el artículo como texto periodístico de opinión, el foco se desplaza ahora hacia las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ofertas de trabajo</strong>. Estos textos informativos y persuasivos se encuentran de forma habitual tanto en soportes físicos tradicionales (periódicos, revistas) como en plataformas digitales especializadas. El objetivo es dominar el vocabulario, las estructuras de comunicación escrita y oral, y los aspectos gramaticales necesarios para desenvolverse con éxito en procesos de búsqueda de empleo.</p>
+<p style="margin: 0 0 1rem;">Esta unidad didÃ¡ctica se sumerge de lleno en el entorno laboral. Tras haber abordado en temas previos el artÃ­culo como texto periodÃ­stico de opiniÃ³n, el foco se desplaza ahora hacia las <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ofertas de trabajo</strong>. Estos textos informativos y persuasivos se encuentran de forma habitual tanto en soportes fÃ­sicos tradicionales (periÃ³dicos, revistas) como en plataformas digitales especializadas. El objetivo es dominar el vocabulario, las estructuras de comunicaciÃ³n escrita y oral, y los aspectos gramaticales necesarios para desenvolverse con Ã©xito en procesos de bÃºsqueda de empleo.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Glosario del mundo laboral</h2>
 
-<p style="margin: 0 0 1rem;">Para poder comprender y redactar textos relacionados con el empleo, es fundamental dominar un vocabulario específico. A continuación, se detallan los términos clave del ámbito laboral con su respectiva traducción y matiz conceptual:</p>
+<p style="margin: 0 0 1rem;">Para poder comprender y redactar textos relacionados con el empleo, es fundamental dominar un vocabulario especÃ­fico. A continuaciÃ³n, se detallan los tÃ©rminos clave del Ã¡mbito laboral con su respectiva traducciÃ³n y matiz conceptual:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Job</strong>: Trabajo o puesto de trabajo específico.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Job</strong>: Trabajo o puesto de trabajo especÃ­fico.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Work</strong>: Trabajar (verbo) o trabajo en sentido general.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Boss</strong>: Jefe o superior jerárquico.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Boss</strong>: Jefe o superior jerÃ¡rquico.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Employee</strong>: Empleado o trabajador de una empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Office</strong>: Oficina o lugar físico de trabajo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Office</strong>: Oficina o lugar fÃ­sico de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Meeting</strong>: Reunión de trabajo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Meeting</strong>: ReuniÃ³n de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deadline</strong>: Fecha límite para la entrega de una tarea o proyecto.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Deadline</strong>: Fecha lÃ­mite para la entrega de una tarea o proyecto.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salary</strong>: Salario o remuneración económica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Salary</strong>: Salario o remuneraciÃ³n econÃ³mica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Promotion</strong>: Promoción o ascenso dentro de la escala laboral.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Promotion</strong>: PromociÃ³n o ascenso dentro de la escala laboral.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resume / CV</strong>: Currículum o documento de trayectoria profesional y académica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Resume / CV</strong>: CurrÃ­culum o documento de trayectoria profesional y acadÃ©mica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Interview</strong>: Entrevista de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coworker</strong>: Compañero de trabajo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Coworker</strong>: CompaÃ±ero de trabajo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Teamwork</strong>: Trabajo en equipo.</li>
@@ -63,22 +93,22 @@
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Overtime</strong>: Horas extraordinarias o tiempo de trabajo fuera del horario habitual.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Paycheck</strong>: Cheque de pago o nómina.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Paycheck</strong>: Cheque de pago o nÃ³mina.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Benefits</strong>: Beneficios adicionales al salario (seguro médico, planes de pensiones, etc.).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Benefits</strong>: Beneficios adicionales al salario (seguro mÃ©dico, planes de pensiones, etc.).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Training</strong>: Capacitación, formación o período de prácticas.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Training</strong>: CapacitaciÃ³n, formaciÃ³n o perÃ­odo de prÃ¡cticas.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Performance</strong>: Rendimiento o desempeño laboral.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Performance</strong>: Rendimiento o desempeÃ±o laboral.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Feedback</strong>: Retroalimentación o comentarios sobre el desempeño.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Feedback</strong>: RetroalimentaciÃ³n o comentarios sobre el desempeÃ±o.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Career</strong>: Carrera profesional (no confundir con <span class="markdown-emphasis">degree</span>, que se refiere al grado o título universitario).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Career</strong>: Carrera profesional (no confundir con <span class="markdown-emphasis">degree</span>, que se refiere al grado o tÃ­tulo universitario).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Hire</strong>: Contratar.</li>
@@ -87,7 +117,7 @@
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Fire</strong>: Despedir.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Shift</strong>: Turno de trabajo (mañana, tarde, noche).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Shift</strong>: Turno de trabajo (maÃ±ana, tarde, noche).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Break</strong>: Descanso o pausa durante la jornada.</li>
@@ -96,7 +126,7 @@
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sick leave</strong>: Baja por enfermedad.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Retirement</strong>: Jubilación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Retirement</strong>: JubilaciÃ³n.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Workload</strong>: Carga de trabajo.</li>
@@ -112,49 +142,49 @@
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Expresión oral y preferencias laborales</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">ExpresiÃ³n oral y preferencias laborales</h2>
 
-<p style="margin: 0 0 1rem;">En el ámbito de la búsqueda de empleo, es crucial saber transmitir de forma oral y escrita nuestros deseos, preferencias, gustos y expectativas respecto a un puesto de trabajo.</p>
+<p style="margin: 0 0 1rem;">En el Ã¡mbito de la bÃºsqueda de empleo, es crucial saber transmitir de forma oral y escrita nuestros deseos, preferencias, gustos y expectativas respecto a un puesto de trabajo.</p>
 
-<p style="margin: 0 0 1rem;">Para construir un discurso fluido sobre nuestras metas laborales, se puede utilizar una estructura preestablecida que combine fórmulas de cortesía y verbos de preferencia. Un modelo de discurso estándar incluye los siguientes puntos:</p>
+<p style="margin: 0 0 1rem;">Para construir un discurso fluido sobre nuestras metas laborales, se puede utilizar una estructura preestablecida que combine fÃ³rmulas de cortesÃ­a y verbos de preferencia. Un modelo de discurso estÃ¡ndar incluye los siguientes puntos:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Indicar el puesto solicitado:</strong> &quot;I applied for this job position last week&quot; (Solicité este puesto de trabajo la semana pasada).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Indicar el puesto solicitado:</strong> &quot;I applied for this job position last week&quot; (SolicitÃ© este puesto de trabajo la semana pasada).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Expresar el entorno de trabajo deseado:</strong> &quot;I would like to work in a comfortable atmosphere, in a place where I could find great workmates to share our tasks with&quot; (Me gustaría trabajar en un ambiente cómodo, en un lugar donde pudiera encontrar excelentes compañeros con quienes compartir nuestras tareas).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Expresar el entorno de trabajo deseado:</strong> &quot;I would like to work in a comfortable atmosphere, in a place where I could find great workmates to share our tasks with&quot; (Me gustarÃ­a trabajar en un ambiente cÃ³modo, en un lugar donde pudiera encontrar excelentes compaÃ±eros con quienes compartir nuestras tareas).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Justificar la elección de la empresa:</strong> &quot;I wanted to work in this company because I have heard that it is one of the best in my field&quot; (Quería trabajar en esta empresa porque he oído que es una de las mejores en mi sector).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Justificar la elecciÃ³n de la empresa:</strong> &quot;I wanted to work in this company because I have heard that it is one of the best in my field&quot; (QuerÃ­a trabajar en esta empresa porque he oÃ­do que es una de las mejores en mi sector).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mostrar entusiasmo y expectativas:</strong> &quot;I really fancy working here as it is my ideal job. I would like to have holidays in summer and winter, and earn a good salary&quot; (Realmente me apetece trabajar aquí, ya que es mi trabajo ideal. Me gustaría tener vacaciones en verano e invierno, y ganar un buen salario).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mostrar entusiasmo y expectativas:</strong> &quot;I really fancy working here as it is my ideal job. I would like to have holidays in summer and winter, and earn a good salary&quot; (Realmente me apetece trabajar aquÃ­, ya que es mi trabajo ideal. Me gustarÃ­a tener vacaciones en verano e invierno, y ganar un buen salario).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Especificar la disponibilidad horaria:</strong> &quot;I prefer working in the mornings, but I do not mind working in the afternoons too. However, in summer I’d rather work only in the mornings. I would not like to work at night&quot; (Prefiero trabajar por las mañanas, pero no me importa trabajar también por las tardes. Sin embargo, en verano preferiría trabajar solo por las mañanas. No me gustaría trabajar por la noche).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Especificar la disponibilidad horaria:</strong> &quot;I prefer working in the mornings, but I do not mind working in the afternoons too. However, in summer Iâ€™d rather work only in the mornings. I would not like to work at night&quot; (Prefiero trabajar por las maÃ±anas, pero no me importa trabajar tambiÃ©n por las tardes. Sin embargo, en verano preferirÃ­a trabajar solo por las maÃ±anas. No me gustarÃ­a trabajar por la noche).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Concluir con el valor añadido:</strong> &quot;Besides, I think I could learn a lot about my job here. I think it is the best place for me to work&quot; (Además, creo que podría aprender mucho sobre mi trabajo aquí. Creo que es el mejor lugar para trabajar).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Concluir con el valor aÃ±adido:</strong> &quot;Besides, I think I could learn a lot about my job here. I think it is the best place for me to work&quot; (AdemÃ¡s, creo que podrÃ­a aprender mucho sobre mi trabajo aquÃ­. Creo que es el mejor lugar para trabajar).</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Este modelo sirve como plantilla para que cualquier candidato, adaptando las partes específicas, pueda estructurar su presentación en una entrevista laboral de manera clara y profesional.</p>
+<p style="margin: 0 0 1rem;">Este modelo sirve como plantilla para que cualquier candidato, adaptando las partes especÃ­ficas, pueda estructurar su presentaciÃ³n en una entrevista laboral de manera clara y profesional.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estructura y redacción de una oferta de empleo</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Estructura y redacciÃ³n de una oferta de empleo</h2>
 
-<p style="margin: 0 0 1rem;">Para postularse con éxito a una vacante o para entender los requerimientos del mercado, es indispensable conocer la estructura habitual de una oferta de trabajo. Aunque puede variar según la empresa, por lo general consta de los siguientes elementos:</p>
+<p style="margin: 0 0 1rem;">Para postularse con Ã©xito a una vacante o para entender los requerimientos del mercado, es indispensable conocer la estructura habitual de una oferta de trabajo. Aunque puede variar segÃºn la empresa, por lo general consta de los siguientes elementos:</p>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Título del puesto (Job title):</strong> Especifica de manera clara y directa el nombre de la vacante que se ofrece.</p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TÃ­tulo del puesto (Job title):</strong> Especifica de manera clara y directa el nombre de la vacante que se ofrece.</p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Descripción del puesto (Job description):</strong> Detalla las responsabilidades, funciones cotidianas y tareas asociadas al cargo.</p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DescripciÃ³n del puesto (Job description):</strong> Detalla las responsabilidades, funciones cotidianas y tareas asociadas al cargo.</p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos del puesto (Requirements):</strong> Enumera las habilidades técnicas, competencias blandas, experiencia previa y titulaciones académicas necesarias para el desempeño del rol.</p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Requisitos del puesto (Requirements):</strong> Enumera las habilidades tÃ©cnicas, competencias blandas, experiencia previa y titulaciones acadÃ©micas necesarias para el desempeÃ±o del rol.</p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Condiciones laborales (Benefits/Working conditions):</strong> Incluye información sobre la jornada laboral, salarios, oportunidades de desarrollo, beneficios sociales y el lugar de trabajo.</p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Condiciones laborales (Benefits/Working conditions):</strong> Incluye informaciÃ³n sobre la jornada laboral, salarios, oportunidades de desarrollo, beneficios sociales y el lugar de trabajo.</p>
 
-<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Información de contacto (Contact information):</strong> Proporciona la dirección de correo electrónico, enlace o método para enviar la solicitud o currículum.</p>
+<p style="margin: 0 0 1rem;">5. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">InformaciÃ³n de contacto (Contact information):</strong> Proporciona la direcciÃ³n de correo electrÃ³nico, enlace o mÃ©todo para enviar la solicitud o currÃ­culum.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo práctico de oferta de empleo</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplo prÃ¡ctico de oferta de empleo</h3>
 
 <p style="margin: 0 0 1rem;">&gt; <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Position:</strong> Customer Service Representative</p>
 
@@ -204,23 +234,23 @@
 
 <p style="margin: 0 0 1rem;">&gt; <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">To apply:</strong> Please send your CV to careers@aabbcorp.com. We look forward to hearing from you!</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Mediación lingüística en el ámbito laboral</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MediaciÃ³n lingÃ¼Ã­stica en el Ã¡mbito laboral</h2>
 
-<p style="margin: 0 0 1rem;">La mediación consiste en procesar información contenida en un texto y transmitirla a otra persona de manera resumida, adaptada y accesible, a menudo porque esa persona no tiene acceso directo al texto original o necesita una síntesis rápida.</p>
+<p style="margin: 0 0 1rem;">La mediaciÃ³n consiste en procesar informaciÃ³n contenida en un texto y transmitirla a otra persona de manera resumida, adaptada y accesible, a menudo porque esa persona no tiene acceso directo al texto original o necesita una sÃ­ntesis rÃ¡pida.</p>
 
-<p style="margin: 0 0 1rem;">En el contexto de la búsqueda de empleo, es muy común realizar mediación cuando encontramos una oferta de trabajo que no se ajusta a nuestro perfil, pero que resulta ideal para un amigo o familiar. En estos casos, se deben extraer únicamente los puntos clave (puesto, requisitos esenciales, tareas principales y método de contacto) para enviárselos de forma directa y simplificada.</p>
+<p style="margin: 0 0 1rem;">En el contexto de la bÃºsqueda de empleo, es muy comÃºn realizar mediaciÃ³n cuando encontramos una oferta de trabajo que no se ajusta a nuestro perfil, pero que resulta ideal para un amigo o familiar. En estos casos, se deben extraer Ãºnicamente los puntos clave (puesto, requisitos esenciales, tareas principales y mÃ©todo de contacto) para enviÃ¡rselos de forma directa y simplificada.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico de mediación: Oferta de profesor de preescolar</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico de mediaciÃ³n: Oferta de profesor de preescolar</h3>
 
-<p style="margin: 0 0 1rem;">Si encontramos una oferta para el puesto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Preschool Teacher</strong> en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ABC Preschool</strong> cuyas condiciones exigen planificar actividades para niños, mantener un entorno seguro, poseer un título en Educación Infantil (<span class="markdown-emphasis">Bachelor&#039;s degree in Early Childhood Education</span>) y enviar el currículum antes del 30 de junio; la mediación consistiría en redactar un mensaje de texto rápido y directo para el familiar interesado, destacando estos requisitos académicos y la fecha límite de entrega de forma clara y concisa.</p>
+<p style="margin: 0 0 1rem;">Si encontramos una oferta para el puesto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Preschool Teacher</strong> en <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ABC Preschool</strong> cuyas condiciones exigen planificar actividades para niÃ±os, mantener un entorno seguro, poseer un tÃ­tulo en EducaciÃ³n Infantil (<span class="markdown-emphasis">Bachelor&#039;s degree in Early Childhood Education</span>) y enviar el currÃ­culum antes del 30 de junio; la mediaciÃ³n consistirÃ­a en redactar un mensaje de texto rÃ¡pido y directo para el familiar interesado, destacando estos requisitos acadÃ©micos y la fecha lÃ­mite de entrega de forma clara y concisa.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Cultura general</h2>
 
-<p style="margin: 0 0 1rem;">Dentro del bagaje cultural asociado al ámbito de la innovación y el desarrollo profesional, la unidad destaca la figura de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Thomas Alva Edison</strong>, uno de los inventores más célebres de los Estados Unidos. Conocer su biografía y su trayectoria de perseverancia y creación aporta una perspectiva histórica valiosa sobre el desarrollo tecnológico y el espíritu emprendedor.</p>
+<p style="margin: 0 0 1rem;">Dentro del bagaje cultural asociado al Ã¡mbito de la innovaciÃ³n y el desarrollo profesional, la unidad destaca la figura de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Thomas Alva Edison</strong>, uno de los inventores mÃ¡s cÃ©lebres de los Estados Unidos. Conocer su biografÃ­a y su trayectoria de perseverancia y creaciÃ³n aporta una perspectiva histÃ³rica valiosa sobre el desarrollo tecnolÃ³gico y el espÃ­ritu emprendedor.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Soporte gramatical: Voz pasiva en pasado simple</h2>
 
-<p style="margin: 0 0 1rem;">La voz pasiva en pasado simple (<span class="markdown-emphasis">Passive voice in past simple</span>) se utiliza en inglés cuando queremos poner el foco de atención en la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">acción realizada</strong> o en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">objeto que recibe la acción</strong>, en lugar de centrarnos en el sujeto que la ejecuta.</p>
+<p style="margin: 0 0 1rem;">La voz pasiva en pasado simple (<span class="markdown-emphasis">Passive voice in past simple</span>) se utiliza en inglÃ©s cuando queremos poner el foco de atenciÃ³n en la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">acciÃ³n realizada</strong> o en el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">objeto que recibe la acciÃ³n</strong>, en lugar de centrarnos en el sujeto que la ejecuta.</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Estructura de la voz pasiva en pasado simple</h3>
 
@@ -230,17 +260,17 @@
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Se utiliza <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">was</strong> para sujetos singulares (<span class="markdown-emphasis">I, he, she, it</span>) y <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">were</strong> para sujetos plurales (<span class="markdown-emphasis">you, we, they</span>).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El verbo principal siempre debe ir en su forma de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">participio pasado</strong> (añadiendo <span class="markdown-emphasis">-ed</span> si es un verbo regular, o utilizando la tercera columna si es un verbo irregular).</li>
+<li style="margin-bottom: .45rem; position: relative;"> El verbo principal siempre debe ir en su forma de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">participio pasado</strong> (aÃ±adiendo <span class="markdown-emphasis">-ed</span> si es un verbo regular, o utilizando la tercera columna si es un verbo irregular).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">agente</strong> (la persona u objeto que realiza la acción en la frase activa) se introduce al final mediante la preposición <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">by</strong>, pero solo se incluye si es necesario o aporta información relevante.</li>
+<li style="margin-bottom: .45rem; position: relative;"> El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">agente</strong> (la persona u objeto que realiza la acciÃ³n en la frase activa) se introduce al final mediante la preposiciÃ³n <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">by</strong>, pero solo se incluye si es necesario o aporta informaciÃ³n relevante.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplos de transformación de activa a pasiva</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Ejemplos de transformaciÃ³n de activa a pasiva</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Voz activa:</strong>
-<span class="markdown-emphasis">The boss signed the contract.</span> (El jefe firmó el contrato).</li>
+<span class="markdown-emphasis">The boss signed the contract.</span> (El jefe firmÃ³ el contrato).</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> En este caso, el sujeto activo es <span class="markdown-emphasis">The boss</span> y el objeto directo es <span class="markdown-emphasis">the contract</span>.</li>
 
@@ -248,19 +278,19 @@
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Voz pasiva:</strong>
 <span class="markdown-emphasis">The contract was signed by the boss.</span> (El contrato fue firmado por el jefe).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Aquí, <span class="markdown-emphasis">The contract</span> pasa a ser el sujeto de la oración pasiva, se introduce el verbo auxiliar en pasado (<span class="markdown-emphasis">was</span>) seguido del participio (<span class="markdown-emphasis">signed</span>), y se añade el agente introducido por <span class="markdown-emphasis">by</span>.</li>
+<li style="margin-bottom: .45rem; position: relative;"> AquÃ­, <span class="markdown-emphasis">The contract</span> pasa a ser el sujeto de la oraciÃ³n pasiva, se introduce el verbo auxiliar en pasado (<span class="markdown-emphasis">was</span>) seguido del participio (<span class="markdown-emphasis">signed</span>), y se aÃ±ade el agente introducido por <span class="markdown-emphasis">by</span>.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Omisión del agente</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">OmisiÃ³n del agente</h3>
 
-<p style="margin: 0 0 1rem;">Es muy común omitir el agente en la voz pasiva cuando no es relevante, se desconoce o no se quiere mencionar explícitamente quién realizó la acción.</p>
+<p style="margin: 0 0 1rem;">Es muy comÃºn omitir el agente en la voz pasiva cuando no es relevante, se desconoce o no se quiere mencionar explÃ­citamente quiÃ©n realizÃ³ la acciÃ³n.</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ejemplo:</strong>
 <span class="markdown-emphasis">The report was submitted yesterday.</span> (El informe fue entregado ayer).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> En esta oración, el foco está exclusivamente en el hecho de que el informe se entregó. No es necesario añadir quién lo entregó para que la frase tenga sentido completo y profesional.</li>
+<li style="margin-bottom: .45rem; position: relative;"> En esta oraciÃ³n, el foco estÃ¡ exclusivamente en el hecho de que el informe se entregÃ³. No es necesario aÃ±adir quiÃ©n lo entregÃ³ para que la frase tenga sentido completo y profesional.</li>
 
 </ul>
 
@@ -269,16 +299,17 @@
 <p style="margin: 0 0 1rem;">Para consolidar el aprendizaje de esta unidad, es importante recordar los siguientes puntos esenciales:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vocabulario:</strong> Distinguir correctamente conceptos clave como <span class="markdown-emphasis">career</span> (carrera profesional) frente a <span class="markdown-emphasis">degree</span> (título académico), y familiarizarse con términos administrativos como <span class="markdown-emphasis">sick leave</span> (baja por enfermedad) o <span class="markdown-emphasis">deadline</span> (fecha límite).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Vocabulario:</strong> Distinguir correctamente conceptos clave como <span class="markdown-emphasis">career</span> (carrera profesional) frente a <span class="markdown-emphasis">degree</span> (tÃ­tulo acadÃ©mico), y familiarizarse con tÃ©rminos administrativos como <span class="markdown-emphasis">sick leave</span> (baja por enfermedad) o <span class="markdown-emphasis">deadline</span> (fecha lÃ­mite).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estructura de ofertas de empleo:</strong> Una oferta estándar debe contar con título, descripción, requisitos, condiciones/beneficios y datos de contacto.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Estructura de ofertas de empleo:</strong> Una oferta estÃ¡ndar debe contar con tÃ­tulo, descripciÃ³n, requisitos, condiciones/beneficios y datos de contacto.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Gramática:</strong> La voz pasiva en pasado simple se forma con el auxiliar <span class="markdown-emphasis">was/were</span> + participio pasado. El objeto de la oración activa se convierte en el sujeto de la pasiva, y el agente se introduce con <span class="markdown-emphasis">by</span> solo si aporta valor a la comunicación.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">GramÃ¡tica:</strong> La voz pasiva en pasado simple se forma con el auxiliar <span class="markdown-emphasis">was/were</span> + participio pasado. El objeto de la oraciÃ³n activa se convierte en el sujeto de la pasiva, y el agente se introduce con <span class="markdown-emphasis">by</span> solo si aporta valor a la comunicaciÃ³n.</li>
 
 </ul>
 
 </main>
 </body>
 </html>
+
