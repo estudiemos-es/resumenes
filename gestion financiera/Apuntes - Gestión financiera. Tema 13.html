@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apuntes - GestiÃ³n financiera. Tema 13</title>
-<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "â˜…"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
+<title>Apuntes - Gestión financiera. Tema 13</title>
+<style> @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&display=swap'); :root { --paper: #fdfbf7; --line: #a2d2ff; --margin: #ffadad; --ink: #2d3436; } * { box-sizing: border-box; } body { margin: 0; background: #dedbd5; color: var(--ink); font: 20px/2rem 'Patrick Hand', cursive; padding: 12px; } .sheet { width: 100%; max-width: none; margin: 0; padding: 35px 32px 60px 72px; background-color: var(--paper); background-image: linear-gradient(var(--line) 1px, transparent 1px); background-size: 100% 2rem; box-shadow: 0 12px 30px rgba(0,0,0,0.15); position: relative; border-radius: 4px; } .sheet:before { content: ''; position: absolute; left: 48px; top: 0; bottom: 0; width: 2px; background: var(--margin); } h1, h2, h3, h4 { background: var(--paper); } h1 { font-family: 'Caveat', cursive; font-size: 3rem; text-align: center; border-bottom: 2px dashed #aaa; padding-bottom: 15px; margin-top: 0; color: #2c3e50; } h2 { font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem; } h3 { font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem; } h4 { font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; } strong { background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold; } ul { padding-left: 1.5rem; list-style: none; margin: 1rem 0; } li { margin-bottom: .45rem; position: relative; } li::before { content: "★"; color: #f39c12; position: absolute; left: -1.5rem; font-size: 0.8em; } p { margin: 0 0 1rem; } @media print { body { padding: 0; background: white; } .sheet { box-shadow: none; max-width: none; } } @media (max-width: 600px) { body { padding: 10px; } .sheet { padding: 25px 20px 40px 48px; } .sheet:before { left: 32px; } } body{padding:12px} .sheet{width:100%;max-width:none;padding:35px 32px 60px 72px} .sheet:before{left:48px} .sheet p{margin:.65rem 0 1rem} .sheet ul{margin:1rem 0 1.35rem 1.65rem;padding-left:1.1rem} .sheet li{margin:.42rem 0;line-height:2rem} .sheet li.group-heading{margin-top:1.05rem;margin-bottom:.35rem;font-weight:700;list-style-position:outside} .sheet li.group-heading strong{background:linear-gradient(transparent 45%,#fff17688 45%)} .sheet h2{margin-top:2rem;margin-bottom:.65rem} .sheet h3{margin-top:1.5rem;margin-bottom:.45rem} .sheet h4{margin-top:1.2rem;margin-bottom:.35rem} .sheet h2{text-decoration:none} .formula-block{display:block;margin:1rem 0;padding:.65rem .8rem;background:#fffdf3;border-left:4px solid #f2c94c;border-radius:4px;line-height:2.15rem;overflow-x:auto;white-space:nowrap} .formula-inline{display:inline-block;padding:0 .18rem;background:#fff8bf;border-radius:3px;line-height:1.35} .formula-frac{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;text-align:center;margin:0 .15rem;line-height:1.1} .formula-frac .num{border-bottom:1.5px solid currentColor;padding:0 .25rem} .formula-frac .den{padding:0 .25rem} .formula-sum{font-size:1.2em;font-weight:700} .markdown-table{width:100%;border-collapse:collapse;margin:1rem 0 1.35rem;background:#fffdf7;font-size:.95em;line-height:1.45} .markdown-table th,.markdown-table td{border:1px solid #c7def8;padding:.35rem .45rem;text-align:left;vertical-align:top} .markdown-table th{background:#eef6ff;font-weight:700} .markdown-emphasis{color:#087f5b;background:linear-gradient(transparent 45%,#b7f7d488 45%);font-weight:700;border-radius:3px;padding:0 .08rem} .sheet li.group-heading{list-style:none} .sheet li.group-heading::before{content:none!important} .sheet li.group-heading::marker{content:""} 
 /* Mobile readability overrides */
 html { overflow-x: hidden; }
 body { overflow-x: hidden; }
@@ -43,17 +43,17 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 </head>
 <body>
 <main class="sheet">
-<h1>Apuntes - GestiÃ³n financiera. Tema 13</h1>
+<h1>Apuntes - Gestión financiera. Tema 13</h1>
 
-<h2>AnÃ¡lisis de inversiones</h2>
+<h2>Análisis de inversiones</h2>
 
-<p style="margin: 0 0 1rem;">El estudio y la determinaciÃ³n de la rentabilidad y viabilidad de un proyecto de inversiÃ³n es un pilar fundamental para cualquier organizaciÃ³n. Las empresas se enfrentan habitualmente a mÃºltiples opciones de inversiÃ³n y deben disponer de herramientas tÃ©cnicas precisas para seleccionar la alternativa mÃ¡s adecuada.</p>
+<p style="margin: 0 0 1rem;">El estudio y la determinación de la rentabilidad y viabilidad de un proyecto de inversión es un pilar fundamental para cualquier organización. Las empresas se enfrentan habitualmente a múltiples opciones de inversión y deben disponer de herramientas técnicas precisas para seleccionar la alternativa más adecuada.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Concepto y criterios de valoraciÃ³n</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Concepto y criterios de valoración</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de inversiÃ³n</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto de inversión</h3>
 
-<p style="margin: 0 0 1rem;">Una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">inversiÃ³n</strong> puede definirse desde dos perspectivas complementarias:</p>
+<p style="margin: 0 0 1rem;">Una <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">inversión</strong> puede definirse desde dos perspectivas complementarias:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Temporal:</strong> Consiste en destinar unos fondos a un gasto inicial con la expectativa de generar una serie de recursos o flujos financieros en el futuro.</li>
@@ -63,82 +63,82 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterios de valoraciÃ³n</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterios de valoración</h3>
 
-<p style="margin: 0 0 1rem;">A la hora de analizar un proyecto, se deben considerar tres caracterÃ­sticas esenciales que determinan su viabilidad:</p>
+<p style="margin: 0 0 1rem;">A la hora de analizar un proyecto, se deben considerar tres características esenciales que determinan su viabilidad:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Liquidez:</strong> Se evalÃºa mediante la tÃ©cnica del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">pay-back</strong> o plazo de recuperaciÃ³n, que mide el tiempo necesario para recuperar el desembolso inicial del proyecto.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Liquidez:</strong> Se evalúa mediante la técnica del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">pay-back</strong> o plazo de recuperación, que mide el tiempo necesario para recuperar el desembolso inicial del proyecto.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rentabilidad:</strong> Se analiza a travÃ©s de mÃ©todos dinÃ¡micos como el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN</strong> (Valor Actual Neto) y la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong> (Tasa Interna de Retorno), que determinan la capacidad del proyecto para generar rendimientos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rentabilidad:</strong> Se analiza a través de métodos dinámicos como el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN</strong> (Valor Actual Neto) y la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong> (Tasa Interna de Retorno), que determinan la capacidad del proyecto para generar rendimientos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgo:</strong> No cuenta con tÃ©cnicas matemÃ¡ticas especÃ­ficas en este bloque conceptual, pero se encuentra directamente ligado a la duraciÃ³n del proyecto. A mayor duraciÃ³n de la inversiÃ³n, mayor es el riesgo e incertidumbre asociados, por lo que la empresa siempre buscarÃ¡ minimizar este factor.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Riesgo:</strong> No cuenta con técnicas matemáticas específicas en este bloque conceptual, pero se encuentra directamente ligado a la duración del proyecto. A mayor duración de la inversión, mayor es el riesgo e incertidumbre asociados, por lo que la empresa siempre buscará minimizar este factor.</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">El concepto de cash-flow o flujo de caja</h3>
 
-<p style="margin: 0 0 1rem;">Para el anÃ¡lisis de inversiones se descarta el uso del beneficio contable, ya que este no refleja la liquidez ni la situaciÃ³n financiera real de la empresa. El beneficio contable incluye partidas como amortizaciones y provisiones, que son apuntes contables pero no implican una salida real de dinero.</p>
+<p style="margin: 0 0 1rem;">Para el análisis de inversiones se descarta el uso del beneficio contable, ya que este no refleja la liquidez ni la situación financiera real de la empresa. El beneficio contable incluye partidas como amortizaciones y provisiones, que son apuntes contables pero no implican una salida real de dinero.</p>
 
-<p style="margin: 0 0 1rem;">En su lugar, se utiliza el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">cash-flow</strong> (flujo de caja), que registra los cobros y pagos reales (entradas y salidas de fondos) durante un perÃ­odo. Esto permite medir con exactitud los recursos lÃ­quidos que genera el proyecto de inversiÃ³n.</p>
+<p style="margin: 0 0 1rem;">En su lugar, se utiliza el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">cash-flow</strong> (flujo de caja), que registra los cobros y pagos reales (entradas y salidas de fondos) durante un período. Esto permite medir con exactitud los recursos líquidos que genera el proyecto de inversión.</p>
 
 <h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Tipos de inversiones</h2>
 
-<p style="margin: 0 0 1rem;">Las inversiones se pueden clasificar segÃºn diferentes criterios econÃ³micos y contables:</p>
+<p style="margin: 0 0 1rem;">Las inversiones se pueden clasificar según diferentes criterios económicos y contables:</p>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipo de activo</h3>
 
-<p style="margin: 0 0 1rem;">Tomando como referencia el balance de situaciÃ³n (donde el activo refleja las inversiones y el pasivo su financiaciÃ³n), distinguimos:</p>
+<p style="margin: 0 0 1rem;">Tomando como referencia el balance de situación (donde el activo refleja las inversiones y el pasivo su financiación), distinguimos:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo corriente:</strong> Inversiones en elementos que permanecen en la empresa menos de un ejercicio econÃ³mico (por ejemplo, las existencias).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo corriente:</strong> Inversiones en elementos que permanecen en la empresa menos de un ejercicio económico (por ejemplo, las existencias).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo no corriente:</strong> Inversiones en bienes duraderos con una vida Ãºtil superior a un ejercicio econÃ³mico (por ejemplo, maquinaria o instalaciones).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Activo no corriente:</strong> Inversiones en bienes duraderos con una vida útil superior a un ejercicio económico (por ejemplo, maquinaria o instalaciones).</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Finalidad</h3>
 
-<p style="margin: 0 0 1rem;">SegÃºn el objetivo que persigue la inversiÃ³n, existen las siguientes categorÃ­as:</p>
+<p style="margin: 0 0 1rem;">Según el objetivo que persigue la inversión, existen las siguientes categorías:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Productivas:</strong> Destinadas a la adquisiciÃ³n de bienes de producciÃ³n.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Productivas:</strong> Destinadas a la adquisición de bienes de producción.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Mantenimiento:</strong> Orientadas a sustituir equipos o elementos desgastados para garantizar el funcionamiento normal de la actividad.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">ReducciÃ³n de costes:</strong> Realizadas para mejorar la eficiencia y disminuir los costes de producciÃ³n.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Reducción de costes:</strong> Realizadas para mejorar la eficiencia y disminuir los costes de producción.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">AmpliaciÃ³n de oferta:</strong> DiseÃ±adas para incrementar la gama de productos o servicios ofrecidos.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Ampliación de oferta:</strong> Diseñadas para incrementar la gama de productos o servicios ofrecidos.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Apertura de nuevos mercados:</strong> Destinadas a la expansiÃ³n geogrÃ¡fica o comercial de la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Apertura de nuevos mercados:</strong> Destinadas a la expansión geográfica o comercial de la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuestas:</strong> Aquellas exigidas por la normativa vigente (medioambiental, laboral, etc.). Dentro de este Ã¡mbito o de forma complementaria se pueden seÃ±alar:</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Impuestas:</strong> Aquellas exigidas por la normativa vigente (medioambiental, laboral, etc.). Dentro de este ámbito o de forma complementaria se pueden señalar:</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Financieras:</strong> AdquisiciÃ³n de activos financieros como acciones o valores negociables.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Financieras:</strong> Adquisición de activos financieros como acciones o valores negociables.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">En stocks:</strong> Destinadas a mantener el nivel Ã³ptimo de inventario en el almacÃ©n.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">En stocks:</strong> Destinadas a mantener el nivel óptimo de inventario en el almacén.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">I+D:</strong> Inversiones en investigaciÃ³n y desarrollo para la innovaciÃ³n tecnolÃ³gica.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">I+D:</strong> Inversiones en investigación y desarrollo para la innovación tecnológica.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Sociales:</strong> Dirigidas a la mejora de las condiciones de trabajo y el clima laboral.</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">RelaciÃ³n entre cobros y pagos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Relación entre cobros y pagos</h3>
 
-<p style="margin: 0 0 1rem;">Atendiendo a la distribuciÃ³n temporal de las corrientes monetarias:</p>
+<p style="margin: 0 0 1rem;">Atendiendo a la distribución temporal de las corrientes monetarias:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Un solo pago y un solo cobro.</li>
 
@@ -150,28 +150,28 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Variables de un proyecto de inversiÃ³n</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Variables de un proyecto de inversión</h2>
 
-<p style="margin: 0 0 1rem;">Para definir matemÃ¡ticamente un proyecto de inversiÃ³n se emplean las siguientes variables:</p>
+<p style="margin: 0 0 1rem;">Para definir matemáticamente un proyecto de inversión se emplean las siguientes variables:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Desembolso inicial (-A):</strong> La cantidad de fondos necesarios en el momento cero para poner en marcha el proyecto.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DuraciÃ³n temporal (n):</strong> El nÃºmero de perÃ­odos (generalmente aÃ±os) durante los cuales el proyecto generarÃ¡ flujos de caja.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Duración temporal (n):</strong> El número de períodos (generalmente años) durante los cuales el proyecto generará flujos de caja.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Flujo neto de caja (<span class="formula-inline">Q<sub>t</sub></span> o <span class="formula-inline">Q<sub>n</sub></span>):</strong> La diferencia entre los cobros y los pagos registrados en cada perÃ­odo <span class="formula-inline">t</span>.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Flujo neto de caja (<span class="formula-inline">Q<sub>t</sub></span> o <span class="formula-inline">Q<sub>n</sub></span>):</strong> La diferencia entre los cobros y los pagos registrados en cada período <span class="formula-inline">t</span>.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Valor residual (Vr):</strong> El valor estimado de los activos de la inversiÃ³n al finalizar su vida Ãºtil.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Valor residual (Vr):</strong> El valor estimado de los activos de la inversión al finalizar su vida útil.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rentabilidad requerida (i o k):</strong> El tipo de descuento o tasa de rendimiento mÃ­nimo exigida por el inversor.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Rentabilidad requerida (i o k):</strong> El tipo de descuento o tasa de rendimiento mínimo exigida por el inversor.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">GrÃ¡ficamente, un proyecto de inversiÃ³n se representa en una lÃ­nea temporal:</p>
+<p style="margin: 0 0 1rem;">Gráficamente, un proyecto de inversión se representa en una línea temporal:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Momento 0: Desembolso inicial de <span class="formula-inline">-A</span>.</li>
 
@@ -183,167 +183,167 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterios de evaluaciÃ³n</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterios de evaluación</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio estÃ¡tico:</strong> No tiene en cuenta el momento del tiempo en que se producen los cobros y los pagos. Asume que el valor del dinero es constante a lo largo del tiempo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio estático:</strong> No tiene en cuenta el momento del tiempo en que se producen los cobros y los pagos. Asume que el valor del dinero es constante a lo largo del tiempo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio dinÃ¡mico:</strong> Considera el factor tiempo y la variaciÃ³n del valor del dinero. Se fundamenta en el concepto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">capital financiero</strong> (dinero ahorrado que se coloca en el mercado con el fin de obtener una rentabilidad futura mediante la aplicaciÃ³n de leyes financieras).</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio dinámico:</strong> Considera el factor tiempo y la variación del valor del dinero. Se fundamenta en el concepto de <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">capital financiero</strong> (dinero ahorrado que se coloca en el mercado con el fin de obtener una rentabilidad futura mediante la aplicación de leyes financieras).</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 1: cÃ¡lculo del cash-flow</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Caso práctico 1: cálculo del cash-flow</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Planteamiento</h3>
 
-<p style="margin: 0 0 1rem;">Una empresa presenta los siguientes datos econÃ³micos al cierre del ejercicio:</p>
+<p style="margin: 0 0 1rem;">Una empresa presenta los siguientes datos económicos al cierre del ejercicio:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Ventas totales: 500.000 â‚¬</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Ventas totales: 500.000 €</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Costes de materias primas: 100.000 â‚¬</li>
+<li style="margin-bottom: .45rem; position: relative;"> Costes de materias primas: 100.000 €</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Coste de personal: 80.000 â‚¬</li>
+<li style="margin-bottom: .45rem; position: relative;"> Coste de personal: 80.000 €</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AmortizaciÃ³n del inmovilizado: 20.000 â‚¬</li>
+<li style="margin-bottom: .45rem; position: relative;"> Amortización del inmovilizado: 20.000 €</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Gastos de mantenimiento: 30.000 â‚¬</li>
+<li style="margin-bottom: .45rem; position: relative;"> Gastos de mantenimiento: 30.000 €</li>
 
 <li style="margin-bottom: .45rem; position: relative;"> Impuesto sobre sociedades: 21%</li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ResoluciÃ³n paso a paso</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Resolución paso a paso</h3>
 
-<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del Beneficio Antes de Intereses e Impuestos (BAII):</strong></p>
+<p style="margin: 0 0 1rem;">1. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del Beneficio Antes de Intereses e Impuestos (BAII):</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">BAII = Ventas - Materias primas - Personal - AmortizaciÃ³n - Mantenimiento</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">BAII = Ventas - Materias primas - Personal - Amortización - Mantenimiento</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">BAII = 500.000 - 100.000 - 80.000 - 20.000 - 30.000 = 270.000 â‚¬</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">BAII = 500.000 - 100.000 - 80.000 - 20.000 - 30.000 = 270.000 €</span></p>
 
-<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del Impuesto sobre Sociedades:</strong></p>
+<p style="margin: 0 0 1rem;">2. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del Impuesto sobre Sociedades:</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Impuesto = 270.000 Ã— 21% = 56.700 â‚¬</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Impuesto = 270.000 × 21% = 56.700 €</span></p>
 
-<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del Beneficio Neto (BN):</strong></p>
+<p style="margin: 0 0 1rem;">3. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del Beneficio Neto (BN):</strong></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">BN = BAII - Impuestos = 270.000 - 56.700 = 213.300 â‚¬</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">BN = BAII - Impuestos = 270.000 - 56.700 = 213.300 €</span></p>
 
-<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">CÃ¡lculo del Cash-flow (Flujo de caja):</strong></p>
+<p style="margin: 0 0 1rem;">4. <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Cálculo del Cash-flow (Flujo de caja):</strong></p>
 
-<p style="margin: 0 0 1rem;">Para obtener el movimiento real de fondos, sumamos nuevamente la amortizaciÃ³n (ya que no supuso una salida de dinero fÃ­sica, sino un mero apunte contable):</p>
+<p style="margin: 0 0 1rem;">Para obtener el movimiento real de fondos, sumamos nuevamente la amortización (ya que no supuso una salida de dinero física, sino un mero apunte contable):</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Cash-flow = Beneficio Neto + AmortizaciÃ³n</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Cash-flow = Beneficio Neto + Amortización</span></p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">Cash-flow = 213.300 + 20.000 = 233.300 â‚¬</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Cash-flow = 213.300 + 20.000 = 233.300 €</span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MÃ©todos estÃ¡ticos de selecciÃ³n de inversiones</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Métodos estáticos de selección de inversiones</h2>
 
-<p style="margin: 0 0 1rem;">Estos mÃ©todos se caracterizan por su sencillez, aunque adolecen de precisiÃ³n al no actualizar los flujos de caja al momento presente.</p>
+<p style="margin: 0 0 1rem;">Estos métodos se caracterizan por su sencillez, aunque adolecen de precisión al no actualizar los flujos de caja al momento presente.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">MÃ©todo del pay-back estÃ¡tico (plazo de recuperaciÃ³n)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Método del pay-back estático (plazo de recuperación)</h3>
 
-<p style="margin: 0 0 1rem;">EvalÃºa el tiempo necesario para recuperar el desembolso inicial (<span class="formula-inline">A</span>) mediante la suma acumulada de los flujos de caja anuales (<span class="formula-inline">Q<sub>1</sub>, Q<sub>2</sub>...</span>).</p>
+<p style="margin: 0 0 1rem;">Evalúa el tiempo necesario para recuperar el desembolso inicial (<span class="formula-inline">A</span>) mediante la suma acumulada de los flujos de caja anuales (<span class="formula-inline">Q<sub>1</sub>, Q<sub>2</sub>...</span>).</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio:</strong> Se elige el proyecto que recupere la inversiÃ³n en el menor tiempo posible.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Criterio:</strong> Se elige el proyecto que recupere la inversión en el menor tiempo posible.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">LimitaciÃ³n:</strong> Ignora los flujos de caja que se producen despuÃ©s de haber recuperado la inversiÃ³n inicial.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Limitación:</strong> Ignora los flujos de caja que se producen después de haber recuperado la inversión inicial.</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota:</span> Si a este mÃ©todo se le incorpora el efecto de la inflaciÃ³n o el descuento financiero, pasa a denominarse <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">pay-back descontado</strong>, convirtiÃ©ndose en un mÃ©todo dinÃ¡mico.</p>
+<p style="margin: 0 0 1rem;"><span class="markdown-emphasis">Nota:</span> Si a este método se le incorpora el efecto de la inflación o el descuento financiero, pasa a denominarse <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">pay-back descontado</strong>, convirtiéndose en un método dinámico.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">MÃ©todo del flujo neto de caja</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Método del flujo neto de caja</h3>
 
 <h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Flujo neto de caja total</h4>
 
-<p style="margin: 0 0 1rem;">Consiste en sumar todos los flujos netos de caja generados durante la vida Ãºtil del proyecto y dividirlos por el desembolso inicial.</p>
+<p style="margin: 0 0 1rem;">Consiste en sumar todos los flujos netos de caja generados durante la vida útil del proyecto y dividirlos por el desembolso inicial.</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">RelaciÃ³n = <span class="formula-frac"><span class="num"><span class="formula-sum">Î£</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub></span><span class="den">A</span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Relación = <span class="formula-frac"><span class="num"><span class="formula-sum">Σ</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub></span><span class="den">A</span></span></span></p>
 
-<p style="margin: 0 0 1rem;">Para que la inversiÃ³n sea considerada aceptable, el resultado de esta relaciÃ³n debe ser superior a 1.</p>
+<p style="margin: 0 0 1rem;">Para que la inversión sea considerada aceptable, el resultado de esta relación debe ser superior a 1.</p>
 
 <h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Flujo neto de caja medio anual</h4>
 
-<p style="margin: 0 0 1rem;">Relaciona el flujo neto de caja promedio de un aÃ±o con el desembolso inicial para obtener una referencia anualizada:</p>
+<p style="margin: 0 0 1rem;">Relaciona el flujo neto de caja promedio de un año con el desembolso inicial para obtener una referencia anualizada:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">RelaciÃ³n media = <span class="formula-frac"><span class="num"><span class="formula-sum">Î£</span><sub>j=1</sub><sup>n</sup>
+<p style="margin: 0 0 1rem;"><span class="formula-block">Relación media = <span class="formula-frac"><span class="num"><span class="formula-sum">Σ</span><sub>j=1</sub><sup>n</sup>
 <span class="formula-frac"><span class="num">Q<sub>j</sub></span><span class="den">n</span></span></span><span class="den">A</span></span></span></p>
 
-<p style="margin: 0 0 1rem;">Si todos los flujos de caja anuales (<span class="formula-inline">Q</span>) son positivos e iguales, el plazo de recuperaciÃ³n simplificado se calcula como:</p>
+<p style="margin: 0 0 1rem;">Si todos los flujos de caja anuales (<span class="formula-inline">Q</span>) son positivos e iguales, el plazo de recuperación simplificado se calcula como:</p>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">P = <span class="formula-frac"><span class="num">A</span><span class="den">Q</span></span></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">MÃ©todo de comparaciÃ³n de costes</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Método de comparación de costes</h3>
 
-<p style="margin: 0 0 1rem;">Se enfoca exclusivamente en los costes fijos y variables que genera cada opciÃ³n de inversiÃ³n. Ante proyectos con prestaciones similares, la empresa elegirÃ¡ aquel que presente los menores costes totales.</p>
+<p style="margin: 0 0 1rem;">Se enfoca exclusivamente en los costes fijos y variables que genera cada opción de inversión. Ante proyectos con prestaciones similares, la empresa elegirá aquel que presente los menores costes totales.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">MÃ©todo de la tasa de rendimiento contable (TRC)</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Método de la tasa de rendimiento contable (TRC)</h3>
 
-<p style="margin: 0 0 1rem;">Analiza la relaciÃ³n porcentual entre el beneficio medio anual y la inversiÃ³n media anual:</p>
+<p style="margin: 0 0 1rem;">Analiza la relación porcentual entre el beneficio medio anual y la inversión media anual:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">TRC = <span class="formula-frac"><span class="num">Beneficio medio anual</span><span class="den">InversiÃ³n media anual</span></span> Ã— 100</span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">TRC = <span class="formula-frac"><span class="num">Beneficio medio anual</span><span class="den">Inversión media anual</span></span> × 100</span></p>
 
 <p style="margin: 0 0 1rem;">Su principal desventaja es que utiliza el beneficio contable en lugar del flujo de caja, heredando las limitaciones de los criterios puramente contables.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MÃ©todos dinÃ¡micos de selecciÃ³n de inversiones</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Métodos dinámicos de selección de inversiones</h2>
 
-<p style="margin: 0 0 1rem;">A diferencia de los estÃ¡ticos, los mÃ©todos dinÃ¡micos incorporan el valor del dinero en el tiempo empleando la capitalizaciÃ³n y el descuento compuesto.</p>
+<p style="margin: 0 0 1rem;">A diferencia de los estáticos, los métodos dinámicos incorporan el valor del dinero en el tiempo empleando la capitalización y el descuento compuesto.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">OperaciÃ³n de capitalizaciÃ³n</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Operación de capitalización</h3>
 
-<p style="margin: 0 0 1rem;">Permite proyectar un capital actual hacia el futuro para conocer su valor final transcurridos <span class="formula-inline">n</span> perÃ­odos a una tasa de interÃ©s <span class="formula-inline">i</span>:</p>
+<p style="margin: 0 0 1rem;">Permite proyectar un capital actual hacia el futuro para conocer su valor final transcurridos <span class="formula-inline">n</span> períodos a una tasa de interés <span class="formula-inline">i</span>:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>n</sub> = C<sub>0</sub> Ã— (1 + i)<sup>n</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>n</sub> = C<sub>0</sub> × (1 + i)<sup>n</sup></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">OperaciÃ³n de descuento o actualizaciÃ³n</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Operación de descuento o actualización</h3>
 
-<p style="margin: 0 0 1rem;">Permite traer al momento presente (<span class="formula-inline">C<sub>0</sub></span>) un capital que se recibirÃ¡ en el futuro (<span class="formula-inline">Q<sub>n</sub></span>):</p>
+<p style="margin: 0 0 1rem;">Permite traer al momento presente (<span class="formula-inline">C<sub>0</sub></span>) un capital que se recibirá en el futuro (<span class="formula-inline">Q<sub>n</sub></span>):</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>0</sub> = Q<sub>n</sub> Ã— (1 + i)<sup>-n</sup> = <span class="formula-frac"><span class="num">Q<sub>n</sub></span><span class="den">(1 + i)<sup>n</sup></span></span></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">C<sub>0</sub> = Q<sub>n</sub> × (1 + i)<sup>-n</sup> = <span class="formula-frac"><span class="num">Q<sub>n</sub></span><span class="den">(1 + i)<sup>n</sup></span></span></span></p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MÃ©todo del valor actual neto (VAN)</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Método del valor actual neto (VAN)</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto y variables</h3>
 
-<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN</strong> es la diferencia entre el valor actualizado de los flujos netos de caja esperados y el desembolso inicial de la inversiÃ³n.</p>
+<p style="margin: 0 0 1rem;">El <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN</strong> es la diferencia entre el valor actualizado de los flujos netos de caja esperados y el desembolso inicial de la inversión.</p>
 
-<p style="margin: 0 0 1rem;">La fÃ³rmula general para su cÃ¡lculo es:</p>
+<p style="margin: 0 0 1rem;">La fórmula general para su cálculo es:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">VAN = -A + <span class="formula-sum">Î£</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub> Ã— (1 + i)<sup>-j</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">VAN = -A + <span class="formula-sum">Σ</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub> × (1 + i)<sup>-j</sup></span></p>
 
-<p style="margin: 0 0 1rem;">Si al finalizar la vida Ãºtil del proyecto existe un valor residual (<span class="formula-inline">VR</span>), la fÃ³rmula se expresa de la siguiente manera:</p>
+<p style="margin: 0 0 1rem;">Si al finalizar la vida útil del proyecto existe un valor residual (<span class="formula-inline">VR</span>), la fórmula se expresa de la siguiente manera:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">VAN = -A + <span class="formula-sum">Î£</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub> Ã— (1 + i)<sup>-j</sup> + VR Ã— (1 + i)<sup>-n</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">VAN = -A + <span class="formula-sum">Σ</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub> × (1 + i)<sup>-j</sup> + VR × (1 + i)<sup>-n</sup></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterio de decisiÃ³n del VAN</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterio de decisión del VAN</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN &gt; 0:</strong> La inversiÃ³n es viable y recomendable, ya que genera un rendimiento superior a la tasa de descuento exigida, incrementando el valor de la empresa.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN &gt; 0:</strong> La inversión es viable y recomendable, ya que genera un rendimiento superior a la tasa de descuento exigida, incrementando el valor de la empresa.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN &lt; 0:</strong> La inversiÃ³n debe rechazarse, puesto que no cubre la rentabilidad mÃ­nima requerida.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN &lt; 0:</strong> La inversión debe rechazarse, puesto que no cubre la rentabilidad mínima requerida.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN = 0:</strong> El proyecto es indiferente, ya que la rentabilidad coincide exactamente con la tasa de descuento exigida.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">MÃ©todo de la tasa interna de retorno (TIR)</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Método de la tasa interna de retorno (TIR)</h2>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Concepto y variables</h3>
 
-<p style="margin: 0 0 1rem;">La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong> (tambiÃ©n llamada tasa interna de rentabilidad) es aquella tasa de descuento o actualizaciÃ³n (<span class="formula-inline">r</span>) que hace que el Valor Actual Neto de una inversiÃ³n sea igual a cero. Representa la rentabilidad interna del proyecto expresada en tÃ©rminos porcentuales.</p>
+<p style="margin: 0 0 1rem;">La <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong> (también llamada tasa interna de rentabilidad) es aquella tasa de descuento o actualización (<span class="formula-inline">r</span>) que hace que el Valor Actual Neto de una inversión sea igual a cero. Representa la rentabilidad interna del proyecto expresada en términos porcentuales.</p>
 
-<p style="margin: 0 0 1rem;">Para hallar la TIR se plantea la siguiente ecuaciÃ³n:</p>
+<p style="margin: 0 0 1rem;">Para hallar la TIR se plantea la siguiente ecuación:</p>
 
-<p style="margin: 0 0 1rem;"><span class="formula-block">0 = -A + <span class="formula-sum">Î£</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub> Ã— (1 + r)<sup>-j</sup></span></p>
+<p style="margin: 0 0 1rem;"><span class="formula-block">0 = -A + <span class="formula-sum">Σ</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub> × (1 + r)<sup>-j</sup></span></p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">CÃ¡lculo aproximado de la TIR</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Cálculo aproximado de la TIR</h3>
 
-<p style="margin: 0 0 1rem;">Cuando la duraciÃ³n del proyecto es superior a dos aÃ±os (<span class="formula-inline">n &gt; 2</span>), despejar la tasa <span class="formula-inline">r</span> de forma manual resulta complejo al tratarse de polinomios de grado superior. Aunque habitualmente se recurre a hojas de cÃ¡lculo, se pueden estimar dos valores lÃ­mites (por exceso y por defecto) para definir el intervalo donde se encuentra la TIR real (<span class="formula-inline">r<sub>1</sub> â‰¤ r â‰¤ r<sub>2</sub></span>):</p>
+<p style="margin: 0 0 1rem;">Cuando la duración del proyecto es superior a dos años (<span class="formula-inline">n &gt; 2</span>), despejar la tasa <span class="formula-inline">r</span> de forma manual resulta complejo al tratarse de polinomios de grado superior. Aunque habitualmente se recurre a hojas de cálculo, se pueden estimar dos valores límites (por exceso y por defecto) para definir el intervalo donde se encuentra la TIR real (<span class="formula-inline">r<sub>1</sub> ≤ r ≤ r<sub>2</sub></span>):</p>
 
 <p style="margin: 0 0 1rem;"><span class="formula-block">r<sub>1</sub> = (<span class="formula-frac"><span class="num">S</span><span class="den">A</span></span>)<sup><span class="formula-frac"><span class="num">S</span><span class="den">M</span></span></sup> - 1</span></p>
 
@@ -352,148 +352,149 @@ img, svg, video, canvas { max-width: 100%; height: auto; }
 <p style="margin: 0 0 1rem;">Donde las variables intermedias se definen como:</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">S = <span class="formula-sum">Î£</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub></span> (Suma total de los flujos de caja).</li>
+<span class="formula-inline">S = <span class="formula-sum">Σ</span><sub>j=1</sub><sup>n</sup> Q<sub>j</sub></span> (Suma total de los flujos de caja).</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">M = Q<sub>1</sub> Ã— 1 + Q<sub>2</sub> Ã— 2 + Q<sub>3</sub> Ã— 3 + â€¦ + Q<sub>n</sub> Ã— n</span></li>
+<span class="formula-inline">M = Q<sub>1</sub> × 1 + Q<sub>2</sub> × 2 + Q<sub>3</sub> × 3 + … + Q<sub>n</sub> × n</span></li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<span class="formula-inline">D = <span class="formula-frac"><span class="num">Q<sub>1</sub></span><span class="den">1</span></span> + <span class="formula-frac"><span class="num">Q<sub>2</sub></span><span class="den">2</span></span> + <span class="formula-frac"><span class="num">Q<sub>3</sub></span><span class="den">3</span></span> + â€¦ + <span class="formula-frac"><span class="num">Q<sub>n</sub></span><span class="den">n</span></span></span></li>
+<span class="formula-inline">D = <span class="formula-frac"><span class="num">Q<sub>1</sub></span><span class="den">1</span></span> + <span class="formula-frac"><span class="num">Q<sub>2</sub></span><span class="den">2</span></span> + <span class="formula-frac"><span class="num">Q<sub>3</sub></span><span class="den">3</span></span> + … + <span class="formula-frac"><span class="num">Q<sub>n</sub></span><span class="den">n</span></span></span></li>
 
 </ul>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterio de decisiÃ³n de la TIR</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Criterio de decisión de la TIR</h3>
 
-<p style="margin: 0 0 1rem;">Se compara la TIR (<span class="formula-inline">r</span>) con la rentabilidad mÃ­nima exigida o tasa de descuento (<span class="formula-inline">k</span>):</p>
+<p style="margin: 0 0 1rem;">Se compara la TIR (<span class="formula-inline">r</span>) con la rentabilidad mínima exigida o tasa de descuento (<span class="formula-inline">k</span>):</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR &gt; k:</strong> El proyecto es recomendable porque la rentabilidad interna supera el coste de oportunidad del capital.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR &lt; k:</strong> El proyecto se rechaza por no alcanzar el rendimiento mÃ­nimo exigido.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR &lt; k:</strong> El proyecto se rechaza por no alcanzar el rendimiento mínimo exigido.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR = k:</strong> La decisiÃ³n es indiferente.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR = k:</strong> La decisión es indiferente.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">RelaciÃ³n entre el VAN y la TIR</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Relación entre el VAN y la TIR</h2>
 
-<p style="margin: 0 0 1rem;">El VAN y la TIR analizan la rentabilidad desde perspectivas diferentes: el VAN ofrece un resultado en tÃ©rminos absolutos (unidades monetarias), mientras que la TIR lo hace en tÃ©rminos relativos (porcentaje).</p>
+<p style="margin: 0 0 1rem;">El VAN y la TIR analizan la rentabilidad desde perspectivas diferentes: el VAN ofrece un resultado en términos absolutos (unidades monetarias), mientras que la TIR lo hace en términos relativos (porcentaje).</p>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inversiones simples:</strong> En proyectos donde todos los flujos de caja netos son positivos tras el desembolso inicial, ambos mÃ©todos coinciden en el diagnÃ³stico de aceptaciÃ³n o rechazo.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inversiones simples:</strong> En proyectos donde todos los flujos de caja netos son positivos tras el desembolso inicial, ambos métodos coinciden en el diagnóstico de aceptación o rechazo.</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inversiones no simples:</strong> Cuando existen flujos de caja negativos intercalados a lo largo de la vida del proyecto, los mÃ©todos pueden arrojar resultados contradictorios. Incluso en proyectos viables para ambos mÃ©todos, el orden de preferencia (cuÃ¡l es el mejor proyecto) puede diferir entre el VAN y la TIR.</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Inversiones no simples:</strong> Cuando existen flujos de caja negativos intercalados a lo largo de la vida del proyecto, los métodos pueden arrojar resultados contradictorios. Incluso en proyectos viables para ambos métodos, el orden de preferencia (cuál es el mejor proyecto) puede diferir entre el VAN y la TIR.</li>
 
 </ul>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prÃ¡cticos de anÃ¡lisis de proyectos</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Casos prácticos de análisis de proyectos</h2>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso prÃ¡ctico 2: evaluaciÃ³n y selecciÃ³n de proyectos</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Caso práctico 2: evaluación y selección de proyectos</h3>
 
-<p style="margin: 0 0 1rem;">Una empresa analiza dos proyectos de inversiÃ³n con una tasa de descuento del 5%.</p>
+<p style="margin: 0 0 1rem;">Una empresa analiza dos proyectos de inversión con una tasa de descuento del 5%.</p>
 
 <h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Datos de flujos de cobros y pagos</h4>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto A:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Desembolso inicial (Momento 0): Cobros = 0 â‚¬ | Pagos = 100.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = -100.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Desembolso inicial (Momento 0): Cobros = 0 € | Pagos = 100.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = -100.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 1: Cobros = 80.000 â‚¬ | Pagos = 20.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 60.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 1: Cobros = 80.000 € | Pagos = 20.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 60.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 2: Cobros = 90.000 â‚¬ | Pagos = 70.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 20.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 2: Cobros = 90.000 € | Pagos = 70.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 20.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 3: Cobros = 100.000 â‚¬ | Pagos = 30.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 70.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 3: Cobros = 100.000 € | Pagos = 30.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 70.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 4: Cobros = 110.000 â‚¬ | Pagos = 100.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 10.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 4: Cobros = 110.000 € | Pagos = 100.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 10.000 €</strong></li>
 
 </ul>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Desembolso inicial (Momento 0): Cobros = 0 â‚¬ | Pagos = 90.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = -90.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Desembolso inicial (Momento 0): Cobros = 0 € | Pagos = 90.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = -90.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 1: Cobros = 100.000 â‚¬ | Pagos = 40.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 60.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 1: Cobros = 100.000 € | Pagos = 40.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 60.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 2: Cobros = 110.000 â‚¬ | Pagos = 90.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 20.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 2: Cobros = 110.000 € | Pagos = 90.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 20.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 3: Cobros = 170.000 â‚¬ | Pagos = 70.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 100.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 3: Cobros = 170.000 € | Pagos = 70.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 100.000 €</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 4: Cobros = 110.000 â‚¬ | Pagos = 100.000 â‚¬ | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 10.000 â‚¬</strong></li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 4: Cobros = 110.000 € | Pagos = 100.000 € | <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Neto = 10.000 €</strong></li>
 
 </ul>
 
 <h4 style="font-size: 1.5rem; font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem;">Resultados obtenidos</h4>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto A:</strong> VAN = 43.979 â‚¬ | TIR = 25,47%</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto A:</strong> VAN = 43.979 € | TIR = 25,47%</li>
 
 <li style="margin-bottom: .45rem; position: relative;">
-<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B:</strong> VAN = 79.894 â‚¬ | TIR = 41,65%</li>
+<strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B:</strong> VAN = 79.894 € | TIR = 41,65%</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">DecisiÃ³n:</strong> Se elige el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B</strong>, ya que presenta tanto un VAN como una TIR superiores a los del Proyecto A.</p>
+<p style="margin: 0 0 1rem;"><strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Decisión:</strong> Se elige el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B</strong>, ya que presenta tanto un VAN como una TIR superiores a los del Proyecto A.</p>
 
-<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y resoluciÃ³n del caso prÃ¡ctico de la unidad</h2>
+<h2 style="font-family: 'Caveat', cursive; font-size: 2.35rem; color: #c0392b; margin-top: 2rem; margin-bottom: 0.5rem;">Resumen y resolución del caso práctico de la unidad</h2>
 
-<p style="margin: 0 0 1rem;">En este caso de estudio final, se plantea la toma de decisiones ante dos proyectos alternativos que presentan contradicciones metodolÃ³gicas.</p>
+<p style="margin: 0 0 1rem;">En este caso de estudio final, se plantea la toma de decisiones ante dos proyectos alternativos que presentan contradicciones metodológicas.</p>
 
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Flujos netos de caja calculados para la resoluciÃ³n</h3>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Flujos netos de caja calculados para la resolución</h3>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto A:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Momento 0 (Desembolso): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">-80.000 â‚¬</strong> (Cobros: 0 | Pagos: 80.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Momento 0 (Desembolso): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">-80.000 €</strong> (Cobros: 0 | Pagos: 80.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 1: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">70.000 â‚¬</strong> (Cobros: 120.000 | Pagos: 50.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 1: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">70.000 €</strong> (Cobros: 120.000 | Pagos: 50.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 2: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15.000 â‚¬</strong> (Cobros: 45.000 | Pagos: 30.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 2: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">15.000 €</strong> (Cobros: 45.000 | Pagos: 30.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 3: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">35.000 â‚¬</strong> (Cobros: 65.000 | Pagos: 30.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 3: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">35.000 €</strong> (Cobros: 65.000 | Pagos: 30.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 4: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">25.000 â‚¬</strong> (Cobros: 50.000 | Pagos: 25.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 4: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">25.000 €</strong> (Cobros: 50.000 | Pagos: 25.000)</li>
 
 </ul>
 
 <ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;">
 <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B:</strong></li>
 
-<li style="margin-bottom: .45rem; position: relative;"> Momento 0 (Desembolso): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">-55.000 â‚¬</strong> (Cobros: 0 | Pagos: 55.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Momento 0 (Desembolso): <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">-55.000 €</strong> (Cobros: 0 | Pagos: 55.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 1: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">50.000 â‚¬</strong> (Cobros: 90.000 | Pagos: 40.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 1: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">50.000 €</strong> (Cobros: 90.000 | Pagos: 40.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 2: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10.000 â‚¬</strong> (Cobros: 100.000 | Pagos: 90.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 2: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">10.000 €</strong> (Cobros: 100.000 | Pagos: 90.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 3: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">45.000 â‚¬</strong> (Cobros: 115.000 | Pagos: 70.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 3: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">45.000 €</strong> (Cobros: 115.000 | Pagos: 70.000)</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> AÃ±o 4: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">0 â‚¬</strong> (Cobros: 100.000 | Pagos: 100.000)</li>
+<li style="margin-bottom: .45rem; position: relative;"> Año 4: <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">0 €</strong> (Cobros: 100.000 | Pagos: 100.000)</li>
 
 </ul>
 
 <h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Comparativa de resultados</h3>
 
-<table class="markdown-table"><thead><tr><th>MÃ©trica de evaluaciÃ³n</th><th>Proyecto A</th><th>Proyecto B</th></tr></thead><tbody><tr><td>VAN</td><td>46.165 â‚¬</td><td>37.197 â‚¬</td></tr><tr><td>TIR</td><td>36,79%</td><td>43,39%</td></tr></tbody></table>
-<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">ConclusiÃ³n del anÃ¡lisis</h3>
+<table class="markdown-table"><thead><tr><th>Métrica de evaluación</th><th>Proyecto A</th><th>Proyecto B</th></tr></thead><tbody><tr><td>VAN</td><td>46.165 €</td><td>37.197 €</td></tr><tr><td>TIR</td><td>36,79%</td><td>43,39%</td></tr></tbody></table>
+<h3 style="font-family: 'Caveat', cursive; font-size: 1.9rem; color: #2980b9; margin-top: 1.5rem; margin-bottom: 0.5rem;">Conclusión del análisis</h3>
 
 <p style="margin: 0 0 1rem;">Ambos proyectos son viables y recomendables de manera individual, ya que en los dos casos el VAN es mayor que cero y la TIR supera la tasa de descuento requerida.</p>
 
-<p style="margin: 0 0 1rem;">Sin embargo, se produce un conflicto en la jerarquizaciÃ³n:</p>
+<p style="margin: 0 0 1rem;">Sin embargo, se produce un conflicto en la jerarquización:</p>
 
-<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> SegÃºn el criterio del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN</strong>, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto A</strong> es preferible (46.165 â‚¬ frente a 37.197 â‚¬).</li>
+<ul style="padding-left: 1.5rem; list-style: none; margin: 1rem 0;"><li style="margin-bottom: .45rem; position: relative;"> Según el criterio del <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">VAN</strong>, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto A</strong> es preferible (46.165 € frente a 37.197 €).</li>
 
-<li style="margin-bottom: .45rem; position: relative;"> SegÃºn el criterio de la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong>, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B</strong> es preferible (43,39% frente a 36,79%).</li>
+<li style="margin-bottom: .45rem; position: relative;"> Según el criterio de la <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">TIR</strong>, el <strong style="background: linear-gradient(transparent 45%, rgba(255, 243, 5, 0.35) 45%); font-weight: bold;">Proyecto B</strong> es preferible (43,39% frente a 36,79%).</li>
 
 </ul>
 
-<p style="margin: 0 0 1rem;">Este escenario ilustra la necesidad de valorar de manera conjunta la estrategia financiera de la empresa (si se busca maximizar el valor absoluto generado o la eficiencia de los recursos invertidos) antes de tomar la decisiÃ³n definitiva.</p>
+<p style="margin: 0 0 1rem;">Este escenario ilustra la necesidad de valorar de manera conjunta la estrategia financiera de la empresa (si se busca maximizar el valor absoluto generado o la eficiencia de los recursos invertidos) antes de tomar la decisión definitiva.</p>
 
 </main>
 </body>
 </html>
+
 
 
